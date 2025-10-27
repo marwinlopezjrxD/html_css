@@ -10,6 +10,8 @@
     color: blue;    
 }
 
+/* style snippet https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade */
+
 .container {
   position: relative;
   width: 50%;
@@ -49,6 +51,9 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+/* end of style snippet */
+
 
 .text-deco {
     color: white;
