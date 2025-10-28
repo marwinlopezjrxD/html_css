@@ -124,13 +124,13 @@ ol li::marker {
 .submitBtn {
   margin-top: 15px;
   padding: 8px 16px;
-  background-color: green;
+  background-color: darkblue;
   color: white;
   border: none;
   cursor: pointer;
 }
 
 .submitBtn:hover {
-  background-color: darkgreen;
+  background-color: blue;
 }
 /* End of Questionnaire.html style */
