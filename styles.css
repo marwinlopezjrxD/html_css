@@ -84,10 +84,10 @@
 }
 
 
-
+ 
 .questionnaireContainer {
-    /* margin-top: 20px;
-    margin-bottom: 20px; */
+    margin-top: 20px;
+    margin-bottom: 20px; 
   background-color: lightgrey;
   width: 300px;
   border: 15px solid lightblue;
@@ -95,6 +95,7 @@
   margin: 20px;
   }
 
+  
 ol li::marker {
   font-weight: bold;
   color: blue;
@@ -104,3 +105,32 @@ ol li::marker {
 .questionOptions {
     margin-left: 20px;
 }
+
+/* Optional CSS Styles(for readability */
+.questionnaireContainer p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.questionnaireContainer ol {
+  list-style-type: lower-alpha; /* a, b, c */
+  margin-left: 30px;
+}
+
+.questionnaireContainer li {
+  margin-bottom: 8px;
+}
+
+.submitBtn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background-color: darkgreen;
+}
+/* End of Questionnaire.html style */
