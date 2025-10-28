@@ -79,3 +79,7 @@
     background-color: yellow;
     background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
 } */
+
+.questionOptions {
+    margin-left: 20px;
+}
