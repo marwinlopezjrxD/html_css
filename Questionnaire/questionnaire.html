@@ -1,47 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questionnaire</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questionnaire</title>
+  <!-- Go up one folder to find styles.css -->
+  <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
 
-<h2>Questionnaire</h2>
-<h3>Choose the correct answer</h3>
+  <h2>Questionnaire</h2>
+  <h3>Choose the correct answer</h3>
 
-    <div class="questionnaireContainer">
+  <div class="questionnaireContainer">
+    <form id="questionnaireForm" action="">
+      <p><strong>Question:</strong> What is the abbreviation of HTML stands for?</p>
 
-        <form action="">
+      <ol type="a">
+        <li>
+          <input type="radio" name="question" id="HowToMakeLumpia" value="HowToMakeLumpia">
+          <label for="HowToMakeLumpia" class="questionOptions">How to Make Lumpia</label>
+        </li>
 
-            <p><strong>Question:</strong> What is the abbreviation of HTML stands for?</p>
+        <li>
+          <input type="radio" name="question" id="HTML" value="HTML">
+          <label for="HTML" class="questionOptions">HyperText Markup Language</label>
+        </li>
 
-            <ol type="a">
-                <li>
-                    <input type="radio" name="question" id="HowToMakeLumpia" value="HowToMakeLumpia">
-                    <label for="HowToMakeLumpia" class="questionOptions">How to Make Lumpia</label>
-                </li>
+        <li>
+          <input type="radio" name="question" id="HowToMakeLoop" value="HowToMakeLoop">
+          <label for="HowToMakeLoop" class="questionOptions">How to Make Loop</label>
+        </li>
+      </ol>
 
-                <li>
-                    <input type="radio" name="question" id="HTML" value="HTML">
-                    <label for="HTML" class="questionOptions">HyperText Markup Language</label>
-                </li>
+      <!-- Button triggers the confirmation box -->
+      <button type="button" class="submitBtn" id="openConfirm">Submit</button>
+    </form>
+  </div>
 
-                <li>
-                    <input type="radio" name="question" id="HowToMakeLoop" value="HowToMakeLoop">
-                    <label for="HowToMakeLoop" class="questionOptions">How to Make Loop</label>
-                </li>
-            </ol>
-
-            <button type="submit" class="submitBtn"><strong>Submit</strong></button>
-        </form>
-
+  <!-- Confirmation Popup -->
+  <div id="confirmBox" class="confirmBox">
+    <div class="confirmBox-content">
+      <p>Are you sure you want to submit your answer?</p>
+      <div class="confirmButtons">
+        <button id="confirmYes" class="confirmBtn">Submit</button>
+        <button id="confirmNo" class="cancelBtn">Cancel</button>
+      </div>
     </div>
+  </div>
 
-    
+  <script>
+    const openConfirm = document.getElementById("openConfirm");
+    const confirmBox = document.getElementById("confirmBox");
+    const confirmYes = document.getElementById("confirmYes");
+    const confirmNo = document.getElementById("confirmNo");
+    const form = document.getElementById("questionnaireForm");
 
+    // When user clicks Submit
+    openConfirm.addEventListener("click", () => {
+      confirmBox.style.display = "flex"; // show confirmation box
+    });
+
+    // If user clicks Cancel
+    confirmNo.addEventListener("click", () => {
+      confirmBox.style.display = "none"; // hide box
+    });
+
+    // If user confirms Submit
+    confirmYes.addEventListener("click", () => {
+      confirmBox.style.display = "none";
+      form.submit(); // proceed with submission
+    });
+  </script>
 
 </body>
 </html>

@@ -134,3 +134,56 @@ ol li::marker {
   background-color: blue;
 }
 /* End of Questionnaire.html style */
+
+/* Confirmation popup box */
+.confirmBox {
+  display: none; /* hidden by default */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.confirmBox-content {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.confirmButtons {
+  margin-top: 20px;
+}
+
+.confirmBtn {
+  background-color: darkblue;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.confirmBtn:hover {
+  background-color: blue;
+}
+
+.cancelBtn {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cancelBtn:hover {
+  background-color: darkgray;
+}
