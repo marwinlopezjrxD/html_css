@@ -4,42 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questionnaire</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<h2>Questionnaire</h2>
-
-<h3>Choose the correct answer</h3>
-
-<form action="">
-<ul>
-  <input type="radio">
-  
-  <div class="questionOptions">
-
-  <label for="HowToMakeLumpia"> How to Make Lumpia </label> 
-  </div>
-  
-    <input type="radio">
-  
-  <div class="questionOptions">
-
-  <label for="HTML"> HyperText Markup Language </label>
-  </div>
-  
-    <input type="radio">
-  
-  <div class="questionOptions">
-
-  <label for="HowToMakeLoop"> How to Make Loop </label> 
-  </div>
-
-  <button type="submit" class="submitBtn">Submit</button>
-
-</ul>  
-
-</form>
-
 <body>
-    
+
+    <h2>Questionnaire</h2>
+    <h3>Choose the correct answer</h3>
+
+    <div class="questionnaireContainer">
+    <form action="">
+        <ol type="a">
+        <li>
+            <input type="radio" name="question" id="HowToMakeLumpia">
+            <label for="HowToMakeLumpia" class="questionOptions">How to Make Lumpia</label>
+        </li>
+
+        <li>
+            <input type="radio" name="question" id="HTML">
+            <label for="HTML" class="questionOptions">HyperText Markup Language</label>
+        </li>
+
+        <li>
+            <input type="radio" name="question" id="HowToMakeLoop">
+            <label for="HowToMakeLoop" class="questionOptions">How to Make Loop</label>
+        </li>
+        </ol>
+
+        <button type="submit" class="submitBtn">Submit</button>
+    </form>
+    </div>
+
+
 </body>
 </html>

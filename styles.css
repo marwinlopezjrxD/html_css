@@ -68,17 +68,38 @@
 }
 
 /* end of style snippet */
+/* .imgBg {
+    background-color: yellow;
+    background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+} */
 
+/* Questionnaire.html style */
+
+/* CSS Box Model reference - https://www.w3schools.com/css/css_boxmodel.asp*/
+/* Box Model Demonstration reference - https://www.w3schools.com/css/tryit.asp?filename=trycss_boxmodel */
 
 .text-deco {
     color: white;
     text-decoration: none;
 }
 
-/* .imgBg {
-    background-color: yellow;
-    background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
-} */
+
+
+.questionnaireContainer {
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid lightblue;
+  padding: 50px;
+  margin: 20px;
+  }
+
+ol li::marker {
+  font-weight: bold;
+  color: blue;
+}
+
 
 .questionOptions {
     margin-left: 20px;
