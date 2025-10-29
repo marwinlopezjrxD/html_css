@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body>
+<body id="top">
 
   <h2>Questionnaire</h2>
   <h3>Choose the correct answer</h3>
@@ -49,7 +49,7 @@
 
         <li>
           <input type="radio" name="question" id="HowToMakeLoop" value="HowToMakeLoop">
-          <label for="HowToMakeLoop" class="questionOptions">HTML &lt;a&gt; ascend Attribute</label>
+          <label for="HowToMakeLoop" class="questionOptions">HTML &lt;a&gt; align Attribute</label>
         </li>
       </ol>
 
@@ -221,6 +221,9 @@
     </div>
   </div>
 
+  <!-- Return to Top Button -->
+  <button id="returnTop">Return to Top</button>
+
   <!-- script if user clicks Submit Button when all of the questions are answered -->
   <script>
     const openConfirm = document.getElementById("openConfirm");
@@ -228,6 +231,44 @@
     const confirmYes = document.getElementById("confirmYes");
     const confirmNo = document.getElementById("confirmNo");
     const form = document.getElementById("questionnaireForm");
+    const returnTop = document.getElementById("returnTop");
+
+    // // Show "Return to Top" Button when scrolling
+    // window.onscroll = function () {
+    //   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    //     returnTop.style.display = "block";
+    //   } else {
+    //     returnTop.style.display = "none";
+    //   }
+    // };
+
+    const container = document.querySelector(".questionnaireContainer");
+
+    container.addEventListener("scroll", function () {
+      if (container.scrollTop > 200) {
+        returnTop.style.display = "block";
+      } else {
+        returnTop.style.display = "none";
+      }
+    });
+     
+
+
+    // Scroll back to top
+    returnTop.addEventListener("click", () => {
+      container.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+
+
+    
+    // Confirmation Popup
+    openConfirm.addEventListener("click", () => confirmBox.style.display = "flex");
+    confirmNo.addEventListener("click", () => confirmBox.style.display = "none");
+    confirmYes.addEventListener("click", () => {
+      confirmBox.style.display = "none";
+      window.location.href = "answersheet.html"; // redirect after confirm
+    });  
 
     // When user clicks Submit
     openConfirm.addEventListener("click", () => {

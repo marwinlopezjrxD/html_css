@@ -24,9 +24,7 @@
 } */
 
 
-
 /* style snippet https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade */
-
 .container {
   position: relative;
   width: 50%;
@@ -61,52 +59,46 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
 /* end of style snippet */
-/* .imgBg {
-    background-color: yellow;
-    background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
-} */
 
-/* Questionnaire.html style */
 
-/* CSS Box Model reference - https://www.w3schools.com/css/css_boxmodel.asp*/
-/* Box Model Demonstration reference - https://www.w3schools.com/css/tryit.asp?filename=trycss_boxmodel */
+/* ==============================
+   Questionnaire.html Styles
+   ============================== */
 
-.text-deco {
-    color: white;
-    text-decoration: none;
+html {
+  scroll-behavior: smooth;
 }
 
-/* questionnaire.html */
- 
+/* Questionnaire Container */
 .questionnaireContainer {
-    margin-top: 20px;
-    margin-bottom: 20px; 
+  margin-top: 20px;
+  margin-bottom: 20px; 
   background-color: lightgrey;
   width: 300px;
   border: 15px solid lightblue;
   padding: 50px;
   margin: 20px;
-  }
+  max-height: 70vh; /* limit height for internal scroll */
+  overflow-y: auto;
+  border-radius: 10px;
+  padding-right: 10px;
+}
 
-  
+/* Ordered List Styling */
 ol li::marker {
   font-weight: bold;
   color: blue;
 }
 
-
 .questionOptions {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
-/* Optional CSS Styles(for readability */
+/* Optional CSS Styles (for readability) */
 .questionnaireContainer p {
   font-weight: bold;
   margin-bottom: 10px;
@@ -121,6 +113,7 @@ ol li::marker {
   margin-bottom: 8px;
 }
 
+/* Submit Button */
 .submitBtn {
   margin-top: 15px;
   padding: 8px 16px;
@@ -128,14 +121,16 @@ ol li::marker {
   color: white;
   border: none;
   cursor: pointer;
+  border-radius: 8px;
 }
 
 .submitBtn:hover {
   background-color: blue;
 }
-/* End of Questionnaire.html style */
 
-/* Confirmation popup box */
+/* ==============================
+   Confirmation Popup Box
+   ============================== */
 .confirmBox {
   display: none; /* hidden by default */
   position: fixed;
@@ -186,4 +181,33 @@ ol li::marker {
 
 .cancelBtn:hover {
   background-color: darkgray;
+}
+
+/* ==============================
+   Return to Top Button
+   ============================== */
+#returnTop {
+  display: none; /* hidden by default */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: lightblue;
+  color: darkblue;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#returnTop.show {
+  display: block;
+  opacity: 1;
+}
+
+#returnTop:hover {
+  background-color: deepskyblue;
+  color: white;
 }
