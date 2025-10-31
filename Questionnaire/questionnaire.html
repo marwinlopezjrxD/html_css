@@ -17,7 +17,11 @@
 
   <div class="questionnaireContainer">
     <form id="questionnaireForm" action="">
-      <p><strong>Question 1:</strong> What does HTML stands for?</p>
+      <!-- w/o ID -->
+      <!-- <p><strong>Question 1:</strong> What does HTML stands for?</p> -->
+      <p id="question1"><strong>Question 1:</strong> What does HTML stands for?</p>
+
+
 
       <ol type="a">
         <li>
@@ -246,21 +250,22 @@
     // };
 
     const container = document.querySelector(".questionnaireContainer");
+    // const returnTop = document.getElementById("returnTop");
 
-    container.addEventListener("scroll", function () {
+    // Show/hide button smoothly when scrolling inside the container
+    container.addEventListener("scroll", () => {
       if (container.scrollTop > 200) {
-        returnTop.style.display = "block";
+        returnTop.classList.add("show");
       } else {
-        returnTop.style.display = "none";
+        returnTop.classList.remove("show");
       }
     });
-     
 
-
-    // Scroll back to top
+    // Scroll smoothly back to Question 1
     returnTop.addEventListener("click", () => {
       container.scrollTo({ top: 0, behavior: "smooth" });
     });
+
 
 
 

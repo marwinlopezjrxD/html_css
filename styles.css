@@ -184,10 +184,11 @@ ol li::marker {
 }
 
 /* ==============================
-   Return to Top Button
+   Return to Top Button(with animation)
    ============================== */
 #returnTop {
-  display: none; /* hidden by default */
+  opacity: 0;                 /* hidden by default */
+  pointer-events: none;       /* not clickable when hidden */
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -200,11 +201,12 @@ ol li::marker {
   cursor: pointer;
   font-weight: bold;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.5s ease; /* fade in/out effect */
 }
 
 #returnTop.show {
-  display: block;
   opacity: 1;
+  pointer-events: auto;       /* clickable when visible */
 }
 
 #returnTop:hover {
