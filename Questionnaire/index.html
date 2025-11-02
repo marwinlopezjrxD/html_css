@@ -1,14 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Quiz</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML & CSS Quiz</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e6f4ff;
+      color: #003366;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #99d3ff;
+      padding: 30px 10px;
+      border-bottom: 3px solid #66b3ff;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #003366;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin: 20px auto;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    .quiz-box {
+      background-color: #ffffff;
+      border: 2px solid #99d3ff;
+      border-radius: 12px;
+      padding: 40px;
+      max-width: 600px;
+      margin: 50px auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1.1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 15px;
+      background-color: #99d3ff;
+      border-top: 3px solid #66b3ff;
+      color: #003366;
+    }
+  </style>
 </head>
 <body>
-    <h1>Draft</h1>
-    <p>This test has 20 questions, it consists of basic HTML related questions. Good luck!
+  <header>
+    <h1>Welcome to the HTML & CSS Quiz!</h1>
+  </header>
+
+  <div class="quiz-box">
+    <p>
+      This quiz contains <strong>20 questions</strong> — a mix of HTML and CSS basics.
+      Test your knowledge and see how much you know about web development!
     </p>
-    <a href="../Questionnaire/questionnaire.html" target="_blank"> <button>Take the test</button>
+    <a href="../Questionnaire/questionnaire.html" target="_blank">
+      <button>Take the Test</button>
+    </a>
+  </div>
+
+  <footer>
+    <p>Good luck and have fun learning HTML & CSS!</p>
+  </footer>
 </body>
 </html>
