@@ -20,8 +20,8 @@ November
 ---
 Questionnaire Folder
 
-add pass or fail logic
-designs
+add pass or fail logic,
+designs, and 
 Finishing Touches on quiestionnaire
 ---
 ---
