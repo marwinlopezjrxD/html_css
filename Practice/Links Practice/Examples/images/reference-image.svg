@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#7c5cff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#34d4ff" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="bggrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0f1724" />
+      <stop offset="1" stop-color="#061021" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="18" stdDeviation="30" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="100%" height="100%" fill="url(#bggrad)" />
+  <g opacity="0.12">
+    <circle cx="1400" cy="180" r="420" fill="#7c5cff"/>
+    <circle cx="400" cy="860" r="520" fill="#34d4ff"/>
+  </g>
+
+  <!-- mock card -->
+  <g transform="translate(120,120)">
+    <!-- left card -->
+    <rect x="0" y="0" width="540" height="840" rx="28" fill="#090a0f" opacity="0.95" filter="url(#shadow)"/>
+    <!-- avatar circle -->
+    <circle cx="120" cy="120" r="72" fill="url(#g1)"/>
+    <!-- avatar face placeholder -->
+    <g transform="translate(56,64)" opacity="0.95">
+      <circle cx="64" cy="40" r="36" fill="#fff" opacity="0.08"/>
+    </g>
+    <!-- name -->
+    <text x="200" y="110" fill="#ffffff" font-family="Inter, Arial" font-size="36" font-weight="700">jane.doe</text>
+    <text x="200" y="142" fill="#b4bfd2" font-family="Inter, Arial" font-size="16">@janedoe</text>
+    <text x="24" y="200" fill="#aab0c0" font-family="Inter, Arial" font-size="16">Creator · Podcaster · Designer</text>
+
+    <!-- link buttons -->
+    <g transform="translate(24,240)" fill="#0b0c10">
+      <!-- each button -->
+      <rect x="0" y="0" width="492" height="66" rx="14" fill="#0f1724" />
+      <rect x="0" y="84" width="492" height="66" rx="14" fill="#0f1724" />
+      <rect x="0" y="168" width="492" height="66" rx="14" fill="#0f1724" />
+      <rect x="0" y="252" width="492" height="66" rx="14" fill="#0f1724" />
+      <rect x="0" y="336" width="492" height="66" rx="14" fill="#0f1724" />
+      <rect x="0" y="420" width="492" height="66" rx="14" fill="#0f1724" />
+    </g>
+
+    <!-- button icon circles and titles -->
+    <g transform="translate(36,254)" fill="#fff" font-family="Inter, Arial">
+      <rect x="-12" y="-8" width="56" height="56" rx="12" fill="#1da1f2"/>
+      <text x="64" y="28" fill="#fff" font-weight="700" font-size="18">Follow on Twitter</text>
+
+      <g transform="translate(0,84)">
+        <rect x="-12" y="-8" width="56" height="56" rx="12" fill="#ff4b4b"/>
+        <text x="64" y="28" fill="#fff" font-weight="700" font-size="18">Watch on YouTube</text>
+      </g>
+
+      <g transform="translate(0,168)">
+        <rect x="-12" y="-8" width="56" height="56" rx="12" fill="#ff7ab0"/>
+        <text x="64" y="28" fill="#fff" font-weight="700" font-size="18">Follow on Instagram</text>
+      </g>
+
+      <g transform="translate(0,252)">
+        <rect x="-12" y="-8" width="56" height="56" rx="12" fill="#34d4ff"/>
+        <text x="64" y="28" fill="#fff" font-weight="700" font-size="18">Visit Website</text>
+      </g>
+
+      <g transform="translate(0,336)">
+        <rect x="-12" y="-8" width="56" height="56" rx="12" fill="#ff944f"/>
+        <text x="64" y="28" fill="#fff" font-weight="700" font-size="18">Support on Patreon</text>
+      </g>
+
+      <g transform="translate(0,420)">
+        <rect x="-12" y="-8" width="56" height="56" rx="12" fill="#1db954"/>
+        <text x="64" y="28" fill="#fff" font-weight="700" font-size="18">Listen on Spotify</text>
+      </g>
+    </g>
+
+    <!-- right card -->
+    <g transform="translate(600,0)">
+      <rect x="0" y="0" width="740" height="840" rx="28" fill="#0b0e13" opacity="0.95" filter="url(#shadow)"/>
+      <text x="32" y="56" fill="#fff" font-family="Inter, Arial" font-size="22" font-weight="700">jane.doe</text>
+      <text x="32" y="84" fill="#9fb0c7" font-family="Inter, Arial" font-size="14">Link-in-bio • 14 links</text>
+
+      <!-- stats -->
+      <g transform="translate(32,120)">
+        <rect x="0" y="0" width="204" height="96" rx="14" fill="#0f1724" />
+        <rect x="228" y="0" width="204" height="96" rx="14" fill="#0f1724" />
+        <rect x="456" y="0" width="204" height="96" rx="14" fill="#0f1724" />
+        <text x="24" y="44" fill="#fff" font-size="20" font-weight="700">12.3k</text>
+        <text x="24" y="68" fill="#9fb0c7" font-size="13">Monthly views</text>
+
+        <text x="252" y="44" fill="#fff" font-size="20" font-weight="700">3.8k</text>
+        <text x="252" y="68" fill="#9fb0c7" font-size="13">Clicks</text>
+
+        <text x="480" y="44" fill="#fff" font-size="20" font-weight="700">1.1k</text>
+        <text x="480" y="68" fill="#9fb0c7" font-size="13">New followers</text>
+      </g>
+
+      <!-- reference image box -->
+      <g transform="translate(32,260)">
+        <rect x="0" y="0" width="676" height="360" rx="14" fill="#0f1724" />
+        <text x="338" y="180" fill="#9fb0c7" font-size="18" font-family="Inter" text-anchor="middle">Reference mockup (see provided SVG)</text>
+      </g>
+
+      <text x="32" y="660" fill="#9fb0c7" font-family="Inter" font-size="13">Built with ♥ — customize styles and replace icons/avatar</text>
+    </g>
+  </g>
+</svg>
