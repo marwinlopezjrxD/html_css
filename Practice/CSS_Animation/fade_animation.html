@@ -1,59 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fading Animation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            padding: 20px;
-        }
-        h1 {
-            color: #007BFF;
-        }
-        h2 {
-            color: #28A745;
-        }
-        h3 {
-            color: #DC3545;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fading Animation</title>
+
+  <!-- 🎨 Link to external stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <h1>Fading Animation</h1>
+  <!-- 🌐 Page Container -->
+  <div class="page-container">
 
-    <h1>#1</h1>
-    <h2>Insert Fading Animation here</h1>
-    <h2>Add a picture</h2>
-    <h2>download the sound file</h2>
-    <h2>Add fading css effects</h2>
-    <h3>Add full sound</h3>
+    <!-- 🏷️ Header Section -->
+    <header>
+      <h1>Fading Animation Showcase</h1>
+      <p class="subtitle">Smooth fade-in effects triggered by background music</p>
+    </header>
 
-    <!--------------------------------------------->
+    <!-- ======================================================
+         🎵 SECTION #1 — Full Sound Animation
+         ====================================================== -->
+    <section class="fade-card">
+      <h2>#1 — Full Sound Animation</h2>
 
-    <h1>#2</h1>
-    <h2>Insert Fading Animation here</h1>
-    <h2>Add a picture</h2>
-    <h2>add the snippet version of the sound file</h2>
-    <h2>Add fading css effects</h2>
-    <h3>Add snippet sound</h3>
-    <!--------------------------------------------->
-    <br><br>
-    <h1>Music by Paolo Argento from Pixabay</h1>
-    <!-- Background Music -->
-    <audio controls autoplay loop>
-    <source src="sounds/the-best-jazz-club-in-new-orleans-164472.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-    </audio>
+      <div class="fade-container">
+        <img id="jazzImage" src="images/jazz-club.jpg" alt="Jazz Club" class="fade-image" />
+      </div>
 
-    <!-- Attribution (optional but good practice) -->
-    <p style="font-size: 12px; color: #666; margin-top: 10px;">
-    Music by <a href="https://pixabay.com/users/paoloargento-38603296/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=164472">Paolo Argento</a>
-    from <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=164472">Pixabay</a>
-    </p>
+      <h3>Full Background Sound</h3>
+      <audio id="bgMusic" controls autoplay loop>
+        <source src="sounds/the-best-jazz-club-in-new-orleans-164472.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <p class="credit">
+        Music by 
+        <a href="https://pixabay.com/users/paoloargento-38603296/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=164472">
+          Paolo Argento
+        </a> 
+        from 
+        <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=164472">
+          Pixabay
+        </a>
+      </p>
+    </section>
+
+    <!-- 🎬 Fade Script for Full Sound -->
+    <script>
+      const music = document.getElementById("bgMusic");
+      const image = document.getElementById("jazzImage");
+
+      if (!music.paused) image.classList.add("fade-in");
+
+      music.addEventListener("play", () => {
+        image.classList.add("fade-in");
+        image.classList.remove("fade-out");
+      });
+
+      music.addEventListener("pause", () => {
+        image.classList.remove("fade-in");
+        image.classList.add("fade-out");
+      });
+    </script>
+
+    <hr />
+
+    <!-- ======================================================
+         🎧 SECTION #2 — Snippet Sound Animation
+         ====================================================== -->
+    <section class="fade-card">
+      <h2>#2 — Snippet Sound Animation</h2>
+
+      <div class="fade-container">
+        <img id="snippetImage" src="images/jazz-club.jpg" alt="Jazz Club Snippet" class="fade-image" />
+      </div>
+
+      <h3>Snippet Sound</h3>
+      <audio id="snippetMusic" controls>
+        <source src="sounds/the-best-jazz-club-in-new-orleans-164472.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <p class="credit">
+        Music by 
+        <a href="https://pixabay.com/users/paoloargento-38603296/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=164472">
+          Paolo Argento
+        </a> 
+        from 
+        <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=164472">
+          Pixabay
+        </a>
+      </p>
+    </section>
+
+    <!-- 🎬 Fade Script for Snippet Sound -->
+    <script>
+      const snippetMusic = document.getElementById("snippetMusic");
+      const snippetImage = document.getElementById("snippetImage");
+
+      snippetMusic.addEventListener("play", () => {
+        snippetImage.classList.add("fade-in");
+        snippetImage.classList.remove("fade-out");
+      });
+
+      snippetMusic.addEventListener("pause", () => {
+        snippetImage.classList.remove("fade-in");
+        snippetImage.classList.add("fade-out");
+      });
+
+      snippetMusic.addEventListener("ended", () => {
+        snippetImage.classList.remove("fade-in");
+        snippetImage.classList.add("fade-out");
+      });
+    </script>
+
+  </div> <!-- ✅ closes .page-container cleanly -->
+
+  <!-- 🏠 Fixed Back-to-Home Button -->
+  <a href="index.html" class="home-button">
+    🏠 <span>Back to Home</span>
+  </a>
+
+  <!-- 🎬 Shrinking Button Script -->
+  <script>
+    const homeBtn = document.querySelector('.home-button');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) {
+        homeBtn.classList.add('shrink');
+      } else {
+        homeBtn.classList.remove('shrink');
+      }
+    });
+  </script>
+
+  <!-- 🌟 Fade-in page effect -->
+  <script>
+    window.addEventListener("load", () => {
+      const container = document.querySelector(".page-container");
+      if (container) {
+        container.classList.add("fade-in-page");
+      }
+    });
+  </script>
 
 </body>
 </html>
