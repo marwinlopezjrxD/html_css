@@ -1,0 +1,105 @@
+/* =========================================================
+   SKY-BLUE PAGE BACKGROUND
+   ========================================================= */
+/* The whole page gets a gentle sky gradient */
+body {
+  margin: 0;                                   /* Remove default space around the page */
+  min-height: 100vh;                           /* Page at least as tall as the screen */
+  background: linear-gradient(to bottom, #87CEEB 0%, #E0F7FA 100%);
+  font-family: 'Comic Sans MS', cursive, sans-serif;   /* Fun, readable font */
+  overflow-x: hidden;                          /* Prevent horizontal scroll */
+}
+
+/* =========================================================
+   FLOATING CLOUD (the <div> we learn)
+   ========================================================= */
+/* Every <div class="cloud"> becomes a puffy cloud */
+.cloud {
+  background: rgba(255, 255, 255, 0.85);        /* White with a little transparency */
+  border-radius: 50px;                         /* Rounded “puff” shape */
+  padding: 15px 25px;                          /* Space inside the cloud */
+  margin: 20px auto;                           /* Center it and add space between clouds */
+  max-width: 80%;                              /* Never too wide on big screens */
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);      /* Soft shadow for depth */
+  position: relative;                          /* Needed for animations */
+  animation: float 6s ease-in-out infinite;    /* Gentle up-down movement */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+/* When you hover over a cloud it lifts a bit */
+.cloud:hover {
+  transform: translateY(-10px);                /* Move up */
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);      /* Bigger shadow */
+}
+
+/* =========================================================
+   FLOAT ANIMATION (makes clouds drift)
+   ========================================================= */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }        /* Start / end position */
+  50%      { transform: translateY(-15px); }    /* Highest point */
+}
+
+/* =========================================================
+   NESTED CLOUDS (a cloud inside another cloud)
+   ========================================================= */
+/* Inner clouds are a little whiter so you can see the layers */
+.cloud .cloud {
+  background: rgba(255, 255, 255, 0.95);
+  margin: 15px 0;                              /* Space inside the parent */
+}
+
+/* =========================================================
+   PAGE TITLE (inside the first cloud)
+   ========================================================= */
+h1 {
+  text-align: center;                          /* Center the big title */
+  color: #0288D1;                              /* Deep sky-blue */
+  text-shadow: 1px 1px 3px rgba(255,255,255,0.7); /* Soft white glow */
+  margin-top: 40px;                            /* Space above the title */
+}
+
+/* =========================================================
+   INSTRUCTION BOX (the second cloud)
+   ========================================================= */
+.instructions {
+  max-width: 700px;                            /* Keep instructions readable */
+  margin: 30px auto;                           /* Center + space */
+  padding: 20px;                               /* Inner padding */
+  background: rgba(255,255,255,0.7);           /* Semi-transparent white */
+  border-radius: 20px;                         /* Slightly rounded */
+  color: #01579B;                              /* Darker blue text */
+  line-height: 1.6;                            /* Comfortable line spacing */
+}
+
+/* =========================================================
+   CODE SNIPPETS (inline <code>)
+   ========================================================= */
+code {
+  background: #BBDEFB;                         /* Light sky-blue background */
+  padding: 2px 6px;                            /* Small padding */
+  border-radius: 4px;                          /* Rounded corners */
+  font-family: monospace;                      /* Monospaced font (looks like code) */
+}
+
+/* =========================================================
+   IMAGES INSIDE CLOUDS
+   ========================================================= */
+.cloud-image {
+  max-width: 100%;                             /* Never overflow the cloud */
+  border-radius: 12px;                         /* Rounded corners */
+  display: block;                              /* Remove extra space below image */
+  margin: 10px auto;                           /* Center the image */
+}
+
+/* =========================================================
+   YOUR-TURN CLOUD (a little different colour)
+   ========================================================= */
+.your-turn {
+  background: #BBDEFB;                         /* Light sky-blue */
+  color: #01579B;                              /* Darker text for contrast */
+}
+
+/* =========================================================
+   END OF FILE
+   ========================================================= */
