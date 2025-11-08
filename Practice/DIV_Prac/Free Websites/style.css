@@ -1,0 +1,143 @@
+/* =========================================================
+   SKY-BLUE PAGE BACKGROUND
+   ========================================================= */
+/* This styles the <body> – the whole page */
+body {
+  margin: 0;                                   /* Remove default white space around the page */
+  min-height: 100vh;                           /* Make page at least as tall as the screen */
+  background: linear-gradient(to bottom, #87CEEB 0%, #E0F7FA 100%);
+                                               /* Sky-blue gradient from top to bottom */
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+                                               /* Fun, easy-to-read font */
+  overflow-x: hidden;                          /* Stop horizontal scrolling */
+  display: flex;                               /* Helps center clouds vertically */
+  flex-direction: column;                      /* Stack clouds top to bottom */
+  align-items: center;                         /* Center everything horizontally */
+}
+
+/* =========================================================
+   FLOATING CLOUD (the <div> we learn)
+   ========================================================= */
+/* Any <div class="cloud"> becomes a puffy white cloud */
+.cloud {
+  background: rgba(255, 255, 255, 0.85);        /* White with slight transparency */
+  border-radius: 50px;                         /* Super rounded = puffy shape */
+  padding: 20px 30px;                          /* Space inside the cloud */
+  margin: 25px auto;                           /* Center + space between clouds */
+  max-width: 80%;                              /* Don’t stretch too wide on big screens */
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);      /* Soft shadow = floating effect */
+  position: relative;                          /* Needed for animations */
+  animation: float 6s ease-in-out infinite;    /* Gentle up-down floating */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover lift */
+  text-align: center;                          /* Center text inside */
+}
+
+/* When you hover, the cloud lifts up */
+.cloud:hover {
+  transform: translateY(-10px);                /* Move up 10 pixels */
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);      /* Bigger, darker shadow */
+}
+
+/* =========================================================
+   FLOAT ANIMATION (makes clouds drift)
+   ========================================================= */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }        /* Start and end at normal height */
+  50%      { transform: translateY(-15px); }    /* Float up in the middle */
+}
+
+/* =========================================================
+   NESTED CLOUDS (a cloud inside another cloud)
+   ========================================================= */
+.cloud .cloud {
+  background: rgba(255, 255, 255, 0.95);        /* Slightly more solid white */
+  margin: 15px 0;                              /* Space inside parent cloud */
+  animation: none;                             /* Inner clouds don’t float */
+}
+
+/* =========================================================
+   PAGE TITLE & HEADINGS
+   ========================================================= */
+h1 {
+  color: #0288D1;                              /* Deep sky-blue */
+  text-shadow: 1px 1px 3px rgba(255,255,255,0.7); /* Soft glow */
+  margin: 0 0 10px 0;                          /* Remove extra top margin */
+}
+
+h2 {
+  color: #0277BD;                              /* Slightly darker blue */
+  margin-top: 0;                               /* No space above h2 */
+}
+
+/* =========================================================
+   INSTRUCTION BOX (wider readable text)
+   ========================================================= */
+.instructions {
+  max-width: 700px;                            /* Limit width for easy reading */
+  text-align: left;                            /* Left-align instructions */
+  background: rgba(255,255,255,0.7);           /* Semi-transparent */
+  border-radius: 20px;
+  padding: 25px;
+  color: #01579B;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   CODE SNIPPETS (inline <code>)
+   ========================================================= */
+code {
+  background: #BBDEFB;                         /* Light blue background */
+  padding: 3px 7px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;       /* Code font */
+  font-size: 0.95em;
+}
+
+/* =========================================================
+   FLEXBOX LAYOUT EXAMPLE
+   ========================================================= */
+.flex-container {
+  display: flex;                               /* Turn on Flexbox */
+  gap: 15px;                                   /* Space between boxes */
+  justify-content: center;                     /* Center the boxes */
+  flex-wrap: wrap;                             /* Wrap on small screens */
+  margin-top: 15px;
+}
+
+.flex-item {
+  background: #81D4FA;                         /* Light sky blue */
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;                                     /* Grow to fill space */
+  min-width: 100px;                            /* Don’t get too small */
+  text-align: center;
+  font-weight: bold;
+  color: #01579B;
+}
+
+/* =========================================================
+   YOUR-TURN INTERACTIVE CLOUD
+   ========================================================= */
+.your-turn {
+  background: #BBDEFB;                         /* Light blue background */
+  color: #01579B;
+  cursor: pointer;                             /* Hand icon on hover */
+  user-select: none;                           /* Prevent text selection */
+}
+
+/* =========================================================
+   LINKS (inside resource list)
+   ========================================================= */
+a {
+  color: #0288D1;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0277BD;
+}
+
+/* =========================================================
+   END OF FILE
+   ========================================================= */
