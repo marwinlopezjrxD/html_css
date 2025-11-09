@@ -31,14 +31,16 @@ Questionnaire Folder
 
 add pass or fail logic,
 designs, and 
-Finishing Touches on quiestionnaire
+Finishing Touches on quiestionnaire(not done)
+
+11/09/25 - Completed Div practice website on Free Website Folder.
 ---
 ---
 
 
 ---
 11/10/25
-- add links to a website that is free to use and is open source on Links Practice
+- add links to a website that is free to use and is open source on Links Practice(done - 11/09/25
 ---
 
 December
