@@ -57,17 +57,17 @@ Finishing Touches on quiestionnaire(not done)
 ---
 
 
-Activity #1(11/11/25 -- 11/13/25)
+Activity #1(11/12/25 -- 11/14/25)
 Andromeda
 - Add a design that mainly focuses on Galaxy. Add planets, stars, comets, meteorite, and such. 
 -- use all resources that can be found on the internet. 
 
 
-Acitivty #2(11/14/25 - 11/16/25)
+Acitivty #2(11/15/25 - 11/17/25)
 Quotes Generator
 - Add a responsive quotes generator, maximum of 500 quotes or more. find a query for it to be much easier. or just manually search 500 quotes. 
 
-Activity #3(11/17/25 - 11/19/25)
+Activity #3(11/18/25 - 11/20/25)
 Color of Hue
 - Add a design that tackles about RGB and more.
 - try to generate also a color combination(Example: Yellow + Blue = Green)
