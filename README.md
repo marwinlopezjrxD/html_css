@@ -50,6 +50,8 @@ December
 
 --12/07/25--
 !!!!!!!!!!!!
+-------------
+First Project Start - Deadline: (Until 01/07/26)
 
 Q1(2026)
 
