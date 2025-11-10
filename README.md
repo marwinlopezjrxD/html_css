@@ -50,4 +50,4 @@
 
 ## Q1 2026
 
-**First Project Deadline:** `04/30/26`
+**First Project Deadline:** `05/31/26`
