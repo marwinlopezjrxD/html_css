@@ -45,9 +45,18 @@ Finishing Touches on quiestionnaire(not done)
 
 ---
 11/10/25
-- add links to a website that is free to use and is open source on Links Practice(done - 11/09/25
+- add links to a website that is free to use and is open source on Links Practice(done - 11/09/25)
 ---
 ---
+
+---
+
+--- 
+11/10/25
+- add initial files for Activity #1 to #3
+---
+
+
 Activity #1(11/11/25 -- 11/13/25)
 Andromeda
 - Add a design that mainly focuses on Galaxy. Add planets, stars, comets, meteorite, and such. 
