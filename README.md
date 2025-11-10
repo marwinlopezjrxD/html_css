@@ -1,5 +1,8 @@
 "Allocate the objectives and make readme tidy."
 
+"Move FirstPratice folder to Practice Folder"
+
+
 Q4(2025)
 
 October
@@ -45,17 +48,20 @@ Finishing Touches on quiestionnaire(not done)
 - add links to a website that is free to use and is open source on Links Practice(done - 11/09/25
 ---
 ---
-Activity #1(11/10/25)
+Activity #1(11/10/25 -- 11/12/25)
 - Add a design that mainly focuses on Galaxy. Add planets, stars, comets, meteorite, and such. 
 -- use all resources that can be found on the internet. 
 
 
-Acitivty #2(11/11/25)
+Acitivty #2(11/13/25 - 11/15/25)
 Quotes Generator
 - Add a responsive quotes generator, maximum of 500 quotes or more. find a query for it to be much easier. or just manually search 500 quotes. 
 
- 
-
+Activity #3(11/16/25 - 11/18/25)
+Color of Hue
+- Add a design that tackles about RGB and more.
+- try to generate also a color combination(Example: Yellow + Blue = Green)
+- Maximum of 7 color combinations only
 
 ---
 December
