@@ -1,3 +1,5 @@
+"Allocate the objectives and make readme tidy."
+
 Q4(2025)
 
 October
@@ -42,7 +44,10 @@ Finishing Touches on quiestionnaire(not done)
 11/10/25
 - add links to a website that is free to use and is open source on Links Practice(done - 11/09/25
 ---
-
+---
+Activity #1(11/10/25)
+- To be Decided
+---
 December
 
 --12/01/25
