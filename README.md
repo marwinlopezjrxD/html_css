@@ -1,6 +1,6 @@
 "Allocate the objectives and make readme tidy."
 
-"Move FirstPratice folder to Practice Folder"
+"Move FirstProject folder to Practice Folder" - done
 
 
 Q4(2025)
