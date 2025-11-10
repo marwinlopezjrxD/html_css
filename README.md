@@ -49,6 +49,7 @@ Finishing Touches on quiestionnaire(not done)
 ---
 ---
 Activity #1(11/10/25 -- 11/12/25)
+Andromeda
 - Add a design that mainly focuses on Galaxy. Add planets, stars, comets, meteorite, and such. 
 -- use all resources that can be found on the internet. 
 
