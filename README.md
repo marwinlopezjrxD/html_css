@@ -49,6 +49,14 @@ Activity #1(11/10/25)
 - Add a design that mainly focuses on Galaxy. Add planets, stars, comets, meteorite, and such. 
 -- use all resources that can be found on the internet. 
 
+
+Acitivty #2(11/11/25)
+Quotes Generator
+- Add a responsive quotes generator, maximum of 500 quotes or more. find a query for it to be much easier. or just manually search 500 quotes. 
+
+ 
+
+
 ---
 December
 
