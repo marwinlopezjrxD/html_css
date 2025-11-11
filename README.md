@@ -36,8 +36,8 @@
 | Activity | Dates | Theme | Tasks |
 |--------|-------|-------|-------|
 | **#1** | 11/18 – 11/24 | **Andromeda** | Galaxy-focused design with planets, stars, comets, meteorites. Use all free online resources. |
-| **#2** | 11/25 – 12/02 | **Quotes Generator** | Responsive generator with **500+ quotes**. Search via API or compile manually. |
-| **#3** | 12/10 – 12/16 | **Color of Hue** | RGB-focused design. Generate **up to 7 color combos** (e.g., Yellow + Blue = Green). |
+| **#2** | 11/27 – 12/03 | **Quotes Generator** | Responsive generator with **500+ quotes**. Search via API or compile manually. |
+| **#3** | 12/11 – 12/17 | **Color of Hue** | RGB-focused design. Generate **up to 7 color combos** (e.g., Yellow + Blue = Green). |
 
 ---
 
