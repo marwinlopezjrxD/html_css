@@ -51,3 +51,13 @@
 ## Q1 2026
 
 **First Project Deadline:** `05/31/26`
+
+
+---
+
+## Q2 2026
+
+**API Integration or Javascript Basics Practice(To be Decided)
+
+
+
