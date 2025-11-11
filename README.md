@@ -59,4 +59,8 @@
 
 **API Integration or Javascript Basics Practice(To be Decided)**
 
+---
 
+## Q4 2026
+
+**Second Project Prep(PC Builder, Bank Simulator - To be Decided)**
