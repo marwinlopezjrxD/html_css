@@ -63,4 +63,4 @@
 
 ## Q4 2026
 
-**Second Project Prep(PC Builder, Bank Simulator - To be Decided)**
+**Prep for Second Project(To be Decided)**
