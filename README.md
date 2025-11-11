@@ -43,7 +43,7 @@
 
 ## December
 
-- **12/07**: Prep phase
+- **12/08**: Prep phase
 - **12/15**: **First Project Kickoff**
 
 ---
