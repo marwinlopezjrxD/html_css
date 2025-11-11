@@ -57,7 +57,13 @@
 
 ## Q2 2026
 
-**API Integration or Javascript Basics Practice(To be Decided)**
+**Javascript Basics Practice**
+
+---
+
+## Q3 2026
+
+**API Integration**
 
 ---
 
