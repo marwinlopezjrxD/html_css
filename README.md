@@ -35,20 +35,21 @@
 
 | Activity | Dates | Theme | Tasks |
 |--------|-------|-------|-------|
-| **#1** | 11/18 – 11/22 | **Andromeda** | Galaxy-focused design with planets, stars, comets, meteorites. Use all free online resources. |
-| **#2** | 11/23 – 11/27 | **Quotes Generator** | Responsive generator with **500+ quotes**. Search via API or compile manually. |
-| **#3** | 11/28 – 12/02 | **Color of Hue** | RGB-focused design. Generate **up to 7 color combos** (e.g., Yellow + Blue = Green). |
+| **#1** | 11/18 – 11/24 | **Andromeda** | Galaxy-focused design with planets, stars, comets, meteorites. Use all free online resources. |
+| **#2** | 11/25 – 12/02 | **Quotes Generator** | Responsive generator with **500+ quotes**. Search via API or compile manually. |
+| **#3** | 12/10 – 12/16 | **Color of Hue** | RGB-focused design. Generate **up to 7 color combos** (e.g., Yellow + Blue = Green). |
 
 ---
 
 ## December
 
-- **12/08**: Prep phase
-- **12/15**: **First Project Kickoff**
+- **12/23**: Prep phase
 
 ---
 
 ## Q1 2026
+
+- **01/12**: **First Project Kickoff**
 
 **First Project Deadline:** `05/31/26`
 
