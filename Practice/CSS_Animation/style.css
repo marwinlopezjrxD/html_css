@@ -1,0 +1,275 @@
+/* =========================================================
+   🌈 GLOBAL PAGE STYLES
+   ========================================================= */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #c8e1ff, #f9f9ff, #dfe9f3);
+  color: #222;
+  margin: 0;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* =========================================================
+   🧭 MAIN PAGE CONTAINER
+   ========================================================= */
+.page-container {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 18px;
+  padding: 40px 50px;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* =========================================================
+   🏷️ HEADER STYLES
+   ========================================================= */
+header h1 {
+  color: #0057d8;
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* =========================================================
+   📑 SECTION TITLES
+   ========================================================= */
+h2 {
+  color: #1e7e34;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* =========================================================
+   🖼️ FADE IMAGE + AUDIO CARD
+   ========================================================= */
+.fade-card {
+  background: #fdfdfd;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.fade-card:hover {
+  transform: scale(1.02);
+}
+
+/* =========================================================
+   🌅 FADE IMAGE STYLES
+   ========================================================= */
+.fade-image {
+  width: 100%;
+  border-radius: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.5s ease-in-out, visibility 0s linear 1.5s;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================================================
+   ✨ FADE STATE CLASSES
+   ========================================================= */
+.fade-in {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.5s ease-out, visibility 0s linear 1.5s;
+}
+
+/* =========================================================
+   🎵 AUDIO PLAYER
+   ========================================================= */
+audio {
+  margin-top: 20px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 12px;
+  outline: none;
+  background: #fafafa;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================================================
+   🪶 ATTRIBUTION / CREDIT TEXT
+   ========================================================= */
+.credit {
+  font-size: 13px;
+  color: #555;
+  margin-top: 12px;
+}
+
+.credit a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.credit a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================================
+   🔹 DIVIDER (Between sections)
+   ========================================================= */
+hr {
+  width: 70%;
+  margin: 60px auto;
+  border: none;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+
+/* =========================================================
+   🏠 BACK TO HOME BUTTON (Enhanced)
+   ========================================================= */
+.home-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 26px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.home-button.shrink {
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  justify-content: center;
+  gap: 0;
+}
+
+.home-button.shrink span {
+  display: none;
+}
+
+/* =========================================================
+   🌟 PAGE FADE-IN ON LOAD
+   ========================================================= */
+.page-container {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.page-container.fade-in-page {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================================================
+   🏡 HOMEPAGE (index.html) STYLES — Added Section
+   ========================================================= */
+
+/* 🎨 Sky-blue gradient background */
+body.homepage {
+  background: linear-gradient(135deg, #cde7ff, #e6f3ff, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* 🏠 Central container */
+.home-container {
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  padding: 60px 80px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  max-width: 800px;
+  width: 90%;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.home-container h1 {
+  color: #007bff;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.home-container p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* 🔗 Button container */
+.animation-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* 🎞️ Animated buttons */
+.anim-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 26px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.anim-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* ✨ Footer text */
+footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* 🌀 Homepage entry animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

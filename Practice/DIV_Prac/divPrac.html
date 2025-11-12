@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Tell the browser we’re using modern UTF-8 characters -->
+    <meta charset="UTF-8">
+    <!-- Make the page look good on phones & tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Practice – Sky-Blue Clouds</title>
+
+    <!-- Link to external CSS -->
+    <!-- This line pulls in all the styles from style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CLOUD #1 – TITLE -->
+    <!-- Every <div> with class="cloud" becomes a floating cloud -->
+    <div class="cloud">
+        <h1>Div Practice in the Sky!</h1>
+    </div>
+
+    <!-- CLOUD #2 – INSTRUCTIONS -->
+    <div class="cloud instructions">
+        <strong>Try this:</strong><br>
+        1. Add a new <code>&lt;div class="cloud"&gt;…&lt;/div&gt;</code> anywhere in the <code>&lt;body&gt;</code>.<br>
+        2. Put text, images, or even <em>more clouds</em> inside it.<br>
+        3. Watch it float and glow on hover!<br><br>
+
+        <strong>Examples below – copy, paste, and modify!</strong>
+    </div>
+
+    <!-- CLOUD #3 – SIMPLE TEXT -->
+    <div class="cloud">
+        <p>I am a simple <strong>div</strong>. I hold any content you want.</p>
+    </div>
+
+    <!-- CLOUD #4 – NESTED CLOUDS -->
+    <div class="cloud">
+        <p>This is the <em>outer</em> cloud.</p>
+        <div class="cloud">
+            <p>I’m an <em>inner</em> cloud – a div inside a div!</p>
+        </div>
+    </div>
+
+    <!-- CLOUD #5 – IMAGE (Now smaller & prettier!) -->
+    <div class="cloud">
+        <p>Here’s a picture of the sky:</p>
+
+        <!-- This img shows a beautiful sky photo -->
+        <!-- src = image address on the internet -->
+        <!-- alt = text if image fails to load (good for accessibility) -->
+        <!-- class="cloud-image" = applies CSS styling from style.css -->
+        <!-- style="..." = inline CSS to make it smaller & centered -->
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_1280.jpg"
+             alt="Fluffy clouds in a bright blue sky"
+             class="cloud-image"
+             style="
+               width: 100%;           /* Image fills the cloud width */
+               max-width: 350px;      /* But never bigger than 350px */
+               height: auto;          /* Keep correct shape (no stretching) */
+               display: block;        /* Remove extra space below image */
+               margin: 12px auto;     /* Center the image + add space above */
+               border-radius: 16px;   /* Soft rounded corners (pretty!) */
+               box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Gentle shadow */
+               transition: transform 0.3s ease; /* Smooth zoom on hover */
+             "
+             onmouseover="this.style.transform='scale(1.05)'"
+             onmouseout="this.style.transform='scale(1)'">
+    </div>
+
+    <!-- CLOUD #6 – YOUR TURN -->
+    <div class="cloud your-turn">
+        <p><strong>Your Turn:</strong> Add a new cloud below me. Give it a class of <code>cloud</code> and put anything inside!</p>
+        <!-- Add your <div class="cloud">…</div> right here! -->
+    </div>
+
+</body>
+</html>

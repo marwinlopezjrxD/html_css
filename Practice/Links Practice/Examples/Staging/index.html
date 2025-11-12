@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>(STAGING)</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect width='100%25' height='100%25' fill='%23746CFF' rx='12'/%3E%3Ctext x='50%25' y='54%25' font-size='36' text-anchor='middle' fill='white' font-family='Arial'%3EML%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg: #0f0f12;
+    --card: rgba(255,255,255,0.04);
+    --muted: #aab0c0;
+    --accent: linear-gradient(135deg,#7c5cff,#4cd3ff);
+    --glass: rgba(255,255,255,0.02);
+    --text: #e9eef8;
+    --radius: 14px;
+  }
+  [data-theme="light"]{
+    --bg: #f6f7fb;
+    --card: #ffffff;
+    --muted: #5b6474;
+    --text: #0b1220;
+    --glass: rgba(10,12,18,0.03);
+  }
+
+  html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; background: radial-gradient(1200px 600px at 10% 10%, rgba(124,92,255,0.08), transparent), radial-gradient(900px 400px at 90% 90%, rgba(76,211,255,0.03), transparent), var(--bg); color:var(--text); -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:980px;margin:36px auto;padding:28px;display:grid;grid-template-columns:360px 1fr;gap:28px;align-items:start;}
+  /* Responsive: stack on small screens */
+  @media (max-width:880px){ .wrap{grid-template-columns:1fr;padding:20px;margin:18px;}}
+
+  .left {
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+    border-radius: var(--radius);
+    padding:22px;
+    box-shadow: 0 6px 20px rgba(2,6,23,0.45);
+    position:relative;
+    overflow:hidden;
+  }
+  .avatar {
+    width:120px;height:120px;border-radius:999px;overflow:hidden;border:6px solid rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:linear-gradient(135deg,#7c5cff,#34d4ff);
+  }
+  .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+  .name{font-size:20px;font-weight:700;margin:0 0 6px}
+  .handle{color:var(--muted);font-size:14px;margin:0 0 10px;}
+  .bio{color:var(--muted);font-size:14px;margin-bottom:14px;line-height:1.35}
+  .links {display:flex;flex-direction:column;gap:12px;margin-top:8px}
+  .link {
+    display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:12px;background:var(--card);text-decoration:none;color:var(--text);
+    transition:transform .14s ease, box-shadow .14s ease;
+    box-shadow: 0 4px 10px rgba(2,6,23,0.35);
+  }
+  .link:hover{transform:translateY(-5px);box-shadow:0 12px 30px rgba(0,0,0,0.45)}
+  .link .icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#ffffff10,#00000000);flex:0 0 36px}
+  .link .meta{flex:1}
+  .link .meta .title{font-weight:600}
+  .link .meta .sub{color:var(--muted);font-size:13px;margin-top:2px}
+
+  .right {
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+    border-radius: var(--radius); padding:20px; min-height:160px; box-shadow: 0 6px 24px rgba(2,6,23,0.45);
+    display:flex;flex-direction:column;gap:12px;
+  }
+
+  .topbar {display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+  .logo{display:flex;gap:10px;align-items:center}
+  .logo .mark{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,#7c5cff,#4cd3ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+  .controls{display:flex;gap:8px;align-items:center}
+  .btn {
+    background:var(--glass);border:0;padding:8px 12px;border-radius:10px;color:var(--text);cursor:pointer;font-weight:600;font-size:14px;
+  }
+  .share {background:linear-gradient(90deg,#7c5cff,#4cd3ff);color:white;border:0}
+  .small{font-size:13px;color:var(--muted)}
+
+  .stats {display:flex;gap:12px;align-items:center}
+  .stat {padding:12px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));flex:1;text-align:center}
+  .stat .num{font-weight:700;font-size:18px}
+  footer.small{margin-top:auto;color:var(--muted);font-size:13px}
+
+  /* copy toast */
+  .toast {position:fixed;left:50%;transform:translateX(-50%);bottom:26px;background:#111827;color:white;padding:10px 14px;border-radius:10px;box-shadow:0 8px 30px rgba(2,6,23,0.6);opacity:0;pointer-events:none;transition:opacity .18s ease}
+  .toast.show{opacity:1;pointer-events:auto}
+
+  /* Link icons colored */
+  .social-twitter{background:linear-gradient(135deg,#1da1f2,#0a8bd6)}
+  .social-youtube{background:linear-gradient(135deg,#ff5a5f,#ff1f1f)}
+  .social-instagram{background:linear-gradient(135deg,#ff6aab,#ffd26a)}
+  .social-web{background:linear-gradient(135deg,#4cd3ff,#7c5cff)}
+  .social-patreon{background:linear-gradient(135deg,#ff6f3c,#ff3a3a)}
+  .social-spotify{background:linear-gradient(135deg,#1ed760,#1ab24a)}
+
+  /* small screens: place top controls inside left card */
+  @media (max-width:880px){
+    .left{order:0}
+    .right{order:1}
+  }
+</style>
+</head>
+<body data-theme="dark">
+  <div class="wrap" role="main">
+    <aside class="left" aria-labelledby="profile-name">
+      <div style="display:flex;justify-content:space-between;align-items:start;">
+        <div>
+      <div class="avatar" aria-hidden="true">
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#7c5cff"/>
+              <stop offset="100%" stop-color="#4cd3ff"/>
+            </linearGradient>
+          </defs>
+          <circle cx="60" cy="60" r="60" fill="url(#grad)"/>
+          <text x="50%" y="58%" text-anchor="middle" fill="white"
+                font-size="40" font-family="Arial" dy=".3em">ML</text>
+        </svg>
+      </div>
+          <h1 id="profile-name" class="name">marwinlopezjr</h1>
+          <div class="handle">@marwinlopezjr</div>
+          <p class="bio">Student · Gamer · Designer. I design things for fun!</p>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end;">
+          <button class="btn" id="themeToggle" aria-pressed="false" title="Toggle theme">🌗</button>
+          <button class="btn" id="openShare" aria-haspopup="true" title="Share profile">Share</button>
+        </div>
+      </div>
+
+      <nav class="links" aria-label="Profile links">
+        <a class="link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+          <span class="icon social-twitter" aria-hidden="true">
+            <!-- Twitter icon -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M22 5.92c-.7.31-1.45.52-2.24.62.81-.48 1.44-1.24 1.73-2.15-.77.46-1.62.79-2.54.96A4.05 4.05 0 0 0 12.6 9.5c0 .32.04.63.1.93C8.27 10.26 5 8.14 2.73 5.02c-.35.6-.55 1.3-.55 2.04 0 1.41.72 2.66 1.81 3.39-.67-.02-1.3-.21-1.85-.5v.05c0 1.97 1.41 3.6 3.28 3.97-.34.1-.7.15-1.07.15-.26 0-.52-.03-.77-.07.52 1.61 2.03 2.78 3.82 2.82A8.1 8.1 0 0 1 2 19.54a11.43 11.43 0 0 0 6.18 1.81c7.42 0 11.5-6.16 11.5-11.5v-.52c.78-.57 1.45-1.28 1.98-2.09-.71.31-1.47.52-2.26.62z"/></svg>
+          </span>
+          <div class="meta"><div class="title">Follow on Twitter</div><div class="sub">@marwinlopezjr</div></div>
+        </a>
+
+        <a class="link" href="https://youtube.com/" target="_blank" rel="noopener noreferrer">
+          <span class="icon social-youtube" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M10 15l5.19-3L10 9v6zM21.8 8s-.2-1.42-.82-2.06C19.7 5.1 17.9 5 16.8 5H7.2c-1.1 0-2.9.1-4.18.94C1.5 6.58 1.3 8 1.3 8S1 9.6 1 11.2v1.6C1 14.4 1.3 16 1.3 16s.2 1.4.82 2.06C4.3 19.9 6.1 20 7.2 20h9.6c1.1 0 2.9-.1 4.18-.94.6-.66.82-2.06.82-2.06s.3-1.6.3-3.2v-1.6C22.1 9.6 21.8 8 21.8 8z"/></svg>
+          </span>
+          <div class="meta"><div class="title">Watch on YouTube</div><div class="sub">New episodes weekly</div></div>
+        </a>
+
+        <a class="link" href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+          <span class="icon social-instagram" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.2A4.8 4.8 0 1 0 16.8 13 4.8 4.8 0 0 0 12 8.2zM18.4 5.6a1.12 1.12 0 1 0 1.12 1.12A1.12 1.12 0 0 0 18.4 5.6z"/></svg>
+          </span>
+          <div class="meta"><div class="title">Follow on Instagram</div><div class="sub">@marwinlopezjr</div></div>
+        </a>
+
+        <a class="link" href="https://marwinlopezjr.design" target="_blank" rel="noopener noreferrer">
+          <span class="icon social-web" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 2a10 10 0 1 0 10 10A10.01 10.01 0 0 0 12 2zm1 17.93V19a7 7 0 0 0 3.9-2.3A8 8 0 0 1 13 19.93zM5.1 15A7 7 0 0 0 11 19v.93A8 8 0 0 1 5.1 15zM11 5a7 7 0 0 0-5.9 3.9A8 8 0 0 1 11 5zM13 5a8 8 0 0 1 6.8 3.9A7 7 0 0 0 13 5z"/></svg>
+          </span>
+          <div class="meta"><div class="title">Visit my Website</div><div class="sub">marwinlopezjr.design</div></div>
+        </a>
+
+        <a class="link" href="https://patreon.com/" target="_blank" rel="noopener noreferrer">
+          <span class="icon social-patreon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M6 3h4v18H6zM17 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/></svg>
+          </span>
+          <div class="meta"><div class="title">Support on Patreon</div><div class="sub">Exclusive episodes</div></div>
+        </a>
+
+        <a class="link" href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">
+          <span class="icon social-spotify" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 2A10 10 0 1 0 22 12 10.01 10.01 0 0 0 12 2zm4.2 14.5a.9.9 0 0 1-1.2.3 10.87 10.87 0 0 0-4.1-1.3 7.9 7.9 0 0 0-3.9.2.9.9 0 1 1-.7-1.6 9.8 9.8 0 0 1 4.9-.6 12 12 0 0 1 4.9 1.5.9.9 0 0 1 .3 1.2z"/></svg>
+          </span>
+          <div class="meta"><div class="title">Listen on Spotify</div><div class="sub">Latest episode</div></div>
+        </a>
+      </nav>
+    </aside>
+
+    <section class="right" aria-labelledby="page-heading">
+      <div class="topbar">
+        <div class="logo" aria-hidden="true">
+          <div class="mark">ML</div>
+          <div style="line-height:1">
+            <div style="font-weight:700">marwinlopezjr</div>
+            <div class="small">Link-in-bio • 14 links</div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button class="btn" id="copyBtn" title="Copy profile link">Copy Link</button>
+          <button class="btn share" id="shareBtn">Share</button>
+        </div>
+      </div>
+
+      <div class="stats" aria-hidden="true">
+        <div class="stat">
+          <div class="num">12.3k</div>
+          <div class="small">Monthly views</div>
+        </div>
+        <div class="stat">
+          <div class="num">3.8k</div>
+          <div class="small">Clicks</div>
+        </div>
+        <div class="stat">
+          <div class="num">1.1k</div>
+          <div class="small">New followers</div>
+        </div>
+      </div>
+
+      <div style="padding:12px;border-radius:12px;background:var(--card);display:flex;gap:12px;align-items:center;">
+        <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect width='100%25' height='100%25' fill='%23121219' rx='12'/%3E%3Ctext x='50%25' y='50%25' fill='%23fff' font-size='28' font-family='Arial' text-anchor='middle'%3EReference image below (open file 'reference-image.svg')%3C/text%3E%3C/svg%3E" alt="reference" style="width:120px;height:80px;border-radius:8px;object-fit:cover">
+        <div>
+          <div style="font-weight:700">Reference mockup</div>
+          <div class="small">A clean visual mockup of the profile (SVG provided).</div>
+        </div>
+      </div>
+
+      <footer class="small">Built with ♥ — Customize these styles and replace icons/avatar to match your brand.</footer>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Link copied to clipboard</div>
+
+<script>
+  (function(){
+    const copyBtn = document.getElementById('copyBtn');
+    const shareBtn = document.getElementById('shareBtn');
+    const themeToggle = document.getElementById('themeToggle');
+    const toast = document.getElementById('toast');
+
+    copyBtn.addEventListener('click', async () => {
+      const url = location.href;
+      try {
+        await navigator.clipboard.writeText(url);
+        showToast('Profile link copied to clipboard');
+      } catch (err) {
+        // fallback
+        const input = document.createElement('input');
+        document.body.appendChild(input);
+        input.value = url;
+        input.select();
+        document.execCommand('copy');
+        document.body.removeChild(input);
+        showToast('Profile link copied (fallback)');
+      }
+    });
+
+    shareBtn.addEventListener('click', async () => {
+      const data = { title: 'marwinlopezjr', text: 'Check out my links', url: location.href };
+      if (navigator.share) {
+        try { await navigator.share(data); } catch(e) { /* user cancelled */ }
+      } else {
+        // fallback: copy
+        try { await navigator.clipboard.writeText(location.href); showToast('Profile link copied'); } catch(e){ showToast('Copy failed'); }
+      }
+    });
+
+    themeToggle.addEventListener('click', () => {
+      const el = document.documentElement;
+      const body = document.body;
+      const cur = body.getAttribute('data-theme') || 'dark';
+      const next = cur === 'dark' ? 'light' : 'dark';
+      body.setAttribute('data-theme', next);
+      themeToggle.setAttribute('aria-pressed', next === 'light');
+      showToast(next === 'light' ? 'Light mode' : 'Dark mode');
+    });
+
+    function showToast(text){
+      toast.textContent = text;
+      toast.classList.add('show');
+      clearTimeout(toast._t);
+      toast._t = setTimeout(()=>toast.classList.remove('show'), 1800);
+    }
+
+  })();
+</script>
+</body>
+</html>

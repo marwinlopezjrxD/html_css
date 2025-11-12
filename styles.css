@@ -1,0 +1,215 @@
+.testPara {
+    color: green;
+}
+
+.testHdr {
+    color: red;
+}
+
+.testImg {
+    color: blue;    
+}
+
+/* 
+.Para {
+    color: green;
+}
+
+.Hdr {
+    color: red;
+}
+
+.Img {
+    color: blue;    
+} */
+
+
+/* style snippet https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade */
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* end of style snippet */
+
+
+/* ==============================
+   Questionnaire.html Styles
+   ============================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Questionnaire Container */
+.questionnaireContainer {
+  margin-top: 20px;
+  margin-bottom: 20px; 
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid lightblue;
+  padding: 50px;
+  margin: 20px;
+  max-height: 70vh; /* limit height for internal scroll */
+  overflow-y: auto;
+  border-radius: 10px;
+  padding-right: 10px;
+}
+
+/* Ordered List Styling */
+ol li::marker {
+  font-weight: bold;
+  color: blue;
+}
+
+.questionOptions {
+  margin-left: 20px;
+}
+
+/* Optional CSS Styles (for readability) */
+.questionnaireContainer p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.questionnaireContainer ol {
+  list-style-type: lower-alpha; /* a, b, c */
+  margin-left: 30px;
+}
+
+.questionnaireContainer li {
+  margin-bottom: 8px;
+}
+
+/* Submit Button */
+.submitBtn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.submitBtn:hover {
+  background-color: blue;
+}
+
+/* ==============================
+   Confirmation Popup Box
+   ============================== */
+.confirmBox {
+  display: none; /* hidden by default */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.confirmBox-content {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.confirmButtons {
+  margin-top: 20px;
+}
+
+.confirmBtn {
+  background-color: darkblue;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.confirmBtn:hover {
+  background-color: blue;
+}
+
+.cancelBtn {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cancelBtn:hover {
+  background-color: darkgray;
+}
+
+/* ==============================
+   Return to Top Button(with animation)
+   ============================== */
+#returnTop {
+  opacity: 0;                 /* hidden by default */
+  pointer-events: none;       /* not clickable when hidden */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: lightblue;
+  color: darkblue;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.5s ease; /* fade in/out effect */
+}
+
+#returnTop.show {
+  opacity: 1;
+  pointer-events: auto;       /* clickable when visible */
+}
+
+#returnTop:hover {
+  background-color: deepskyblue;
+  color: white;
+}
