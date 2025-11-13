@@ -44,7 +44,9 @@
         <li><input type="radio" name="q3" id="q3c" value="Bill Gates"><label for="q3c" class="questionOptions">Bill Gates</label></li>
       </ol>
 
-      <!-- QUESTION 4 - FIXED: Use real < and " in value -->
+      <!-- QUESTION 4 - FIXED: Use real < and " in value so JS can match exactly -->
+      <!-- BEFORE: Used &lt; and &quot; → JavaScript saw different string → always wrong -->
+      <!-- NOW: value uses real < and " → matches answersheet.html exactly -->
       <p><strong>Question 4:</strong> Which of the following snippet for HTML Images tag is correct?</p>
       <ol type="a">
         <li>
@@ -66,28 +68,28 @@
         </li>
       </ol>
 
-      <!-- QUESTION 5 -->
+      <!-- QUESTION 5 - FIXED: Use real < in value -->
       <p><strong>Question 5:</strong> What is the correct HTML element for inserting a line break?</p>
       <ol type="a">
-        <li><input type="radio" name="q5" id="q5a" value="&lt;break&gt;"><label for="q5a" class="questionOptions">&lt;break&gt;</label></li>
-        <li><input type="radio" name="q5" id="q5b" value="&lt;br&gt;"><label for="q5b" class="questionOptions">&lt;br&gt;</label></li>
-        <li><input type="radio" name="q5" id="q5c" value="&lt;lb&gt;"><label for="q5c" class="questionOptions">&lt;lb&gt;</label></li>
+        <li><input type="radio" name="q5" id="q5a" value="<break>"><label for="q5a" class="questionOptions">&lt;break&gt;</label></li>
+        <li><input type="radio" name="q5" id="q5b" value="<br>"><label for="q5b" class="questionOptions">&lt;br&gt;</label></li>
+        <li><input type="radio" name="q5" id="q5c" value="<lb>"><label for="q5c" class="questionOptions">&lt;lb&gt;</label></li>
       </ol>
 
-      <!-- QUESTION 6 -->
+      <!-- QUESTION 6 - FIXED: Use real < in value -->
       <p><strong>Question 6:</strong> Which HTML tag is used to define an internal style sheet?</p>
       <ol type="a">
-        <li><input type="radio" name="q6" id="q6a" value="&lt;style&gt;"><label for="q6a" class="questionOptions">&lt;style&gt;</label></li>
-        <li><input type="radio" name="q6" id="q6b" value="&lt;css&gt;"><label for="q6b" class="questionOptions">&lt;css&gt;</label></li>
-        <li><input type="radio" name="q6" id="q6c" value="&lt;script&gt;"><label for="q6c" class="questionOptions">&lt;script&gt;</label></li>
+        <li><input type="radio" name="q6" id="q6a" value="<style>"><label for="q6a" class="questionOptions">&lt;style&gt;</label></li>
+        <li><input type="radio" name="q6" id="q6b" value="<css>"><label for="q6b" class="questionOptions">&lt;css&gt;</label></li>
+        <li><input type="radio" name="q6" id="q6c" value="<script>"><label for="q6c" class="questionOptions">&lt;script&gt;</label></li>
       </ol>
 
-      <!-- QUESTION 7 -->
+      <!-- QUESTION 7 - FIXED: Use real < in value -->
       <p><strong>Question 7:</strong> How do you make text bold in HTML?</p>
       <ol type="a">
-        <li><input type="radio" name="q7" id="q7a" value="&lt;strong&gt; or &lt;b&gt;"><label for="q7a" class="questionOptions">&lt;strong&gt; or &lt;b&gt;</label></li>
-        <li><input type="radio" name="q7" id="q7b" value="&lt;bold&gt;"><label for="q7b" class="questionOptions">&lt;bold&gt;</label></li>
-        <li><input type="radio" name="q7" id="q7c" value="&lt;em&gt;"><label for="q7c" class="questionOptions">&lt;em&gt;</label></li>
+        <li><input type="radio" name="q7" id="q7a" value="<strong> or <b>"><label for="q7a" class="questionOptions">&lt;strong&gt; or &lt;b&gt;</label></li>
+        <li><input type="radio" name="q7" id="q7b" value="<bold>"><label for="q7b" class="questionOptions">&lt;bold&gt;</label></li>
+        <li><input type="radio" name="q7" id="q7c" value="<em>"><label for="q7c" class="questionOptions">&lt;em&gt;</label></li>
       </ol>
 
       <!-- QUESTION 8 -->
@@ -114,28 +116,28 @@
         <li><input type="radio" name="q10" id="q10c" value="font-weight"><label for="q10c" class="questionOptions">font-weight</label></li>
       </ol>
 
-      <!-- QUESTION 11 -->
+      <!-- QUESTION 11 - FIXED: Use real < in value -->
       <p><strong>Question 11:</strong> Which HTML element is used for the largest heading?</p>
       <ol type="a">
-        <li><input type="radio" name="q11" id="q11a" value="&lt;heading&gt;"><label for="q11a" class="questionOptions">&lt;heading&gt;</label></li>
-        <li><input type="radio" name="q11" id="q11b" value="&lt;h1&gt;"><label for="q11b" class="questionOptions">&lt;h1&gt;</label></li>
-        <li><input type="radio" name="q11" id="q11c" value="&lt;head&gt;"><label for="q11c" class="questionOptions">&lt;head&gt;</label></li>
+        <li><input type="radio" name="q11" id="q11a" value="<heading>"><label for="q11a" class="questionOptions">&lt;heading&gt;</label></li>
+        <li><input type="radio" name="q11" id="q11b" value="<h1>"><label for="q11b" class="questionOptions">&lt;h1&gt;</label></li>
+        <li><input type="radio" name="q11" id="q11c" value="<head>"><label for="q11c" class="questionOptions">&lt;head&gt;</label></li>
       </ol>
 
-      <!-- QUESTION 12 -->
+      <!-- QUESTION 12 - FIXED: Use real < in value -->
       <p><strong>Question 12:</strong> What is the correct HTML element for inserting a paragraph?</p>
       <ol type="a">
-        <li><input type="radio" name="q12" id="q12a" value="&lt;pg&gt;"><label for="q12a" class="questionOptions">&lt;pg&gt;</label></li>
-        <li><input type="radio" name="q12" id="q12b" value="&lt;p&gt;"><label for="q12b" class="questionOptions">&lt;p&gt;</label></li>
-        <li><input type="radio" name="q12" id="q12c" value="&lt;para&gt;"><label for="q12c" class="questionOptions">&lt;para&gt;</label></li>
+        <li><input type="radio" name="q12" id="q12a" value="<pg>"><label for="q12a" class="questionOptions">&lt;pg&gt;</label></li>
+        <li><input type="radio" name="q12" id="q12b" value="<p>"><label for="q12b" class="questionOptions">&lt;p&gt;</label></li>
+        <li><input type="radio" name="q12" id="q12c" value="<para>"><label for="q12c" class="questionOptions">&lt;para&gt;</label></li>
       </ol>
 
-      <!-- QUESTION 13 -->
+      <!-- QUESTION 13 - FIXED: Use real < in value -->
       <p><strong>Question 13:</strong> Which HTML tag is used to define a hyperlink?</p>
       <ol type="a">
-        <li><input type="radio" name="q13" id="q13a" value="&lt;a&gt;"><label for="q13a" class="questionOptions">&lt;a&gt;</label></li>
-        <li><input type="radio" name="q13" id="q13b" value="&lt;link&gt;"><label for="q13b" class="questionOptions">&lt;link&gt;</label></li>
-        <li><input type="radio" name="q13" id="q13c" value="&lt;hyper&gt;"><label for="q13c" class="questionOptions">&lt;hyper&gt;</label></li>
+        <li><input type="radio" name="q13" id="q13a" value="<a>"><label for="q13a" class="questionOptions">&lt;a&gt;</label></li>
+        <li><input type="radio" name="q13" id="q13b" value="<link>"><label for="q13b" class="questionOptions">&lt;link&gt;</label></li>
+        <li><input type="radio" name="q13" id="q13c" value="<hyper>"><label for="q13c" class="questionOptions">&lt;hyper&gt;</label></li>
       </ol>
 
       <!-- QUESTION 14 -->
@@ -178,12 +180,12 @@
         <li><input type="radio" name="q18" id="q18c" value="font-align"><label for="q18c" class="questionOptions">font-align</label></li>
       </ol>
 
-      <!-- QUESTION 19 -->
+      <!-- QUESTION 19 - FIXED: Use real < in value -->
       <p><strong>Question 19:</strong> How do you make a list with bullets in HTML?</p>
       <ol type="a">
-        <li><input type="radio" name="q19" id="q19a" value="&lt;ul&gt;"><label for="q19a" class="questionOptions">&lt;ul&gt;</label></li>
-        <li><input type="radio" name="q19" id="q19b" value="&lt;ol&gt;"><label for="q19b" class="questionOptions">&lt;ol&gt;</label></li>
-        <li><input type="radio" name="q19" id="q19c" value="&lt;list&gt;"><label for="q19c" class="questionOptions">&lt;list&gt;</label></li>
+        <li><input type="radio" name="q19" id="q19a" value="<ul>"><label for="q19a" class="questionOptions">&lt;ul&gt;</label></li>
+        <li><input type="radio" name="q19" id="q19b" value="<ol>"><label for="q19b" class="questionOptions">&lt;ol&gt;</label></li>
+        <li><input type="radio" name="q19" id="q19c" value="<list>"><label for="q19c" class="questionOptions">&lt;list&gt;</label></li>
       </ol>
 
       <!-- QUESTION 20 -->
@@ -218,12 +220,12 @@
     // ———————————————————————————————————
     // 1. GET ALL IMPORTANT ELEMENTS
     // ———————————————————————————————————
-    const openConfirm = document.getElementById("openConfirm");
-    const confirmBox   = document.getElementById("confirmBox");
-    const confirmYes   = document.getElementById("confirmYes");
-    const confirmNo    = document.getElementById("confirmNo");
-    const container    = document.querySelector(".questionnaireContainer");
-    const returnTop    = document.getElementById("returnTop");
+    const openConfirm = document.getElementById("openConfirm");   // Submit button
+    const confirmBox   = document.getElementById("confirmBox");   // Popup
+    const confirmYes   = document.getElementById("confirmYes");   // Yes → submit
+    const confirmNo    = document.getElementById("confirmNo");    // No → cancel
+    const container    = document.querySelector(".questionnaireContainer"); // Scrollable area
+    const returnTop    = document.getElementById("returnTop");    // Back to top button
 
     // ———————————————————————————————————
     // 2. SHOW/HIDE "RETURN TO TOP" BUTTON
@@ -253,27 +255,29 @@
     confirmYes.addEventListener("click", () => {
       confirmBox.style.display = "none";
 
-      // ——— Correct answers: MUST MATCH answersheet.html EXACTLY ———
+      // ——— CORRECT ANSWERS: NOW MATCH answersheet.html EXACTLY ———
+      // FIXED: All HTML tags use real < and " (not &lt; or &quot;)
+      // This ensures JavaScript comparison (===) works perfectly
       const correctAnswers = {
         q1:  "HyperText Markup Language",
         q2:  "HTML <a> href Attribute",
         q3:  "Tim Berners-Lee",
         q4:  '<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">',  // FIXED
-        q5:  "&lt;br&gt;",
-        q6:  "&lt;style&gt;",
-        q7:  "&lt;strong&gt; or &lt;b&gt;",
+        q5:  "<br>",                                                               // FIXED
+        q6:  "<style>",                                                            // FIXED
+        q7:  "<strong> or <b>",                                                    // FIXED
         q8:  "background-color",
         q9:  "p {color: red;}",
         q10: "font-family",
-        q11: "&lt;h1&gt;",
-        q12: "&lt;p&gt;",
-        q13: "&lt;a&gt;",
+        q11: "<h1>",                                                               // FIXED
+        q12: "<p>",                                                                // FIXED
+        q13: "<a>",                                                                // FIXED
         q14: "alt",
         q15: "font-size",
         q16: "padding",
         q17: "Cascading Style Sheets",
         q18: "text-align",
-        q19: "&lt;ul&gt;",
+        q19: "<ul>",                                                               // FIXED
         q20: "line-height"
       };
 
