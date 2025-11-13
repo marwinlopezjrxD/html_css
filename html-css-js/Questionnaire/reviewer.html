@@ -3,35 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Questionnaire Reviewer</title>
+  <title>Quiz Reviewer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="page-container" id="page">
     <header>
-      <h1>Quiz Results</h1>
-      <p class="subtitle">See your final score</p>
+      <h1>Quiz Reviewer</h1>
+      <p class="subtitle">Your final score</p>
     </header>
 
-    <!-- ====================== NAVIGATION ====================== -->
+    <!-- NAVIGATION -->
     <nav>
       <ul>
         <li><a href="../index.html">Homepage</a></li>
-        <li><a href="questionnaire.html">Take Quiz Again</a></li>
+        <li><a href="questionnaire.html">Take Quiz</a></li>
+        <li><a href="quizResult.html">See Full Results</a></li>
         <li><a href="answersheet.html" target="_blank">Answer Sheet</a></li>
       </ul>
     </nav>
 
-    <!-- ====================== SCORE CARD ====================== -->
+    <!-- SCORE CARD -->
     <div class="score-card" id="scoreCard">
       <strong>Your Score: <span id="scoreDisplay">?/20</span></strong>
-      <p id="resultText">Calculating…</p>
+      <p id="resultText">Loading…</p>
     </div>
 
-    <!-- ====================== NO QUESTIONS SHOWN ====================== -->
-    <div style="text-align:center; margin-top:40px; color:#666;">
-      <p>Answers are not shown — just your final score.</p>
-      <p><a href="questionnaire.html">Try again?</a></p>
+    <!-- SIMPLE MESSAGE -->
+    <div style="text-align:center; margin:40px 0; color:#555;">
+      <p>Only your score is shown here.</p>
+      <p><a href="quizResult.html">View full results</a></p>
     </div>
 
     <footer>
@@ -39,50 +40,38 @@
     </footer>
   </div>
 
-  <!-- ====================== HOME BUTTON ====================== -->
+  <!-- HOME BUTTON -->
   <a href="../index.html" class="home-button" id="homeBtn">
     <span>Home</span>
   </a>
 
-  <!-- ====================== MAIN SCRIPT ====================== -->
+  <!-- SCRIPT -->
   <script>
-    // ———————————————————————————————————
-    // 1. GET SCORE FROM localStorage
-    // ———————————————————————————————————
-    const totalQuestions = 20;
-    const passingScore   = 14; // 70% = 14/20
-    const userScore      = parseInt(localStorage.getItem('quizScore')) || 0;
+    // Get score from localStorage
+    const userScore = parseInt(localStorage.getItem('quizScore')) || 0;
+    const total = 20;
+    const pass = 14;
 
-    // ——— Update score display ———
-    document.getElementById('scoreDisplay').textContent = `${userScore}/${totalQuestions}`;
+    document.getElementById('scoreDisplay').textContent = `${userScore}/${total}`;
+    const result = document.getElementById('resultText');
+    const card = document.getElementById('scoreCard');
 
-    // ——— Get result elements ———
-    const scoreCard = document.getElementById('scoreCard');
-    const result    = document.getElementById('resultText');
-
-    // ———————————————————————————————————
-    // 2. PASS OR FAIL?
-    // ———————————————————————————————————
-    if (userScore >= passingScore) {
-      scoreCard.classList.add('pass');
-      result.textContent = 'You PASSED! Great job!';
-      result.style.color = '#28a745'; // Green
+    if (userScore >= pass) {
+      card.classList.add('pass');
+      result.textContent = 'PASSED!';
+      result.style.color = '#28a745';
     } else {
-      scoreCard.classList.add('fail');
-      result.textContent = 'You FAILED. Try again!';
-      result.style.color = '#dc3545'; // Red
+      card.classList.add('fail');
+      result.textContent = 'FAILED. Try again!';
+      result.style.color = '#dc3545';
     }
 
-    // ———————————————————————————————————
-    // 3. PAGE FADE-IN + SHRINK HOME BUTTON
-    // ———————————————————————————————————
-    setTimeout(() => {
-      document.getElementById('page').classList.add('fade-in-page');
-    }, 100);
+    // Fade in
+    setTimeout(() => document.getElementById('page').classList.add('fade-in-page'), 100);
 
-    const homeBtn = document.getElementById('homeBtn');
+    // Shrink home button on scroll
     window.addEventListener('scroll', () => {
-      homeBtn.classList.toggle('shrink', window.scrollY > 200);
+      document.getElementById('homeBtn').classList.toggle('shrink', window.scrollY > 200);
     });
   </script>
 </body>

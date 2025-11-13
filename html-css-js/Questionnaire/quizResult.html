@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Questionnaire Reviewer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-container" id="page">
+    <header>
+      <h1>Quiz Results</h1>
+      <p class="subtitle">See your final score</p>
+    </header>
+
+    <!-- ====================== NAVIGATION ====================== -->
+    <nav>
+      <ul>
+        <li><a href="../index.html">Homepage</a></li>
+        <li><a href="questionnaire.html">Take Quiz Again</a></li>
+        <li><a href="answersheet.html" target="_blank">Answer Sheet</a></li>
+      </ul>
+    </nav>
+
+    <!-- ====================== SCORE CARD ====================== -->
+    <div class="score-card" id="scoreCard">
+      <strong>Your Score: <span id="scoreDisplay">?/20</span></strong>
+      <p id="resultText">Calculating…</p>
+    </div>
+
+    <!-- ====================== NO QUESTIONS SHOWN ====================== -->
+    <div style="text-align:center; margin-top:40px; color:#666;">
+      <p>Answers are not shown — just your final score.</p>
+      <p><a href="questionnaire.html">Try again?</a></p>
+    </div>
+
+    <footer>
+      <p>© 2025 HTML/CSS Practice • <a href="../index.html">Back to Home</a></p>
+    </footer>
+  </div>
+
+  <!-- ====================== HOME BUTTON ====================== -->
+  <a href="../index.html" class="home-button" id="homeBtn">
+    <span>Home</span>
+  </a>
+
+  <!-- ====================== MAIN SCRIPT ====================== -->
+  <script>
+    // ———————————————————————————————————
+    // 1. GET SCORE FROM localStorage
+    // ———————————————————————————————————
+    const totalQuestions = 20;
+    const passingScore   = 14; // 70% = 14/20
+    const userScore      = parseInt(localStorage.getItem('quizScore')) || 0;
+
+    // ——— Update score display ———
+    document.getElementById('scoreDisplay').textContent = `${userScore}/${totalQuestions}`;
+
+    // ——— Get result elements ———
+    const scoreCard = document.getElementById('scoreCard');
+    const result    = document.getElementById('resultText');
+
+    // ———————————————————————————————————
+    // 2. PASS OR FAIL?
+    // ———————————————————————————————————
+    if (userScore >= passingScore) {
+      scoreCard.classList.add('pass');
+      result.textContent = 'You PASSED! Great job!';
+      result.style.color = '#28a745'; // Green
+    } else {
+      scoreCard.classList.add('fail');
+      result.textContent = 'You FAILED. Try again!';
+      result.style.color = '#dc3545'; // Red
+    }
+
+    // ———————————————————————————————————
+    // 3. PAGE FADE-IN + SHRINK HOME BUTTON
+    // ———————————————————————————————————
+    setTimeout(() => {
+      document.getElementById('page').classList.add('fade-in-page');
+    }, 100);
+
+    const homeBtn = document.getElementById('homeBtn');
+    window.addEventListener('scroll', () => {
+      homeBtn.classList.toggle('shrink', window.scrollY > 200);
+    });
+  </script>
+</body>
+</html>
