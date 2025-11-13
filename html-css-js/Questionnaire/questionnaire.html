@@ -290,56 +290,88 @@
 
   <!-- MAIN SCRIPT -->
   <script>
+    // -------------------------------------------------
+    // 1. Grab all needed elements
+    // -------------------------------------------------
     const openConfirm = document.getElementById("openConfirm");
-    const confirmBox = document.getElementById("confirmBox");
-    const confirmYes = document.getElementById("confirmYes");
-    const confirmNo = document.getElementById("confirmNo");
-    const container = document.querySelector(".questionnaireContainer");
-    const returnTop = document.getElementById("returnTop");
+    const confirmBox   = document.getElementById("confirmBox");
+    const confirmYes   = document.getElementById("confirmYes");
+    const confirmNo    = document.getElementById("confirmNo");
+    const container    = document.querySelector(".questionnaireContainer");
+    const returnTop    = document.getElementById("returnTop");
 
-    // Show/hide "Return to Top" button
+    // -------------------------------------------------
+    // 2. "Return to Top" button (scroll inside container)
+    // -------------------------------------------------
     container.addEventListener("scroll", () => {
       returnTop.classList.toggle("show", container.scrollTop > 200);
     });
-
-    // Smooth scroll to top
     returnTop.addEventListener("click", () => {
       container.scrollTo({ top: 0, behavior: "smooth" });
     });
 
-    // Open confirmation popup
+    // -------------------------------------------------
+    // 3. Open / Cancel confirmation popup
+    // -------------------------------------------------
     openConfirm.addEventListener("click", () => {
       confirmBox.style.display = "flex";
     });
-
-    // Cancel → hide popup
     confirmNo.addEventListener("click", () => {
       confirmBox.style.display = "none";
     });
 
-    // Submit → Calculate Score → Save → Go to Reviewer
+    // -------------------------------------------------
+    // 4. *** MAIN SUBMIT LOGIC ***
+    //    - Save every answer
+    //    - Count correct answers
+    //    - Store score
+    //    - Redirect to reviewer
+    // -------------------------------------------------
     confirmYes.addEventListener("click", () => {
       confirmBox.style.display = "none";
 
-      // 1. Calculate correct answers
-      let correct = 0;
-      const answers = {
-        q1: "HTML", q2: "href", q3: "Tim Berners-Lee", q4: "correct",
-        q5: "<br>", q6: "<style>", q7: "<strong>", q8: "background-color",
-        q9: "p {color: red;}", q10: "font-family", q11: "<h1>", q12: "<p>",
-        q13: "<a>", q14: "alt", q15: "font-size", q16: "padding",
-        q17: "Cascading Style Sheets", q18: "text-align", q19: "<ul>", q20: "line-height"
+      // ----- a) Correct-answer key (same order as questions) -----
+      const correctAnswers = {
+        q1: "HTML",
+        q2: "href",
+        q3: "Tim Berners-Lee",
+        q4: "correct",
+        q5: "<br>",
+        q6: "<style>",
+        q7: "<strong>",
+        q8: "background-color",
+        q9: "p {color: red;}",
+        q10: "font-family",
+        q11: "<h1>",
+        q12: "<p>",
+        q13: "<a>",
+        q14: "alt",
+        q15: "font-size",
+        q16: "padding",
+        q17: "Cascading Style Sheets",
+        q18: "text-align",
+        q19: "<ul>",
+        q20: "line-height"
       };
 
-      for (const [key, val] of Object.entries(answers)) {
+      let correctCount = 0;
+
+      // ----- b) Loop through every question -----
+      for (const [key, correctVal] of Object.entries(correctAnswers)) {
         const selected = document.querySelector(`input[name="${key}"]:checked`);
-        if (selected && selected.value === val) correct++;
+        const userVal  = selected ? selected.value : null;
+
+        // Save the user's choice (even if none)
+        localStorage.setItem(key, userVal);
+
+        // Count correct answers
+        if (userVal === correctVal) correctCount++;
       }
 
-      // 2. Save score
-      localStorage.setItem('quizScore', correct);
+      // ----- c) Store total score -----
+      localStorage.setItem('quizScore', correctCount);
 
-      // 3. Redirect to Reviewer
+      // ----- d) Go to the reviewer page -----
       setTimeout(() => {
         window.location.href = "reviewer.html";
       }, 300);

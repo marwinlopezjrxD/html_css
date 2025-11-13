@@ -4,16 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Questionnaire Reviewer</title>
+  <!-- Use the same style.css as questionnaire.html -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="page-container" id="page">
     <header>
       <h1>Questionnaire Reviewer</h1>
-      <p class="subtitle">See every correct answer • Pass/Fail result</p>
+      <p class="subtitle">See your answers • Learn from mistakes</p>
     </header>
 
-    <!-- CLEAR NAVIGATION -->
+    <!-- NAVIGATION -->
     <nav>
       <ul>
         <li><a href="../index.html">Homepage</a></li>
@@ -29,7 +30,7 @@
       <p id="resultText">Calculating…</p>
     </div>
 
-    <!-- QUESTIONS WILL BE INJECTED BY JS -->
+    <!-- QUESTIONS WILL BE INJECTED HERE -->
     <div id="reviewQuestions"></div>
 
     <footer>
@@ -38,76 +39,132 @@
   </div>
 
   <!-- FLOATING HOME BUTTON -->
-  <aef href="../index.html" class="home-button" id="homeBtn">
+  <a href="../index.html" class="home-button" id="homeBtn">
     <span>Home</span>
   </a>
 
+  <!-- MAIN SCRIPT -->
   <script>
-    // ================================
+    // =====================================================
     // 1. PASS / FAIL LOGIC (70% = 14/20)
-    // ================================
+    // =====================================================
     const totalQuestions = 20;
-    const passingScore   = 14;               // 70%
+    const passingScore   = 14; // 70%
     const userScore      = parseInt(localStorage.getItem('quizScore')) || 0;
 
+    // Update score display
     document.getElementById('scoreDisplay').textContent = `${userScore}/${totalQuestions}`;
     const scoreCard = document.getElementById('scoreCard');
     const result    = document.getElementById('resultText');
 
     if (userScore >= passingScore) {
       scoreCard.classList.add('pass');
-      result.textContent = 'You PASSED! Keep it up!';
+      result.textContent = 'You PASSED! Great job!';
       result.style.color = '#28a745';
     } else {
       scoreCard.classList.add('fail');
-      result.textContent = 'You FAILED. Review the answers below.';
+      result.textContent = 'You FAILED. Review your mistakes below.';
       result.style.color = '#dc3545';
     }
 
-    // ================================
-    // 2. QUESTION DATA (exact copy of questionnaire.html)
-    // ================================
+    // =====================================================
+    // 2. QUESTION DATA + CORRECT ANSWERS
+    // =====================================================
     const questions = [
-      { q:"What does HTML stand for?", a:"HyperText Markup Language", exp:"HTML = HyperText Markup Language – the skeleton of every webpage." },
-      { q:"What does \"<a>\" stand for?", a:"HTML <a> href Attribute", exp:"The <a> tag creates hyperlinks; the href attribute holds the URL." },
-      { q:"Who first invented HTML?", a:"Tim Berners-Lee", exp:"Tim Berners-Lee created HTML in 1991 at CERN." },
-      { q:"Which snippet for HTML Images tag is correct?", a:"&lt;img src=\"w3schools.jpg\" alt=\"W3Schools.com\" width=\"104\" height=\"142\"&gt;", exp:"All attributes must be inside the opening tag and properly closed." },
-      { q:"What is the correct HTML element for inserting a line break?", a:"<br>", exp:"<br> creates a single line break without a new paragraph." },
-      { q:"Which HTML tag is used to define an internal style sheet?", a:"<style>", exp:"Internal CSS lives inside a <style> tag in the <head>." },
-      { q:"How do you make text bold in HTML?", a:"<strong> or <b>", exp:"<strong> is semantic (important), <b> is purely visual." },
-      { q:"Which CSS property is used to change the background color of an element?", a:"background-color", exp:"background-color sets the element’s background." },
-      { q:"What is the correct CSS syntax to make all paragraph text red?", a:"p {color: red;}", exp:"color changes the text (foreground) colour." },
-      { q:"Which property is used to change the font of an element in CSS?", a:"font-family", exp:"font-family defines the typeface(s)." },
-      { q:"Which HTML element is used for the largest heading?", a:"<h1>", exp:"<h1> is the biggest heading, down to <h6>." },
-      { q:"What is the correct HTML element for inserting a paragraph?", a:"<p>", exp:"Paragraphs are wrapped in <p> tags." },
-      { q:"Which HTML tag is used to define a hyperlink?", a:"<a>", exp:"<a href=\"…\"> creates clickable links." },
-      { q:"Which HTML attribute specifies an alternate text for an image?", a:"alt", exp:"alt text is shown when the image cannot load and helps accessibility." },
-      { q:"Which CSS property controls the text size?", a:"font-size", exp:"font-size sets the size of the text." },
-      { q:"Which CSS property adds space inside an element's border?", a:"padding", exp:"padding = space inside the border; margin = space outside." },
-      { q:"What does CSS stand for?", a:"Cascading Style Sheets", exp:"CSS describes how HTML elements are displayed." },
-      { q:"Which property is used to align text in CSS?", a:"text-align", exp:"text-align: left|center|right|justify." },
-      { q:"How do you make a list with bullets in HTML?", a:"<ul>", exp:"<ul> = unordered (bullet) list; <ol> = ordered (numbered)." },
-      { q:"Which CSS property is used to set the space between lines of text?", a:"line-height", exp:"line-height controls the height of each line." }
+      { q: "What does HTML stand for?", a: "HyperText Markup Language", exp: "HTML = HyperText Markup Language – the skeleton of every webpage." },
+      { q: "What does \"<a>\" stand for?", a: "HTML <a> href Attribute", exp: "The <a> tag creates hyperlinks; the href attribute holds the URL." },
+      { q: "Who first invented HTML?", a: "Tim Berners-Lee", exp: "Tim Berners-Lee created HTML in 1991 at CERN." },
+      { q: "Which snippet for HTML Images tag is correct?", a: "&lt;img src=\"w3schools.jpg\" alt=\"W3Schools.com\" width=\"104\" height=\"142\"&gt;", exp: "All attributes must be inside the opening tag and properly closed." },
+      { q: "What is the correct HTML element for inserting a line break?", a: "<br>", exp: "<br> creates a single line break without a new paragraph." },
+      { q: "Which HTML tag is used to define an internal style sheet?", a: "<style>", exp: "Internal CSS lives inside a <style> tag in the <head>." },
+      { q: "How do you make text bold in HTML?", a: "<strong> or <b>", exp: "<strong> is semantic (important), <b> is purely visual." },
+      { q: "Which CSS property is used to change the background color of an element?", a: "background-color", exp: "background-color sets the element’s background." },
+      { q: "What is the correct CSS syntax to make all paragraph text red?", a: "p {color: red;}", exp: "color changes the text (foreground) colour." },
+      { q: "Which property is used to change the font of an element in CSS?", a: "font-family", exp: "font-family defines the typeface(s)." },
+      { q: "Which HTML element is used for the largest heading?", a: "<h1>", exp: "<h1> is the biggest heading, down to <h6>." },
+      { q: "What is the correct HTML element for inserting a paragraph?", a: "<p>", exp: "Paragraphs are wrapped in <p> tags." },
+      { q: "Which HTML tag is used to define a hyperlink?", a: "<a>", exp: "<a href=\"…\"> creates clickable links." },
+      { q: "Which HTML attribute specifies an alternate text for an image?", a: "alt", exp: "alt text is shown when the image cannot load and helps accessibility." },
+      { q: "Which CSS property controls the text size?", a: "font-size", exp: "font-size sets the size of the text." },
+      { q: "Which CSS property adds space inside an element's border?", a: "padding", exp: "padding = space inside the border; margin = space outside." },
+      { q: "What does CSS stand for?", a: "Cascading Style Sheets", exp: "CSS describes how HTML elements are displayed." },
+      { q: "Which property is used to align text in CSS?", a: "text-align", exp: "text-align: left|center|right|justify." },
+      { q: "How do you make a list with bullets in HTML?", a: "<ul>", exp: "<ul> = unordered (bullet) list; <ol> = ordered (numbered)." },
+      { q: "Which CSS property is used to set the space between lines of text?", a: "line-height", exp: "line-height controls the height of each line." }
     ];
 
-    // ================================
-    // 3. INJECT QUESTION CARDS
-    // ================================
+    // =====================================================
+    // 3. GET USER'S ANSWERS FROM localStorage
+    // =====================================================
+    // We saved answers as: localStorage.setItem(`q${i}`, selectedValue)
+    const userAnswers = {};
+    for (let i = 1; i <= totalQuestions; i++) {
+      const key = `q${i}`;
+      userAnswers[key] = localStorage.getItem(key) || null;
+    }
+
+    // =====================================================
+    // 4. INJECT QUESTION CARDS WITH USER ANSWER
+    // =====================================================
     const container = document.getElementById('reviewQuestions');
-    questions.forEach((item,i) => {
+    questions.forEach((item, i) => {
+      const qNum = i + 1;
+      const userAns = userAnswers[`q${qNum}`];
+      const isCorrect = userAns === item.a;
+
+      // Create card
       const card = document.createElement('div');
       card.className = 'question-card';
+
+      // Build inner HTML
       card.innerHTML = `
-        <h3>Question ${i+1}: ${item.q}</h3>
-        <div class="correct-answer">Correct Answer: ${item.a}</div>
+        <h3>Question ${qNum}: ${item.q}</h3>
+        
+        <!-- User's Answer -->
+        <div class="user-answer ${isCorrect ? '' : 'incorrect'}">
+          <strong>Your Answer:</strong> 
+          <span class="answer-text">${userAns ? userAns : '<em>Not answered</em>'}</span>
+        </div>
+
+        <!-- Correct Answer -->
+        <div class="correct-answer">
+          <strong>Correct Answer:</strong> ${item.a}
+        </div>
+
+        <!-- Explanation -->
         <p class="explanation">${item.exp}</p>
       `;
+
       container.appendChild(card);
     });
 
-    // ================================
-    // 4. PAGE FADE-IN + HOME-BUTTON SHRINK
-    // ================================
+    // =====================================================
+    // 5. ADD CSS FOR INCORRECT ANSWERS (RED TEXT)
+    // =====================================================
+    const style = document.createElement('style');
+    style.textContent = `
+      .user-answer {
+        background: #f8f9fa;
+        padding: 10px;
+        border-radius: 8px;
+        margin: 10px 0;
+        border-left: 4px solid #007bff;
+      }
+      .user-answer.incorrect {
+        background: #fce8e6;
+        border-left-color: #dc3545;
+        color: #721c24;
+      }
+      .user-answer.incorrect .answer-text {
+        color: #dc3545;
+        font-weight: bold;
+      }
+    `;
+    document.head.appendChild(style);
+
+    // =====================================================
+    // 6. PAGE FADE-IN + HOME BUTTON SHRINK
+    // =====================================================
     setTimeout(() => document.getElementById('page').classList.add('fade-in-page'), 100);
     const homeBtn = document.getElementById('homeBtn');
     window.addEventListener('scroll', () => {
