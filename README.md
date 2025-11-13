@@ -54,10 +54,22 @@
 ---
 
 ## Q1 2026
-- **01/07**: Color of Hue
-- **02/16**: First Project Prep
 
-**First Project Deadline: `05/31/26`**
+### January
+- **01/07**: Activity # 3: Color of Hue
+
+### February
+- **02/16** First Project Prep Phase
+
+### March
+- **TBD**
+
+### April
+- **TBD**
+
+### May
+
+- **First Project Deadline: `05/31/26`**
 
 ## Q2 2026
 Javascript Basics Practice
