@@ -1,6 +1,6 @@
-# HTML/CSS Practice 
+# HTML/CSS Practice
 
----
+[![](https://img.shields.io/badge/Live%20Site-View%20Project-blue?style=for-the-badge&logo=github&logoColor=white)](https://marwinlopezjrxD.github.io/html_css/)
 
 ## Q4 2025 Timeline
 
@@ -12,62 +12,56 @@
 - **10/31**: 32%
 
 ### November
+
 #### Questionnaire Folder
 - **11/01**: 35%
 - **11/02**: 40%
-
 - **11/06**: Added folders for First Project prep
 
-#### 11/08 – Questionnaire Updates *(in progress)*
-- Add pass/fail logic
-- Apply designs
+#### 11/08 – Questionnaire Updates (completed)
+- Added pass/fail logic
+- Applied designs
 - Final touches
-
 - **11/09**: Completed Div practice site in `Free Website` folder
+- **11/10**: Completed Questionnaire updates
 
 #### 11/10
-- Added open-source, free-to-use links to `Links Practice` *(done 11/09)*
+- Added open-source, free-to-use links to `Links Practice` (done 11/09)
 - Added initial files for Activities #1–#3
 
----
+*(Progress: ~80% as of November 12, 2025. Check the [live site](https://marwinlopezjrxD.github.io/html_css/questionnaire.html) for interactive updates!)*
+
+## Live Website
+[Questionnaire Live Demo](https://marwinlopezjrxD.github.io/html_css/questionnaire.html)
 
 ## Upcoming Activities
 
-| Activity | Dates | Theme | Tasks |
-|--------|-------|-------|-------|
-| **#1** | 11/18 – 11/24 | **Andromeda** | Galaxy-focused design with planets, stars, comets, meteorites. Use all free online resources. |
-| **#2** | 11/27 – 12/03 | **Quotes Generator** | Responsive generator with **500+ quotes**. Search via API or compile manually. |
-| **#3** | 12/11 – 12/17 | **Color of Hue** | RGB-focused design. Generate **up to 7 color combos** (e.g., Yellow + Blue = Green). |
-
----
+| Activity | Dates         | Theme            | Tasks |
+|----------|---------------|------------------|-------|
+| #1       | 11/19 – 11/25 | Andromeda        | Galaxy-focused design with planets, stars, comets, meteorites. Use all free online resources. |
+| #2       | 11/27 – 12/03 | Quotes Generator | Responsive generator with 500+ quotes. Search via API or compile manually. |
+| #3       | 12/11 – 12/17 | Color of Hue     | RGB-focused design. Generate up to 7 color combos (e.g., Yellow + Blue = Green). |
 
 ## December
-
 - **12/23**: Prep phase
 
 ---
 
 ## Q1 2026
+- **01/12**: First Project Kickoff
 
-- **01/12**: **First Project Kickoff**
-
-**First Project Deadline:** `05/31/26`
-
-
----
+**First Project Deadline: `05/31/26`**
 
 ## Q2 2026
-
-**Javascript Basics Practice**
-
----
+Javascript Basics Practice
 
 ## Q3 2026
+API Integration
 
-**API Integration**
+## Q4 2026
+Prep for Second Project (PC Builder)
 
 ---
 
-## Q4 2026
-
-**Prep for Second Project(PC Builder)**
+## About
+Just a simple repo about HTML and CSS, aims to learn mainly on basic HTML tags and how to use styles in an HTML Document.
