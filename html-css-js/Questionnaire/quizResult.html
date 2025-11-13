@@ -3,8 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Questionnaire Reviewer</title>
+  <title>Quiz Results</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Optional: Make buttons look consistent */
+    .result-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 1.5rem 0;
+    }
+    .result-btn {
+      padding: 0.8rem 1.5rem;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .result-btn:hover {
+      background: #0056b3;
+      transform: translateY(-2px);
+    }
+    .review-btn { background: #28a745; }
+    .review-btn:hover { background: #1e7e34; }
+  </style>
 </head>
 <body>
   <div class="page-container" id="page">
@@ -28,10 +53,17 @@
       <p id="resultText">Calculating…</p>
     </div>
 
-    <!-- ====================== NO QUESTIONS SHOWN ====================== -->
+    <!-- ====================== ACTION BUTTONS ====================== -->
+    <div class="result-buttons">
+      <a href="reviewer.html" class="result-btn review-btn">Review Answers</a>
+      <a href="questionnaire.html" class="result-btn">Retake Quiz</a>
+      <a href="answersheet.html" target="_blank" class="result-btn">Answer Sheet</a>
+    </div>
+
+    <!-- ====================== MESSAGE ====================== -->
     <div style="text-align:center; margin-top:40px; color:#666;">
       <p>Answers are not shown — just your final score.</p>
-      <p><a href="questionnaire.html">Try again?</a></p>
+      <p>Want to learn? <a href="reviewer.html">Review all answers with explanations</a></p>
     </div>
 
     <footer>
@@ -50,7 +82,7 @@
     // 1. GET SCORE FROM localStorage
     // ———————————————————————————————————
     const totalQuestions = 20;
-    const passingScore   = 14; // 70% = 14/20
+    const passingScore   = 14;
     const userScore      = parseInt(localStorage.getItem('quizScore')) || 0;
 
     // ——— Update score display ———
@@ -66,11 +98,11 @@
     if (userScore >= passingScore) {
       scoreCard.classList.add('pass');
       result.textContent = 'You PASSED! Great job!';
-      result.style.color = '#28a745'; // Green
+      result.style.color = '#28a745';
     } else {
       scoreCard.classList.add('fail');
       result.textContent = 'You FAILED. Try again!';
-      result.style.color = '#dc3545'; // Red
+      result.style.color = '#dc3545';
     }
 
     // ———————————————————————————————————
