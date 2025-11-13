@@ -12,8 +12,7 @@
   
   <h2>Questionnaire</h2>
   <h3>Choose the correct answer</h3>
-  <h1><a href="../Questionnaire/answersheet.html" target="_blank"><button>Answer Sheet</button></a></h1>
-
+  <h1><a href="reviewer.html"><button>Go to Reviewer</button></a></h1>
 
   <div class="questionnaireContainer">
   <form id="questionnaireForm" action="">
@@ -190,7 +189,7 @@
       </li>
     </ol>
 
-        <!-- QUESTION 11 -->
+    <!-- QUESTION 11 -->
     <p><strong>Question 11:</strong> Which HTML element is used for the largest heading?</p>
     <ol type="a">
       <li><input type="radio" name="q11" id="q11a" value="<heading>"><label for="q11a">&lt;heading&gt;</label></li>
@@ -270,18 +269,15 @@
       <li><input type="radio" name="q20" id="q20c" value="letter-spacing"><label for="q20c">letter-spacing</label></li>
     </ol>
 
-    <!-- END OF QUESTION 20 -->
-
     <!-- Submit Button -->
     <button type="button" class="submitBtn" id="openConfirm">Submit</button>
   </form>
-
   </div>
 
   <!-- Confirmation Popup -->
   <div id="confirmBox" class="confirmBox">
     <div class="confirmBox-content">
-      <p>Are you sure you want to submit your answer?</p>
+      <p>Are you sure you want to submit your answers?</p>
       <div class="confirmButtons">
         <button id="confirmYes" class="confirmBtn">Submit</button>
         <button id="confirmNo" class="cancelBtn">Cancel</button>
@@ -292,67 +288,61 @@
   <!-- Return to Top Button -->
   <button id="returnTop">Return to Top</button>
 
-  <!-- script if user clicks Submit Button when all of the questions are answered -->
+  <!-- MAIN SCRIPT -->
   <script>
     const openConfirm = document.getElementById("openConfirm");
     const confirmBox = document.getElementById("confirmBox");
     const confirmYes = document.getElementById("confirmYes");
     const confirmNo = document.getElementById("confirmNo");
-    const form = document.getElementById("questionnaireForm");
+    const container = document.querySelector(".questionnaireContainer");
     const returnTop = document.getElementById("returnTop");
 
-    // // Show "Return to Top" Button when scrolling
-    // window.onscroll = function () {
-    //   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    //     returnTop.style.display = "block";
-    //   } else {
-    //     returnTop.style.display = "none";
-    //   }
-    // };
-
-    const container = document.querySelector(".questionnaireContainer");
-    // const returnTop = document.getElementById("returnTop");
-
-    // Show/hide button smoothly when scrolling inside the container
+    // Show/hide "Return to Top" button
     container.addEventListener("scroll", () => {
-      if (container.scrollTop > 200) {
-        returnTop.classList.add("show");
-      } else {
-        returnTop.classList.remove("show");
-      }
+      returnTop.classList.toggle("show", container.scrollTop > 200);
     });
 
-    // Scroll smoothly back to Question 1
+    // Smooth scroll to top
     returnTop.addEventListener("click", () => {
       container.scrollTo({ top: 0, behavior: "smooth" });
     });
 
-
-
-
-    
-    // Confirmation Popup
-    openConfirm.addEventListener("click", () => confirmBox.style.display = "flex");
-    confirmNo.addEventListener("click", () => confirmBox.style.display = "none");
-    confirmYes.addEventListener("click", () => {
-      confirmBox.style.display = "none";
-      window.location.href = "answersheet.html"; // redirect after confirm
-    });  
-
-    // When user clicks Submit
+    // Open confirmation popup
     openConfirm.addEventListener("click", () => {
-      confirmBox.style.display = "flex"; // show confirmation box
+      confirmBox.style.display = "flex";
     });
 
-    // If user clicks Cancel
+    // Cancel → hide popup
     confirmNo.addEventListener("click", () => {
-      confirmBox.style.display = "none"; // hide box
+      confirmBox.style.display = "none";
     });
 
-    // If user confirms Submit
+    // Submit → Calculate Score → Save → Go to Reviewer
     confirmYes.addEventListener("click", () => {
       confirmBox.style.display = "none";
-      form.submit(); // proceed with submission
+
+      // 1. Calculate correct answers
+      let correct = 0;
+      const answers = {
+        q1: "HTML", q2: "href", q3: "Tim Berners-Lee", q4: "correct",
+        q5: "<br>", q6: "<style>", q7: "<strong>", q8: "background-color",
+        q9: "p {color: red;}", q10: "font-family", q11: "<h1>", q12: "<p>",
+        q13: "<a>", q14: "alt", q15: "font-size", q16: "padding",
+        q17: "Cascading Style Sheets", q18: "text-align", q19: "<ul>", q20: "line-height"
+      };
+
+      for (const [key, val] of Object.entries(answers)) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === val) correct++;
+      }
+
+      // 2. Save score
+      localStorage.setItem('quizScore', correct);
+
+      // 3. Redirect to Reviewer
+      setTimeout(() => {
+        window.location.href = "reviewer.html";
+      }, 300);
     });
   </script>
 
