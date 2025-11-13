@@ -29,6 +29,9 @@
 - Added open-source, free-to-use links to `Links Practice` (done 11/09)
 - Added initial files for Activities #1–#3
 
+#### 11/12
+- **11/13** Added a reviewer for questionnaire(not done) 
+
 *(Progress: ~80% as of November 12, 2025. Check the [live site](https://marwinlopezjrxD.github.io/html_css/questionnaire.html) for interactive updates!)*
 
 ## Live Website
