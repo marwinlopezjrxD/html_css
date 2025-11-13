@@ -6,7 +6,6 @@
   <title>Quiz Results</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Optional: Make buttons look consistent */
     .result-buttons {
       display: flex;
       gap: 1rem;
@@ -22,6 +21,8 @@
       border-radius: 8px;
       font-weight: 600;
       transition: 0.3s;
+      text-align: center;
+      min-width: 140px;
     }
     .result-btn:hover {
       background: #0056b3;
@@ -29,6 +30,8 @@
     }
     .review-btn { background: #28a745; }
     .review-btn:hover { background: #1e7e34; }
+    .retake-btn { background: #6c757d; }
+    .retake-btn:hover { background: #5a6268; }
   </style>
 </head>
 <body>
@@ -56,7 +59,7 @@
     <!-- ====================== ACTION BUTTONS ====================== -->
     <div class="result-buttons">
       <a href="reviewer.html" class="result-btn review-btn">Review Answers</a>
-      <a href="questionnaire.html" class="result-btn">Retake Quiz</a>
+      <button id="retakeBtn" class="result-btn retake-btn">Retake Quiz</button>
       <a href="answersheet.html" target="_blank" class="result-btn">Answer Sheet</a>
     </div>
 
@@ -106,7 +109,23 @@
     }
 
     // ———————————————————————————————————
-    // 3. PAGE FADE-IN + SHRINK HOME BUTTON
+    // 3. RETAKE QUIZ BUTTON — FULL RESET
+    // ———————————————————————————————————
+    document.getElementById('retakeBtn').addEventListener('click', () => {
+      // Step 1: Clear score
+      localStorage.removeItem('quizScore');
+
+      // Step 2: Clear all individual answers (q1, q2, ..., q20)
+      for (let i = 1; i <= totalQuestions; i++) {
+        localStorage.removeItem(`q${i}`);
+      }
+
+      // Step 3: Redirect to quiz
+      window.location.href = 'questionnaire.html';
+    });
+
+    // ———————————————————————————————————
+    // 4. PAGE FADE-IN + SHRINK HOME BUTTON
     // ———————————————————————————————————
     setTimeout(() => {
       document.getElementById('page').classList.add('fade-in-page');
