@@ -31,6 +31,9 @@
 
 #### 11/12
 - **11/13** Added a reviewer for questionnaire(not done) 
+- Added Questionnaire reviewer (done 11/13)
+- Added initial files for reviewer.html
+- (updated readme.md)
 
 *(Progress: ~80% as of November 12, 2025. Check the [live site](https://marwinlopezjrxD.github.io/html_css/questionnaire.html) for interactive updates!)*
 
@@ -48,14 +51,11 @@
 ## December
 - **12/11**: Quotes Generator
 
-
 ---
 
 ## Q1 2026
-
 - **01/07**: Color of Hue
-
-- **02/12**: First Project Prep
+- **02/16**: First Project Prep
 
 **First Project Deadline: `05/31/26`**
 
