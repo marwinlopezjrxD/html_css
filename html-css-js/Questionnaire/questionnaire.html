@@ -44,14 +44,26 @@
         <li><input type="radio" name="q3" id="q3c" value="Bill Gates"><label for="q3c" class="questionOptions">Bill Gates</label></li>
       </ol>
 
-      <!-- QUESTION 4 -->
+      <!-- QUESTION 4 - FIXED: Use real < and " in value -->
       <p><strong>Question 4:</strong> Which of the following snippet for HTML Images tag is correct?</p>
       <ol type="a">
-        <li><input type="radio" name="q4" id="q4a" value="&lt;img src=&quot;w3schools.jpg&quot; alt=&quot;W3Schools.com&quot; width=&quot;104&quot; height=&quot;142&quot;&gt;"><label for="q4a" class="questionOptions">
-          &lt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&gt;
-        </label></li>
-        <li><input type="radio" name="q4" id="q4b" value="img src=&quot;w3schools.jpg&quot; alt=&quot;W3Schools.com&quot; width=&quot;104&quot; height=&quot;142&quot;"><label for="q4b" class="questionOptions">img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"</label></li>
-        <li><input type="radio" name="q4" id="q4c" value="&gt;img src=&quot;w3schools.jpg&quot; alt=&quot;W3Schools.com&quot; width=&quot;104&quot; height=&quot;142&quot;&lt;"><label for="q4c" class="questionOptions">&gt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&lt;</label></li>
+        <li>
+          <input type="radio" name="q4" id="q4a" 
+                 value='<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">'>
+          <label for="q4a" class="questionOptions">
+            &lt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&gt;
+          </label>
+        </li>
+        <li>
+          <input type="radio" name="q4" id="q4b" 
+                 value='img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"'>
+          <label for="q4b" class="questionOptions">img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"</label>
+        </li>
+        <li>
+          <input type="radio" name="q4" id="q4c" 
+                 value='>img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"<'>
+          <label for="q4c" class="questionOptions">&gt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&lt;</label>
+        </li>
       </ol>
 
       <!-- QUESTION 5 -->
@@ -206,12 +218,12 @@
     // ———————————————————————————————————
     // 1. GET ALL IMPORTANT ELEMENTS
     // ———————————————————————————————————
-    const openConfirm = document.getElementById("openConfirm");   // Submit button
-    const confirmBox   = document.getElementById("confirmBox");   // Popup
-    const confirmYes   = document.getElementById("confirmYes");   // Yes → submit
-    const confirmNo    = document.getElementById("confirmNo");    // No → cancel
-    const container    = document.querySelector(".questionnaireContainer"); // Scrollable area
-    const returnTop    = document.getElementById("returnTop");    // Back to top button
+    const openConfirm = document.getElementById("openConfirm");
+    const confirmBox   = document.getElementById("confirmBox");
+    const confirmYes   = document.getElementById("confirmYes");
+    const confirmNo    = document.getElementById("confirmNo");
+    const container    = document.querySelector(".questionnaireContainer");
+    const returnTop    = document.getElementById("returnTop");
 
     // ———————————————————————————————————
     // 2. SHOW/HIDE "RETURN TO TOP" BUTTON
@@ -236,17 +248,17 @@
     });
 
     // ———————————————————————————————————
-    // 4. SUBMIT → CALCULATE SCORE → SAVE → GO TO REVIEWER
+    // 4. SUBMIT → CALCULATE SCORE → SAVE → GO TO QUIZRESULT
     // ———————————————————————————————————
     confirmYes.addEventListener("click", () => {
       confirmBox.style.display = "none";
 
-      // ——— Correct answers (must match label text exactly) ———
+      // ——— Correct answers: MUST MATCH answersheet.html EXACTLY ———
       const correctAnswers = {
         q1:  "HyperText Markup Language",
         q2:  "HTML <a> href Attribute",
         q3:  "Tim Berners-Lee",
-        q4:  "&lt;img src=&quot;w3schools.jpg&quot; alt=&quot;W3Schools.com&quot; width=&quot;104&quot; height=&quot;142&quot;&gt;",
+        q4:  '<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">',  // FIXED
         q5:  "&lt;br&gt;",
         q6:  "&lt;style&gt;",
         q7:  "&lt;strong&gt; or &lt;b&gt;",
@@ -275,9 +287,9 @@
       }
 
       localStorage.setItem('quizScore', score);
-      // ——— Redirect to result page ———
+
       setTimeout(() => {
-        window.location.href = "quizResult.html"; // Now goes to quizResult.html
+        window.location.href = "quizResult.html"; // Redirect to result page
       }, 300);
     });
   </script>
