@@ -3,36 +3,302 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quiz Reviewer</title>
+  <title>HTML/CSS Reviewer</title>
+  <!-- Use your shared style.css -->
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Extra styles for clarity and beauty */
+    .review-container { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+    .question-block { 
+      background: #f9f9fb; 
+      padding: 1.5rem; 
+      margin-bottom: 1.5rem; 
+      border-radius: 12px; 
+      border-left: 5px solid #007bff; 
+    }
+    .question-text { font-size: 1.1rem; font-weight: 600; color: #333; margin-bottom: 0.8rem; }
+    .answer-list { list-style: lower-alpha; padding-left: 1.5rem; }
+    .answer-list li { margin: 0.5rem 0; }
+    .correct-answer { 
+      font-weight: bold; 
+      color: #28a745; 
+      background: #d4edda; 
+      padding: 0.4rem 0.8rem; 
+      border-radius: 6px; 
+      display: inline-block; 
+      margin-top: 0.8rem; 
+    }
+    .explanation { 
+      font-style: italic; 
+      color: #555; 
+      margin-top: 0.8rem; 
+      font-size: 0.95rem; 
+      line-height: 1.5; 
+    }
+    .page-title { text-align: center; color: #007bff; margin-bottom: 0.5rem; }
+    .page-subtitle { text-align: center; color: #666; font-size: 1rem; margin-bottom: 2rem; }
+  </style>
 </head>
 <body>
   <div class="page-container" id="page">
     <header>
-      <h1>Quiz Reviewer</h1>
-      <p class="subtitle">Your final score</p>
+      <h1 class="page-title">HTML & CSS Reviewer</h1>
+      <p class="page-subtitle">Master the basics — one question at a time</p>
     </header>
 
-    <!-- NAVIGATION -->
+    <!-- ====================== NAVIGATION ====================== -->
     <nav>
       <ul>
         <li><a href="../index.html">Homepage</a></li>
         <li><a href="questionnaire.html">Take Quiz</a></li>
-        <li><a href="quizResult.html">See Full Results</a></li>
+        <li><a href="quizResult.html">View Results</a></li>
         <li><a href="answersheet.html" target="_blank">Answer Sheet</a></li>
       </ul>
     </nav>
 
-    <!-- SCORE CARD -->
-    <div class="score-card" id="scoreCard">
-      <strong>Your Score: <span id="scoreDisplay">?/20</span></strong>
-      <p id="resultText">Loading…</p>
-    </div>
+    <!-- ====================== REVIEW CONTENT ====================== -->
+    <div class="review-container">
 
-    <!-- SIMPLE MESSAGE -->
-    <div style="text-align:center; margin:40px 0; color:#555;">
-      <p>Only your score is shown here.</p>
-      <p><a href="quizResult.html">View full results</a></p>
+      <!-- QUESTION 1 -->
+      <div class="question-block">
+        <div class="question-text">1. What does HTML stand for?</div>
+        <ol class="answer-list">
+          <li>How to Make Lumpia</li>
+          <li><strong>HyperText Markup Language</strong></li>
+          <li>How to Make Loop</li>
+        </ol>
+        <div class="correct-answer">HyperText Markup Language</div>
+        <p class="explanation">HTML is the standard language used to create and structure web pages.</p>
+      </div>
+
+      <!-- QUESTION 2 -->
+      <div class="question-block">
+        <div class="question-text">2. What does "&lt;a&gt;" stand for?</div>
+        <ol class="answer-list">
+          <li><strong>HTML &lt;a&gt; href Attribute</strong></li>
+          <li>HTML &lt;a&gt; align Attribute</li>
+          <li>HTML &lt;a&gt; alink Attribute</li>
+        </ol>
+        <div class="correct-answer">HTML &lt;a&gt; href Attribute</div>
+        <p class="explanation">The <code>&lt;a&gt;</code> tag with <code>href</code> creates clickable hyperlinks.</p>
+      </div>
+
+      <!-- QUESTION 3 -->
+      <div class="question-block">
+        <div class="question-text">3. Who first invented HTML?</div>
+        <ol class="answer-list">
+          <li><strong>Tim Berners-Lee</strong></li>
+          <li>Mark Zuckerberg</li>
+          <li>Bill Gates</li>
+        </ol>
+        <div class="correct-answer">Tim Berners-Lee</div>
+        <p class="explanation">He invented HTML in 1989 while working at CERN to share documents.</p>
+      </div>
+
+      <!-- QUESTION 4 -->
+      <div class="question-block">
+        <div class="question-text">4. Which is the correct HTML image tag?</div>
+        <ol class="answer-list">
+          <li><strong>&lt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&gt;</strong></li>
+          <li>img src="..." (no &lt;img&gt;)</li>
+          <li>&gt;img ... &lt; (backwards)</li>
+        </ol>
+        <div class="correct-answer">&lt;img src="..." alt="..." width="..." height="..."&gt;</div>
+        <p class="explanation">The <code>&lt;img&gt;</code> tag needs <code>src</code> and <code>alt</code> for accessibility.</p>
+      </div>
+
+      <!-- QUESTION 5 -->
+      <div class="question-block">
+        <div class="question-text">5. Correct HTML element for a line break?</div>
+        <ol class="answer-list">
+          <li>&lt;break&gt;</li>
+          <li><strong>&lt;br&gt;</strong></li>
+          <li>&lt;lb&gt;</li>
+        </ol>
+        <div class="correct-answer">&lt;br&gt;</div>
+        <p class="explanation"><code>&lt;br&gt;</code> forces a new line without creating a new paragraph.</p>
+      </div>
+
+      <!-- QUESTION 6 -->
+      <div class="question-block">
+        <div class="question-text">6. Which tag defines an internal style sheet?</div>
+        <ol class="answer-list">
+          <li><strong>&lt;style&gt;</strong></li>
+          <li>&lt;css&gt;</li>
+          <li>&lt;script&gt;</li>
+        </ol>
+        <div class="correct-answer">&lt;style&gt;</div>
+        <p class="explanation">CSS inside <code>&lt;style&gt;</code> in the <code>&lt;head&gt;</code> applies to the whole page.</p>
+      </div>
+
+      <!-- QUESTION 7 -->
+      <div class="question-block">
+        <div class="question-text">7. How do you make text bold in HTML?</div>
+        <ol class="answer-list">
+          <li><strong>&lt;strong&gt; or &lt;b&gt;</strong></li>
+          <li>&lt;bold&gt;</li>
+          <li>&lt;em&gt;</li>
+        </ol>
+        <div class="correct-answer">&lt;strong&gt; or &lt;b&gt;</div>
+        <p class="explanation"><code>&lt;strong&gt;</code> is semantic (important), <code>&lt;b&gt;</code> is visual only.</p>
+      </div>
+
+      <!-- QUESTION 8 -->
+      <div class="question-block">
+        <div class="question-text">8. CSS property to change background color?</div>
+        <ol class="answer-list">
+          <li>color</li>
+          <li><strong>background-color</strong></li>
+          <li>bgcolor</li>
+        </ol>
+        <div class="correct-answer">background-color</div>
+        <p class="explanation">Use <code>background-color: red;</code> to fill an element’s background.</p>
+      </div>
+
+      <!-- QUESTION 9 -->
+      <div class="question-block">
+        <div class="question-text">9. Correct CSS to make paragraph text red?</div>
+        <ol class="answer-list">
+          <li>p {text-color: red;}</li>
+          <li><strong>p {color: red;}</strong></li>
+          <li>p {font-color: red;}</li>
+        </ol>
+        <div class="correct-answer">p {color: red;}</div>
+        <p class="explanation">The <code>color</code> property changes text color in CSS.</p>
+      </div>
+
+      <!-- QUESTION 10 -->
+      <div class="question-block">
+        <div class="question-text">10. Which CSS property changes the font?</div>
+        <ol class="answer-list">
+          <li>font-style</li>
+          <li><strong>font-family</strong></li>
+          <li>font-weight</li>
+        </ol>
+        <div class="correct-answer">font-family</div>
+        <p class="explanation"><code>font-family: Arial, sans-serif;</code> sets the typeface.</p>
+      </div>
+
+      <!-- QUESTION 11 -->
+      <div class="question-block">
+        <div class="question-text">11. Largest heading in HTML?</div>
+        <ol class="answer-list">
+          <li>&lt;heading&gt;</li>
+          <li><strong>&lt;h1&gt;</strong></li>
+          <li>&lt;head&gt;</li>
+        </ol>
+        <div class="correct-answer">&lt;h1&gt;</div>
+        <p class="explanation"><code>&lt;h1&gt;</code> is the most important heading; <code>&lt;h6&gt;</code> is smallest.</p>
+      </div>
+
+      <!-- QUESTION 12 -->
+      <div class="question-block">
+        <div class="question-text">12. Correct element for a paragraph?</div>
+        <ol class="answer-list">
+          <li>&lt;pg&gt;</li>
+          <li><strong>&lt;p&gt;</strong></li>
+          <li>&lt;para&gt;</li>
+        </ol>
+        <div class="correct-answer">&lt;p&gt;</div>
+        <p class="explanation"><code>&lt;p&gt;</code> defines a block of text as a paragraph.</p>
+      </div>
+
+      <!-- QUESTION 13 -->
+      <div class="question-block">
+        <div class="question-text">13. Tag to define a hyperlink?</div>
+        <ol class="answer-list">
+          <li><strong>&lt;a&gt;</strong></li>
+          <li>&lt;link&gt;</li>
+          <li>&lt;hyper&gt;</li>
+        </ol>
+        <div class="correct-answer">&lt;a&gt;</div>
+        <p class="explanation"><code>&lt;a href="..."&gt;</code> creates clickable links.</p>
+      </div>
+
+      <!-- QUESTION 14 -->
+      <div class="question-block">
+        <div class="question-text">14. Attribute for image alternate text?</div>
+        <ol class="answer-list">
+          <li>title</li>
+          <li><strong>alt</strong></li>
+          <li>src</li>
+        </ol>
+        <div class="correct-answer">alt</div>
+        <p class="explanation"><code>alt</code> text shows if image fails and helps screen readers.</p>
+      </div>
+
+      <!-- QUESTION 15 -->
+      <div class="question-block">
+        <div class="question-text">15. CSS property to control text size?</div>
+        <ol class="answer-list">
+          <li><strong>font-size</strong></li>
+          <li>text-style</li>
+          <li>font-weight</li>
+        </ol>
+        <div class="correct-answer">font-size</div>
+        <p class="explanation">Use <code>font-size: 16px;</code> to set text size.</p>
+      </div>
+
+      <!-- QUESTION 16 -->
+      <div class="question-block">
+        <div class="question-text">16. CSS property for inner spacing?</div>
+        <ol class="answer-list">
+          <li>margin</li>
+          <li><strong>padding</strong></li>
+          <li>spacing</li>
+        </ol>
+        <div class="correct-answer">padding</div>
+        <p class="explanation"><code>padding</code> adds space inside the border, <code>margin</code> outside.</p>
+      </div>
+
+      <!-- QUESTION 17 -->
+      <div class="question-block">
+        <div class="question-text">17. What does CSS stand for?</div>
+        <ol class="answer-list">
+          <li>Creative Style Sheets</li>
+          <li><strong>Cascading Style Sheets</strong></li>
+          <li>Computer Style Sheets</li>
+        </ol>
+        <div class="correct-answer">Cascading Style Sheets</div>
+        <p class="explanation">CSS controls the look and layout of HTML elements.</p>
+      </div>
+
+      <!-- QUESTION 18 -->
+      <div class="question-block">
+        <div class="question-text">18. CSS property to align text?</div>
+        <ol class="answer-list">
+          <li><strong>text-align</strong></li>
+          <li>alignment</li>
+          <li>font-align</li>
+        </ol>
+        <div class="correct-answer">text-align</div>
+        <p class="explanation">Use <code>text-align: center;</code> to center text horizontally.</p>
+      </div>
+
+      <!-- QUESTION 19 -->
+      <div class="question-block">
+        <div class="question-text">19. How to make a bullet list in HTML?</div>
+        <ol class="answer-list">
+          <li><strong>&lt;ul&gt;</strong></li>
+          <li>&lt;ol&gt;</li>
+          <li>&lt;list&gt;</li>
+        </ol>
+        <div class="correct-answer">&lt;ul&gt;</div>
+        <p class="explanation"><code>&lt;ul&gt;</code> = unordered (bullets), <code>&lt;ol&gt;</code> = ordered (numbers).</p>
+      </div>
+
+      <!-- QUESTION 20 -->
+      <div class="question-block">
+        <div class="question-text">20. CSS property for line spacing?</div>
+        <ol class="answer-list">
+          <li>line-spacing</li>
+          <li><strong>line-height</strong></li>
+          <li>letter-spacing</li>
+        </ol>
+        <div class="correct-answer">line-height</div>
+        <p class="explanation"><code>line-height: 1.6;</code> controls space between lines of text.</p>
+      </div>
+
     </div>
 
     <footer>
@@ -40,33 +306,14 @@
     </footer>
   </div>
 
-  <!-- HOME BUTTON -->
+  <!-- ====================== HOME BUTTON ====================== -->
   <a href="../index.html" class="home-button" id="homeBtn">
     <span>Home</span>
   </a>
 
-  <!-- SCRIPT -->
+  <!-- ====================== PAGE EFFECTS ====================== -->
   <script>
-    // Get score from localStorage
-    const userScore = parseInt(localStorage.getItem('quizScore')) || 0;
-    const total = 20;
-    const pass = 14;
-
-    document.getElementById('scoreDisplay').textContent = `${userScore}/${total}`;
-    const result = document.getElementById('resultText');
-    const card = document.getElementById('scoreCard');
-
-    if (userScore >= pass) {
-      card.classList.add('pass');
-      result.textContent = 'PASSED!';
-      result.style.color = '#28a745';
-    } else {
-      card.classList.add('fail');
-      result.textContent = 'FAILED. Try again!';
-      result.style.color = '#dc3545';
-    }
-
-    // Fade in
+    // Fade in page
     setTimeout(() => document.getElementById('page').classList.add('fade-in-page'), 100);
 
     // Shrink home button on scroll
