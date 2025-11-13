@@ -76,7 +76,7 @@ Javascript Basics Practice
 API Integration
 
 ## Q4 2026
-Prep for Second Project (PC Builder)
+Prep for Second Project (PC Builder with Chat Bot Assistant)
 
 ---
 
