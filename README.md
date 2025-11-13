@@ -24,6 +24,7 @@
 - Final touches
 - **11/09**: Completed Div practice site in `Free Website` folder
 - **11/10**: Completed Questionnaire updates
+- **11/14**: Completed reviewer, retake and results functionalities
 
 #### 11/10
 - Added open-source, free-to-use links to `Links Practice` (done 11/09)
