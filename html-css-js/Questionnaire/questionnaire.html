@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Questionnaire</title>
-  <!-- Load your shared CSS file (one level up) -->
+  <!-- Load shared CSS (one folder up) -->
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body id="top">
@@ -13,7 +13,7 @@
   <h2>Questionnaire</h2>
   <h3>Choose the correct answer</h3>
 
-  <!-- Button to go to reviewer (optional, can stay) -->
+  <!-- Optional button to go to reviewer -->
   <h1><a href="reviewer.html"><button>Go to Reviewer</button></a></h1>
 
   <!-- ====================== QUIZ FORM ====================== -->
@@ -23,9 +23,9 @@
       <!-- QUESTION 1 -->
       <p id="question1"><strong>Question 1:</strong> What does HTML stand for?</p>
       <ol type="a">
-        <li><input type="radio" name="q1" id="q1a" value="HowToMakeLumpia"><label for="q1a" class="questionOptions">How to Make Lumpia</label></li>
+        <li><input type="radio" name="q1" id="q1a" value="How to Make Lumpia"><label for="q1a" class="questionOptions">How to Make Lumpia</label></li>
         <li><input type="radio" name="q1" id="q1b" value="HyperText Markup Language"><label for="q1b" class="questionOptions">HyperText Markup Language</label></li>
-        <li><input type="radio" name="q1" id="q1c" value="HowToMakeLoop"><label for="q1c" class="questionOptions">How to Make Loop</label></li>
+        <li><input type="radio" name="q1" id="q1c" value="How to Make Loop"><label for="q1c" class="questionOptions">How to Make Loop</label></li>
       </ol>
 
       <!-- QUESTION 2 -->
@@ -36,9 +36,145 @@
         <li><input type="radio" name="q2" id="q2c" value="HTML <a> alink Attribute"><label for="q2c" class="questionOptions">HTML &lt;a&gt; alink Attribute</label></li>
       </ol>
 
-      <!-- ... (Questions 3–19 are the same — keep your current ones) ... -->
+      <!-- QUESTION 3 -->
+      <p><strong>Question 3:</strong> Who first invented HTML?</p>
+      <ol type="a">
+        <li><input type="radio" name="q3" id="q3a" value="Tim Berners-Lee"><label for="q3a" class="questionOptions">Tim Berners-Lee</label></li>
+        <li><input type="radio" name="q3" id="q3b" value="Mark Zuckerberg"><label for="q3b" class="questionOptions">Mark Zuckerberg</label></li>
+        <li><input type="radio" name="q3" id="q3c" value="Bill Gates"><label for="q3c" class="questionOptions">Bill Gates</label></li>
+      </ol>
 
-      <!-- QUESTION 20 (last one) -->
+      <!-- QUESTION 4 -->
+      <p><strong>Question 4:</strong> Which of the following snippet for HTML Images tag is correct?</p>
+      <ol type="a">
+        <li><input type="radio" name="q4" id="q4a" value="&lt;img src=&quot;w3schools.jpg&quot; alt=&quot;W3Schools.com&quot; width=&quot;104&quot; height=&quot;142&quot;&gt;"><label for="q4a" class="questionOptions">
+          &lt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&gt;
+        </label></li>
+        <li><input type="radio" name="q4" id="q4b" value="img src=&quot;w3schools.jpg&quot; alt=&quot;W3Schools.com&quot; width=&quot;104&quot; height=&quot;142&quot;"><label for="q4b" class="questionOptions">img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"</label></li>
+        <li><input type="radio" name="q4" id="q4c" value="&gt;img src=&quot;w3schools.jpg&quot; alt=&quot;W3Schools.com&quot; width=&quot;104&quot; height=&quot;142&quot;&lt;"><label for="q4c" class="questionOptions">&gt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&lt;</label></li>
+      </ol>
+
+      <!-- QUESTION 5 -->
+      <p><strong>Question 5:</strong> What is the correct HTML element for inserting a line break?</p>
+      <ol type="a">
+        <li><input type="radio" name="q5" id="q5a" value="&lt;break&gt;"><label for="q5a" class="questionOptions">&lt;break&gt;</label></li>
+        <li><input type="radio" name="q5" id="q5b" value="&lt;br&gt;"><label for="q5b" class="questionOptions">&lt;br&gt;</label></li>
+        <li><input type="radio" name="q5" id="q5c" value="&lt;lb&gt;"><label for="q5c" class="questionOptions">&lt;lb&gt;</label></li>
+      </ol>
+
+      <!-- QUESTION 6 -->
+      <p><strong>Question 6:</strong> Which HTML tag is used to define an internal style sheet?</p>
+      <ol type="a">
+        <li><input type="radio" name="q6" id="q6a" value="&lt;style&gt;"><label for="q6a" class="questionOptions">&lt;style&gt;</label></li>
+        <li><input type="radio" name="q6" id="q6b" value="&lt;css&gt;"><label for="q6b" class="questionOptions">&lt;css&gt;</label></li>
+        <li><input type="radio" name="q6" id="q6c" value="&lt;script&gt;"><label for="q6c" class="questionOptions">&lt;script&gt;</label></li>
+      </ol>
+
+      <!-- QUESTION 7 -->
+      <p><strong>Question 7:</strong> How do you make text bold in HTML?</p>
+      <ol type="a">
+        <li><input type="radio" name="q7" id="q7a" value="&lt;strong&gt; or &lt;b&gt;"><label for="q7a" class="questionOptions">&lt;strong&gt; or &lt;b&gt;</label></li>
+        <li><input type="radio" name="q7" id="q7b" value="&lt;bold&gt;"><label for="q7b" class="questionOptions">&lt;bold&gt;</label></li>
+        <li><input type="radio" name="q7" id="q7c" value="&lt;em&gt;"><label for="q7c" class="questionOptions">&lt;em&gt;</label></li>
+      </ol>
+
+      <!-- QUESTION 8 -->
+      <p><strong>Question 8:</strong> Which CSS property is used to change the background color of an element?</p>
+      <ol type="a">
+        <li><input type="radio" name="q8" id="q8a" value="color"><label for="q8a" class="questionOptions">color</label></li>
+        <li><input type="radio" name="q8" id="q8b" value="background-color"><label for="q8b" class="questionOptions">background-color</label></li>
+        <li><input type="radio" name="q8" id="q8c" value="bgcolor"><label for="q8c" class="questionOptions">bgcolor</label></li>
+      </ol>
+
+      <!-- QUESTION 9 -->
+      <p><strong>Question 9:</strong> What is the correct CSS syntax to make all paragraph text red?</p>
+      <ol type="a">
+        <li><input type="radio" name="q9" id="q9a" value="p {text-color: red;}"><label for="q9a" class="questionOptions">p {text-color: red;}</label></li>
+        <li><input type="radio" name="q9" id="q9b" value="p {color: red;}"><label for="q9b" class="questionOptions">p {color: red;}</label></li>
+        <li><input type="radio" name="q9" id="q9c" value="p {font-color: red;}"><label for="q9c" class="questionOptions">p {font-color: red;}</label></li>
+      </ol>
+
+      <!-- QUESTION 10 -->
+      <p><strong>Question 10:</strong> Which property is used to change the font of an element in CSS?</p>
+      <ol type="a">
+        <li><input type="radio" name="q10" id="q10a" value="font-style"><label for="q10a" class="questionOptions">font-style</label></li>
+        <li><input type="radio" name="q10" id="q10b" value="font-family"><label for="q10b" class="questionOptions">font-family</label></li>
+        <li><input type="radio" name="q10" id="q10c" value="font-weight"><label for="q10c" class="questionOptions">font-weight</label></li>
+      </ol>
+
+      <!-- QUESTION 11 -->
+      <p><strong>Question 11:</strong> Which HTML element is used for the largest heading?</p>
+      <ol type="a">
+        <li><input type="radio" name="q11" id="q11a" value="&lt;heading&gt;"><label for="q11a" class="questionOptions">&lt;heading&gt;</label></li>
+        <li><input type="radio" name="q11" id="q11b" value="&lt;h1&gt;"><label for="q11b" class="questionOptions">&lt;h1&gt;</label></li>
+        <li><input type="radio" name="q11" id="q11c" value="&lt;head&gt;"><label for="q11c" class="questionOptions">&lt;head&gt;</label></li>
+      </ol>
+
+      <!-- QUESTION 12 -->
+      <p><strong>Question 12:</strong> What is the correct HTML element for inserting a paragraph?</p>
+      <ol type="a">
+        <li><input type="radio" name="q12" id="q12a" value="&lt;pg&gt;"><label for="q12a" class="questionOptions">&lt;pg&gt;</label></li>
+        <li><input type="radio" name="q12" id="q12b" value="&lt;p&gt;"><label for="q12b" class="questionOptions">&lt;p&gt;</label></li>
+        <li><input type="radio" name="q12" id="q12c" value="&lt;para&gt;"><label for="q12c" class="questionOptions">&lt;para&gt;</label></li>
+      </ol>
+
+      <!-- QUESTION 13 -->
+      <p><strong>Question 13:</strong> Which HTML tag is used to define a hyperlink?</p>
+      <ol type="a">
+        <li><input type="radio" name="q13" id="q13a" value="&lt;a&gt;"><label for="q13a" class="questionOptions">&lt;a&gt;</label></li>
+        <li><input type="radio" name="q13" id="q13b" value="&lt;link&gt;"><label for="q13b" class="questionOptions">&lt;link&gt;</label></li>
+        <li><input type="radio" name="q13" id="q13c" value="&lt;hyper&gt;"><label for="q13c" class="questionOptions">&lt;hyper&gt;</label></li>
+      </ol>
+
+      <!-- QUESTION 14 -->
+      <p><strong>Question 14:</strong> Which HTML attribute specifies an alternate text for an image?</p>
+      <ol type="a">
+        <li><input type="radio" name="q14" id="q14a" value="title"><label for="q14a" class="questionOptions">title</label></li>
+        <li><input type="radio" name="q14" id="q14b" value="alt"><label for="q14b" class="questionOptions">alt</label></li>
+        <li><input type="radio" name="q14" id="q14c" value="src"><label for="q14c" class="questionOptions">src</label></li>
+      </ol>
+
+      <!-- QUESTION 15 -->
+      <p><strong>Question 15:</strong> Which CSS property controls the text size?</p>
+      <ol type="a">
+        <li><input type="radio" name="q15" id="q15a" value="font-size"><label for="q15a" class="questionOptions">font-size</label></li>
+        <li><input type="radio" name="q15" id="q15b" value="text-style"><label for="q15b" class="questionOptions">text-style</label></li>
+        <li><input type="radio" name="q15" id="q15c" value="font-weight"><label for="q15c" class="questionOptions">font-weight</label></li>
+      </ol>
+
+      <!-- QUESTION 16 -->
+      <p><strong>Question 16:</strong> Which CSS property adds space inside an element's border?</p>
+      <ol type="a">
+        <li><input type="radio" name="q16" id="q16a" value="margin"><label for="q16a" class="questionOptions">margin</label></li>
+        <li><input type="radio" name="q16" id="q16b" value="padding"><label for="q16b" class="questionOptions">padding</label></li>
+        <li><input type="radio" name="q16" id="q16c" value="spacing"><label for="q16c" class="questionOptions">spacing</label></li>
+      </ol>
+
+      <!-- QUESTION 17 -->
+      <p><strong>Question 17:</strong> What does CSS stand for?</p>
+      <ol type="a">
+        <li><input type="radio" name="q17" id="q17a" value="Creative Style Sheets"><label for="q17a" class="questionOptions">Creative Style Sheets</label></li>
+        <li><input type="radio" name="q17" id="q17b" value="Cascading Style Sheets"><label for="q17b" class="questionOptions">Cascading Style Sheets</label></li>
+        <li><input type="radio" name="q17" id="q17c" value="Computer Style Sheets"><label for="q17c" class="questionOptions">Computer Style Sheets</label></li>
+      </ol>
+
+      <!-- QUESTION 18 -->
+      <p><strong>Question 18:</strong> Which property is used to align text in CSS?</p>
+      <ol type="a">
+        <li><input type="radio" name="q18" id="q18a" value="text-align"><label for="q18a" class="questionOptions">text-align</label></li>
+        <li><input type="radio" name="q18" id="q18b" value="alignment"><label for="q18b" class="questionOptions">alignment</label></li>
+        <li><input type="radio" name="q18" id="q18c" value="font-align"><label for="q18c" class="questionOptions">font-align</label></li>
+      </ol>
+
+      <!-- QUESTION 19 -->
+      <p><strong>Question 19:</strong> How do you make a list with bullets in HTML?</p>
+      <ol type="a">
+        <li><input type="radio" name="q19" id="q19a" value="&lt;ul&gt;"><label for="q19a" class="questionOptions">&lt;ul&gt;</label></li>
+        <li><input type="radio" name="q19" id="q19b" value="&lt;ol&gt;"><label for="q19b" class="questionOptions">&lt;ol&gt;</label></li>
+        <li><input type="radio" name="q19" id="q19c" value="&lt;list&gt;"><label for="q19c" class="questionOptions">&lt;list&gt;</label></li>
+      </ol>
+
+      <!-- QUESTION 20 -->
       <p><strong>Question 20:</strong> Which CSS property is used to set the space between lines of text?</p>
       <ol type="a">
         <li><input type="radio" name="q20" id="q20a" value="line-spacing"><label for="q20a" class="questionOptions">line-spacing</label></li>
@@ -81,12 +217,10 @@
     // 2. SHOW/HIDE "RETURN TO TOP" BUTTON
     // ———————————————————————————————————
     container.addEventListener("scroll", () => {
-      // Show button only when scrolled down > 200px
       returnTop.classList.toggle("show", container.scrollTop > 200);
     });
 
     returnTop.addEventListener("click", () => {
-      // Smooth scroll back to top
       container.scrollTo({ top: 0, behavior: "smooth" });
     });
 
@@ -94,25 +228,25 @@
     // 3. OPEN / CLOSE CONFIRMATION POPUP
     // ———————————————————————————————————
     openConfirm.addEventListener("click", () => {
-      confirmBox.style.display = "flex"; // Show popup
+      confirmBox.style.display = "flex";
     });
 
     confirmNo.addEventListener("click", () => {
-      confirmBox.style.display = "none"; // Hide popup
+      confirmBox.style.display = "none";
     });
 
     // ———————————————————————————————————
     // 4. SUBMIT → CALCULATE SCORE → SAVE → GO TO REVIEWER
     // ———————————————————————————————————
     confirmYes.addEventListener("click", () => {
-      confirmBox.style.display = "none"; // Hide popup
+      confirmBox.style.display = "none";
 
-      // ——— Correct answers (must match the label text exactly) ———
+      // ——— Correct answers (must match label text exactly) ———
       const correctAnswers = {
         q1:  "HyperText Markup Language",
         q2:  "HTML <a> href Attribute",
         q3:  "Tim Berners-Lee",
-        q4:  "&lt;img src=\"w3schools.jpg\" alt=\"W3Schools.com\" width=\"104\" height=\"142\"&gt;",
+        q4:  "&lt;img src=&quot;w3schools.jpg&quot; alt=&quot;W3Schools.com&quot; width=&quot;104&quot; height=&quot;142&quot;&gt;",
         q5:  "&lt;br&gt;",
         q6:  "&lt;style&gt;",
         q7:  "&lt;strong&gt; or &lt;b&gt;",
@@ -131,20 +265,17 @@
         q20: "line-height"
       };
 
-      let score = 0; // Count correct answers
+      let score = 0;
 
-      // ——— Loop through each question ———
-      for (const [question, correct] of Object.entries(correctAnswers)) {
-        const selected = document.querySelector(`input[name="${question}"]:checked`);
+      for (const [q, correct] of Object.entries(correctAnswers)) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
         if (selected && selected.value === correct) {
-          score++; // +1 if correct
+          score++;
         }
       }
 
-      // ——— Save score to browser (so reviewer can read it) ———
       localStorage.setItem('quizScore', score);
 
-      // ——— Redirect to reviewer after small delay (smooth) ———
       setTimeout(() => {
         window.location.href = "reviewer.html";
       }, 300);
