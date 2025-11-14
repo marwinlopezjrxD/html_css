@@ -32,10 +32,10 @@
 
 #### 11/12
 - Added Questionnaire reviewer (done 11/13)
-- Added initial files for reviewer.html
+- Added initial files for reviewer.html(done 11/14)
 
 ### 11/14
-- Proofread all files, except style.css files(not done)
+- Proofread all files, except style.css files(done 3%)
 
 *(Progress: ~80% as of November 12, 2025. Check the [live site](https://marwinlopezjrxD.github.io/html_css/questionnaire.html) for interactive updates!)*
 
@@ -46,25 +46,22 @@
 
 | Activity | Dates         | Theme            | Tasks |
 |----------|---------------|------------------|-------|
-| #1       | 11/19 – 11/25 | Andromeda        | Galaxy-focused design with planets, stars, comets, meteorites. Use all free online resources. |
-| #2       | 12/11 – 12/17 | Quotes Generator | Responsive generator with 500+ quotes. Search via API or compile manually. |
-| #3       | 01/07 – 01/15 | Color of Hue     | RGB-focused design. Generate up to 7 color combos (e.g., Yellow + Blue = Green). |
-
-## December
-- **12/11**: Quotes Generator
+| #1       | 12/01 – 12/10 | Andromeda        | Galaxy-focused design with planets, stars, comets, meteorites. Use all free online resources. |
+| #2       | 01/07 – 01/15 | Quotes Generator | Responsive generator with 500+ quotes. Search via API or compile manually. |
+| #3       | 02/16 – 01/24 | Color of Hue     | RGB-focused design. Generate up to 7 color combos (e.g., Yellow + Blue = Green). |
 
 ---
 
 ## Q1 2026
 
 ### January
-- **01/07**: Activity # 3: Color of Hue
+- **01/07** Activity # 2: Quotes Generator
 
 ### February
-- **02/16** First Project Prep Phase
+- **02/16** Activity # 3: Color of Hue
 
 ### March
-- **TBD**
+- **03/12** First Project Prep
 
 ### April
 - **TBD**
