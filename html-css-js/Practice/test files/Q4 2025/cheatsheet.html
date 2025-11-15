@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My HTML & CSS Cheat Sheet</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7fb;
+      color: #333;
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 { text-align: center; color: #007bff; margin-bottom: 0.5rem; }
+    h2 { color: #28a745; border-bottom: 2px solid #28a745; padding-bottom: 0.5rem; }
+    h3 { color: #0056b3; margin-top: 1.5rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 0.8rem;
+      text-align: left;
+    }
+    th {
+      background: #007bff;
+      color: white;
+    }
+    tr:nth-child(even) { background: #f9f9f9; }
+    code {
+      background: #eee;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+    }
+    .tip {
+      background: #d4edda;
+      border-left: 5px solid #28a745;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+    @media print {
+      body { padding: 1rem; }
+      .tip { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My HTML & CSS Cheat Sheet</h1>
+    <p style="text-align:center; color:#666;">Everything I used in my Quiz App — Print & Keep!</p>
+
+    <!-- HTML TAGS -->
+    <h2>HTML Tags I Used</h2>
+    <table>
+      <tr><th>Tag</th><th>Purpose</th><th>Example</th></tr>
+      <tr><td><code>&lt;h1&gt; - &lt;h6&gt;</code></td><td>Headings</td><td><code>&lt;h2&gt;Quiz&lt;/h2&gt;</code></td></tr>
+      <tr><td><code>&lt;p&gt;</code></td><td>Paragraph</td><td><code>&lt;p&gt;Choose one...&lt;/p&gt;</code></td></tr>
+      <tr><td><code>&lt;ol type="a"&gt;</code></td><td>Ordered list (a, b, c)</td><td><code>&lt;ol type="a"&gt;</code></td></tr>
+      <tr><td><code>&lt;li&gt;</code></td><td>List item</td><td><code>&lt;li&gt;&lt;input&gt; Option&lt;/li&gt;</code></td></tr>
+      <tr><td><code>&lt;input type="radio"&gt;</code></td><td>Radio button</td><td><code>name="q1"</code></td></tr>
+      <tr><td><code>&lt;label for="id"&gt;</code></td><td>Label for input</td><td><code>for="q1a"</code></td></tr>
+      <tr><td><code>&lt;button&gt;</code></td><td>Clickable button</td><td><code>Submit</code></td></tr>
+      <tr><td><code>&lt;a href="..."&gt;</code></td><td>Link</td><td><code>href="reviewer.html"</code></td></tr>
+      <tr><td><code>&lt;div&gt;</code></td><td>Container</td><td><code>class="questionnaireContainer"</code></td></tr>
+      <tr><td><code>&lt;form&gt;</code></td><td>Form wrapper</td><td><code>id="questionnaireForm"</code></td></tr>
+      <tr><td><code>&lt;strong&gt;</code></td><td>Bold text</td><td><code>&lt;strong&gt;Question 1:&lt;/strong&gt;</code></td></tr>
+    </table>
+
+    <div class="tip">
+      <strong>Pro Tip:</strong> Use <code>&lt;label for="id"&gt;</code> so users can click text to select radio buttons!
+    </div>
+
+    <!-- HTML ENTITIES -->
+    <h2>HTML Entities (for &lt; and &gt;)</h2>
+    <table>
+      <tr><th>Symbol</th><th>Entity</th><th>Used In</th></tr>
+      <tr><td>&lt;</td><td><code>&amp;lt;</code></td><td>Labels (to show code)</td></tr>
+      <tr><td>&gt;</td><td><code>&amp;gt;</code></td><td>Labels (to show code)</td></tr>
+      <tr><td>"</td><td><code>&amp;quot;</code></td><td>Sometimes in values</td></tr>
+    </table>
+
+    <!-- CSS PROPERTIES -->
+    <h2>CSS Properties I Used</h2>
+    <table>
+      <tr><th>Property</th><th>Value Example</th><th>Effect</th></tr>
+      <tr><td><code>color</code></td><td><code>#28a745</code></td><td>Text color</td></tr>
+      <tr><td><code>background-color</code></td><td><code>#f8d7da</code></td><td>Background fill</td></tr>
+      <tr><td><code>font-weight</code></td><td><code>bold</code></td><td>Bold text</td></tr>
+      <tr><td><code>font-size</code></td><td><code>1.1rem</code></td><td>Text size</td></tr>
+      <tr><td><code>padding</code></td><td><code>1.5rem</code></td><td>Inner space</td></tr>
+      <tr><td><code>margin</code></td><td><code>1rem 0</code></td><td>Outer space</td></tr>
+      <tr><td><code>border-radius</code></td><td><code>12px</code></td><td>Rounded corners</td></tr>
+      <tr><td><code>text-align</code></td><td><code>center</code></td><td>Center text</td></tr>
+      <tr><td><code>display</code></td><td><code>flex</code></td><td>Flexible layout</td></tr>
+      <tr><td><code>justify-content</code></td><td><code>center</code></td><td>Center children</td></tr>
+    </table>
+
+    <!-- JAVASCRIPT BASICS -->
+    <h2>JavaScript I Used</h2>
+    <table>
+      <tr><th>Code</th><th>What It Does</th></tr>
+      <tr><td><code>document.getElementById("id")</code></td><td>Get element by ID</td></tr>
+      <tr><td><code>document.querySelector(".class")</code></td><td>Get first element by class</td></tr>
+      <tr><td><code>.addEventListener("click", () => {})</code></td><td>Run code when clicked</td></tr>
+      <tr><td><code>localStorage.setItem("key", value)</code></td><td>Save data</td></tr>
+      <tr><td><code>localStorage.getItem("key")</code></td><td>Read data</td></tr>
+      <tr><td><code>localStorage.removeItem("key")</code></td><td>Delete data</td></tr>
+      <tr><td><code>window.location.href = "page.html"</code></td><td>Go to new page</td></tr>
+      <tr><td><code>setTimeout(() => {}, 300)</code></td><td>Wait 0.3 seconds</td></tr>
+    </table>
+
+    <div class="tip">
+      <strong>Pro Tip:</strong> <code>localStorage</code> saves answers even if you close the browser!
+    </div>
+
+    <!-- COMMON MISTAKES -->
+    <h2>Common Mistakes (I Fixed!)</h2>
+    <ul>
+      <li><strong>Wrong:</strong> Using <code>&amp;lt;</code> in <code>value=""</code> → JavaScript fails</li>
+      <li><strong>Fixed:</strong> Use real <code>&lt;</code> in <code>value</code>, show <code>&amp;lt;</code> in <code>&lt;label&gt;</code></li>
+      <li><strong>Wrong:</strong> Forgetting <code>for="id"</code> in labels</li>
+      <li><strong>Fixed:</strong> Always match <code>for</code> with <code>id</code></li>
+    </ul>
+
+    <div class="footer">
+      <p>Made with by <strong>You</strong> — HTML/CSS Beginner → Web Developer</p>
+      <p>Print this • Keep it • Code every day!</p>
+    </div>
+  </div>
+</body>
+</html>
