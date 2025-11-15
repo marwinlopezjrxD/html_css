@@ -35,9 +35,12 @@
 - Added initial files for reviewer.html(done 11/14)
 
 #### 11/14
-- Proofread all files, except style.css files(done 4%)
+- Proofread all files, except style.css files(done 5%)
 - Added Mini_Projects Folder(done 11/14)
 - Added Subscription Folder under Mini_Projects Folder(done 11/15)
+
+#### 11/15
+- Add a remove button on Subcriptions(not done)
 
 *(Progress: ~88% as of November 15, 2025 — Subscription form in progress!)*
 
