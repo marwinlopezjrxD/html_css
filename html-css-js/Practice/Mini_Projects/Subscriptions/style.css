@@ -1,0 +1,172 @@
+/* =========================================================
+   GLOBAL VARIABLES – EASY TO CHANGE COLORS
+   ========================================================= */
+:root {
+  /* LIGHT MODE COLORS */
+  --bg-gradient: linear-gradient(to bottom, #87CEEB 0%, #E0F7FA 100%);
+  --text-color: #0288D1;
+  --table-bg: rgba(255, 255, 255, 0.9);
+  --table-header: #0288D1;
+  --table-header-text: white;
+  --table-border: #BBDEFB;
+  --table-hover: #BBDEFB;
+  --table-alt: #E3F2FD;
+  --btn-bg: #4CAF50;
+  --btn-hover: #45a049;
+  --btn-disabled: #cccccc;
+  --shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* DARK MODE – ACTIVATED BY CLASS */
+.dark-mode {
+  --bg-gradient: linear-gradient(to bottom, #1a1a2e 0%, #16213e 100%);
+  --text-color: #4FC3F7;
+  --table-bg: rgba(30, 30, 50, 0.95);
+  --table-header: #0d47a1;
+  --table-header-text: #bbdefb;
+  --table-border: #1565c0;
+  --table-hover: #0d47a1;
+  --table-alt: #1e2a44;
+  --btn-bg: #66bb6a;
+  --btn-hover: #4caf50;
+  --btn-disabled: #757575;
+  --shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* =========================================================
+   PAGE BACKGROUND
+   ========================================================= */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg-gradient);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: var(--text-color);
+  transition: background 0.5s ease;
+}
+
+/* =========================================================
+   PAGE TITLE
+   ========================================================= */
+h1 {
+  text-align: center;
+  color: var(--text-color);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  margin: 30px 0 10px 0;
+}
+
+/* =========================================================
+   DARK MODE TOGGLE BUTTON
+   ========================================================= */
+#darkModeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--btn-bg);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.1em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: all 0.3s;
+}
+#darkModeToggle:hover {
+  background: var(--btn-hover);
+  transform: scale(1.05);
+}
+
+/* =========================================================
+   PAYMENT TABLE
+   ========================================================= */
+.payment-table {
+  width: 90%;
+  max-width: 800px;
+  background: var(--table-bg);
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  margin-bottom: 40px;
+}
+
+/* Header */
+.payment-table th {
+  background-color: var(--table-header);
+  color: var(--table-header-text);
+  padding: 15px;
+  text-align: left;
+  font-weight: bold;
+  height: 50px;
+  vertical-align: middle;
+}
+.payment-table th:first-child { border-top-left-radius: 15px; }
+.payment-table th:last-child  { border-top-right-radius: 15px; }
+
+/* Cells */
+.payment-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--table-border);
+  vertical-align: middle;
+}
+.payment-table tbody tr:last-child td:first-child { border-bottom-left-radius: 15px; }
+.payment-table tbody tr:last-child td:last-child  { border-bottom-right-radius: 15px; }
+
+/* Rows */
+.payment-table tbody tr:nth-child(even) { background-color: var(--table-alt); }
+.payment-table tbody tr:hover { background-color: var(--table-hover); transition: background-color .3s; }
+
+/* =========================================================
+   WARNING COLORS
+   ========================================================= */
+.near-due { background-color: #FFF9C4 !important; font-weight: bold; }
+.past-due { background-color: #FFCDD2 !important; color: #B71C1C; font-weight: bold; }
+.near-due:hover { background-color: #FFEB3B !important; }
+.past-due:hover { background-color: #EF5350 !important; }
+
+/* DARK MODE OVERRIDES */
+.dark-mode .near-due { background-color: #ffeb3b !important; color: #000 !important; }
+.dark-mode .past-due { background-color: #ef5350 !important; color: #ffebee !important; }
+
+/* =========================================================
+   RENEW BUTTON
+   ========================================================= */
+.renew-btn {
+  background-color: var(--btn-bg);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95em;
+  font-weight: bold;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  min-width: 80px;
+}
+.renew-btn:hover { background-color: var(--btn-hover); }
+.renew-btn:disabled { background-color: var(--btn-disabled); cursor: not-allowed; color: #ccc; }
+
+/* Action column */
+.payment-table td:last-child { text-align: center; padding: 8px 15px; }
+
+/* =========================================================
+   RENEWED ROW
+   ========================================================= */
+.renewed { background-color: #C8E6C9 !important; font-weight: bold; }
+.renewed:hover { background-color: #A5D6A7 !important; }
+.dark-mode .renewed { background-color: #66bb6a !important; color: #000 !important; }
+
+/* =========================================================
+   END OF FILE
+   ========================================================= */
