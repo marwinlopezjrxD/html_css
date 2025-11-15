@@ -74,10 +74,10 @@
 Javascript Basics Practice
 
 ## Q3 2026
-API Integration
+Javascript Basics Continuation
 
 ## Q4 2026
-Prep for Second Project (PC Builder with Chat Bot Assistant)
+API Integration
 
 ---
 
