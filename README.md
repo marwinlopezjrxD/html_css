@@ -32,18 +32,24 @@
 
 #### 11/12
 - Added Questionnaire reviewer (done 11/13)
-- Added initial files for reviewer.html(done 11/14)
+- Added initial files for reviewer.html (done 11/14)
 
 #### 11/14
-- Proofread all files, except style.css files(done 5%)
+- Proofread all files, except style.css files(done 25%)
 - Added Mini_Projects Folder(done 11/14)
-- Added Subscription Folder under Mini_Projects Folder(done 11/15)
+- Added Subscription Folder under Mini_Projects Folder (done 11/15)
 
 #### 11/15
-- Add a remove button on Subcriptions(not done)
-- Added test files Folder
+- **feat:** Added **remove button** with confirmation
+- Added `test files` folder
+- Proofread `Subscriptions` folder
+- Added `freestyle.txt` for future ideas (and when bored)
 
-*(Progress: ~88% as of November 15, 2025 — Subscription form in progress!)*
+### ON A STREAK — WILL BE ON A **LONG HIATUS** AFTER THIS!
+
+**ADVANCE MERRY CHRISTMAS, EVERYONE!**
+
+*(Progress: ~90% as of November 15, 2025 — Subscription form in progress!)*
 
 ## Live Website
 [Questionnaire Live Demo](https://marwinlopezjrxD.github.io/html_css/questionnaire.html)

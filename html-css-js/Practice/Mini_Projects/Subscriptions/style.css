@@ -1,4 +1,8 @@
 /* =========================================================
+   FINAL script.js — WITH REMOVE BUTTON + HEAVY COMMENTS + REUSABLE
+   ========================================================= */
+
+/* =========================================================
    GLOBAL VARIABLES – EASY TO CHANGE COLORS
    ========================================================= */
 :root {
@@ -161,7 +165,7 @@ h1 {
 .payment-table td:last-child { text-align: center; padding: 8px 15px; }
 
 /* =========================================================
-   RENEWED ROW
+   RENEWED ROW (NEWLY ADDED)
    ========================================================= */
 .renewed { background-color: #C8E6C9 !important; font-weight: bold; }
 .renewed:hover { background-color: #A5D6A7 !important; }

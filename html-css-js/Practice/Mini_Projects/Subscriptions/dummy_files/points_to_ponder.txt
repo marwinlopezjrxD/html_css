@@ -1,0 +1,17 @@
+General Knowledge as of now on what I know in this Subscription Website:
+
+index.html
+- everything from start to finish is neat.
+- will improve some explanation on every bit of it, Its to tedious to change the documentation of all.
+- clean spacings on HTML Tags(I do not like messy structure)
+
+style.css
+- So hectic to understand it all(Large amounts of CSS attributes have been inserted in this file. If a beginner would see this, They might just call it quits.)
+- Not so Beginner-Friendly.
+- Even with the hard commenting of every lines, it is still unbearable to read.
+- Documention-wise, It's good. But still. 
+
+script.js
+- the logic is clean, just like pointers in C++. No questions asked. Absolute Cinema.
+- Perfectly utilizing all the variables inside.
+- The variables can be used on other projects? Maybe? But it is too tedious and the user will still use another separate script.js file.
