@@ -22,7 +22,7 @@ I will try to replicate and or recreate the flipping card mechanism of **t*n*.
 
 **Difficulty(Medium? 😊)
 
-- Add a simple skeleton structure design about HTML and CSS(Box . Just make it simple(real)
+- Add a simple skeleton structure design about HTML and CSS(Box Model). Just make it simple(real)
 
 **Difficulty(Advanced 😈)
 
