@@ -39,7 +39,7 @@
 - Added Mini_Projects Folder(done 11/14)
 - Added Subscription Folder under Mini_Projects Folder(done 11/15)
 
-*(Progress: ~80% as of November 12, 2025. Check the [live site](https://marwinlopezjrxD.github.io/html_css/questionnaire.html) for interactive updates!)*
+*(Progress: ~88% as of November 15, 2025 — Subscription form in progress!)*
 
 ## Live Website
 [Questionnaire Live Demo](https://marwinlopezjrxD.github.io/html_css/questionnaire.html)
