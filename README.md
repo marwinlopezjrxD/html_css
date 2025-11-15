@@ -35,7 +35,9 @@
 - Added initial files for reviewer.html(done 11/14)
 
 ### 11/14
-- Proofread all files, except style.css files(done 3%)
+- Proofread all files, except style.css files(done 4%)
+- Added Mini_Projects Folder(done 11/14)
+- Added Subscription Folder under Mini_Projects Folder(done 11/15)
 
 *(Progress: ~80% as of November 12, 2025. Check the [live site](https://marwinlopezjrxD.github.io/html_css/questionnaire.html) for interactive updates!)*
 
