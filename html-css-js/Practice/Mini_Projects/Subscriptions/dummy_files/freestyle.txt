@@ -10,3 +10,20 @@ Pagtitipong Malakasang rat' mag Fiesta ra.
 Lagay daw ako ng Future Ideas "DITO"
 
 - Dito...
+
+------------------------—-----------------
+
+- Add a reponsive Flipping Card Interaction, Just like Dungeons and Dragons thing or yugioh type shi(idk i just brought some random things up.)
+I will try to replicate and or recreate the flipping card mechanism of **t*n*.
+
+**Difficulty(Advanced 🤩)
+
+- Add a language pack for a website for foreign visitors(e.g, Spanish, English, Tagalog, Bisaya, and more.)
+
+**Difficulty(Medium? 😊)
+
+- Add a simple skeleton structure design about HTML and CSS(Box . Just make it simple(real)
+
+**Difficulty(Advanced 😈)
+
+END OF FILE
