@@ -1,3 +1,6 @@
+no deadline
+
+
 High Priority
 
 - Make a Todo List App
@@ -8,4 +11,4 @@ Medium
 
 Low
 
-- Test and/or verify any changes on Subscription Folder. 
+- Test and/or verify any changes made on Subscription Folder. 
