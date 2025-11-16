@@ -1,0 +1,11 @@
+High Priority
+
+- Make a Todo List App
+
+Medium
+
+- Proofread
+
+Low
+
+- Test and/or verify any changes on Subscription Folder. 
