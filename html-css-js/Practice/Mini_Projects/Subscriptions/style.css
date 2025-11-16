@@ -10,6 +10,7 @@
    - Warning colors for near-due and expired rows
    - Fixed-size buttons (all 88px wide, 36px tall)
    - "Renew Now" uses color for urgency, not width
+   - "Action" header centered in its column
    --------------------------------------------------------- */
 
 /* =========================================================
@@ -147,6 +148,11 @@ h1 {
 .payment-table th:first-child { border-top-left-radius: 15px; }
 .payment-table th:last-child  { border-top-right-radius: 15px; }
 
+/* Center "Action" header in its column */
+.payment-table th:last-child {
+  text-align: center;
+}
+
 /* Data cells */
 .payment-table td {
   padding: 12px 15px;
@@ -282,7 +288,7 @@ h1 {
   transition: background 0.3s;
 }
 .remove-btn:hover {
-  background: #c0392b;
+  background: #c0392b; /* (fixed) Valid hex color */
 }
 
 /* =========================================================
