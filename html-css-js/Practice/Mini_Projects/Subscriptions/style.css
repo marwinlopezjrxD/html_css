@@ -1,56 +1,56 @@
 /* =========================================================
-   SUBSCRIPTION TRACKER STYLES – FULL FILE WITH HEAVY COMMENTS
+   SUBSCRIPTION TRACKER STYLES
    ========================================================= */
-/*
-   This CSS file controls the look of your subscription payments page.
+
+/* 
+   This CSS file styles the subscription payments table.
    It includes:
-   - Light and dark mode color schemes using CSS variables
+   - Light and dark mode using CSS variables
    - Responsive table with rounded corners and shadows
-   - Warning colors for near-due and expired subscriptions
-   - Perfectly aligned buttons (Renew, Renew Now, Done, Remove)
-   - Clean layout and consistent spacing
+   - Warning colors for near-due and expired rows
+   - Fixed-size buttons (all 88px wide, 36px tall)
+   - "Renew Now" uses color for urgency, not width
    --------------------------------------------------------- */
 
 /* =========================================================
-   UX DESIGN HIGHLIGHT – "RENEW NOW" BUTTON STANDS OUT
+   UX DESIGN NOTE – "RENEW NOW" BUTTON
    ========================================================= */
 /*
    ┌─────────────────────────────────────────────────────────────┐
    │ Factor          │ Why It Works                              │
    ├─────────────────┼───────────────────────────────────────────┤
    │ Orange color    │ High contrast = attention-grabbing        │
-   │ Longer text     │ "Renew Now" > "Renew" → forces wider button │
-   │ Same height     │ Still aligned — no layout break           │
-   │ User psychology │ Expired = urgency → must stand out        │
+   │ Fixed width     │ 88px for all Renew buttons → perfect alignment │
+   │ Same height     │ 36px → no layout shift                    │
+   │ User psychology │ Expired = urgency → color signals priority│
    └─────────────────────────────────────────────────────────────┘
-   This intentional design makes expired subscriptions impossible to miss.
-   UX > pixel-perfect equality. Urgency wins.
+   Text wraps inside button to fit. No overflow.
    --------------------------------------------------------- */
 
 /* =========================================================
-   1. CSS VARIABLES – CENTRAL COLOR CONTROL
+   1. CSS VARIABLES – GLOBAL COLORS
    ========================================================= */
 /*
-   :root sets default (light mode) colors.
-   Variables start with -- and can be reused anywhere.
-   Example: var(--btn-bg) uses the green button color.
+   :root defines light mode colors.
+   .dark-mode class overrides them when active.
+   Variables are used throughout with var(--name).
 */
 :root {
-  --bg-gradient: linear-gradient(to bottom, #87CEEB 0%, #E0F7FA 100%); /* Sky blue gradient */
-  --text-color: #0288D1;             /* Main text color */
-  --table-bg: rgba(255, 255, 255, 0.9); /* Semi-transparent white table */
+  --bg-gradient: linear-gradient(to bottom, #87CEEB 0%, #E0F7FA 100%); /* Light sky gradient */
+  --text-color: #0288D1;             /* Main text and accents */
+  --table-bg: rgba(255, 255, 255, 0.9); /* Semi-transparent table */
   --table-header: #0288D1;           /* Header background */
   --table-header-text: white;        /* Header text */
   --table-border: #BBDEFB;           /* Cell borders */
   --table-hover: #BBDEFB;            /* Row hover color */
-  --table-alt: #E3F2FD;              /* Alternating row background */
-  --btn-bg: #4CAF50;                 /* Button background */
-  --btn-hover: #45a049;              /* Button hover */
-  --btn-disabled: #cccccc;           /* Disabled button */
-  --shadow: 0 8px 20px rgba(0,0,0,0.15); /* Box shadow */
+  --table-alt: #E3F2FD;              /* Alternating row */
+  --btn-bg: #4CAF50;                 /* Green buttons */
+  --btn-hover: #45a049;              /* Hover green */
+  --btn-disabled: #cccccc;           /* Disabled state */
+  --shadow: 0 8px 20px rgba(0,0,0,0.15); /* Soft shadow */
 }
 
-/* Dark mode overrides – applied when .dark-mode class is added to <body> */
+/* Dark mode color overrides */
 .dark-mode {
   --bg-gradient: linear-gradient(to bottom, #1a1a2e 0%, #16213e 100%);
   --text-color: #4FC3F7;
@@ -67,141 +67,137 @@
 }
 
 /* =========================================================
-   2. BODY & PAGE LAYOUT
+   2. BODY & LAYOUT
    ========================================================= */
 /*
-   body uses flexbox to center content vertically and horizontally.
-   min-height: 100vh ensures it takes full screen height.
-   padding: 20px adds space around the edges.
+   Full-page flexbox container.
+   Centers content and adds padding.
 */
 body {
-  margin: 0;                         /* Remove browser default margin */
-  min-height: 100vh;                 /* Full viewport height */
-  background: var(--bg-gradient);    /* Apply gradient */
-  font-family: 'Comic Sans MS', cursive, sans-serif; /* Font stack */
-  display: flex;                     /* Enable flexbox */
-  flex-direction: column;            /* Stack children vertically */
-  align-items: center;               /* Center horizontally */
-  padding: 20px;                     /* Outer spacing */
-  color: var(--text-color);          /* Text color */
-  transition: background 0.5s ease;  /* Smooth theme change */
-}
-
-/* Main title styling */
-h1 {
-  text-align: center;                /* Center text */
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg-gradient);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
   color: var(--text-color);
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* Subtle shadow */
-  margin: 30px 0 10px 0;             /* Top and bottom spacing */
+  transition: background 0.5s ease;
 }
 
-/* Dark mode toggle button – fixed in top-right corner */
+/* Page title */
+h1 {
+  text-align: center;
+  color: var(--text-color);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  margin: 30px 0 10px 0;
+}
+
+/* Dark mode toggle button – top-right */
 #darkModeToggle {
-  position: fixed;                   /* Stays in place when scrolling */
-  top: 20px;                         /* Distance from top */
-  right: 20px;                       /* Distance from right */
+  position: fixed;
+  top: 20px;
+  right: 20px;
   background: var(--btn-bg);
   color: white;
   border: none;
-  padding: 10px 16px;                /* Inner padding */
-  border-radius: 50px;               /* Pill shape */
-  cursor: pointer;                   /* Hand icon on hover */
-  font-size: 1.1em;                  /* Slightly larger text */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Button shadow */
-  z-index: 1000;                     /* Above other elements */
-  transition: all 0.3s;              /* Smooth hover effects */
+  padding: 10px 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.1em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: all 0.3s;
 }
 #darkModeToggle:hover {
   background: var(--btn-hover);
-  transform: scale(1.05);            /* Slight grow on hover */
+  transform: scale(1.05);
 }
 
 /* =========================================================
-   3. SUBSCRIPTION TABLE STRUCTURE
+   3. TABLE STRUCTURE
    ========================================================= */
 /*
-   .payment-table is the main table.
-   border-collapse: separate allows rounded corners.
-   overflow: hidden clips content to rounded edges.
+   Responsive table with rounded corners.
+   border-collapse: separate enables border-radius.
 */
 .payment-table {
-  width: 90%;                        /* Responsive width */
-  max-width: 800px;                  /* Max width on large screens */
+  width: 90%;
+  max-width: 800px;
   background: var(--table-bg);
-  border-collapse: separate;         /* Needed for border-radius */
-  border-spacing: 0;                 /* Remove cell gaps */
-  border-radius: 15px;               /* Rounded corners */
-  overflow: hidden;                  /* Hide overflow */
-  box-shadow: var(--shadow);         /* Drop shadow */
-  margin-bottom: 40px;               /* Space below */
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  margin-bottom: 40px;
 }
 
-/* Table header cells */
+/* Header cells */
 .payment-table th {
   background-color: var(--table-header);
   color: var(--table-header-text);
-  padding: 15px;                     /* Cell padding */
-  text-align: left;                  /* Left-align text */
+  padding: 15px;
+  text-align: left;
   font-weight: bold;
-  height: 50px;                      /* Fixed height */
-  vertical-align: middle;            /* Vertically center */
+  height: 50px;
+  vertical-align: middle;
 }
-/* Round top corners of first and last header */
 .payment-table th:first-child { border-top-left-radius: 15px; }
 .payment-table th:last-child  { border-top-right-radius: 15px; }
 
-/* Table data cells */
+/* Data cells */
 .payment-table td {
-  padding: 12px 15px;                /* Consistent padding */
-  border-bottom: 1px solid var(--table-border); /* Bottom border */
-  vertical-align: middle;            /* Center content vertically */
-  min-height: 50px;                  /* Minimum row height */
-  text-align: left;                  /* Default alignment */
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--table-border);
+  vertical-align: middle;
+  min-height: 50px;
+  text-align: left;
 }
 
-/* Username column – prevents collapse when empty */
+/* Username column – prevents collapse */
 .payment-table td:nth-child(2) {
-  min-width: 100px;                  /* Minimum width */
+  min-width: 100px;
 }
 
-/* Center text in Expires In and Payment Due columns */
+/* Center Expires In and Payment Due */
 .payment-table td:nth-child(3),
 .payment-table td:nth-child(4) {
   text-align: center;
-  font-weight: 500;                  /* Medium boldness */
+  font-weight: 500;
 }
 
 /* Round bottom corners on last row */
 .payment-table tbody tr:last-child td:first-child { border-bottom-left-radius: 15px; }
 .payment-table tbody tr:last-child td:last-child  { border-bottom-right-radius: 15px; }
 
-/* Alternating row colors and hover effect */
+/* Alternating rows and hover */
 .payment-table tbody tr:nth-child(even) { background-color: var(--table-alt); }
 .payment-table tbody tr:hover { 
   background-color: var(--table-hover); 
-  transition: background-color .3s;  /* Smooth color change */
+  transition: background-color .3s; 
 }
 
 /* =========================================================
-   4. WARNING ROW COLORS
+   4. ROW WARNING COLORS
    ========================================================= */
-/*
-   Classes added by JavaScript based on due date.
-   !important ensures they override other styles.
-*/
+/* Near due – yellow */
 .near-due { 
-  background-color: #FFF9C4 !important; /* Light yellow */
-  font-weight: bold; 
-}
-.past-due { 
-  background-color: #FFCDD2 !important; /* Light red */
-  color: #B71C1C; 
+  background-color: #FFF9C4 !important; 
   font-weight: bold; 
 }
 .near-due:hover { background-color: #FFEB3B !important; }
+
+/* Expired – red */
+.past-due { 
+  background-color: #FFCDD2 !important; 
+  color: #B71C1C; 
+  font-weight: bold; 
+}
 .past-due:hover { background-color: #EF5350 !important; }
 
-/* Dark mode overrides for warnings */
+/* Dark mode warnings */
 .dark-mode .near-due { 
   background-color: #ffeb3b !important; 
   color: #000 !important; 
@@ -211,7 +207,7 @@ h1 {
   color: #ffebee !important; 
 }
 
-/* Renewed row – success state */
+/* Renewed – success */
 .renewed { 
   background-color: #C8E6C9 !important; 
   font-weight: bold; 
@@ -223,43 +219,44 @@ h1 {
 }
 
 /* =========================================================
-   5. BUTTON STYLES – PERFECT ALIGNMENT
+   5. BUTTON STYLES – FIXED SIZE
    ========================================================= */
 /*
-   All buttons have fixed height (36px) and min-width.
-   inline-flex centers text perfectly.
-   No inline styles from JS – everything in CSS.
+   All Renew buttons are 88px wide × 36px tall.
+   "Renew Now" wraps text to fit.
+   Urgency from color only.
 */
-
-/* Base Renew button */
 .renew-btn {
   background-color: var(--btn-bg);
   color: white;
   border: none;
-  padding: 8px 16px;
+  padding: 6px 8px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 0.95em;
+  font-size: 0.9em;
   font-weight: bold;
-  height: 36px;                      /* Fixed height */
-  min-width: 88px;                   /* Fixed minimum width */
+  height: 36px;
+  width: 88px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  white-space: normal;
+  line-height: 1.2;
   transition: all 0.3s;
-  box-sizing: border-box;            /* Include padding in size */
+  box-sizing: border-box;
 }
 .renew-btn:hover:not(:disabled) { 
   background-color: var(--btn-hover); 
 }
 .renew-btn:disabled { 
-  background-color: var(--btn-bg);   /* Keep green for "Done" */
+  background-color: var(--btn-bg);
   color: white;
   opacity: 0.9;
   cursor: not-allowed; 
 }
 
-/* Orange style for expired "Renew Now" */
+/* "Renew Now" – orange, same size */
 .renew-btn.renew-now {
   background-color: #ff9800 !important;
   color: white !important;
@@ -268,17 +265,17 @@ h1 {
   background-color: #f57c00 !important;
 }
 
-/* Remove button – matches Renew height */
+/* Remove button – 76px wide */
 .remove-btn {
   background: #e74c3c;
   color: white;
   border: none;
-  padding: 8px 12px;
+  padding: 6px 8px;
   border-radius: 6px;
   cursor: pointer;
   font-size: 0.9em;
-  height: 36px;                      /* Same height */
-  min-width: 76px;                   /* Slightly narrower */
+  height: 36px;
+  width: 76px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -292,9 +289,8 @@ h1 {
    6. ACTION COLUMN – BUTTON LAYOUT
    ========================================================= */
 /*
-   Last column uses flexbox to center buttons.
-   gap: 8px adds space between them.
-   flex-wrap allows wrapping on small screens.
+   Flexbox centers buttons with 8px gap.
+   Wraps on small screens.
 */
 .payment-table td:last-child {
   text-align: center;
@@ -311,7 +307,7 @@ h1 {
    ========================================================= */
 #showAddForm {
   display: block;
-  margin: 10px auto;                 /* Center horizontally */
+  margin: 10px auto;
   padding: 10px 20px;
   background: var(--btn-bg);
   color: white;
