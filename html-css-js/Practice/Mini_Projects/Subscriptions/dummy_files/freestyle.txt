@@ -13,6 +13,7 @@ Lagay daw ako ng Future Ideas "DITO"
 
 ------------------------—-----------------
 
+<<<<<<< HEAD
 PRIORITY 1 (Starting NOW – Q4 2025 - NO DEADLINE)
 - Build a responsive Flipping Card Interaction
   → Inspired by D&D cards or Yu-Gi-Oh flip mechanics (front: image/title, back: stats/description)
@@ -55,3 +56,19 @@ PRIORITY 3 (Q2 2026)
 - Mentor via Tagalog dev blog or Discord – pay it forward (asa boss :3)
 
 END OF FILE
+=======
+- Add a reponsive Flipping Card Interaction, Just like Dungeons and Dragons thing or yugioh type shi(idk i just brought some random things up.)
+I will try to replicate and or recreate the flipping card mechanism of **t*n*.
+
+**Difficulty(Advanced 🤩)
+
+- Add a language pack for a website for foreign visitors(e.g, Spanish, English, Tagalog, Bisaya, and more.)
+
+**Difficulty(Medium? 😊)
+
+- Add a simple skeleton structure design about HTML and CSS(Box Model). Just make it simple(real)
+
+**Difficulty(Advanced 😈)
+
+END OF FILE
+>>>>>>> 80de1e2e6091890a638ebaafdc5cad8da8f615a9
