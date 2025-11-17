@@ -17,3 +17,32 @@ Search for this:
 - what is this "!important" thing in css? 
 - Javascript implements local storage? 
 i just saw localStorage while reading style.css. it might be a feature i dunno
+- Search for that SEO thing also, as well as how to minimize lines for faster loading times
+
+
+WARNING:
+Editing this file via phone, An error will occur(files on local and files on the repo will show up), will add a step-by-step solution later on.  
+
+this still benefits me to learn more about git commands 
+
+Solution:
+
+=========
+
+Step 1
+
+Step 2
+
+Step 3
+
+Step 4
+
+Step 5
+
+Step 6
+
+Step 7
+
+=========
+
+
