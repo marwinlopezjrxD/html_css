@@ -17,7 +17,7 @@ Search for this:
 - what is this "!important" thing in css? 
 - Javascript implements local storage? 
 i just saw localStorage while reading style.css. it might be a feature i dunno
-- Search for that SEO thing also, as well as how to minimize lines for faster loading times
+- Search for that SEO thing also, as well as how to reduce lines for faster loading times
 
 
 WARNING:
