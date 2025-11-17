@@ -14,9 +14,12 @@ Low
 - Test and/or verify any changes made on Subscription Folder. 
 
 Search for this:
+
 - what is this "!important" thing in css? 
+
 - Javascript implements local storage? 
-i just saw localStorage while reading style.css. it might be a feature i dunno
+-- i just saw localStorage while reading style.css. it might be a feature i dunno
+
 - Search for that SEO thing also, as well as how to reduce lines for faster loading times
 
 
@@ -48,10 +51,14 @@ Step 7
 TMI
 
 marinade and air fry chicken
+
 buy vegetables
+
 grocery and stock up food 
+
 water plants
+
 save up cash for deep cleaning on laptop next year
-- only if the warranty for free cleaning is not applicable anymore.
+- only if the warranty that has a free deep cleaning promo is expired. 
 
 
