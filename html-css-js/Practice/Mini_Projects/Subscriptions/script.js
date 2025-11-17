@@ -209,6 +209,8 @@ toggleBtn.addEventListener('click', () => {
   localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
 });
 
+/* Proof read done (1-/17)
+
 /* =========================================================
    END OF FILE
    ========================================================= */
