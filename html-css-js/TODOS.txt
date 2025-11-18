@@ -1,4 +1,7 @@
-no deadline
+# No deadlines, prioritizing this and some files on the Mini_Projects Folder. 
+# Less worries, no timeframe. no rules. 
+# Plain and simple. 
+# Period.
 
 High Priority
 - Make a Todo List App
