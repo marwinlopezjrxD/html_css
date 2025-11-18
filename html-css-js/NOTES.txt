@@ -1,9 +1,33 @@
--------- NOTES ---------
+# CSS NOTES - Cascade, Specificity & !important
 
+1. How CSS decides the winner
+   1. Specificity (selector strength)
+   2. Source order (later = wins if specificity equal)
+   3. !important (overrides everything - avoid!)
 
-- 
--
--
--
--
--
+2. Specificity Ranking (weak → strong)
+   • Tag selectors          p, div           → weakest (0,0,0,1)
+   • Class / attribute / pseudo-class
+     .my-class, [type], :hover           → (0,0,1,0)
+   • ID selectors           #header          → (0,1,0,0)
+   • Inline styles          style="..."      → (1,0,0,0)
+   • !important             color: red !important → beats all
+
+3. Source Order Example
+   p { color: blue; }
+   p { color: red; }   /* this wins - same specificity, comes later */
+
+4. !important Example
+   p { color: red !important; }  /* always wins */
+
+5. Quick Rules to Live By
+   • Use classes, not IDs, for reusable styles
+   • Put your CSS after framework CSS
+   • Never use !important unless overriding a plugin/theme
+   • When stuck, check DevTools → Computed → look for the winning rule
+
+# References
+MDN Specificity: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
+MDN Cascade: https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade
+
+# End of Notes
