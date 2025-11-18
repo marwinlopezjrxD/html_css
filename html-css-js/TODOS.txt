@@ -17,6 +17,7 @@ Search for this:
 - What does "!important" do in CSS?
 - How does JavaScript localStorage work? (noticed it referenced in style.css)
 - SEO basics and techniques to reduce CSS/JS file size for faster loading
+- Read Git reset risks 
 
 ══════════════════════════════════════════════════════════
 NOTE: Syncing between devices (phone ↔ laptop)
