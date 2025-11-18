@@ -2,6 +2,7 @@ no deadline
 
 High Priority
 - Make a Todo List App
+- Make an error 404 not found page for every mini project folder first
 
 Medium
 - Proofread on subscriptions folder again (done 11/17)
