@@ -14,7 +14,7 @@ Low
 - Test and/or verify any changes made on Subscription Folder.
 
 Search for this:
-- What does "!important" do in CSS?
+- What does "!important" do in CSS? (done 11/19)
 - How does JavaScript localStorage work? (noticed it referenced in style.css)
 - SEO basics and techniques to reduce CSS/JS file size for faster loading
 - Read Git reset risks 
