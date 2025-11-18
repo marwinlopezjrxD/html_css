@@ -1,69 +1,68 @@
-# No deadlines, prioritizing this and some files on the Mini_Projects Folder. 
-# Less worries, no timeframe. no rules. 
-# Plain and simple. 
-# Period.
+# TODOS.txt - No deadlines, no pressure, no rules. Just progress. Period.
 
-High Priority
-- Make a Todo List App
-- Make an error 404 not found page for every mini project folder first
-- Minify CSS(reduce css code size -less file size i think??)
-- Try to deminify/un-minify CSS also
+Live Repository: https://github.com/marwinlopezjrxD/html_css
 
-Medium
-- Proofread on subscriptions folder again (done 11/17)
-- Check if the subcscriptions website buttons has hover effects (done 11/19)
-
-Low
-- Test and/or verify any changes made on Subscription Folder.
-
-Search for this:
-- What does "!important" do in CSS? (done 11/19)
-- How does JavaScript localStorage work? (noticed it referenced in style.css)
-- SEO basics and techniques to reduce CSS/JS file size for faster loading
-- Read Git reset risks 
+Prioritizing this file + projects in the Mini_Projects folder.
+Chill vibes onli. 
 
 ══════════════════════════════════════════════════════════
-NOTE: Syncing between devices (phone ↔ laptop)
+HIGH PRIORITY
+- Build a Todo List App
+- Create custom 404 Not Found pages for every mini project folder
+- Minify CSS files (reduce file size for faster loading)
+- Learn how to unminify/de-minify CSS when needed
 
-When editing files directly on GitHub or via phone and committing there,  
-the local copy on my laptop will become outdated.
+MEDIUM PRIORITY
+- Proofread the Subscriptions folder again (done 11/17)
+- Check if buttons in the Subscriptions site have hover effects (done 11/19)
 
-This causes Git conflicts or errors the next time I try to commit or push from the laptop.
+LOW PRIORITY
+- Test and verify all changes made in the Subscriptions folder
 
-To update the laptop copy to match the latest version on GitHub:
+══════════════════════════════════════════════════════════
+THINGS TO RESEARCH / LEARN
+- What does "!important" do in CSS? → (done 11/19)
+- How does JavaScript localStorage work? (saw it referenced in style.css)
+- SEO basics + techniques to reduce CSS/JS file size
+- Dangers and risks of "git reset --hard"
 
-1. Open terminal in the project folder
+══════════════════════════════════════════════════════════
+SYNCING BETWEEN DEVICES (Phone ↔ Laptop)
+
+Warning: Editing directly on GitHub or phone → laptop gets outdated → conflicts!
+
+To update laptop to match GitHub (latest version):
+1. Open terminal in project folder
 2. Run:
    git fetch origin
-   git reset --hard origin/master
-3. (Optional, removes untracked files)
-   git clean -fd
+   git reset --hard origin/main    # or origin/master if still using master
+   git clean -fd                   # (optional: removes new/untracked files)
 
-After these commands, the local files are identical to the remote repository  
-and I can continue editing safely.
+Now laptop = exactly like GitHub. Safe to edit again.
 
-To upload changes made on laptop:
+To push changes from laptop:
    git add .
-   git commit -m "description"
+   git commit -m "your message here"
    git push
 
 ══════════════════════════════════════════════════════════
+PERSONAL REMINDERS
 
-Personal reminders below
-Food:
-- marinade and air fry chicken
-- buy vegetables
-- grocery and stock up food
-- water plants
-- save up cash for laptop deep cleaning next year (only if warranty promo expires)
+Food / House
+- Marinate and air fry chicken
+- Buy vegetables
+- Grocery run + stock up
+- Water the plants!!
+- Save money for laptop deep cleaning next year (only after warranty promo ends)
 
-Health
-- Run 3k
-- Run 5k
-- Run 10k
-- play basketball (done 11/18)
+Health / Fitness
+- Run 3K
+- Run 5K
+- Run 10K
+- Play basketball (done 11/18 ✅)
 
-Well-being:
-- watch remaining episodes of Spy x Family, Dr. Stone S4
+Well-being
+- Finish remaining episodes of Spy x Family
+- Watch Dr. Stone Season 4
 
-Oh noooo fakeeeeeeh
+Oh noooo fakeeeeeeh 
