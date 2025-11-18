@@ -1,81 +1,61 @@
 no deadline
 
-
 High Priority
-
 - Make a Todo List App
 
 Medium
-
 - Proofread on subscriptions folder again (done 11/17)
 
 Low
-
-- Test and/or verify any changes made on Subscription Folder. 
+- Test and/or verify any changes made on Subscription Folder.
 
 Search for this:
+- What does "!important" do in CSS?
+- How does JavaScript localStorage work? (noticed it referenced in style.css)
+- SEO basics and techniques to reduce CSS/JS file size for faster loading
 
-- what is this "!important" thing in css? 
+══════════════════════════════════════════════════════════
+NOTE: Syncing between devices (phone ↔ laptop)
 
-- Javascript implements local storage? 
--- i just saw localStorage while reading style.css. it might be a feature i dunno
+When editing files directly on GitHub or via phone and committing there,  
+the local copy on my laptop will become outdated.
 
-- Search for that SEO thing also, as well as how to reduce lines for faster loading times
+This causes Git conflicts or errors the next time I try to commit or push from the laptop.
 
+To update the laptop copy to match the latest version on GitHub:
 
-WARNING:
-Editing this file via phone, An error will occur(files on local and files on the repo will show up), will add a step-by-step solution later on.  
+1. Open terminal in the project folder
+2. Run:
+   git fetch origin
+   git reset --hard origin/master
+3. (Optional, removes untracked files)
+   git clean -fd
 
-this still benefits me to learn more about git commands 
+After these commands, the local files are identical to the remote repository  
+and I can continue editing safely.
 
-Solution:
+To upload changes made on laptop:
+   git add .
+   git commit -m "description"
+   git push
 
-=========
+══════════════════════════════════════════════════════════
 
-Step 1
-
-Step 2
-
-Step 3
-
-Step 4
-
-Step 5
-
-Step 6
-
-Step 7
-
-=========
-
-TMI
-
+Personal reminders below
 Food:
-
-marinade and air fry chicken
-
-buy vegetables
-
-grocery and stock up food 
-
-water plants
-
-save up cash for deep cleaning on laptop next year
-- only if the warranty that has a free deep cleaning promo is expired. 
+- marinade and air fry chicken
+- buy vegetables
+- grocery and stock up food
+- water plants
+- save up cash for laptop deep cleaning next year (only if warranty promo expires)
 
 Health
+- Run 3k
+- Run 5k
+- Run 10k
+- play basketball (done 11/18)
 
-Run 3k
+Well-being:
+- watch remaining episodes of Spy x Family, Dr. Stone S4
 
-Run 5k
-
-Run 10k
-
-play basketball(done 11/18)
-
-Well being:
-
-watch remaining eps of Spy x fam, Dr. Stone s4
-
-
-
+Oh noooo fakeeeeeeh
