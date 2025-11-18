@@ -73,7 +73,7 @@
 - **02/16** Activity # 3: Color of Hue
 
 ### March
-- **03/12** First Project Prep
+- **03/31** First Project Prep
 
 ### April
 - **TBD**
