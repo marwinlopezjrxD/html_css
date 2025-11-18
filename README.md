@@ -80,7 +80,12 @@
 
 ### May
 
-- **First Project Deadline: `05/31/26`**
+- **TBD**
+
+### June
+
+- **First Project Deadline: `06/30/26`**
+
 
 ## Q2 2026
 Javascript Basics Practice
