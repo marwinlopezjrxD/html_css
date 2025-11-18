@@ -8,6 +8,7 @@ High Priority
 
 Medium
 - Proofread on subscriptions folder again (done 11/17)
+- Check if the subcscriptions website buttons has hover effects (done 11/19)
 
 Low
 - Test and/or verify any changes made on Subscription Folder.
