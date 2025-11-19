@@ -1,0 +1,11 @@
+add a small text under the song(show full album)
+
+- try to show the album first in the music index homepage and check if it is applicable to the user experience (UX).
+- 
+
+Main TODOS.txt file (root)
+
+- make optional roadmap for front-end dev
+- make optional roadmap for MERN Stack 
+- add the following roadmaps to under Mini_Project Folder
+- transfer 
