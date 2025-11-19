@@ -1,13 +1,28 @@
 
 Deadline: On or before 9:00 AM PHT TODAY SEPT 20!!!!!
 
+Objectives:
+
+music-index.html
+
+1
+
 - add a small text under the song card(show full album)
 SONG 
 album_name
 
+1.1 (more detailed explanation)
 
 - try to show the album first in the music index homepage and check if it is applicable to the user experience (UX).
-- add genre
+Example:
+- Song_Name 
+- Song_Album (small font size under Song_Name)
+
+
+- add a genre
+
+To be followed:
+
 - add more artists and albums
 
 ====================================================================================================================
