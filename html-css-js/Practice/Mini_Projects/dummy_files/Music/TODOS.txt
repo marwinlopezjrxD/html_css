@@ -14,3 +14,9 @@ Main TODOS.txt file (root)
 - make optional roadmap for MERN Stack (long time, idk maybe 5-10 years probably, same as full stack web dev.)
 - add the following roadmaps to under Mini_Project Folder
 - transfer 
+
+
+Additional TODOS (no deadline)
+
+- add design for wishlist.txt
+- add design for points_to_ponder.txt
