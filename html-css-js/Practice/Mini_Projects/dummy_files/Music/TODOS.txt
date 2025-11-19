@@ -1,7 +1,8 @@
 add a small text under the song(show full album)
 
 - try to show the album first in the music index homepage and check if it is applicable to the user experience (UX).
-- 
+- add genre
+- add more artists and albums
 
 Main TODOS.txt file (root)
 
