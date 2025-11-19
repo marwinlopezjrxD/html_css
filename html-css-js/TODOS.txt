@@ -3,8 +3,7 @@
 Live Repository: https://github.com/marwinlopezjrxD/html_css
 
 Prioritizing this file + projects in the Mini_Projects folder.
-Chill vibes onli. 
-
+Chill vibes only. 
 
 Research first and do low prio tasks, then start making progress on high priority.
 
@@ -25,9 +24,9 @@ LOW PRIORITY
 ══════════════════════════════════════════════════════════
 THINGS TO RESEARCH / LEARN
 - What does "!important" do in CSS? → (done 11/19)
-- How does JavaScript localStorage work? (saw it referenced in style.css)
-- SEO basics + techniques to reduce CSS/JS file size
-- Dangers and risks of "git reset --hard"
+- How does JavaScript localStorage work? (saw it referenced in style.css) → (done 11/19)
+- SEO basics + techniques to reduce CSS/JS file size → (done 11/19)
+- Dangers and risks of "git reset --hard" → (done 11/19)
 
 ══════════════════════════════════════════════════════════
 SYNCING BETWEEN DEVICES (Phone ↔ Laptop)
@@ -38,7 +37,7 @@ To update laptop to match GitHub (latest version):
 1. Open terminal in project folder
 2. Run:
    git fetch origin
-   git reset --hard origin/main    # or origin/master if still using master
+   git reset --hard origin/master    # (stick with master for now!)
    git clean -fd                   # (optional: removes new/untracked files)
 
 Now laptop = exactly like GitHub. Safe to edit again.
@@ -69,7 +68,6 @@ Well-being
 - Watch Dr. Stone Season 4
 
 News and Headlines
-- Watch IT related stufs and other technological advancements happening today. (done 11/19)
-
+- Watch IT related stuff and other technological advancements happening today. (done 11/19)
 
 Oh noooo fakeeeeeeh 
