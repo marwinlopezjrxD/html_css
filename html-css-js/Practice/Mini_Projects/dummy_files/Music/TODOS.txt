@@ -1,4 +1,8 @@
-add a small text under the song(show full album)
+
+- add a small text under the song card(show full album)
+SONG 
+album_name
+
 
 - try to show the album first in the music index homepage and check if it is applicable to the user experience (UX).
 - add genre
@@ -6,7 +10,7 @@ add a small text under the song(show full album)
 
 Main TODOS.txt file (root)
 
-- make optional roadmap for front-end dev
-- make optional roadmap for MERN Stack 
+- make optional roadmap for front-end dev (max 3-4 years to master i think, remove all backend and focus more on designs and enhance users experience (UX) )
+- make optional roadmap for MERN Stack (long time, idk maybe 5-10 years probably, same as full stack web dev.)
 - add the following roadmaps to under Mini_Project Folder
 - transfer 
