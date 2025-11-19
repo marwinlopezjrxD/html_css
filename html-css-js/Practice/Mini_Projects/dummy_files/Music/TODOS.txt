@@ -1,4 +1,6 @@
 
+Deadline: On or before 9:00 AM PHT
+
 - add a small text under the song card(show full album)
 SONG 
 album_name
@@ -8,6 +10,11 @@ album_name
 - add genre
 - add more artists and albums
 
+====================================================================================================================
+
+
+== no deadline ==
+
 Main TODOS.txt file (root)
 
 - make optional roadmap for front-end dev (max 3-4 years to master i think, remove all backend and focus more on designs and enhance users experience (UX) )
@@ -16,7 +23,7 @@ Main TODOS.txt file (root)
 - transfer 
 
 
-Additional TODOS (no deadline)
+Additional TODOS
 
 - add design for wishlist.txt
 - add design for points_to_ponder.txt
