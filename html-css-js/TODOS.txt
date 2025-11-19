@@ -5,6 +5,9 @@ Live Repository: https://github.com/marwinlopezjrxD/html_css
 Prioritizing this file + projects in the Mini_Projects folder.
 Chill vibes onli. 
 
+
+Research first and do low prio tasks, then start making progress on high priority.
+
 ══════════════════════════════════════════════════════════
 HIGH PRIORITY
 - Build a Todo List App
