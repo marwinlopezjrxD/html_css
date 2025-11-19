@@ -30,4 +30,36 @@
 MDN Specificity: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
 MDN Cascade: https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade
 
+=============================================================================================
+
+# GIT NOTES - Dangers & Risks of git reset --hard
+
+1. What git reset --hard Does
+   - Resets your branch to a specific commit
+   - Overwrites the index (staged files) and working directory to match that commit
+   - **Danger**: Permanently discards ALL uncommitted changes (tracked or untracked files)
+
+2. Key Risks
+   - **Data Loss**: Unsaved work in files? Gone forever—no undo without backups
+   - **Untracked Files**: Deletes anything not yet added to Git (e.g., new files/folders)
+   - **Irreversible History**: Rewrites shared branches—can break team workflows
+   - **No Safety Net**: Unlike soft/mixed resets, it doesn't preserve your changes
+
+3. When It Bites You
+   - Forgot to commit? Run --hard → poof, changes vanish
+   - Syncing devices? Mismatched files get nuked without warning
+
+4. Quick Rules to Live By
+   - Always run `git status` first—review what's at risk
+   - Use `git stash` to save uncommitted work temporarily
+   - Prefer `--soft` (keeps changes staged) or `--mixed` (unstaged) for safety
+   - For history rewrites, use `git revert` instead—safer for shared repos
+   - Backup with `git branch backup` before risky commands
+
+# References
+Git Reset Docs: https://git-scm.com/docs/git-reset
+Atlassian Git Reset Guide: https://www.atlassian.com/git/tutorials/undoing-changes/git-reset
+
+=============================================================================================
+
 # End of Notes
