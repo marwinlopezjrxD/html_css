@@ -20,7 +20,7 @@ MEDIUM PRIORITY
 
 LOW PRIORITY
 - Test and verify all changes made in the Subscriptions folder
-- Create a Budget Tracker App (on-progress 11/19)
+- Create a Budget Tracker App (ongoing 11/19)
 
 ══════════════════════════════════════════════════════════
 THINGS TO RESEARCH / LEARN
