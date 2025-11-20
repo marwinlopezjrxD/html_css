@@ -39,6 +39,7 @@ Untracked / Bugs
 
 Music folder still has background-clip warnings
 → need to add   background-clip: text;   after every -webkit-background-clip
+- All Done, Nothing to fix now.
 
 ==========================================================================================
 
