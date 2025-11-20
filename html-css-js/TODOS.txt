@@ -48,6 +48,13 @@ To push changes from laptop:
    git commit -m "your message here"
    git push
 
+Translate later:
+
+Ganito ang nangyayari, if magcocommit ako ng something sa phone, tapos cocommit ako sa laptop
+lalabas may lalabas na files from live repo and files sa local(nag ca-clash sila), so ang dapat
+gawin nangyari sakin to ng madaling araw, hindi naman lumabas yung conflict error
+pero ang ginawa ng github ata or ng GIT is wait lang hanapin ko pa
+
 ══════════════════════════════════════════════════════════
 PERSONAL REMINDERS
 
