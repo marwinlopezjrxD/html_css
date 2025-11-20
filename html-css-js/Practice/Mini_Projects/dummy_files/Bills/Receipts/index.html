@@ -1,3 +1,341 @@
-<h1>anything that has receipts will be dropped here...</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robinsons Supermarket Receipt • Nov 20, 2025</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Exo+2:wght@300;500&display=swap');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      background: linear-gradient(135deg, #0b0014 0%, #1a0033 50%, #2d0066 100%);
+      background-attachment: fixed;
+      color: #e6e6ff;
+      font-family: 'Exo 2', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      line-height: 1.4;
+    }
+    
+    .receipt-container {
+      max-width: 400px;
+      width: 100%;
+      background: rgba(20, 10, 40, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(180, 80, 255, 0.4);
+      border-radius: 15px;
+      padding: 30px 25px;
+      box-shadow: 
+        0 0 30px rgba(180, 80, 255, 0.5),
+        inset 0 0 20px rgba(100, 50, 200, 0.2);
+      position: relative;
+      overflow: hidden;
+      font-size: 0.85rem;
+    }
+    
+    .receipt-container::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(180, 80, 255, 0.1) 0%, transparent 70%);
+      animation: pulse 12s infinite;
+      z-index: 0;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { transform: translate(25%, 25%); }
+      50% { transform: translate(-25%, -25%); }
+    }
+    
+    .receipt-content {
+      position: relative;
+      z-index: 1;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba(180, 80, 255, 0.3);
+      padding-bottom: 15px;
+    }
+    
+    .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.5rem;
+      background: linear-gradient(90deg, #b450ff, #ff66cc);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 5px;
+    }
+    
+    .store-info {
+      font-size: 0.7rem;
+      color: #b450ff;
+      line-height: 1.2;
+    }
+    
+    .tin-id {
+      font-size: 0.65rem;
+      color: #e6e6ff;
+      margin-top: 10px;
+    }
+    
+    .customer-info {
+      margin-bottom: 15px;
+      font-size: 0.7rem;
+      color: #b19cd9;
+    }
+    
+    .item-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      padding: 2px 0;
+      border-bottom: 1px solid rgba(180, 80, 255, 0.1);
+    }
+    
+    .item-name {
+      flex: 1;
+      font-size: 0.75rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    .item-price {
+      font-size: 0.75rem;
+      text-align: right;
+      min-width: 60px;
+    }
+    
+    .subtotal-row {
+      font-weight: 500;
+      border-top: 2px solid rgba(180, 80, 255, 0.3);
+      margin-top: 10px;
+      padding-top: 5px;
+    }
+    
+    .total {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #b450ff, #ff66cc);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: right;
+      margin: 10px 0;
+    }
+    
+    .payment-section {
+      margin: 15px 0;
+      padding: 10px;
+      background: rgba(180, 80, 255, 0.05);
+      border-radius: 8px;
+      font-size: 0.7rem;
+    }
+    
+    .payment-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 3px;
+    }
+    
+    .vat {
+      color: #b19cd9;
+      font-size: 0.65rem;
+    }
+    
+    .card-info {
+      font-family: monospace;
+      font-size: 0.6rem;
+      color: #b450ff;
+      margin-top: 5px;
+      word-break: break-all;
+    }
+    
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.6rem;
+      color: #b19cd9;
+      border-top: 1px solid rgba(180, 80, 255, 0.2);
+      padding-top: 10px;
+    }
+    
+    .barcode {
+      font-family: monospace;
+      letter-spacing: 2px;
+      color: #ff66cc;
+      margin: 5px 0;
+    }
+    
+    @media (max-width: 480px) {
+      .receipt-container {
+        max-width: 100%;
+        padding: 20px 15px;
+      }
+      
+      .item-name {
+        font-size: 0.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="receipt-container">
+    <div class="receipt-content">
+      <div class="header">
+        <div class="logo">ROBINSONS EASYmart</div>
+        <div class="store-info">
+          SUPERMARKET<br>
+          G/F LIBERTY BLDG. BONI AVE.<br>
+          CORNER MANDALUYONG CITY<br>
+          SAN JUAN CITY
+        </div>
+        <div class="tin-id">TIN: ________</div>
+        <div>ID No.: ________</div>
+        <div>Business Style: ________</div>
+      </div>
 
-<p>== add a receipt here ==</p>
+      <div class="customer-info">
+        <div class="item-row">
+          <span class="item-name">DARI CREME MARG BTRM</span>
+          <span class="item-price">45.00 V</span>
+        </div>
+        <div class="item-row">
+          <span class="item-name">DAISOY SOY SAUCE</span>
+          <span class="item-price">23.00 V</span>
+        </div>
+        <div class="item-row">
+          <span class="item-name">DP WHVGNG 285MLX4</span>
+          <span class="item-price">19.50 V</span>
+        </div>
+        <div class="item-row">
+          <span class="item-name">DARI CREME MARG BTRM</span>
+          <span class="item-price">45.00 V</span>
+        </div>
+        <div class="item-row">
+          <span class="item-name">DAISOY SOY SAUCE</span>
+          <span class="item-price">23.00 V</span>
+        </div>
+        <div class="item-row">
+          <span class="item-name">DP WHVGNG 285MLX4</span>
+          <span class="item-price">19.50 V</span>
+        </div>
+        <div class="item-row">
+          <span class="item-name">DAILY FRESH TASTY</span>
+          <span class="item-price">85.00 V</span>
+        </div>
+        <div class="item-row">
+          <span class="item-name">DAILY FRESH TASTY</span>
+          <span class="item-price">85.00 V</span>
+        </div>
+        <div class="item-row">
+          <span class="item-name">FL X P37.50/UNTIL</span>
+          <span class="item-price">75.00 V</span>
+        </div>
+        <div class="item-row">
+          <span class="item-name">GREEN CROSS DAILY CA</span>
+          <span class="item-price">75.00 V</span>
+        </div>
+        <div class="item-row">
+          <span class="item-name">KNORR P30.50/GRN CORN</span>
+          <span class="item-price">57.00 V</span>
+        </div>
+        <div class="item-row">
+          <span class="item-name">PUREFOODS CRNB FH CH</span>
+          <span class="item-price">127.40 V</span>
+        </div>
+        <div class="item-row">
+          <span class="item-name">PUREFOODS FUN NUGGET</span>
+          <span class="item-price">110.00 V</span>
+        </div>
+        <div class="item-row">
+          <span class="item-name">PUREFOODS TENDER JUICY</span>
+          <span class="item-price">153.25 V</span>
+        </div>
+        <div class="item-row">
+          <span class="item-name">REBAG SACK BAG GREEN</span>
+          <span class="item-price">50.00 V</span>
+        </div>
+        <div class="item-row">
+          <span class="item-name">REBAG ONEGO BAG</span>
+          <span class="item-price">0.00 N</span>
+        </div>
+        <div class="item-row">
+          <span class="item-name">000000072914 SHOP SK</span>
+          <span class="item-price">0.00 N</span>
+        </div>
+        <div class="item-row">
+          <span class="item-name">rob 0.45kg X P18.00/kg</span>
+          <span class="item-price">206.91 N</span>
+        </div>
+        <div class="item-row">
+          <span class="item-name">rob 0.75kg X P18.00/kg</span>
+          <span class="item-price">165.30 N</span>
+        </div>
+        <div class="item-row">
+          <span class="item-name">tf 0.65kg X P19.00/kg</span>
+          <span class="item-price">129.05 N</span>
+        </div>
+        <div class="item-row">
+          <span class="item-name">tf 0.20kg X P25.00/kg</span>
+          <span class="item-price">75.00 N</span>
+        </div>
+        <div class="item-row">
+          <span class="item-name">tf tomato 0.25kg</span>
+          <span class="item-price">48.00 N</span>
+        </div>
+      </div>
+
+      <div class="subtotal-row item-row">
+        <span class="item-name">TOTAL</span>
+        <span class="item-price">P1,467.48</span>
+      </div>
+
+      <div class="payment-section">
+        <div class="payment-row">
+          <span>RBANK DEBIT</span>
+          <span>1,467.48</span>
+        </div>
+        <div class="barcode">4601******7051</div>
+        <div class="payment-row">
+          <span>APPROVED CODE:11500</span>
+          <span></span>
+        </div>
+        <div class="vat">VAT Exempt Sales: 0.00</div>
+        <div class="vat">VAT Exempt Sales: 627.66</div>
+        <div class="vat">VATable Sales: 90.03</div>
+        <div class="total">VAT: 1,467.91</div>
+      </div>
+
+      <div class="card-info">
+        Card Number : ***********6<br>
+        Customer Expiry Name: MARWIN DELA PENA JR<br>
+        | Available Balance : 76.44<br>
+        | Current Balance : 84.10
+      </div>
+
+      <div class="footer">
+        Cashier Items: 19<br>
+        Sr No: 050 Date:11/20/25 Time:17:20:53<br>
+        Terminal No: 0006/T Date:17:20:53
+      </div>
+    </div>
+  </div>
+</body>
+</html>
