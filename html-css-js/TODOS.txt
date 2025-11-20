@@ -20,7 +20,7 @@ MEDIUM PRIORITY
 
 LOW PRIORITY
 - Test and verify all changes made in the Subscriptions folder
-- Create a Budget Tracker App (ongoing 11/19)
+
 
 ══════════════════════════════════════════════════════════
 THINGS TO RESEARCH / LEARN
@@ -63,8 +63,8 @@ hindi ko alam pano nangyari check ko nalang mamaya
 PERSONAL REMINDERS
 
 Food / House
-- Marinate and air fry chicken
-- Buy vegetables
+- Marinate and air fry chicken (no stock)
+- Buy vegetables (no stock)
 - Grocery run + stock up
 - Water the plants!!
 - Save money for laptop deep cleaning next year (only after warranty promo ends)
@@ -92,6 +92,18 @@ Countries to consider Migrating/Work Abroad
 1. Canada - free healthcare
 2. USA - high income, high cost of living
 3. Saudi Arabia/Dubai - Zero tax for foreign workers(OFW)
+
+================
+
+- Create a Budget Tracker App (ongoing 11/19)
+
+1k budget
+
+good for: 7-15 days
+
+- try to maximize 1k php budget. 
+
+================
 
 
 Convert all text files into HTML Document. 
