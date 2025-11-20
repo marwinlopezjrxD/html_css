@@ -45,10 +45,10 @@ Music folder still has background-clip warnings
 
 Ongoing files right now (done 11/21)
 
-- why-rem-is-better-than-emilia.html 
-- gaming-peripherals-and-etc.html  
-- settings-and-etc.html
-- music-index.html 
+- why-rem-is-better-than-emilia.html ✅
+- gaming-peripherals-and-etc.html  ✅
+- settings-and-etc.html ✅
+- music-index.html ✅
 
 ==========================================================================================
 
