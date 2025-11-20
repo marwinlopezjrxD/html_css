@@ -42,5 +42,4 @@ Main TODOS.txt file (root)
 
 Additional TODOS
 
-- add design for wishlist.txt
-- add design for points_to_ponder.txt
+- add design for all text files.
