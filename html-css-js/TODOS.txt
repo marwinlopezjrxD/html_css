@@ -53,7 +53,9 @@ Translate later:
 Ganito ang nangyayari, if magcocommit ako ng something sa phone, tapos cocommit ako sa laptop
 lalabas may lalabas na files from live repo and files sa local(nag ca-clash sila), so ang dapat
 gawin nangyari sakin to ng madaling araw, hindi naman lumabas yung conflict error
-pero ang ginawa ng github ata or ng GIT is wait lang hanapin ko pa
+pero ang ginawa ng github ata or ng GIT is eto yung lumabas after ko mag commit ata via phone
+ito yung lumabas "Merge branch 'master' of https://github.com/marwinlopezjrxD/html_css"
+hindi ko alam pano nangyari check ko nalang mamaya 
 
 ══════════════════════════════════════════════════════════
 PERSONAL REMINDERS
