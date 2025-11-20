@@ -27,7 +27,7 @@ To be followed:
 
 - add more artists and albums
 
-====================================================================================================================
+==========================================================================================
 
 
 == no deadline ==
@@ -43,3 +43,39 @@ Main TODOS.txt file (root)
 Additional TODOS
 
 - add design for all text files.
+
+
+==========================================================================================
+
+Untracked TODOS
+
+- some files on Music Folder has problems in it
+
+Error Message Example:
+[{
+	"resource": "/c:/Users/Marwin Lopez Jr/OneDrive/Desktop/Workspace 2025-2026/html-css-js/Practice/Mini_Projects/dummy_files/Music/Artists/Mitski/Albums/The-Land-Is-Inhospitable-and-So-Are-We/my-love-mine-all-mine/my-love-teaser.html",
+	"owner": "_generated_diagnostic_collection_name_#1",
+	"code": "vendorPrefix",
+	"severity": 4,
+	"message": "Also define the standard property 'background-clip' for compatibility",
+	"source": "css",
+	"startLineNumber": 38,
+	"startColumn": 7,
+	"endLineNumber": 38,
+	"endColumn": 30,
+	"origin": "extHost1"
+}]
+
+"Also define the standard property 'background-clip' for compatibility"
+
+
+==========================================================================================
+
+Ongoing TODOS as of now:
+
+why-rem-is-better-than-emilia.html
+gaming-peripherals-and-etc.html
+settings-and-etc.html
+music-index.html (no deadline)
+
+==========================================================================================

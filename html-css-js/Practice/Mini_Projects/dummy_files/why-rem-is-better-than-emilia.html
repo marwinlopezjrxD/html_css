@@ -1,4 +1,4 @@
-<h1<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -40,7 +40,10 @@
       background: radial-gradient(circle, rgba(180, 80, 255, 0.15) 0%, transparent 70%);
       animation: pulse 12s infinite;
     }
-    @keyframes pulse { 0%,100% { transform: translate(25%,25%); } 50% { transform: translate(-25%,-25%); } }
+    @keyframes pulse { 
+      0%,100% { transform: translate(25%,25%); } 
+      50% { transform: translate(-25%,-25%); } 
+    }
 
     h1 {
       font-family: 'Orbitron', sans-serif;
@@ -48,6 +51,7 @@
       font-size: 2.8rem;
       background: linear-gradient(90deg, #b450ff, #ff66cc);
       -webkit-background-clip: text;
+      background-clip: text;              /* ← This line kills the warning */
       -webkit-text-fill-color: transparent;
       margin-bottom: 30px;
       text-shadow: 0 0 20px rgba(180, 80, 255, 0.6);
@@ -80,9 +84,6 @@
   <div class="container">
     <h1>Why Rem Is Better Than Emilia<br><span style="font-size:0.7em;">— The Only Correct Opinion —</span></h1>
 
-<h3>Revise </>
-
-
     <p>Rem undeniably surpasses Emilia as the superior heroine in Re:Zero because her unwavering, selfless devotion to Subaru stands as the ultimate proof of true love in a world full of half-measures and political convenience—while Emilia constantly wavers, prioritizes her own royal ambitions, and leaves Subaru emotionally dangling for entire arcs, Rem confesses her love without expecting anything in return, literally dies for him multiple times, supports him when he’s at his absolute lowest, and even erases her own existence just to give him a chance at happiness. This level of pure, unconditional loyalty crushes Emilia’s hesitant, “I’ll choose you… eventually, maybe, after the royal selection” attitude, making Rem the one who actually saves Subaru’s soul instead of treating him like a convenient knight she can keep on standby.</p>
 
     <p>Beyond devotion, Rem’s character development and narrative impact completely eclipse Emilia’s—starting as a broken, genocidal oni who viewed herself as worthless compared to her sister, Rem claws her way to genuine self-worth through her love for Subaru, becoming a fierce, competent, and adorably expressive maiden whose every “Rem… loves Subaru-kun” melts hearts and carries the emotional weight of the entire series; Emilia, despite being the titular heroine, spends most of the story as a reactive, perpetually confused half-elf whose growth is glacially slow and constantly overshadowed by literally everyone around her, to the point that even the author admits Rem became more popular than intended.</p>
@@ -90,8 +91,9 @@
     <p>Finally, on a pure waifu level, Rem wins by an absolute landslide: cute demon maid outfit, sky-blue hair that contrasts perfectly with her gentle yet yandere personality, a voice that can switch from angelic softness to terrifying battle mode, actual memorable lines, and the single greatest confession in anime history (“I love you… I want to be by your side… even if this body is torn apart!”) versus Emilia’s silver-haired beauty that somehow still manages to feel bland next to Rem’s explosive charm—simply put, Rem is the one fans would start (and canonically have started) wars over, while Emilia remains the nice girl you root for but would never pick when Best Girl is literally sacrificing her soul for the protagonist right in front of you.</p>
 
     <footer>
-      In short, Rem is love, Rem is life, and Emilia is forever stuck in silver-medal hell.<br>
-      <span class="rem-heart">♡</span> Rem best girl, no contest <span class="rem-heart">♡</span>
+      In short, Rem is love, Rem is life.<br>
+      <span class="rem-heart">♡</span> Rem best girl...<span class="rem-heart">♡</span>
+      <h1>Ty Sierra Madre</h1>
     </footer>
   </div>
 </body>
