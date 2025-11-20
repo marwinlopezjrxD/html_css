@@ -1,84 +1,63 @@
-==========================================================================================
-
-Deadline: On or before 9:00 AM PHT TODAY SEPT 20!!!!!
-- DONE (11/20 8:36 AM)
-
-
-Objectives:
-
-music-index.html
-
-1
-
-- add a small text under the song card(show full album)
-SONG 
-album_name
-
-1.1 (more detailed explanation)
-
-- try to show the album first in the music index homepage and check if it is applicable to the user experience (UX).
-Example:
-- Song_Name 
-- Song_Album (small font size under Song_Name)
+# TODOS.txt
+# Last update: November 21, 2025
 
 ==========================================================================================
 
-
-- add a genre
-
-To be followed:
-
-- add more artists and albums
+Deadline: On or before 9:00 AM PHT TODAY SEPT 20
+- DONE (11/20 8:36 AM) 
 
 ==========================================================================================
 
+music-index.html (current focus)
+
+1. add small text under song card
+   SONG NAME
+   album_name (smaller font)
+
+1.1 try showing album name first on homepage → check if better for UX
+   Example:
+   My Love Mine All Mine
+   The Land Is Inhospitable and So Are We
+
+- add genre tags later
+- more artists & albums (to be followed)
+
+==========================================================================================
 
 == no deadline ==
 
-Main TODOS.txt file (root)
+Main TODOS (root)
 
-- make optional roadmap for front-end dev (max 3-4 years to master i think, remove all backend and focus more on designs and enhance users experience (UX) )
-- make optional roadmap for MERN Stack (long time, idk maybe 5-10 years probably, same as full stack web dev.)
-- add the following roadmaps to under Mini_Project Folder
-- transfer 
-
-
-Additional TODOS
-
-- add design for all text files.
-
+- make front-end roadmap (max 3-4 years, pure design + UX, no backend)
+- make MERN roadmap (long-term, maybe 5-10 years)
+- move both roadmaps inside Mini_Projects folder later
+- convert all .txt files to proper .html with design
 
 ==========================================================================================
 
-Untracked TODOS
+Untracked / Bugs
 
-- some files on Music Folder has problems in it
-
-Error Message Example:
-[{
-	"resource": "/c:/Users/Marwin Lopez Jr/OneDrive/Desktop/Workspace 2025-2026/html-css-js/Practice/Mini_Projects/dummy_files/Music/Artists/Mitski/Albums/The-Land-Is-Inhospitable-and-So-Are-We/my-love-mine-all-mine/my-love-teaser.html",
-	"owner": "_generated_diagnostic_collection_name_#1",
-	"code": "vendorPrefix",
-	"severity": 4,
-	"message": "Also define the standard property 'background-clip' for compatibility",
-	"source": "css",
-	"startLineNumber": 38,
-	"startColumn": 7,
-	"endLineNumber": 38,
-	"endColumn": 30,
-	"origin": "extHost1"
-}]
-
-"Also define the standard property 'background-clip' for compatibility"
-
+Music folder still has background-clip warnings
+→ need to add   background-clip: text;   after every -webkit-background-clip
 
 ==========================================================================================
 
-Ongoing TODOS as of now:
+Ongoing files right now
 
-why-rem-is-better-than-emilia.html
-gaming-peripherals-and-etc.html
-settings-and-etc.html
-music-index.html (no deadline)
+- why-rem-is-better-than-emilia.html
+- gaming-peripherals-and-etc.html  
+- settings-and-etc.html
+- music-index.html (no rush)
 
 ==========================================================================================
+
+Quick Git fix (only when I add empty folders)
+
+echo. > FolderName/.gitkeep
+git add .
+git commit --allow-empty -m "chore: add empty folders"
+git push
+
+==========================================================================================
+
+# End of file.
