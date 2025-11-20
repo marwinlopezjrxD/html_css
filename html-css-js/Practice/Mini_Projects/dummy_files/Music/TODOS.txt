@@ -8,7 +8,7 @@ Deadline: On or before 9:00 AM PHT TODAY SEPT 20
 
 ==========================================================================================
 
-music-index.html (current focus)
+music-index.html (done 11/21)
 
 1. add small text under song card
    SONG NAME
@@ -42,12 +42,12 @@ Music folder still has background-clip warnings
 
 ==========================================================================================
 
-Ongoing files right now
+Ongoing files right now (done 11/21)
 
-- why-rem-is-better-than-emilia.html
+- why-rem-is-better-than-emilia.html 
 - gaming-peripherals-and-etc.html  
 - settings-and-etc.html
-- music-index.html (no rush)
+- music-index.html 
 
 ==========================================================================================
 
