@@ -1,0 +1,7 @@
+# Add malupiton vine boom sound effect for failing grade on questionnaire.html file
+-- add check sound effect for passing grade 
+
+# Add a random number animation (karaoke-like scoring) if the user submits on the questionnaire (make a slo-mo effect when you will show the real score.) 
+-- after showing the real score, apply the sound effect of either pass or fail, delay time is 1-2 seconds.
+
+# Complete Gallery Folder.
