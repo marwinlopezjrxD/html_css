@@ -156,7 +156,7 @@ Well-being
 - Rewatch my Dear Friend Nokotan (watched ep2)
 - Read Solo Leveling: Ragnarok (Manhwa)
 - Rewatch Frieren: Beyond Journey's End
-
+- Try to watch Breaking Bad
 
 News and Headlines
 - Watch IT related stuff and other technological advancements happening today. (done 11/19)
@@ -201,4 +201,5 @@ UNTRACKED TODOS
 FUTURE TODOS
 
 - Add a new-year's resolution page
-
+- Pagination
+- Flexbox Simulator (hoverable)
