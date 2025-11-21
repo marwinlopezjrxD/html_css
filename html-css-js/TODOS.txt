@@ -62,6 +62,35 @@ hindi ko alam pano nangyari check ko nalang mamaya
 ══════════════════════════════════════════════════════════
 PERSONAL REMINDERS
 
+Medications
+
+Antihistamine Tolerance: HIGH
+
+Side Effects after taking Antihistamine:
+- Sleepy
+
+Allergy/Low Immune System(less sleep hrs, Broken Body Clock)
+- Omcet (Antihistamine) (done 11/22)
+
+Allergic Rhinitis (Runny nose, Sleepy, Migraine)
+- Symdex
+
+Fever
+- rest
+
+High Fever
+- Paracetamol 1-3x every 6hrs
+
+Flu
+- Bioflu 2-3x every 6hrs
+
+Headache
+- Rest
+
+Migraine
+- Paracetamol: Biogesic 2-3x every 6hrs
+
+
 Food / House
 - Marinate and air fry chicken (no stock)
 - Buy vegetables (no stock)
@@ -124,31 +153,5 @@ UNTRACKED TODOS
 
 - add a vine boom sound when fail, check mark sound when pass on "Questionnaire.html". 
 
-Medications
 
-Antihistamine Tolerance: HIGH
-
-Side Effects after taking Antihistamine:
-- Sleepy
-
-Allergy/Low Immune System( less sleep time, Broken Body Clock)
-- Omcet (Antihistamine) (done 11/22)
-
-Allergic Rhinitis (Runny nose, Sleepy, Migraine)
-- Symdex
-
-Fever
-- rest
-
-High Fever
-- Paracetamol 1-3x every 6hrs
-
-Flu
-- Bioflu 2-3x every 6hrs
-
-Headache
-- Rest
-
-Migraine
-- Paracetamol: Biogesic 2-3x every 6hrs
 
