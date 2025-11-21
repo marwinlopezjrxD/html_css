@@ -30,5 +30,5 @@ marwinlopezjrxD – 2026 Edition
 - Weekly time commitment: 8–12 hours maximum  
 - All work stays in this repo with clear folders and documentation
 
-– Marwin Lopez  
+– Marwin Jr. Dela Peña Lopez  
 Last updated: November 22, 2025
