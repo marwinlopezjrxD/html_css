@@ -1,7 +1,27 @@
-# Add malupiton vine boom sound effect for failing grade on questionnaire.html file
--- add check sound effect for passing grade 
+DEADLINE: DECEMBER 30, 2025
 
-# Add a random number animation (karaoke-like scoring) if the user submits on the questionnaire (make a slo-mo effect when you will show the real score.) 
+# Add malupiton vine boom sound effect for failing score on questionnaire.html file.
+-- add check sound effect for passing score 
+
+# Add a random number animation (karaoke-like scoring) if the user submits on the questionnaire (make a slo-mo effect when showing the real score).
 -- after showing the real score, apply the sound effect of either pass or fail, delay time is 1-2 seconds.
+-- maybe add an additional drum-roll sound effect before the pass or fail sound effect.
 
 # Complete Gallery Folder.
+-- add wallpapers
+-- add hover effects
+-- make it just like the music-index.html teaser thing (saturn based theme - dark purple color-ish)
+
+# Choose and complete 1-3 text files and convert it to a fully-fledge HTML document and make it responsive for all devices (PC, Laptop, Mobile Devices, etc.).
+
+3 text files to be converted (top picks)
+
+-- wishlist.txt
+-- points to ponder.txt
+-- Main TODOS.txt (root file)
+
+# Complete 3 draft HTML files
+
+-- why-frieren-s2-might-be-AOTY-again.html
+-- why-you-should-not-read-chainsawman-real.html
+-- html-css-js\Practice\Mini_Projects\dummy_files\Gallery\index.html
