@@ -6,6 +6,7 @@ DEADLINE: DECEMBER 30, 2025
 # Add a random number animation (karaoke-like scoring) if the user submits on the questionnaire (make a slo-mo effect when showing the real score).
 -- after showing the real score, apply the sound effect of either pass or fail, delay time is 1-2 seconds.
 -- maybe add an additional drum-roll sound effect before the pass or fail sound effect.
+--- add oh sh** sound effect when the user passes with the expected passing score
 
 # Complete Gallery Folder.
 -- add wallpapers
@@ -25,3 +26,7 @@ DEADLINE: DECEMBER 30, 2025
 -- why-frieren-s2-might-be-AOTY-again.html
 -- why-you-should-not-read-chainsawman-real.html
 -- html-css-js\Practice\Mini_Projects\dummy_files\Gallery\index.html
+
+# Additional
+
+-- Make a 404 page for all of html files
