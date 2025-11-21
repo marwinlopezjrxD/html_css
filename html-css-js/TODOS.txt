@@ -92,8 +92,61 @@ Health / Fitness
 - Run 10K
 - Play basketball (done 11/18 ✅)
 
-Find Old Exercise Plan 
+# Find Old Exercise Plan (Lost or is Deleted)
 
+What i remember on that Exercise Plan:
+
+Sunday
+- cheat day (eat like there is no tomo)
+
+Monday, Wednesday, and Friday
+
+Squats
+
+1st set:
+- 30 reps, rest 2mins
+- 30 reps, rest 2mins
+- 40 reps, reat 2mins
+
+Next set:
+- Static Squat Hold (hold for 30seconds), rest 3-5mins
+- same, hold for 30 seconds, rest 4-6mins
+- last rep is until failure, i can hold for about 1min and 30 seconds afaik
+
+Tuesday
+
+1st set:
+- Unilateral Lift 15pounds(20 reps), rest 2-3mins
+- same, but lighter weight (5pounds) 60 reps, rest 1min
+- cannot remember other things, but it ks 40reps for lifting weight, then rest for 2-4 mins
+
+Next set:
+- push up 20🥹🫡😊reps, rest 2-5mins
+- push up 20 reps, rest 2-5 mins
+- push up 30 reps, rest 5-10 mins
+
+third set:
+- planking, hold at least 1min., rest for next set until satisfied.
+
+Last Set:
+- sit up, 60 reps
+
+Thursday 
+- Jogging for at least 30-40 mins
+- sprint for 10-30 seconds for every 10mins
+
+Saturday
+- rest day
+
+from 95kg to 76kg in less than a year. mid 2023 or so i believe., but im no  athlete, its very tiring to do and is prone for burnouts, thats why i remove and or deleted this demonic exercise plan. 
+
+================
+
+# New Exercise Plan:
+- Nothing, I'll just do what I want and most importantly, be present at all times and spend time with family/friends/etc.
+- Veryfocused in this repo. also, I am very hopeful also in this repo, idk what the future may hold, but im very glad that i am now able to do what i want to do...
+
+================
 
 Well-being
 - Finish remaining episodes of Spy x Family
@@ -102,6 +155,7 @@ Well-being
 - Watch Bocchi/Hell's Paradise
 - Rewatch my Dear Friend Nokotan (watched ep2)
 - Read Solo Leveling: Ragnarok (Manhwa)
+- Rewatch Frieren: Beyond Journey's End
 
 
 News and Headlines
@@ -144,5 +198,7 @@ UNTRACKED TODOS
 
 - add a vine boom sound when fail, check mark sound when pass on "Questionnaire.html". 
 
+FUTURE TODOS
 
+- Add a new-year's resolution page
 
