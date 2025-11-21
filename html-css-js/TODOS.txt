@@ -48,25 +48,42 @@ To push changes from laptop:
    git commit -m "your message here"
    git push
 
-Translate later:
-
-Ganito ang nangyayari, if magcocommit ako ng something sa phone, tapos cocommit ako sa laptop
-lalabas may lalabas na files from live repo and files sa local(nag ca-clash sila), so ang dapat
-gawin nangyari sakin to ng madaling araw, hindi naman lumabas yung conflict error
-pero ang ginawa ng github ata or ng GIT is eto yung lumabas after ko mag commit ata via phone
-ito yung lumabas "Merge branch 'master' of https://github.com/marwinlopezjrxD/html_css"
-1:55 PM (2 hrs ago)
-
-hindi ko alam pano nangyari check ko nalang mamaya 
-
 ══════════════════════════════════════════════════════════
 PERSONAL REMINDERS
 
+Medications
+
+Antihistamine Tolerance: HIGH
+
+Side Effects after taking Antihistamine:
+- Sleepy
+
+Allergy/Low Immune System(less sleep hrs, Broken Body Clock)
+- Omcet (Antihistamine) 
+-- (done 11/22)
+
+Allergic Rhinitis (Runny nose, Sleepy, Migraine)
+- Symdex
+
+Fever
+- rest
+
+High Fever
+- Paracetamol 1-3x every 6hrs
+
+Flu
+- Bioflu 2-3x every 6hrs
+
+Headache
+- Rest
+
+Migraine
+- Paracetamol: Biogesic 2-3x every 6hrs
+
+
 Food / House
-- Marinate and air fry chicken (no stock)
-- Buy vegetables (no stock)
-- Grocery run + stock up
-- Water the plants every 2 to 3 days (done 11/20)
+- Find bidet
+- Water the plants every 2 to 3 days (done 11/22)
 - Save money for laptop deep cleaning next year (only after warranty promo ends)
 
 Health / Fitness
@@ -123,3 +140,6 @@ Convert all text files into HTML Document.
 UNTRACKED TODOS
 
 - add a vine boom sound when fail, check mark sound when pass on "Questionnaire.html". 
+
+
+
