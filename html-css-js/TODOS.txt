@@ -203,3 +203,9 @@ FUTURE TODOS
 - Add a new-year's resolution page
 - Pagination
 - Flexbox Simulator (hoverable)
+
+---
+
+Cut noise and less shouting for neighbors around 8pm or so
+
+---
