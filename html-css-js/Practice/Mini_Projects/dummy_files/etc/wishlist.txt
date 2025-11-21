@@ -7,7 +7,8 @@
 # Peripherals
 - HyperX Cloud III (Wireless)
 - Razer Viper V3 PRO 5G (Comparable to current - Razer Viper Mini 61g)
-AULA F75 (thocky build)
+
+AULA F75 - barebones only (thocky build)
 
 # Find a modder near Mandaluyong
 - Gateron Milky Yellow Pro - Linear (Silent)
