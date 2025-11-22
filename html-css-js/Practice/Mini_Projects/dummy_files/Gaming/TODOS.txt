@@ -70,3 +70,17 @@ Warrior's Arena Normal Mode
 === FAIL ===
 
 - N/A
+
+=== WIND/FORCE/ANGLE/DISTANCE ===
+
+Stage 4
+
+BLACK 
+Force: 65 
+Wind: 2.3 > (right) 
+Force: 34
+
+YELLOW 
+Force:
+Wind:
+Force:
