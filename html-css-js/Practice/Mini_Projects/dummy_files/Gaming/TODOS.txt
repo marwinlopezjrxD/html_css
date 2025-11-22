@@ -67,11 +67,11 @@ Warrior's Arena Normal Mode
 
 === SUCCESS ===
 
-- 2 success (1/22/2025)
+- 2 success (11/22/2025)
 
 === FAIL ===
 
-- 2 fails (1/22/2025)
+- 2 fails (11/22/2025)
 
 === Easy Difficulty ===
 
