@@ -51,7 +51,7 @@ Warrior's Arena Normal Mode
 
 === FAIL ===
 
-- 11/22/2025
+- 1 fail 11/22/2025
 
 === Normal Difficulty ===
 
