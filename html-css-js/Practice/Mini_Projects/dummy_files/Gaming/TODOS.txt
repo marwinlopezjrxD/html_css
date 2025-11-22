@@ -55,7 +55,7 @@ Warrior's Arena Normal Mode
 
 -- SUCCESS
 
-- N/A
+- 1 success (1/22/2025)
 
 === FAIL ===
 
