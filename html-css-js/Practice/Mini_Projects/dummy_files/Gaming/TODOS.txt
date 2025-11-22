@@ -87,6 +87,8 @@ Warrior's Arena Normal Mode
 
 Stage 4
 
+ICE
+
 BLACK 
 Angle: 65 
 Wind: 2.3 > (right) 
