@@ -76,11 +76,13 @@ Warrior's Arena Normal Mode
 Stage 4
 
 BLACK 
-Force: 65 
+Angle: 65 
 Wind: 2.3 > (right) 
 Force: 34
+Distance: (3-5 idk)
 
 YELLOW 
-Force:
-Wind:
-Force:
+Angle: N/A
+Wind: N/A
+Force: N/A
+Distance: N/A
