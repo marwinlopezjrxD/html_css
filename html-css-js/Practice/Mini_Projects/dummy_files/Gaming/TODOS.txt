@@ -45,7 +45,9 @@ Warrior's Arena Normal Mode
 
 === Hard Difficulty ===
 
--- SUCCESS
+=== SUCCESS ===
+
+- N/A
 
 === FAIL ===
 
@@ -53,7 +55,7 @@ Warrior's Arena Normal Mode
 
 === Normal Difficulty ===
 
--- SUCCESS
+=== SUCCESS ===
 
 - 1 success (1/22/2025)
 
@@ -63,7 +65,7 @@ Warrior's Arena Normal Mode
 
 === Easy Difficulty ===
 
--- SUCCESS
+=== SUCCESS ===
 
 - N/A
 
