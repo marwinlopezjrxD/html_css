@@ -1,5 +1,15 @@
 === GAMING TODOS ===
 
+King's Bless (300 all stats + 2 Free Boss Room)
+- Remaining Days: 311 day
+
+VIP
+- Lvl 10 (1 Free Boss Room, Auto Harvest)
+- Expiry Date: 2026-6-4
+
+Card Flip
+- 3 flips (Vip 4 and above + King's Bless)
+
 ==============================================================
 ALL ALARMS ARE ADJUSTED BASED TO +1 HOUR (Daylight Time Saving), To adhere the timezone for server 8.
 
