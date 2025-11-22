@@ -41,12 +41,32 @@ Free Boss Room Wasted:
 
 PRACTICE:
 
-Warriors Arena Normal Mode
+Warrior's Arena Normal Mode
 
-- Hard Mode
+=== Hard Difficulty ===
 
 -- SUCCESS
 
--- FAIL 
+=== FAIL ===
+
 - 11/22/2025
 
+=== Normal Difficulty ===
+
+-- SUCCESS
+
+- N/A
+
+=== FAIL ===
+
+- N/A
+
+=== Easy Difficulty ===
+
+-- SUCCESS
+
+- N/A
+
+=== FAIL ===
+
+- N/A
