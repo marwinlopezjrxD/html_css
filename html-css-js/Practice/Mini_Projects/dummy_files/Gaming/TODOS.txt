@@ -71,7 +71,7 @@ Warrior's Arena Normal Mode
 
 === FAIL ===
 
-- 2 fails (11/22)
+- 3 fails (11/22)
 
 === Easy Difficulty ===
 
