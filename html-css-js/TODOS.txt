@@ -1,4 +1,4 @@
-PAUSE AND TAKE A BREAK AT EXACTLY 500 COMMITS (1week or more) AND OR IF THE REPO REACHES A MONTH (4 days left - repo created last 27 days as of November 23, 2025).
+PAUSE AND TAKE A BREAK (1week or more) AT EXACTLY 500 COMMITS AND OR IF THE REPO REACHES A MONTH (4 days left - repo created last 27 days as of November 23, 2025).
 
 # TODOS.txt - No deadlines, no pressure, no rules. Just progress. Period.
 
