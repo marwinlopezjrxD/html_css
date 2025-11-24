@@ -1,140 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quiz Results</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .result-buttons {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: 1.5rem 0;
-    }
-    .result-btn {
-      padding: 0.8rem 1.5rem;
-      background: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
-      transition: 0.3s;
-      text-align: center;
-      min-width: 140px;
-    }
-    .result-btn:hover {
-      background: #0056b3;
-      transform: translateY(-2px);
-    }
-    .review-btn { background: #28a745; }
-    .review-btn:hover { background: #1e7e34; }
-    .retake-btn { background: #6c757d; }
-    .retake-btn:hover { background: #5a6268; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Result</title>
+    <!-- Load shared CSS (one folder up) -->
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        /* Minimal styles for result animation & display only - no overrides */
+        #scoreDisplay { 
+            font-size: 4rem; 
+            font-weight: bold; 
+            margin: 20px 0; 
+            min-height: 80px; 
+            transition: all 0.3s ease; 
+            color: #e0d7ff; /* Matches your theme */
+        }
+        #resultText { 
+            font-size: 2rem; 
+            margin: 20px 0; 
+        }
+        .pass { color: #90ee90 !important; } /* Green for pass */
+        .fail { color: #ff6b6b !important; } /* Red for fail */
+        body { 
+            background: linear-gradient(135deg, #1a0033, #0a0a23); /* Saturn theme tie-in */
+            color: #e0d7ff; 
+            text-align: center; 
+            padding: 40px 20px; 
+        }
+        #revealBtn { 
+            padding: 12px 30px; 
+            background: #9d4edd; 
+            color: white; 
+            border: none; 
+            border-radius: 50px; 
+            cursor: pointer; 
+            font-size: 1.1rem; 
+            margin: 20px; 
+        }
+        @media (max-width: 600px) { 
+            #scoreDisplay { font-size: 3rem; } 
+        }
+    </style>
 </head>
 <body>
-  <div class="page-container" id="page">
-    <header>
-      <h1>Quiz Results</h1>
-      <p class="subtitle">See your final score</p>
-    </header>
-
-    <!-- ====================== NAVIGATION ====================== -->
-    <nav>
-      <ul>
-        <li><a href="../index.html">Homepage</a></li>
-        <li><a href="questionnaire.html">Take Quiz Again</a></li>
-        <li><a href="answersheet.html" target="_blank">Answer Sheet</a></li>
-      </ul>
-    </nav>
-
-    <!-- ====================== SCORE CARD ====================== -->
-    <div class="score-card" id="scoreCard">
-      <strong>Your Score: <span id="scoreDisplay">?/20</span></strong>
-      <p id="resultText">Calculating…</p>
+    <h1>Quiz Results</h1>
+    <p>Your score out of 20:</p>
+    
+    <div id="scoreDisplay">Click below to reveal!</div>
+    <div id="resultText"></div>
+    
+    <button id="revealBtn">Reveal Score</button>
+    
+    <div style="margin-top: 30px;">
+        <button onclick="window.location.href='questionnaire.html'">Retake Quiz</button>
+        <button onclick="window.location.href='reviewer.html'">View Answers</button>
     </div>
 
-    <!-- ====================== ACTION BUTTONS ====================== -->
-    <div class="result-buttons">
-      <a href="reviewer.html" class="result-btn review-btn">Review Answers</a>
-      <button id="retakeBtn" class="result-btn retake-btn">Retake Quiz</button>
-      <a href="answersheet.html" target="_blank" class="result-btn">Answer Sheet</a>
-    </div>
+    <!-- Audio Elements -->
+    <audio id="vineBoom" preload="auto">
+        <source src="https://raw.githubusercontent.com/marwinlopezjrxD/html_css/master/html-css-js/Questionnaire/sounds/Vine%20boom.ogg" type="audio/ogg">
+    </audio>
+    <audio id="passSound" preload="auto">
+        <source src="https://raw.githubusercontent.com/marwinlopezjrxD/html_css/master/html-css-js/Questionnaire/sounds/success-340660.mp3" type="audio/mpeg">
+    </audio>
 
-    <!-- ====================== MESSAGE ====================== -->
-    <div style="text-align:center; margin-top:40px; color:#666;">
-      <p>Answers are not shown — just your final score.</p>
-      <p>Want to learn? <a href="reviewer.html">Review all answers with explanations</a></p>
-    </div>
+    <script>
+        // Get score from localStorage
+        const score = parseInt(localStorage.getItem('quizScore') || '0');
+        const total = 20;
+        const percentage = Math.round((score / total) * 100);
+        const isPass = score >= 16; // 80% threshold
 
-    <footer>
-      <p>© 2025 HTML/CSS Practice • <a href="../index.html">Back to Home</a></p>
-    </footer>
-  </div>
+        const scoreDisplay = document.getElementById('scoreDisplay');
+        const resultText = document.getElementById('resultText');
+        const revealBtn = document.getElementById('revealBtn');
 
-  <!-- ====================== HOME BUTTON ====================== -->
-  <a href="../index.html" class="home-button" id="homeBtn">
-    <span>Home</span>
-  </a>
+        revealBtn.addEventListener('click', () => {
+            revealBtn.style.display = 'none'; // Hide button after click
 
-  <!-- ====================== MAIN SCRIPT ====================== -->
-  <script>
-    // ———————————————————————————————————
-    // 1. GET SCORE FROM localStorage
-    // ———————————————————————————————————
-    const totalQuestions = 20;
-    const passingScore   = 14;
-    const userScore      = parseInt(localStorage.getItem('quizScore')) || 0;
+            // Random number animation (2 seconds flicker)
+            let fakeScore = 0;
+            const flickerInterval = setInterval(() => {
+                fakeScore = Math.floor(Math.random() * (total + 1));
+                scoreDisplay.textContent = fakeScore;
+                scoreDisplay.style.transform = 'scale(1.1)';
+                setTimeout(() => { scoreDisplay.style.transform = 'scale(1)'; }, 100);
+            }, 150);
 
-    // ——— Update score display ———
-    document.getElementById('scoreDisplay').textContent = `${userScore}/${totalQuestions}`;
+            setTimeout(() => {
+                clearInterval(flickerInterval);
+                scoreDisplay.textContent = score + '/' + total + ' (' + percentage + '%)';
 
-    // ——— Get result elements ———
-    const scoreCard = document.getElementById('scoreCard');
-    const result    = document.getElementById('resultText');
-
-    // ———————————————————————————————————
-    // 2. PASS OR FAIL?
-    // ———————————————————————————————————
-    if (userScore >= passingScore) {
-      scoreCard.classList.add('pass');
-      result.textContent = 'You PASSED! Great job!';
-      result.style.color = '#28a745';
-    } else {
-      scoreCard.classList.add('fail');
-      result.textContent = 'You FAILED. Try again!';
-      result.style.color = '#dc3545';
-    }
-
-    // ———————————————————————————————————
-    // 3. RETAKE QUIZ BUTTON — FULL RESET
-    // ———————————————————————————————————
-    document.getElementById('retakeBtn').addEventListener('click', () => {
-      // Step 1: Clear score
-      localStorage.removeItem('quizScore');
-
-      // Step 2: Clear all individual answers (q1, q2, ..., q20)
-      for (let i = 1; i <= totalQuestions; i++) {
-        localStorage.removeItem(`q${i}`);
-      }
-
-      // Step 3: Redirect to quiz
-      window.location.href = 'questionnaire.html';
-    });
-
-    // ———————————————————————————————————
-    // 4. PAGE FADE-IN + SHRINK HOME BUTTON
-    // ———————————————————————————————————
-    setTimeout(() => {
-      document.getElementById('page').classList.add('fade-in-page');
-    }, 100);
-
-    const homeBtn = document.getElementById('homeBtn');
-    window.addEventListener('scroll', () => {
-      homeBtn.classList.toggle('shrink', window.scrollY > 200);
-    });
-  </script>
+                if (isPass) {
+                    resultText.textContent = 'PASS! Great job!';
+                    resultText.className = 'pass';
+                    document.getElementById('passSound').play().catch(e => console.log('Pass sound failed:', e));
+                } else {
+                    resultText.textContent = 'FAIL! Keep studying.';
+                    resultText.className = 'fail';
+                    document.getElementById('vineBoom').play().catch(e => console.log('Vine Boom failed:', e));
+                }
+            }, 2000);
+        });
+    </script>
 </body>
 </html>
