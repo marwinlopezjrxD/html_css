@@ -22,8 +22,8 @@ js basics
 git commands basics
 sql commands 
 
-2027 - JS/
-2028 SQL/PHP
+2027 - JS/TailwindCSS/Node.js
+2028 - SQL/PHP
 ====
 
 PRIO DESIGN (UI/UX) MORE THAN ANYTHING
