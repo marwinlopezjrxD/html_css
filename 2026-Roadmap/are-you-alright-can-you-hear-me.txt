@@ -19,9 +19,15 @@ RGB TRANSPARENCY, Color Percentage, etc
 Revisit Hierarchy (!important, ".", "#", etc)
 fonts
 js basics
-gut commands basics intro
+git commands basics
+sql commands 
+
+2027 - JS/
+2028 SQL/PHP
 ====
 
 PRIO DESIGN (UI/UX) MORE THAN ANYTHING
 
 🎅
+
+...
