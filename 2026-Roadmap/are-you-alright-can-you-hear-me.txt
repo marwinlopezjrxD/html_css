@@ -1,0 +1,26 @@
+<strong> CONSTITUTE THIS WHOLE 2026 ROADMAP README FILE INTO CSS BASED LEARNING. 
+ADD A LITTLE BIT OF JS BASICS.
+</strong>
+
+....
+
+====
+
+Example Roadmap css with slight js
+
+Explore more Css attribs
+Div mastery
+Hover
+Flexbox
+Animation, Fade in, fade out, etc
+rem, em, px, etc
+BOX MODEL
+RGB TRANSPARENCY, Color Percentage, etc
+Revisit Hierarchy (!important, ".", "#", etc)
+fonts
+js basics
+====
+
+PRIO DESIGN (UI/UX) MORE THAN ANYTHING
+
+🎅
