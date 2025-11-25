@@ -1,8 +1,7 @@
 https://vt.tiktok.com/ZSfyAdaSd/
 
-SANIBAN MO AKO WARREN BUFFET PLS
-
-SARAP BUFFET
+git fetch origin
+git reset --hard origin/master 
 
 DEADLINE: TODAY
 
