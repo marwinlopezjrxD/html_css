@@ -147,9 +147,13 @@ from 95kg to 76kg in less than a year. mid 2023 or so i believe., but im no  ath
 
 ================
 
-# New Exercise Plan:
-- Nothing, I'll just do what I want and most importantly, be present at all times and spend time with family/friends/etc.
-- Very focused in this repo. also, I am very hopeful also in this repo, idk what the future may hold, but im very glad that i am now able to do what i want to do...
+# New Exercise Plan (2026):
+- try to do at least 60 reps of pushup for every 100commits. 
+- if the last commited is an Odd Number (1, 3, 5, 7,), Make an app that simulates the ff. numbers,
+-- insert the file into a live free web hosting. 
+-- After creating a number simulator app, try the FF:
+--- run for 1, 3, 5, or 7 km depending on the result of the # generator. 
+---- but first, find and try to recycle old works on other free website hostings. 
 
 ================
 
