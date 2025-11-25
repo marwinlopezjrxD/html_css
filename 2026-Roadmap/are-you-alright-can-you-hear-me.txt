@@ -6,6 +6,15 @@ ADD A LITTLE BIT OF JS BASICS.
 
 ====
 
+2025 roadmap is hot as helly. 🔥👨‍🚒
+- too much work, draining, tiring, commits everywhere
+
+2026 roadmap shall be cold as ice. ❄️🥶
+- less commits, well-detailed, everything must be inside of a documentation. 
+
+
+====
+
 Example Roadmap css with slight js
 
 Explore more Css attribs
@@ -20,6 +29,15 @@ BOX MODEL
 RGB TRANSPARENCY, Color Percentage, etc
 Revisit Hierarchy (!important, ".", "#", etc)
 fonts
+
+
+research:
+Error Handling
+When and what to refactor?
+Parse handling
+How to edit via console (f12) or in developer mode
+
+
 
 ---------------------------------------------------------------
 
