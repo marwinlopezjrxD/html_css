@@ -62,7 +62,7 @@ Side Effects after taking Antihistamine:
 
 Allergy/Low Immune System(less sleep hrs, Broken Body Clock)
 - Omcet (Antihistamine) 
--- (done 11/22)
+-- (done 11/22, 11/25)
 
 Allergic Rhinitis (Runny nose, Sleepy, Migraine)
 - Symdex
@@ -199,11 +199,13 @@ For a total of:
 
 Convert all text files into HTML Document. 
 
-...m
+...
 
 UNTRACKED TODOS
 
 - add a vine boom sound when fail, check mark sound when pass on "Questionnaire.html". 
+-- done, nothing to do here
+
 
 FUTURE TODOS
 
@@ -211,9 +213,18 @@ FUTURE TODOS
 - Pagination
 - Flexbox Simulator (hoverable)
 
+-----
+----
 ---
+--
+-
 
-Cut noise and reduce shouting around 8pm or so
-Clean or dispose burnt frying pan
 
+FREE SPACE 
+
+
+-
+--
 ---
+----
+-----
