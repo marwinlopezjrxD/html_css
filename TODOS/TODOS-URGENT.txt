@@ -3,7 +3,7 @@ https://vt.tiktok.com/ZSfyAdaSd/
 git fetch origin
 git reset --hard origin/master 
 
-DEADLINE: TODAY
+NO DEADLINE 😏
 
 ===============================================================
 
