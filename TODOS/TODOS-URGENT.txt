@@ -16,10 +16,15 @@ COMPLETE (11/24/2025)
 
 ===============================================================
 
+ONGOING: TODAY
+
 # Complete Gallery Folder.
+-- find PC Stash and compile into a folder named "pcs-stash-and-etc", this will be a folder composed of many different photocard pictures and such.
 -- add wallpapers
 -- add hover effects
 -- make it just like the music-index.html teaser thing (saturn based theme - dark purple color-ish)
+
+===============================================================
 
 # Choose and complete 1-3 text files and convert it to a fully-fledge HTML document and make it responsive for all devices (PC, Laptop, Mobile Devices, etc.).
 
