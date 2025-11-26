@@ -1,0 +1,96 @@
+<strong> CONSTITUTE THIS WHOLE 2026 ROADMAP README FILE INTO CSS BASED LEARNING. 
+ADD A LITTLE BIT OF JS BASICS.
+</strong>
+
+Make remarks on my pasts projects on 2025 which is the most commited files that I have such as questionnaire folder 
+and or the dummy_files folder :D
+
+....
+
+====
+
+2025 roadmap is hot as helly. 🔥👨‍🚒
+- too much work, draining, tiring, commits everywhere
+
+2026 roadmap shall be cold as ice. ❄️🥶
+- less commits, well-detailed, everything must be inside of a documentation. 
+
+
+====
+
+Example Roadmap css with slight js
+
+Explore more Css attribs
+Div mastery
+Hover
+Flexbox
+Grid
+Grid vs. Flexbox
+Animation, Fade in, fade out, etc
+rem, em, px, etc
+BOX MODEL
+RGB TRANSPARENCY, Color Percentage, etc
+Revisit Hierarchy (!important, ".", "#", etc)
+fonts
+
+
+research:
+Error Handling
+When and what to refactor?
+Parse handling
+How to edit via console (f12) or in developer mode
+
+
+
+---------------------------------------------------------------
+
+===============================================================
+js basics 
+
+    var oldStyleVariable = "Hello"; // Older way, function-scoped
+
+    let modernVariable = 123;     // Modern way, block-scoped, can be reassigned
+
+    const constantValue = true;   // Modern way, block-scoped, cannot be reassigned
+
+===============================================================
+
+git commands 
+
+    git add: Adds changes from the working directory to the staging area, preparing them for the next commit.
+    Example (single file): git add my_file.txt
+    Example (all files): git add . or git add --all
+
+    git commit: Permanently records the staged changes in the repository's history with a descriptive message.
+    Example: git commit -m "A brief description of the changes"
+
+
+===============================================================
+
+sql commands 
+
+    SELECT * FROM Customers; -- Selects all columns from the 'Customers' table
+
+    SELECT FirstName, LastName FROM Employees; -- Selects specific columns from 'Employees'
+
+-- CRUD
+
+    Create (Insert): Adding new data records (e.g., creating a new user account, adding a new blog post).
+    Read (Select): Retrieving or viewing existing data (e.g., displaying a list of products, showing a user's profile).
+    Update: Modifying existing data records (e.g., changing a password, editing a product description).
+    Delete: Removing data records from storage (e.g., deleting a comment, closing an account). 
+
+===============================================================
+
+---------------------------------------------------------------
+
+
+2027 - JS/TailwindCSS/Node.js
+2028 - SQL/PHP
+====
+
+PRIO DESIGN (UI/UX) MORE THAN ANYTHING
+
+🎅
+
+...
