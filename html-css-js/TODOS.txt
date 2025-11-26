@@ -51,6 +51,7 @@ To push changes from laptop:
    git push
 
 ══════════════════════════════════════════════════════════
+
 PERSONAL REMINDERS
 
 Medications
@@ -143,8 +144,7 @@ Thursday
 Saturday
 - rest day
 
-from 95kg to 76kg in less than a year. mid 2023 or so i believe., but im no  athlete, its very tiring to do and is prone for burnouts, thats why i remove and or deleted this demonic exercise plan. 
-
+from 95kg to 76kg in less than a year. (2023)
 ================
 
 # New Exercise Plan (2026):
@@ -172,7 +172,7 @@ Well-being
 - update to iOS 18.0 to watch Netflix (current 12.0) or just watch Netflix thru Tv or Laptop
 
 News and Headlines
-- Watch IT related stuff and other technological advancements happening today. (done 11/19)
+- Watch IT related stuff and other technological advancements happening 
 
 Countries to consider Migrating/Work Abroad
 
@@ -184,28 +184,7 @@ Countries to consider Migrating/Work Abroad
 
 - Create a Budget Tracker App (ongoing 11/19)
 
-1k budget
-
-good for: 7-15 days
-
-- try to maximize 1k php budget. 
-
-Real Total for that 1k Budget: 1,467.91.
-
-Plus 5kgs of Jasmine Rice
-
-280.
-
-For a total of:
-
-1,747.91.
-
 ================
-
-
-Convert all text files into HTML Document. 
-
-...
 
 UNTRACKED TODOS
 
@@ -218,6 +197,7 @@ FUTURE TODOS
 - Add a new-year's resolution page
 - Pagination
 - Flexbox Simulator (hoverable)
+- Convert all text files into HTML Document. 
 
 -----
 ----
