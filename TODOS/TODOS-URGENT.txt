@@ -43,4 +43,5 @@ ONGOING
 
 # Additional
 
+-- Add a "for-next-year-of-2026" folder name (or make the folder name shorter)
 -- Make a 404 page for all of html files
