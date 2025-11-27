@@ -48,3 +48,32 @@ ONGOING
 -- Complete at least 5% of FDM Volume 1 (CSS)
 --- See main TODOS.txt for more information. for Filipino Driver's Manual
 ---- Link for reference: https://lto.gov.ph/wp-content/uploads/2023/10/FDM-Vol.-1-2nd-Edition.pdf
+
+
+
+
+
+
+================ GALLERY WEBSITE ================
+
+-- Kind with golden heart. 
+-- quick witted, career-oriented, family-oriented, and such. 
+
+
+            Heading 1 Example Text Heading 1
+
+    |-----------|                 |-----------|                                                                  
+    |           |                 |           |
+    |           |                 |           |
+    |-----------|                 |-----------|
+      Picture 1                     Picture 2
+
+    |-----------|                 |-----------|                                  
+    |           |                 |           |
+    |           |                 |           |
+    |-----------|                 |-----------|
+      Picture 3                     Picture 4
+
+# Apply at least one law of UX/UI
+
+
