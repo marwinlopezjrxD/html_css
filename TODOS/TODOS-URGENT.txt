@@ -62,14 +62,14 @@ Proritize this more than anything:
 
 LAST ACTIVITY FOR 2025:
 
-GALLERY WEBSITE (ONGOING, NO DEADLINE)
+GALLERY WEBSITE - for Leyah (ONGOING, NO DEADLINE)
 
 Example header sentences
 
 Choose one:
 
 1. Kind with a golden heart. Effortlessly Beautiful.
-2. quick witted, career-oriented, family-oriented, and such. 
+2. Caring, quick witted, career-oriented, family-oriented. 
 
 
                Insert Example Header 
@@ -92,7 +92,7 @@ Choose one:
 # and or add a floating button icon to return to homepage...
 # all files must be HEAVILY documented and must have a comment every LINE by me, no excuses
 --- try to understand unfamiliar CSS Attributes
-# make a separate repository for this (recommended)
+# make a separate repository/folder for this (recommended)
 # the 4 picture must be 4 seasons style (spring, summer, autumn, winter)
 -- each season will have a different style compared to the main page.
 
@@ -117,6 +117,7 @@ Research:
 Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/HTML
 
 
+1st commit: Added initial files and folders for Gallery Website. (done)
 
 
 # End of file.
