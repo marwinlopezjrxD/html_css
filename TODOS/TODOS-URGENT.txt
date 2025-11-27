@@ -87,6 +87,7 @@ Choose one:
       Picture 3                     Picture 4
 
 # Apply at least one law of UX/UI
+# main page is saturn-based theme, refer to music-index.html.
 # all are hoverable with buttons to return to homepage
 # and or add a floating button icon to return to homepage...
 # all files must be HEAVILY documented and must have a comment every LINE by me, no excuses
@@ -102,7 +103,7 @@ Grok+
 - Cooldown of 2 hours after 50 prompts + pictures( max attachments is 25images i believe)
 
 Backup Assistants:
-- Gemini
+- Gemini (first time using)
 - Copilot (Windows Built-in application)
 
 # End of file.
