@@ -44,7 +44,10 @@ ONGOING
 # Additional
 
 -- Add a "for-next-year-of-2026" folder name (or make the folder name shorter)
--- Make a 404 page for all of html files
+
+-- Make a 404 page for all of html files (done)
+--- Design 404 page and the maintenance page also (at least 50% or whole)
+
 -- Complete at least 5% of FDM Volume 1 (CSS)
 --- See main TODOS.txt for more information. for Filipino Driver's Manual
 ---- Link for reference: https://lto.gov.ph/wp-content/uploads/2023/10/FDM-Vol.-1-2nd-Edition.pdf
