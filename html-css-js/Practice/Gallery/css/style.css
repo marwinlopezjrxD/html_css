@@ -1,5 +1,5 @@
 /* ========================================================
-   LEYAH'S GALLERY • 2025 • Clean Flashcard/Quizlet Style
+   REZE'S GALLERY • 2025 • Clean Flashcard/Quizlet Style
    ======================================================== */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -35,7 +35,7 @@ body {
     font-weight: 400;
 }
 
-/* 2x2 Flashcard Grid - exactly as my drawing */
+/* 2x2 Flashcard Grid - exactly your drawing */
 .flashcard-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));

@@ -1,4 +1,4 @@
-// Gallery Lightbox Script - Dedicated to Leyah ♡
+// Gallery Lightbox Script - Dedicated to Reze ♡
 // Optimized, clean, and blazing fast
 
 function openLightbox(src) {
@@ -15,7 +15,7 @@ function closeLightbox() {
 
 // Close lightbox when clicking outside image or pressing Escape
 document.getElementById('lightbox').addEventListener('click', function(e) {
-    if (e.target === this || e.target.classList.contains('close-lightbox')) {
+    if (e.target === this || e.target.classList.contains('close')) {
         closeLightbox();
     }
 });

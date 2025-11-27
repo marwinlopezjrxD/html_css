@@ -62,7 +62,7 @@ Proritize this more than anything:
 
 LAST ACTIVITY FOR 2025:
 
-GALLERY WEBSITE - for Leyah (ONGOING, NO DEADLINE)
+GALLERY WEBSITE - for Reze (ONGOING, NO DEADLINE)
 
 Example header sentences
 
@@ -164,13 +164,19 @@ Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extension
 - Lightning fast + fully commented
 - Ready for 100+ photos in pcs-stash-and-etc
 
-3rd commit: add a temporary image for seasons and a favico. (ongoing)
+3rd commit: Refactored Gallery for Reze (personal update, done)
+
+- Changed all references to Reze (title, header, alts)
+- No other changes — same clean flashcard design & performance
+- Still lightning fast, fully commented, ready for photos
+
+4th commit: add a temporary pictures and a favico (ongoing)
 
 Additional (No deadline):
 
 - Proofread/Revise Documentation and heavy commentings on every line.
 
-REMAINING COMMITS: 10
+REMAINING COMMITS: 8
 
 MAMBO
 
