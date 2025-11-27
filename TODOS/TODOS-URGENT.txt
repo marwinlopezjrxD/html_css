@@ -93,8 +93,44 @@ Choose one:
 # all files must be HEAVILY documented and must have a comment every LINE by me, no excuses
 --- try to understand unfamiliar CSS Attributes
 # make a separate repository/folder for this (recommended)
-# the 4 picture must be 4 seasons style (spring, summer, autumn, winter)
+
+=============================================================================================================================================================================================
+
+# the 4 picture must have different stylings (spring, summer, autumn, winter).
 -- each season will have a different style compared to the main page.
+
+# Spring
+
+Spring palettes evoke freshness, renewal, and optimism. Lighter, brighter pastels are ideal for backgrounds, providing a sense of calm and new beginnings. 
+Background Base: Soft whites, cream, or light grey-beige (#E8EEEF).
+Accent Colors: Use light greens (mint, lime, moss), warm yellows (buttercup, lemon), coral, or peach for buttons and highlights. 
+
+# Summer
+
+Summer palettes capture energy and warmth while also suggesting refreshing, cool elements. The best backgrounds are light to maintain an airy feel, using vibrant hues for contrast. 
+Background Base: Crisp white (#FFFFFF), pale blue, or a very light sand/beige tone (#F3E8DF).
+Accent Colors: Incorporate tropical blues, bright yellows, vibrant greens, or hot pinks for a pop of energy and excitement. 
+
+# Autumn
+
+Autumn colors create a cozy, warm, and approachable feel, leveraging earthy tones and rich, saturated hues. Neutral browns and taupes make excellent, grounding backgrounds. 
+Background Base: Warm neutrals like gentle beige or taupe, soft browns (#948879), or antique white (#F1F0E9).
+Accent Colors: Feature burnt oranges, deep reds (burgundy), golden yellows, olive greens, or bronze accents to evoke warmth and stability. 
+
+# Winter
+
+Winter palettes are generally cool-toned, featuring high contrast and a clean, modern aesthetic. Stark contrast is key to the winter look. 
+Background Base: Pure white, icy blues, pale greys (#C2C9CF), or silver tones.
+Accent Colors: Utilize stark black for text and deep jewel tones like emerald green, sapphire blue, ruby red, or fuchsia to create a bold visual impact. 
+
+# Key Design Considerations
+Readability: White is the most popular background color because it ensures content is easy to read. Ensure sufficient contrast between background and text colors using a contrast checker tool for accessibility.
+
+Consistency: A website often uses a dominant background color (around 60% of the space) combined with secondary and accent colors (30% and 10%).
+
+Brand Identity: Ensure the seasonal colors align with your brand's core message and values for a cohesive user experience. 
+
+=============================================================================================================================================================================================
 
 - NO LIMITS, use all remaining resources that you have 
 
@@ -118,7 +154,7 @@ Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extension
 
 
 1st commit: Added initial files and folders for Gallery Website. (done)
-
+2nd commit: Added design for Homepage (ongoing)
 
 # End of file.
 
