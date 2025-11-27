@@ -106,5 +106,18 @@ Backup Assistants:
 - Gemini (first time using)
 - Copilot (Windows Built-in application)
 
+The remaining 15 commits should be all in this Galler Website. 
+- so close, yet so far. achieving dreams one step at a time. Go. 
+
+# Transfer to TODOS-2026
+
+Research:
+-Verbose
+-HTML performance optimization - Learn Web Development | MDN
+Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/HTML
+
+
+
+
 # End of file.
 
