@@ -1,4 +1,4 @@
-https://vt.tiktok.com/ZSfyAdaSd/
+https://open.spotify.com/track/6TBJkXHPhu3EsMk1bshwuI?si=KWa0v1HaQ-eEKbFmF1UlqQ
 
 git fetch origin
 git reset --hard origin/master 
@@ -52,7 +52,7 @@ ONGOING
 for transcript folder:
 - find a reputable text to video translation website to finish the following:
 -- phillipine-looper.html
-
+-- pagbilan-nga-taho.html
 
 
 
@@ -86,4 +86,6 @@ Example header sentences:
 --- try to understand unfamiliar CSS Attributes
 # make a separate repository for this (recommended)
 
+
+# End of file.
 
