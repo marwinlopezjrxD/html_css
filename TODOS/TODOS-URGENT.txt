@@ -57,6 +57,10 @@ for transcript folder:
 -- phillipine-looper.html
 -- pagbilan-nga-taho.html
 
+Additional
+
+Under Critique Folder:
+- add a file named "how-metas-changes-from-time-to-time.html
 
 Proritize this more than anything:
 
@@ -176,7 +180,7 @@ Additional (No deadline):
 
 - Proofread/Revise Documentation and heavy commentings on every line.
 
-REMAINING COMMITS: 8
+REMAINING COMMITS: 9
 
 MAMBO
 
