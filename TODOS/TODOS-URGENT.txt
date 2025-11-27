@@ -49,6 +49,9 @@ ONGOING
 --- See main TODOS.txt for more information. for Filipino Driver's Manual
 ---- Link for reference: https://lto.gov.ph/wp-content/uploads/2023/10/FDM-Vol.-1-2nd-Edition.pdf
 
+for transcript folder:
+- find a reputable text to video translation website to finish the following:
+-- phillipine-looper.html
 
 
 
