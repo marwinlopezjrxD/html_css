@@ -72,7 +72,7 @@ Choose one:
 2. quick witted, career-oriented, family-oriented, and such. 
 
 
-            Heading 1 Example Text Heading 1
+               Insert Example Header 
 
     |-----------|                 |-----------|                                                                  
     |           |                 |           |
