@@ -170,6 +170,7 @@ Additional (No deadline):
 
 - Proofread/Revise Documentation and heavy commentings on every line.
 
+REMAINING COMMITS: 10
 
 MAMBO
 
