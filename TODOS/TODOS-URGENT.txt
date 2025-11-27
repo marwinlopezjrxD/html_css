@@ -77,7 +77,7 @@ Example header sentences:
       Picture 3                     Picture 4
 
 # Apply at least one law of UX/UI
-# all are hoverable with buttong to return to homepage
+# all are hoverable with buttons to return to homepage
 # and or add a floating button icon to return to homepage...
 # make a separate repository for this (recommended)
 
