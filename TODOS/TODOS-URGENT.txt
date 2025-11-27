@@ -74,17 +74,17 @@ Choose one:
 
                Insert Example Header 
 
-    |-----------|                 |-----------|                                                                  
-    |           |                 |           |
-    |           |                 |           |
-    |-----------|                 |-----------|
-      Picture 1                     Picture 2
+    |------------|                 |------------|                                                                  
+    |            |                 |            |
+    |            |                 |            |
+    |------------|                 |------------|
+        Spring                         Summer
 
-    |-----------|                 |-----------|                                  
-    |           |                 |           |
-    |           |                 |           |
-    |-----------|                 |-----------|
-      Picture 3                     Picture 4
+    |------------|                 |------------|                                  
+    |            |                 |            |
+    |            |                 |            |
+    |------------|                 |------------|
+        Autumn                         Winter
 
 # Apply at least one law of UX/UI
 # main page is saturn-based theme, refer to music-index.html.
@@ -142,7 +142,7 @@ Backup Assistants:
 - Gemini (first time using)
 - Copilot (Windows Built-in application)
 
-The remaining 15 commits should be all in this Galler Website. 
+The remaining 15 commits should be all in this Gallery Website. 
 - so close, yet so far. achieving dreams one step at a time. Go. 
 
 # Transfer to TODOS-2026
@@ -154,7 +154,24 @@ Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extension
 
 
 1st commit: Added initial files and folders for Gallery Website. (done)
-2nd commit: Added design for Homepage (ongoing)
+
+2nd commit: Completed Gallery Homepage — EXACTLY like Quizlet flashcard blueprint style
+
+- Clean 2×2 grid, minimal flashcard style
+- Only season label below each photo
+- Removed all borders/glows → pure elegance
+- Floating home button → stays inside Gallery (index.html)
+- Lightning fast + fully commented
+- Ready for 100+ photos in pcs-stash-and-etc
+
+3rd commit: add a temporary image for seasons and a favico. (ongoing)
+
+Additional (No deadline):
+
+- Proofread/Revise Documentation and heavy commentings on every line.
+
+
+MAMBO
 
 # End of file.
 

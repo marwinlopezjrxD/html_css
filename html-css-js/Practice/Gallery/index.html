@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Leyah's Gallery • Clean Flashcard/Quizlet Style • Last Activity for 2025 ♡ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leyah's Gallery • Kind with a golden heart. Effortlessly Beautiful.</title>
+    
+    <!-- CSS + Font -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="gallery-container">
+
+        <!-- Header - Your chosen dedication -->
+        <header class="gallery-header">
+            <h1>Kind with a golden heart.<br>Effortlessly Beautiful.</h1>
+            <p>For Leyah ♡ • Number one girl</p>
+        </header>
+
+        <!-- 2x2 Flashcard Grid -->
+        <div class="flashcard-grid">
+
+            <!-- Spring -->
+            <div class="card" onclick="openLightbox('img/pcs/pic1.jpg')">
+                <img src="img/pcs/pic1.jpg" alt="Leyah - Spring" loading="lazy">
+                <p class="season-label">Spring</p>
+            </div>
+
+            <!-- Summer -->
+            <div class="card" onclick="openLightbox('img/pcs/pic2.jpg')">
+                <img src="img/pcs/pic2.jpg" alt="Leyah - Summer" loading="lazy">
+                <p class="season-label">Summer</p>
+            </div>
+
+            <!-- Autumn -->
+            <div class="card" onclick="openLightbox('img/pcs/pic3.jpg')">
+                <img src="img/pcs/pic3.jpg" alt="Leyah - Autumn" loading="lazy">
+                <p class="season-label">Autumn</p>
+            </div>
+
+            <!-- Winter -->
+            <div class="card" onclick="openLightbox('img/pcs/pic4.jpg')">
+                <img src="img/pcs/pic4.jpg" alt="Leyah - Winter" loading="lazy">
+                <p class="season-label">Winter</p>
+            </div>
+
+        </div>
+
+        <!-- Floating button → stays inside Gallery (refreshes/reloads current page) -->
+        <a href="index.html" class="floating-home-btn" title="Back to Gallery Home">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+            </svg>
+        </a>
+
+        <!-- Simple Lightbox -->
+        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+            <span class="close">×</span>
+            <img src="" alt="Full view" id="lightbox-img">
+        </div>
+
+    </div>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* ========================================================
+   LEYAH'S GALLERY • 2025 • Clean Flashcard/Quizlet Style
+   ======================================================== */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background: linear-gradient(135deg, #1a0b2e, #2d1b4e);
+    color: #e0d9ff;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+/* Center everything */
+.gallery-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Header - emotional & clean */
+.gallery-header h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #d4a5ff, #ff9eee);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+}
+.gallery-header p {
+    font-size: 1.6rem;
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+/* 2x2 Flashcard Grid - exactly as my drawing */
+.flashcard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+    margin: 4rem auto;
+    max-width: 1000px;
+}
+
+/* Each card - minimal, clean, Quizlet style */
+.card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 25px 60px rgba(140,94,255,0.3);
+}
+
+.card img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Season label below photo */
+.season-label {
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    background: linear-gradient(transparent, rgba(255,255,255,0.9));
+    margin-top: -4px;
+}
+
+/* Floating home button - stays in Gallery */
+.floating-home-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px; height: 60px;
+    background: rgba(140,94,255,0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.floating-home-btn:hover {
+    transform: scale(1.2);
+    background: #bc79ff;
+}
+
+/* Simple Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.97);
+    align-items: center;
+    justify-content: center;
+}
+.lightbox.active { display: flex; }
+.lightbox img {
+    max-width: 92%;
+    max-height: 92vh;
+    border-radius: 16px;
+    box-shadow: 0 0 60px rgba(140,94,255,0.6);
+}
+.close {
+    position: absolute;
+    top: 30px; right: 40px;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile friendly */
+@media (max-width: 768px) {
+    .gallery-header h1 { font-size: 2.8rem; }
+    .flashcard-grid { gap: 2rem; }
+    .card img { height: 340px; }
+}
