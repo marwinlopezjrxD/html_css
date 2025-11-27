@@ -60,7 +60,7 @@ for transcript folder:
 
 
 
-================ GALLERY WEBSITE (ON HOLD) ================
+================ GALLERY WEBSITE (ON HOLD, NO DEADLINE) ================
 
 Example header sentences:
 
@@ -88,7 +88,18 @@ Example header sentences:
 # all files must be HEAVILY documented and must have a comment every LINE by me, no excuses
 --- try to understand unfamiliar CSS Attributes
 # make a separate repository for this (recommended)
+# the 4 picture must be 4 seasons style (spring, summer, autumn, winter)
+-- each season will have a different style compared to the main page.
 
+- NO LIMITS, use all remaining resources that you have 
+
+Main Assistants:
+Grok+
+- Cooldown of 2 hours after 50 prompts + pictures( max attachments is 25images i believe)
+
+Backup Assistants:
+- Gemini
+- Copilot (Windows Built-in application)
 
 # End of file.
 
