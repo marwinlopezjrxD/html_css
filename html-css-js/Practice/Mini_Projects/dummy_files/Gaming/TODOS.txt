@@ -132,6 +132,6 @@ OLD META
 
 NEW:
 
-- TBD
+- Queen Walk (Healer 4x)
 
 ==============================
