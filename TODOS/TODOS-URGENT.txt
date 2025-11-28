@@ -242,6 +242,8 @@ Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extension
 
 18th commit: Bigger flashcards (300px) + header text for better end-user view
 
+19th commit: Forced theme-specific gradients with !important for Vercel
+
 19th commit: Add more photos on the following seasons: (no deadline)
 
 - Spring
@@ -252,10 +254,6 @@ Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extension
 Additional (No deadline):
 
 - Proofread/Revise Documentation and heavy commentings on every line.
-
-REMAINING COMMITS: 0/15
-
-Overcommits: 11
 
 
 
