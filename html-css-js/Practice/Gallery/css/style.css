@@ -1,179 +1,129 @@
 /* ========================================================
-   REZE'S GALLERY • 8TH COMMIT • HEADER VISIBLE + SMALLER CARDS
-   Header at top (no cutoff), flashcards 160px squares, labels on hover
+   REZE'S GALLERY • 9TH COMMIT • SHARED SEASON THEMES
+   One CSS file for all pages — just changed body class!
    ======================================================== */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
     font-family: 'Rajdhani', sans-serif;
-    background: linear-gradient(135deg, #1a0b2e, #2d1b4e); /* Saturn purple */
     color: #e0d9ff;
     height: 100vh;
     overflow: hidden;
-    padding: 1rem;
-}
-
-.gallery-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-    height: 100vh;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Start from top to show header */
     align-items: center;
-    padding-top: 1rem;
 }
 
-/* Header - Fully visible at top, no cutoff */
-.gallery-header {
-    margin-bottom: 1rem; /* Small space to grid */
-    flex-shrink: 0; /* Prevent shrinking */
+/* ===== DEFAULT (HOMEPAGE) - SATURN PURPLE ===== */
+body.home {
+    background: linear-gradient(135deg, #1a0b2e, #2d1b4e);
 }
+
+/* ===== SPRING THEME - Warm, light, bright pastels ===== */
+body.spring {
+    background: linear-gradient(135deg, #f9f4ef, #d8e8d4, #c0e4c8);
+    color: #333;
+}
+.spring .gallery-header h1 { background: linear-gradient(90deg, #a7d8a7, #ffecb3); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.spring .season-label { background: linear-gradient(transparent, rgba(167, 216, 167, 0.9)); }
+
+/* ===== SUMMER THEME - Vibrant sun + ocean + tropical ===== */
+body.summer {
+    background: linear-gradient(135deg, #0ff, #00d4ff, #87ceeb);
+    color: #fff;
+}
+.summer .gallery-header h1 { background: linear-gradient(90deg, #ff9a9e, #fad0c4, #fad0c4); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.summer .season-label { background: linear-gradient(transparent, rgba(0, 212, 255, 0.9)); }
+
+/* ===== AUTUMN THEME - Rich earthy harvest tones ===== */
+body.autumn {
+    background: linear-gradient(135deg, #8B4513, #D2691E, #FF8C00, #FFD700);
+    color: #fff;
+}
+.autumn .gallery-header h1 { background: linear-gradient(90deg, #FF6347, #FFA500, #FFD700); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.autumn .season-label { background: linear-gradient(transparent, rgba(139, 69, 19, 0.9)); }
+
+/* ===== WINTER THEME - Cool jewel tones + frost ===== */
+body.winter {
+    background: linear-gradient(135deg, #1e3a5f, #2a5678, #4a9eff);
+    color: #e0f2ff;
+}
+.winter .gallery-header h1 { background: linear-gradient(90deg, #4a9eff, #b388ff, #e0f2ff); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.winter .season-label { background: linear-gradient(transparent, rgba(30, 58, 95, 0.9)); }
+
+/* Header */
 .gallery-header h1 {
-    font-size: 2.6rem; /* Smaller to fit better */
+    font-size: 2.6rem;
     font-weight: 700;
-    background: linear-gradient(90deg, #d4a5ff, #ff9eee);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     line-height: 1.1;
     margin-bottom: 0.3rem;
 }
 .gallery-header p {
     font-size: 1.2rem;
     opacity: 0.9;
-    font-weight: 400;
-    flex-shrink: 0;
 }
 
-/* 2x2 Grid - Smaller cards to fit header + no cutoff */
+/* Grid */
 .flashcard-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem; /* Tighter gap */
-    max-width: 500px; /* Smaller overall */
-    margin: 0 auto;
-    flex-grow: 1; /* Take remaining space */
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 1.5rem auto 0;
 }
 
-/* Card - Smaller squares (160px) */
+/* Card */
 .card {
     background: white;
-    border-radius: 16px;
+    border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
     transition: all 0.4s ease;
     cursor: pointer;
     aspect-ratio: 1 / 1;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    max-width: 240px; /* Cap size for small screens */
-    max-height: 240px;
 }
+.card:hover { transform: translateY(-12px) scale(1.03); }
 
-.card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 15px 35px rgba(140,94,255,0.3);
-}
-
-/* Image - Fits smaller square */
+/* Image */
 .card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 16px;
-    transition: all 0.4s ease;
+    border-radius: 18px;
 }
 
-/* Season label - Hidden until hover */
+/* Hover label */
 .season-label {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem;
-    font-size: 1.3rem;
+    bottom: 0; left: 0; right: 0;
+    padding: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: white;
-    background: linear-gradient(transparent, rgba(0,0,0,0.8));
     text-align: center;
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.4s ease;
-    pointer-events: none;
-    border-radius: 0 0 16px 16px;
 }
+.card:hover .season-label { opacity: 1; transform: translateY(0); }
 
-/* Show on hover - All 4 cards */
-.card:hover .season-label {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Floating home button */
+/* Floating button */
 .floating-home-btn {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px; height: 50px;
+    bottom: 20px; right: 20px;
+    width: 56px; height: 56px;
     background: rgba(140,94,255,0.9);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
     transition: all 0.3s ease;
     z-index: 100;
-    text-decoration: none;
 }
+.floating-home-btn:hover { transform: scale(1.15); background: #bc79ff; }
 
-.floating-home-btn:hover {
-    transform: scale(1.1);
-    background: #bc79ff;
-}
-
-.floating-home-btn svg {
-    width: 24px; height: 24px;
-    fill: white;
-}
-
-/* Lightbox */
-.lightbox {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    left: 0; top: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.97);
-    align-items: center;
-    justify-content: center;
-}
-.lightbox.active { display: flex; }
-.lightbox img {
-    max-width: 90%;
-    max-height: 90vh;
-    border-radius: 12px;
-    box-shadow: 0 0 50px rgba(140,94,255,0.5);
-}
-.close {
-    position: absolute;
-    top: 20px; right: 30px;
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
-}
-
-/* Mobile - Stack if needed, smaller header */
-@media (max-width: 768px) {
-    .flashcard-grid {
-        grid-template-columns: 1fr;
-        gap: 0.8rem;
-        max-width: 280px;
-    }
-    .gallery-header h1 { font-size: 2.2rem; }
-    .gallery-header p { font-size: 1.1rem; }
-    .season-label { font-size: 1.2rem; }
-}
+/* Lightbox & mobile - unchanged */

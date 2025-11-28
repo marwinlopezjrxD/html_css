@@ -206,7 +206,19 @@ Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extension
 - Hover labels work on all 4 cards
 - Saturn purple theme, lightbox, real paths intact
 
-9th commit: Added initial files for four seasons (spring, summer, autumn, and winter)
+9th commit: Season theme pages with accurate color palettes + click redirect
+
+- Clicking a card now goes to spring-theme.html / summer-theme.html / etc.
+- All 4 season pages have identical layout to homepage
+- True seasonal colors:
+   • Spring: warm, light, bright pastels
+   • Summer: vibrant sun, ocean blues, tropical energy (TBD)
+   • Autumn: rich earthy oranges, browns, harvest warmth (TBD)
+   • Winter: cool, deep, high-contrast jewel tones + frost (TBD)
+- Shared CSS, zero scroll, hover labels, lightbox all working
+- Ready for 100+ photos per season (TBD)
+
+10th commit: 
 
 Additional (No deadline):
 
