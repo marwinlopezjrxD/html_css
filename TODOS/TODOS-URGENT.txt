@@ -231,7 +231,9 @@ Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extension
 
 13th commit: fix the default photo that always shows "Spring" (fixed)
 
-14th commit: Add more photos on the following seasons:
+14th commit: Final: root-relative paths for Vercel (CSS + favicon)
+
+15th commit: Add more photos on the following seasons: (not done)
 
 - Spring
 - Summer 
@@ -244,7 +246,7 @@ Additional (No deadline):
 
 REMAINING COMMITS: 0/15
 
-Overcommits: 5
+Overcommits: 7
 
 
 
