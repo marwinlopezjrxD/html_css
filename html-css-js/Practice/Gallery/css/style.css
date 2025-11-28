@@ -1,94 +1,101 @@
 /* ========================================================
-   REZE'S GALLERY • 7TH COMMIT • TRUE QUIZLET FLASHCARD MODE
-   Labels hidden until hover (all 4 cards), header visible, zero scroll
+   REZE'S GALLERY • 8TH COMMIT • HEADER VISIBLE + SMALLER CARDS
+   Header at top (no cutoff), flashcards 160px squares, labels on hover
    ======================================================== */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
     font-family: 'Rajdhani', sans-serif;
-    background: linear-gradient(135deg, #1a0b2e, #2d1b4e);
+    background: linear-gradient(135deg, #1a0b2e, #2d1b4e); /* Saturn purple */
     color: #e0d9ff;
     height: 100vh;
     overflow: hidden;
-    padding: 2rem 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 1rem;
 }
 
 .gallery-container {
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
-    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Start from top to show header */
+    align-items: center;
+    padding-top: 1rem;
 }
 
-/* Header - Now fully visible, not cut off */
+/* Header - Fully visible at top, no cutoff */
 .gallery-header {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem; /* Small space to grid */
+    flex-shrink: 0; /* Prevent shrinking */
 }
 .gallery-header h1 {
-    font-size: 3rem;
+    font-size: 2.6rem; /* Smaller to fit better */
     font-weight: 700;
     background: linear-gradient(90deg, #d4a5ff, #ff9eee);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    line-height: 1.2;
+    line-height: 1.1;
+    margin-bottom: 0.3rem;
 }
 .gallery-header p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     opacity: 0.9;
-    margin-top: 0.5rem;
+    font-weight: 400;
+    flex-shrink: 0;
 }
 
-/* 2x2 Grid - Perfect square cards */
+/* 2x2 Grid - Smaller cards to fit header + no cutoff */
 .flashcard-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    max-width: 680px;
+    gap: 1rem; /* Tighter gap */
+    max-width: 500px; /* Smaller overall */
     margin: 0 auto;
+    flex-grow: 1; /* Take remaining space */
 }
 
-/* Card - Square, rounded, hover lift */
+/* Card - Smaller squares (160px) */
 .card {
     background: white;
-    border-radius: 20px;
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
     transition: all 0.4s ease;
     cursor: pointer;
     aspect-ratio: 1 / 1;
     position: relative;
     display: flex;
     flex-direction: column;
+    max-width: 240px; /* Cap size for small screens */
+    max-height: 240px;
 }
 
 .card:hover {
-    transform: translateY(-12px) scale(1.03);
-    box-shadow: 0 20px 50px rgba(140,94,255,0.4);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(140,94,255,0.3);
 }
 
-/* Image - Full card, covers everything */
+/* Image - Fits smaller square */
 .card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 16px;
     transition: all 0.4s ease;
 }
 
-/* Season label - HIDDEN by default, appears on hover */
+/* Season label - Hidden until hover */
 .season-label {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 1.2rem;
-    font-size: 1.6rem;
+    padding: 1rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: white;
     background: linear-gradient(transparent, rgba(0,0,0,0.8));
@@ -97,10 +104,10 @@ body {
     transform: translateY(20px);
     transition: all 0.4s ease;
     pointer-events: none;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 16px 16px;
 }
 
-/* Show label on hover - ALL 4 CARDS */
+/* Show on hover - All 4 cards */
 .card:hover .season-label {
     opacity: 1;
     transform: translateY(0);
@@ -111,20 +118,26 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 56px; height: 56px;
+    width: 50px; height: 50px;
     background: rgba(140,94,255,0.9);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
     transition: all 0.3s ease;
     z-index: 100;
+    text-decoration: none;
 }
 
 .floating-home-btn:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
     background: #bc79ff;
+}
+
+.floating-home-btn svg {
+    width: 24px; height: 24px;
+    fill: white;
 }
 
 /* Lightbox */
@@ -140,25 +153,27 @@ body {
 }
 .lightbox.active { display: flex; }
 .lightbox img {
-    max-width: 92%;
-    max-height: 92vh;
-    border-radius: 16px;
-    box-shadow: 0 0 60px rgba(140,94,255,0.6);
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 12px;
+    box-shadow: 0 0 50px rgba(140,94,255,0.5);
 }
 .close {
     position: absolute;
-    top: 30px; right: 40px;
-    font-size: 50px;
+    top: 20px; right: 30px;
+    font-size: 40px;
     color: white;
     cursor: pointer;
 }
 
-/* Mobile */
+/* Mobile - Stack if needed, smaller header */
 @media (max-width: 768px) {
     .flashcard-grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
-        max-width: 320px;
+        gap: 0.8rem;
+        max-width: 280px;
     }
-    .gallery-header h1 { font-size: 2.4rem; }
+    .gallery-header h1 { font-size: 2.2rem; }
+    .gallery-header p { font-size: 1.1rem; }
+    .season-label { font-size: 1.2rem; }
 }
