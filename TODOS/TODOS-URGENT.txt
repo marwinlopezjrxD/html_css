@@ -66,7 +66,9 @@ Proritize this more than anything:
 
 LAST ACTIVITY FOR 2025:
 
-GALLERY WEBSITE - for Reze (ONGOING, NO DEADLINE)
+== ming is tired, sleepy and sick... ==
+
+GALLERY WEBSITE - for Reze (ON HOLD, NO DEADLINE)
 
 Example header sentences
 
@@ -180,7 +182,9 @@ Additional (No deadline):
 
 - Proofread/Revise Documentation and heavy commentings on every line.
 
-REMAINING COMMITS: 6/15
+REMAINING COMMITS: 5/15
+
+extend to 550 or 600 commits if the remaining commits are all used up. 
 
 MAMBO
 
