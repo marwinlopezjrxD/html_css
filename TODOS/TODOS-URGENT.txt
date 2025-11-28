@@ -233,7 +233,9 @@ Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extension
 
 14th commit: Final: root-relative paths for Vercel (CSS + favicon)
 
-15th commit: Add more photos on the following seasons: (not done)
+15th commit: Fixed all paths for Vercel: root-relative CSS/JS/images/favicon
+
+16th commit: Add more photos on the following seasons: (no deadline)
 
 - Spring
 - Summer 
@@ -246,7 +248,7 @@ Additional (No deadline):
 
 REMAINING COMMITS: 0/15
 
-Overcommits: 7
+Overcommits: 8
 
 
 
