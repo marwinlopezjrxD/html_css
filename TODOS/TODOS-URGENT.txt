@@ -227,9 +227,9 @@ Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extension
 
 11th commit: link the favico to the homepage
 
-12th commit: added favico to all html files
+12th commit: Fixed all image paths for Vercel — no more broken images
 
-12th commit: Add more photos on the following seasons and fix the default photo that always shows "Spring" (not done)
+13th commit: Add more photos on the following seasons and fix the default photo that always shows "Spring" (not done)
 
 - Spring
 - Summer 
@@ -242,7 +242,7 @@ Additional (No deadline):
 
 REMAINING COMMITS: 0/15
 
-Overcommits: 4
+Overcommits: 5
 
 
 

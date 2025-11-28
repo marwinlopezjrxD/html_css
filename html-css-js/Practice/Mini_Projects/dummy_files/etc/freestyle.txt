@@ -40,66 +40,6 @@ Time is short
 Now I am out of words lol, Heart 🤍
 
 
-------------------------—-----------------
-
-Quotes forda evening:
-
-The meaning of Life
-is to keep Living. 
 
 
-TODOS-URGENT.txt
-
-remaining commits 3/15
-🚨🚨🚨🚨🚔👮‍♀️🚨🚨🚨🚨
-WARNING FOR OVERCOMMIT 
-------------------------—-----------------
-
-Lagay daw ako ng Future Ideas "DITO"
-
-- Dito...
-
-------------------------—-----------------
-
-PRIORITY 1 (Starting NOW – Q4 2025 - NO DEADLINE)
-- Build a responsive Flipping Card Interaction
-  → Inspired by D&D cards or Yu-Gi-Oh flip mechanics (front: image/title, back: stats/description)
-  → Pure HTML + CSS 3D transforms + minimal JS for hover/touch toggle
-  → Fully mobile-friendly, smooth 60fps flip, accessible (keyboard + screen-reader)
-**Difficulty: Advanced 🤩**
-
-PRIORITY 2 (Q1 2026)
-- Add a multi-language pack system
-  → Support: English, Tagalog, Bisaya, Spanish (easy JSON structure)
-  → Toggle via floating language globe icon
-  → No external libraries — vanilla JS + data attributes
-**Difficulty: Medium 😊**
-
-PRIORITY 3 (Q2 2026)
-- Create a clean, interactive HTML/CSS Box Model visualizer
-  → Real-time sliders to adjust padding, border, margin → instant visual feedback
-  → Simple, educational, portfolio-ready
-**Difficulty: Advanced 😈**
-
-2026 → MASTER JAVASCRIPT
-- DOM, Events, ES6+, Async/Await
-- Build: Quotes Generator, Todo App, API-powered card deck
-
-2027 → DESIGN + SERVER LOGIC
-- TailwindCSS (Jan–Jun): Rapid, responsive UI mastery
-- Node.js (Jul–Dec): Express servers, REST APIs, file system
-
-2028 → BACKEND DECISION YEAR
-- Deep dive: PHP *or* Node.js (I will choose based on 2027 projects - to be decided.)
-- Build a full CRUD app with database (MySQL / MongoDB)
-
-2029 → FRAMEWORK POWER
-- Laravel (PHP) → Elegant MVC, auth, admin panels
-- OR continue Node.js → NestJS / Fastify for scalability
-
-2030 → LAUNCH & LEGACY
-- Deploy 3 production-grade apps (live, fast, beautiful)
-- Open-source: "FlipDeck.js" – reusable D&D/Yu-Gi-Oh-style card system
-- Mentor via Tagalog dev blog or Discord – pay it forward (asa boss :3)
-
-END OF FILE
+# End of file.
