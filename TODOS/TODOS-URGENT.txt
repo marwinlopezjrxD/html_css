@@ -16,7 +16,7 @@ COMPLETE (11/24/2025)
 
 ===============================================================
 
-ONGOING
+COMPLETED
 
 # Complete Gallery Folder.
 -- find PC Stash and compile into a folder named "pcs-stash-and-etc", this will be a folder composed of many different photocard pictures and such.
@@ -66,8 +66,9 @@ Proritize this more than anything:
 
 LAST ACTIVITY FOR 2025:
 
+Vercel Link: https://html-css-gallery-reze.vercel.app/
 
-GALLERY WEBSITE - for Reze (ONGOING, NO DEADLINE)
+GALLERY WEBSITE - for Reze (done 11/29)
 
 Example header sentences
 
@@ -235,7 +236,9 @@ Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extension
 
 15th commit: Fixed all paths for Vercel: root-relative CSS/JS/images/favicon
 
-16th commit: Add more photos on the following seasons: (no deadline)
+16th commit: Forced gradient fonts + theme overrides for Vercel
+
+17th commit: Add more photos on the following seasons: (no deadline)
 
 - Spring
 - Summer 
@@ -248,7 +251,7 @@ Additional (No deadline):
 
 REMAINING COMMITS: 0/15
 
-Overcommits: 8
+Overcommits: 9
 
 
 

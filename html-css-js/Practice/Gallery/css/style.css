@@ -1,8 +1,4 @@
-/* ========================================================
-   REZE'S GALLERY • 100% ZOOM PERFECT (FINAL)
-   Header smaller + perfect spacing = fits on every screen
-   ======================================================== */
-
+/* FIXED GRADIENT FONTS — APPLIES TO ALL PAGES */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 html, body {
@@ -18,32 +14,17 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    background: linear-gradient(135deg, #1a0b2e, #2d1b4e);
+    background: linear-gradient(135deg, #1a0b2e, #2d1b4e); /* Default Saturn */
 }
 
-/* HOMEPAGE — SATURN PURPLE */
-body, body.home {
-    background: linear-gradient(135deg, #1a0b2e, #2d1b4e);
-}
-
-/* SEASON THEMES (keep your colors) */
-body.spring  { background: linear-gradient(135deg, #f9f4ef, #d8e8d4, #c0e4c8); color: #333; }
-body.summer  { background: linear-gradient(135deg, #0ff, #00d4ff, #87ceeb); color: #fff; }
-body.autumn  { background: linear-gradient(135deg, #8B4513, #D2691E, #FF8C00, #FFD700); color: #fff; }
-body.winter  { background: linear-gradient(135deg, #1e3a5f, #2a5678, #4a9eff); color: #e0f2ff; }
-
-/* SMALLER HEADER — fits perfectly at 100% zoom */
-.gallery-header {
-    text-align: center;
-    margin-bottom: 1rem;
-    flex-shrink: 0;
-}
+/* FORCE GRADIENT ON H1 — FALLBACK FOR ALL PAGES */
 .gallery-header h1 {
-    font-size: 2.2rem;          /* ↓↓↓ MUCH SMALLER */
+    font-size: 2.2rem;
     font-weight: 700;
     background: linear-gradient(90deg, #d4a5ff, #ff9eee);
     -webkit-background-clip: text;
     background-clip: text;
+    -webkit-text-fill-color: transparent;
     line-height: 1.1;
     margin-bottom: 0.2rem;
 }
@@ -53,11 +34,59 @@ body.winter  { background: linear-gradient(135deg, #1e3a5f, #2a5678, #4a9eff); c
     margin-top: 0.3rem;
 }
 
-/* 2×2 GRID — perfect size & spacing */
+/* HOMEPAGE OVERRIDE (if class="home") */
+body.home .gallery-header h1 {
+    background: linear-gradient(90deg, #d4a5ff, #ff9eee);
+}
+
+/* SPRING OVERRIDE */
+body.spring {
+    background: linear-gradient(135deg, #f9f4ef, #d8e8d4, #c0e4c8);
+}
+body.spring .gallery-header h1 {
+    background: linear-gradient(90deg, #a7d8a7, #ffecb3);
+}
+body.spring .season-label {
+    background: linear-gradient(transparent, rgba(167,216,167,0.9));
+}
+
+/* SUMMER OVERRIDE */
+body.summer {
+    background: linear-gradient(135deg, #0ff, #00d4ff, #87ceeb);
+}
+body.summer .gallery-header h1 {
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+}
+body.summer .season-label {
+    background: linear-gradient(transparent, rgba(0,212,255,0.9));
+}
+
+/* AUTUMN OVERRIDE */
+body.autumn {
+    background: linear-gradient(135deg, #8B4513, #D2691E, #FF8C00, #FFD700);
+}
+body.autumn .gallery-header h1 {
+    background: linear-gradient(90deg, #FF6347, #FFA500, #FFD700);
+}
+body.autumn .season-label {
+    background: linear-gradient(transparent, rgba(139,69,19,0.9));
+}
+
+/* WINTER OVERRIDE */
+body.winter {
+    background: linear-gradient(135deg, #1e3a5f, #2a5678, #4a9eff);
+}
+body.winter .gallery-header h1 {
+    background: linear-gradient(90deg, #4a9eff, #b388ff, #e0f2ff);
+}
+body.winter .season-label {
+    background: linear-gradient(transparent, rgba(30,58,95,0.9));
+}
+
+/* GRID & CARDS */
 .flashcard-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     gap: 1.5rem;
     width: 100%;
     max-width: 560px;
@@ -67,7 +96,6 @@ body.winter  { background: linear-gradient(135deg, #1e3a5f, #2a5678, #4a9eff); c
     align-items: center;
 }
 
-/* Card */
 .card {
     width: 100%;
     max-width: 260px;
@@ -85,7 +113,6 @@ body.winter  { background: linear-gradient(135deg, #1e3a5f, #2a5678, #4a9eff); c
     box-shadow: 0 20px 50px rgba(140,94,255,0.5);
 }
 
-/* FULL IMAGE — no cropping */
 .card img {
     width: 100%;
     height: 100%;
@@ -96,7 +123,7 @@ body.winter  { background: linear-gradient(135deg, #1e3a5f, #2a5678, #4a9eff); c
     box-sizing: border-box;
 }
 
-/* Hover label */
+/* HOVER LABEL */
 .season-label {
     position: absolute;
     bottom: 0; left: 0; right: 0;
@@ -117,7 +144,7 @@ body.winter  { background: linear-gradient(135deg, #1e3a5f, #2a5678, #4a9eff); c
     transform: translateY(0);
 }
 
-/* Floating home button */
+/* FLOATING BUTTON */
 .floating-home-btn {
     position: fixed;
     bottom: 20px;
@@ -137,7 +164,7 @@ body.winter  { background: linear-gradient(135deg, #1e3a5f, #2a5678, #4a9eff); c
     background: #bc79ff;
 }
 
-/* Lightbox */
+/* LIGHTBOX */
 .lightbox {
     display: none;
     position: fixed;
@@ -150,11 +177,10 @@ body.winter  { background: linear-gradient(135deg, #1e3a5f, #2a5678, #4a9eff); c
 .lightbox.active { display: flex; }
 .lightbox img { max-width: 94%; max-height: 94vh; border-radius: 16px; }
 
-/* Mobile */
+/* MOBILE */
 @media (max-width: 768px) {
     .flashcard-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 260px);
         gap: 1.2rem;
         max-width: 300px;
     }
