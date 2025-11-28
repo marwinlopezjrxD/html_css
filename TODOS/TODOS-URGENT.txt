@@ -238,7 +238,9 @@ Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extension
 
 16th commit: Forced gradient fonts + theme overrides for Vercel
 
-17th commit: Add more photos on the following seasons: (no deadline)
+17th commit: Fixed gradients with fallbacks for Vercel
+
+18th commit: Add more photos on the following seasons: (no deadline)
 
 - Spring
 - Summer 
@@ -251,7 +253,7 @@ Additional (No deadline):
 
 REMAINING COMMITS: 0/15
 
-Overcommits: 9
+Overcommits: 10
 
 
 

@@ -1,4 +1,4 @@
-/* FIXED GRADIENT FONTS — APPLIES TO ALL PAGES */
+/* FIXED GRADIENTS — VERCEL PROOF */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 html, body {
@@ -14,76 +14,113 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    background: linear-gradient(135deg, #1a0b2e, #2d1b4e); /* Default Saturn */
+    background: linear-gradient(135deg, #1a0b2e, #2d1b4e);
 }
 
-/* FORCE GRADIENT ON H1 — FALLBACK FOR ALL PAGES */
+/* HOMEPAGE — SATURN PURPLE */
+body, body.home {
+    background: linear-gradient(135deg, #1a0b2e, #2d1b4e);
+}
+
+/* SEASON THEMES */
+body.spring  { background: linear-gradient(135deg, #f9f4ef, #d8e8d4, #c0e4c8); color: #333; }
+body.summer  { background: linear-gradient(135deg, #0ff, #00d4ff, #87ceeb); color: #fff; }
+body.autumn  { background: linear-gradient(135deg, #8B4513, #D2691E, #FF8C00, #FFD700); color: #fff; }
+body.winter  { background: linear-gradient(135deg, #1e3a5f, #2a5678, #4a9eff); color: #e0f2ff; }
+
+/* H1 GRADIENT — FIXED WITH FALLBACKS */
 .gallery-header h1 {
     font-size: 2.2rem;
     font-weight: 700;
-    background: linear-gradient(90deg, #d4a5ff, #ff9eee);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     line-height: 1.1;
     margin-bottom: 0.2rem;
+    background: linear-gradient(90deg, #d4a5ff, #ff9eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* Standard fallback */
+    color: #d4a5ff; /* Fallback color if gradient fails */
 }
 .gallery-header p {
     font-size: 1rem;
     opacity: 0.9;
     margin-top: 0.3rem;
+    color: inherit; /* Inherit from body */
 }
 
-/* HOMEPAGE OVERRIDE (if class="home") */
+/* HOMEPAGE OVERRIDE */
 body.home .gallery-header h1 {
     background: linear-gradient(90deg, #d4a5ff, #ff9eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: #d4a5ff;
 }
 
 /* SPRING OVERRIDE */
-body.spring {
-    background: linear-gradient(135deg, #f9f4ef, #d8e8d4, #c0e4c8);
-}
 body.spring .gallery-header h1 {
     background: linear-gradient(90deg, #a7d8a7, #ffecb3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: #a7d8a7;
+}
+body.spring .gallery-header p {
+    color: #333;
 }
 body.spring .season-label {
     background: linear-gradient(transparent, rgba(167,216,167,0.9));
+    color: white;
 }
 
 /* SUMMER OVERRIDE */
-body.summer {
-    background: linear-gradient(135deg, #0ff, #00d4ff, #87ceeb);
-}
 body.summer .gallery-header h1 {
     background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: #ff9a9e;
+}
+body.summer .gallery-header p {
+    color: #fff;
 }
 body.summer .season-label {
     background: linear-gradient(transparent, rgba(0,212,255,0.9));
+    color: white;
 }
 
 /* AUTUMN OVERRIDE */
-body.autumn {
-    background: linear-gradient(135deg, #8B4513, #D2691E, #FF8C00, #FFD700);
-}
 body.autumn .gallery-header h1 {
     background: linear-gradient(90deg, #FF6347, #FFA500, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: #FF6347;
+}
+body.autumn .gallery-header p {
+    color: #fff;
 }
 body.autumn .season-label {
     background: linear-gradient(transparent, rgba(139,69,19,0.9));
+    color: white;
 }
 
 /* WINTER OVERRIDE */
-body.winter {
-    background: linear-gradient(135deg, #1e3a5f, #2a5678, #4a9eff);
-}
 body.winter .gallery-header h1 {
     background: linear-gradient(90deg, #4a9eff, #b388ff, #e0f2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: #4a9eff;
+}
+body.winter .gallery-header p {
+    color: #e0f2ff;
 }
 body.winter .season-label {
     background: linear-gradient(transparent, rgba(30,58,95,0.9));
+    color: white;
 }
 
-/* GRID & CARDS */
+/* GRID & CARDS (unchanged) */
 .flashcard-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
