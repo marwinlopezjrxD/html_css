@@ -244,7 +244,9 @@ Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extension
 
 19th commit: Forced theme-specific gradients with !important for Vercel
 
-19th commit: Add more photos on the following seasons: (no deadline)
+20th commit: Fixed typo ($0 → 0) + final mobile responsive version
+
+21th commit: Add more photos on the following seasons: (no deadline)
 
 - Spring
 - Summer 
