@@ -248,12 +248,14 @@ Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extension
 
 21th commit: Restored themed font gradients with higher priority
 
-22th commit: Add more photos on the following seasons: (no deadline)
+22th commit: Add more photos on the following seasons: (done)
 
 - Spring
 - Summer 
 - Autumn 
 - Winter
+
+23rd commit: fixed paths and photos
 
 Additional (No deadline):
 
