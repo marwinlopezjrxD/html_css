@@ -1,6 +1,6 @@
 /* ========================================================
-   REZE'S GALLERY • FULLY MOBILE RESPONSIVE (FIXED + CLEAN)
-   Works perfectly on iPhone/Android + no VS Code errors
+   REZE'S GALLERY • THEMED FONTS FIXED (Higher Priority)
+   Fonts now change per theme — no more stuck purple
    ======================================================== */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -29,7 +29,7 @@ body.summer  { background: linear-gradient(135deg, #0ff, #00d4ff, #87ceeb); colo
 body.autumn  { background: linear-gradient(135deg, #8B4513, #D2691E, #FF8C00, #FFD700); color: #fff; }
 body.winter  { background: linear-gradient(135deg, #1e3a5f, #2a5678, #4a9eff); color: #e0f2ff; }
 
-/* HEADER */
+/* HEADER BASE */
 .gallery-header {
     text-align: center;
     margin-bottom: 2rem;
@@ -38,16 +38,58 @@ body.winter  { background: linear-gradient(135deg, #1e3a5f, #2a5678, #4a9eff); c
 .gallery-header h1 {
     font-size: 2.4rem;
     font-weight: 700;
-    background: linear-gradient(90deg, #d4a5ff, #ff9eee);
+    line-height: 1.1;
+    margin-bottom: 0.2rem;
+    background: linear-gradient(90deg, #d4a5ff, #ff9eee); /* Default purple */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    line-height: 1.1;
 }
 .gallery-header p {
     font-size: 1.1rem;
     opacity: 0.9;
     margin-top: 0.5rem;
+}
+
+/* THEME-SPECIFIC FONT OVERRIDES (Higher priority) */
+body.spring .gallery-header h1 {
+    background: linear-gradient(90deg, #a7d8a7, #ffecb3) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+body.spring .gallery-header p {
+    color: #333 !important;
+}
+
+body.summer .gallery-header h1 {
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+body.summer .gallery-header p {
+    color: #fff !important;
+}
+
+body.autumn .gallery-header h1 {
+    background: linear-gradient(90deg, #FF6347, #FFA500, #FFD700) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+body.autumn .gallery-header p {
+    color: #fff !important;
+}
+
+body.winter .gallery-header h1 {
+    background: linear-gradient(90deg, #4a9eff, #b388ff, #e0f2ff) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+body.winter .gallery-header p {
+    color: #e0f2ff !important;
 }
 
 /* GRID — Responsive */
@@ -76,7 +118,7 @@ body.winter  { background: linear-gradient(135deg, #1e3a5f, #2a5678, #4a9eff); c
 }
 .card:hover {
     transform: translateY(-12px) scale(1.03);
-    box-shadow: 0 25px 60px rgba(140,94,255,0.4);  /* ← Fixed: was $0 */
+    box-shadow: 0 25px 60px rgba(140,94,255,0.4);
 }
 
 .card img {
@@ -132,7 +174,7 @@ body.winter  { background: linear-gradient(135deg, #1e3a5f, #2a5678, #4a9eff); c
 /* MOBILE */
 @media (max-width: 768px) {
     .gallery-header h1 { font-size: 2rem; }
-    .gallery-header p   { font-size: 1rem; }
+    .gallery-header p { font-size: 1rem; }
     .flashcard-grid {
         grid-template-columns: 1fr;
         gap: 2rem;

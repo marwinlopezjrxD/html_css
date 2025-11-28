@@ -246,7 +246,9 @@ Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extension
 
 20th commit: Fixed typo ($0 → 0) + final mobile responsive version
 
-21th commit: Add more photos on the following seasons: (no deadline)
+21th commit: Restored themed font gradients with higher priority
+
+22th commit: Add more photos on the following seasons: (no deadline)
 
 - Spring
 - Summer 
