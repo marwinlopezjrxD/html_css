@@ -176,7 +176,12 @@ Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extension
 - No other changes — same clean flashcard design & performance
 - Still lightning fast, fully commented, ready for photos
 
-4th commit: favico and upload more photos(ongoing)
+4th commit: favico and upload more photos(done)
+
+5th commit: 
+- link the uploaded favicos to the website
+- fix the broken image link named "Full view"
+- make the four seasons themes after fixing broken image link (Full View), and change that preview thing into a dedicated specific themes (spring, summer, autumn, winter)
 
 Additional (No deadline):
 
@@ -186,7 +191,45 @@ REMAINING COMMITS: 5/15
 
 extend to 550 or 600 commits if the remaining commits are all used up. 
 
-MAMBO
+===== OVERTIME =====
+
+Translate this text if Gallery Website is finished.
+
+Reason why i cannot use english on this additional activity:
+- wala
+- trip trip lang
+
+Adicionales: 
+
+- Añade una carpeta llamada 4ONLY.
+
+- Después de añadirla, crea un sitio web como music-index.html.
+
+- Crea un botón de acceso directo que redirija al usuario.
+
+- Tras hacer clic en una canción específica para acceder a 4ONLY (LeeHi), crea una animación de vinilo giratorio.
+
+- Añade un fragmento de canción (libre de derechos de autor) a todas las canciones del álbum 4ONLY de LeeHi.
+
+=============================================================================================================================================================================================
+
+Kung ito na ang huling, menudo sa mundo... 
+
+menudo recipe link: https://open.spotify.com/track/06VwVWrnYSTIikz801hGwD?si=8a8fcfa67fe8441c
+
+4ONLY Live Performance DAY 1 (ENG)
+
+Day 1 Link: https://www.youtube.com/watch?v=fF4UF6VaBSc
+
+4ONLY Live Performance DAY 2 (ENG)
+
+Day 2 Link: https://www.youtube.com/watch?v=BktE3Ta8Mhg
+
+=============================================================================================================================================================================================
+
+Quote for today:
+
+"When life gives you lemons, git commit -m "Added initial files."
 
 # End of file.
 
