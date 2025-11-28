@@ -225,7 +225,9 @@ Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extension
 - Click cards → go to themed pages
 - Hover labels, zero scroll, all fixed
 
-11th commit: Add more photos on the following seasons and fix the default photo that always shows "Spring" (not done)
+11th commit: link the favico to the website
+
+12th commit: Add more photos on the following seasons and fix the default photo that always shows "Spring" (not done)
 
 - Spring
 - Summer 
@@ -238,7 +240,7 @@ Additional (No deadline):
 
 REMAINING COMMITS: 0/15
 
-Overcommits: 2
+Overcommits: 3
 
 
 
