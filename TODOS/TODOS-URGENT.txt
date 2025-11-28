@@ -185,11 +185,25 @@ Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extension
 - Favicon + floating home button perfect
 - Ready for drop photos for Reze 
 
+6th commit: EXACT Blueprint Match - 2x2 square grid, header above, labels below
+
+- Cards now perfect squares (1:1 aspect-ratio) like ASCII diagram
+- Header directly above grid, labels under each image
+- Zero scroll, real paths, Saturn theme, lightbox all intact
+- Responsive + heavily commented
+
+7th commit: TRUE Quizlet Flashcard Mode - Labels hidden until hover (all 4 cards)
+
+- Season labels now hidden by default, appear on hover (Spring/Summer/Autumn/Winter)
+- Header no longer cut off
+- Perfect square cards, zero scroll, Saturn-based theme and purple colors are now intact
+- Hover effect smooth + clean
+
 Additional (No deadline):
 
 - Proofread/Revise Documentation and heavy commentings on every line.
 
-REMAINING COMMITS: 2/15
+REMAINING COMMITS: 1/15
 
 extend to 550 or 600 commits if the remaining commits are all used up. 
 

@@ -1,102 +1,129 @@
 /* ========================================================
-   REZE'S GALLERY • FINAL 5TH COMMIT • SATURN PURPLE + NO SCROLL
-   Everything fixed: theme back, cards 210px, zero scroll, beautiful
+   REZE'S GALLERY • 7TH COMMIT • TRUE QUIZLET FLASHCARD MODE
+   Labels hidden until hover (all 4 cards), header visible, zero scroll
    ======================================================== */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
     font-family: 'Rajdhani', sans-serif;
-    background: linear-gradient(135deg, #1a0b2e, #2d1b4e); /* SATURN PURPLE BACK */
+    background: linear-gradient(135deg, #1a0b2e, #2d1b4e);
     color: #e0d9ff;
-    min-height: 100vh;
-    padding: 2rem 1rem;
-    overflow: hidden; /* FINAL NO SCROLL */
     height: 100vh;
+    overflow: hidden;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery-container {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align: center;
+    width: 100%;
 }
 
-/* Header - emotional & clean */
+/* Header - Now fully visible, not cut off */
+.gallery-header {
+    margin-bottom: 2rem;
+}
 .gallery-header h1 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 700;
     background: linear-gradient(90deg, #d4a5ff, #ff9eee);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 0.5rem;
-    line-height: 1.1;
+    line-height: 1.2;
 }
 .gallery-header p {
     font-size: 1.4rem;
     opacity: 0.9;
+    margin-top: 0.5rem;
 }
 
-/* 2x2 Grid - tight & perfect */
+/* 2x2 Grid - Perfect square cards */
 .flashcard-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem auto;
-    max-width: 960px;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 680px;
+    margin: 0 auto;
 }
 
-/* Flashcard style - Quizlet look */
+/* Card - Square, rounded, hover lift */
 .card {
     background: white;
-    border-radius: 24px;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
     transition: all 0.4s ease;
     cursor: pointer;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .card:hover {
-    transform: translateY(-12px) scale(1.04);
-    box-shadow: 0 25px 60px rgba(140,94,255,0.4);
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 20px 50px rgba(140,94,255,0.4);
 }
 
-/* FINAL NO-SCROLL SIZE: 210px height */
+/* Image - Full card, covers everything */
 .card img {
     width: 100%;
-    height: 210px !important;
+    height: 100%;
     object-fit: cover;
-    display: block;
+    border-radius: 20px;
+    transition: all 0.4s ease;
 }
 
-/* Season label */
+/* Season label - HIDDEN by default, appears on hover */
 .season-label {
-    padding: 1rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #333;
-    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+    pointer-events: none;
+    border-radius: 0 0 20px 20px;
 }
 
-/* Floating home button - back to purple */
+/* Show label on hover - ALL 4 CARDS */
+.card:hover .season-label {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Floating home button */
 .floating-home-btn {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 60px; height: 60px;
+    bottom: 20px;
+    right: 20px;
+    width: 56px; height: 56px;
     background: rgba(140,94,255,0.9);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
     transition: all 0.3s ease;
     z-index: 100;
 }
 
 .floating-home-btn:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
     background: #bc79ff;
 }
 
@@ -128,7 +155,10 @@ body {
 
 /* Mobile */
 @media (max-width: 768px) {
-    .card img { height: 180px !important; }
+    .flashcard-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        max-width: 320px;
+    }
     .gallery-header h1 { font-size: 2.4rem; }
-    .flashcard-grid { gap: 1rem; }
 }
