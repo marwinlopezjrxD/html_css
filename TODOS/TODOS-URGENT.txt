@@ -218,7 +218,19 @@ Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extension
 - Shared CSS, zero scroll, hover labels, lightbox all working
 - Ready for 100+ photos per season (TBD)
 
-10th commit: 
+10th commit: Fixed homepage Saturn purple theme + kept all season redirects
+
+- Saturn purple theme restored on index.html (default)
+- All season pages (spring/summer/autumn/winter) still have correct colors
+- Click cards → go to themed pages
+- Hover labels, zero scroll, all fixed
+
+11th commit: Add more photos on the following seasons and fix the default photo that always shows "Spring" (not done)
+
+- Spring
+- Summer 
+- Autumn 
+- Winter
 
 Additional (No deadline):
 
@@ -226,11 +238,49 @@ Additional (No deadline):
 
 REMAINING COMMITS: 0/15
 
-Overcommits: 1
+Overcommits: 2
 
-===== OVERTIME =====
 
-Translate this text if Gallery Website is finished.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=============================================================================================================================================================================================
+
+
+
+Translate this text if Gallery Website is finished. (No Deadline)
 
 Reason why i cannot use english on this additional activity:
 - reduce activity
@@ -249,10 +299,6 @@ Adicionales:
 - Añade un fragmento de canción (libre de derechos de autor) a todas las canciones del álbum 4ONLY de LeeHi.
 
 =============================================================================================================================================================================================
-
-Kung ito na ang huling, menudo sa mundo... 
-
-menudo recipe link: https://open.spotify.com/track/06VwVWrnYSTIikz801hGwD?si=8a8fcfa67fe8441c
 
 4ONLY Live Performance DAY 1 (ENG)
 
