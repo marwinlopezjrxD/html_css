@@ -1,18 +1,20 @@
 /* ========================================================
-   REZE'S GALLERY • 2025 • Clean Flashcard/Quizlet Style
+   REZE'S GALLERY • FINAL 5TH COMMIT • SATURN PURPLE + NO SCROLL
+   Everything fixed: theme back, cards 210px, zero scroll, beautiful
    ======================================================== */
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
     font-family: 'Rajdhani', sans-serif;
-    background: linear-gradient(135deg, #1a0b2e, #2d1b4e);
+    background: linear-gradient(135deg, #1a0b2e, #2d1b4e); /* SATURN PURPLE BACK */
     color: #e0d9ff;
     min-height: 100vh;
     padding: 2rem 1rem;
+    overflow: hidden; /* FINAL NO SCROLL */
+    height: 100vh;
 }
 
-/* Center everything */
 .gallery-container {
     max-width: 1100px;
     margin: 0 auto;
@@ -21,62 +23,62 @@ body {
 
 /* Header - emotional & clean */
 .gallery-header h1 {
-    font-size: 3.8rem;
+    font-size: 3.2rem;
     font-weight: 700;
     background: linear-gradient(90deg, #d4a5ff, #ff9eee);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.5rem;
+    line-height: 1.1;
 }
 .gallery-header p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     opacity: 0.9;
-    font-weight: 400;
 }
 
-/* 2x2 Flashcard Grid - exactly your drawing */
+/* 2x2 Grid - tight & perfect */
 .flashcard-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 3rem;
-    margin: 4rem auto;
-    max-width: 1000px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem auto;
+    max-width: 960px;
 }
 
-/* Each card - minimal, clean, Quizlet style */
+/* Flashcard style - Quizlet look */
 .card {
     background: white;
     border-radius: 24px;
     overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
     transition: all 0.4s ease;
     cursor: pointer;
 }
 
 .card:hover {
-    transform: translateY(-15px) scale(1.03);
-    box-shadow: 0 25px 60px rgba(140,94,255,0.3);
+    transform: translateY(-12px) scale(1.04);
+    box-shadow: 0 25px 60px rgba(140,94,255,0.4);
 }
 
+/* FINAL NO-SCROLL SIZE: 210px height */
 .card img {
     width: 100%;
-    height: 420px;
+    height: 210px !important;
     object-fit: cover;
     display: block;
 }
 
-/* Season label below photo */
+/* Season label */
 .season-label {
-    padding: 1.2rem;
+    padding: 1rem;
     font-size: 1.5rem;
     font-weight: 600;
     color: #333;
-    background: linear-gradient(transparent, rgba(255,255,255,0.9));
-    margin-top: -4px;
+    background: white;
 }
 
-/* Floating home button - stays in Gallery */
+/* Floating home button - back to purple */
 .floating-home-btn {
     position: fixed;
     bottom: 30px;
@@ -98,7 +100,7 @@ body {
     background: #bc79ff;
 }
 
-/* Simple Lightbox */
+/* Lightbox */
 .lightbox {
     display: none;
     position: fixed;
@@ -124,9 +126,9 @@ body {
     cursor: pointer;
 }
 
-/* Mobile friendly */
+/* Mobile */
 @media (max-width: 768px) {
-    .gallery-header h1 { font-size: 2.8rem; }
-    .flashcard-grid { gap: 2rem; }
-    .card img { height: 340px; }
+    .card img { height: 180px !important; }
+    .gallery-header h1 { font-size: 2.4rem; }
+    .flashcard-grid { gap: 1rem; }
 }

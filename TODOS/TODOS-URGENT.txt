@@ -66,9 +66,8 @@ Proritize this more than anything:
 
 LAST ACTIVITY FOR 2025:
 
-== ming is tired, sleepy and sick... ==
 
-GALLERY WEBSITE - for Reze (ON HOLD, NO DEADLINE)
+GALLERY WEBSITE - for Reze (ONGOING, NO DEADLINE)
 
 Example header sentences
 
@@ -178,16 +177,19 @@ Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extension
 
 4th commit: favico and upload more photos(done)
 
-5th commit: 
-- link the uploaded favicos to the website
-- fix the broken image link named "Full view"
-- make the four seasons themes after fixing broken image link (Full View), and change that preview thing into a dedicated specific themes (spring, summer, autumn, winter)
+5th commit: FINAL NO-SCROLL — cards 210px height, super tight layout, zero scroll forever
+
+- Cards now 210px (was 240px) → fits perfectly on all screens
+- Reduced margins/gaps → absolutely no scroll (tested)
+- Real image paths preserved + lightbox working
+- Favicon + floating home button perfect
+- Ready for drop photos for Reze 
 
 Additional (No deadline):
 
 - Proofread/Revise Documentation and heavy commentings on every line.
 
-REMAINING COMMITS: 5/15
+REMAINING COMMITS: 2/15
 
 extend to 550 or 600 commits if the remaining commits are all used up. 
 
@@ -196,8 +198,8 @@ extend to 550 or 600 commits if the remaining commits are all used up.
 Translate this text if Gallery Website is finished.
 
 Reason why i cannot use english on this additional activity:
-- wala
-- trip trip lang
+- reduce activity
+- reduce overcommits
 
 Adicionales: 
 
@@ -227,9 +229,6 @@ Day 2 Link: https://www.youtube.com/watch?v=BktE3Ta8Mhg
 
 =============================================================================================================================================================================================
 
-Quote for today:
-
-"When life gives you lemons, git commit -m "Added initial files."
 
 # End of file.
 
