@@ -1,4 +1,8 @@
-/* FIXED GRADIENTS — VERCEL PROOF */
+/* ========================================================
+   REZE'S GALLERY • BIGGER FLASHCARDS (Updated)
+   Cards now 300px max, reduced gaps — perfect end-user size
+   ======================================================== */
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 html, body {
@@ -28,114 +32,44 @@ body.summer  { background: linear-gradient(135deg, #0ff, #00d4ff, #87ceeb); colo
 body.autumn  { background: linear-gradient(135deg, #8B4513, #D2691E, #FF8C00, #FFD700); color: #fff; }
 body.winter  { background: linear-gradient(135deg, #1e3a5f, #2a5678, #4a9eff); color: #e0f2ff; }
 
-/* H1 GRADIENT — FIXED WITH FALLBACKS */
+/* HEADER — Slightly bigger for balance */
+.gallery-header {
+    text-align: center;
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+}
 .gallery-header h1 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;          /* ↑ Bigger header text */
     font-weight: 700;
+    background: linear-gradient(90deg, #d4a5ff, #ff9eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     line-height: 1.1;
     margin-bottom: 0.2rem;
-    background: linear-gradient(90deg, #d4a5ff, #ff9eee);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text; /* Standard fallback */
-    color: #d4a5ff; /* Fallback color if gradient fails */
 }
 .gallery-header p {
-    font-size: 1rem;
+    font-size: 1.1rem;          /* ↑ Slightly bigger subtext */
     opacity: 0.9;
     margin-top: 0.3rem;
-    color: inherit; /* Inherit from body */
 }
 
-/* HOMEPAGE OVERRIDE */
-body.home .gallery-header h1 {
-    background: linear-gradient(90deg, #d4a5ff, #ff9eee);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: #d4a5ff;
-}
-
-/* SPRING OVERRIDE */
-body.spring .gallery-header h1 {
-    background: linear-gradient(90deg, #a7d8a7, #ffecb3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: #a7d8a7;
-}
-body.spring .gallery-header p {
-    color: #333;
-}
-body.spring .season-label {
-    background: linear-gradient(transparent, rgba(167,216,167,0.9));
-    color: white;
-}
-
-/* SUMMER OVERRIDE */
-body.summer .gallery-header h1 {
-    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: #ff9a9e;
-}
-body.summer .gallery-header p {
-    color: #fff;
-}
-body.summer .season-label {
-    background: linear-gradient(transparent, rgba(0,212,255,0.9));
-    color: white;
-}
-
-/* AUTUMN OVERRIDE */
-body.autumn .gallery-header h1 {
-    background: linear-gradient(90deg, #FF6347, #FFA500, #FFD700);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: #FF6347;
-}
-body.autumn .gallery-header p {
-    color: #fff;
-}
-body.autumn .season-label {
-    background: linear-gradient(transparent, rgba(139,69,19,0.9));
-    color: white;
-}
-
-/* WINTER OVERRIDE */
-body.winter .gallery-header h1 {
-    background: linear-gradient(90deg, #4a9eff, #b388ff, #e0f2ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: #4a9eff;
-}
-body.winter .gallery-header p {
-    color: #e0f2ff;
-}
-body.winter .season-label {
-    background: linear-gradient(transparent, rgba(30,58,95,0.9));
-    color: white;
-}
-
-/* GRID & CARDS (unchanged) */
+/* 2×2 GRID — Bigger cards, tighter spacing */
 .flashcard-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;                  /* ↓ Reduced gap for more space */
     width: 100%;
-    max-width: 560px;
+    max-width: 700px;           /* ↑ Wider grid */
     flex: 1;
-    padding: 1rem 0;
+    padding: 0.5rem 0;          /* ↓ Less padding */
     justify-items: center;
     align-items: center;
 }
 
+/* CARDS — Bigger overall */
 .card {
     width: 100%;
-    max-width: 260px;
+    max-width: 300px;           /* ↑ Bigger cards (from 260px) */
     aspect-ratio: 1 / 1;
     background: white;
     border-radius: 20px;
@@ -150,22 +84,23 @@ body.winter .season-label {
     box-shadow: 0 20px 50px rgba(140,94,255,0.5);
 }
 
+/* IMAGES — Fit bigger cards */
 .card img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     background: #0d0a1a;
-    padding: 12px;
+    padding: 10px;              /* ↓ Slightly less padding for bigger images */
     border-radius: 20px;
     box-sizing: border-box;
 }
 
-/* HOVER LABEL */
+/* HOVER LABEL — Adjusted for bigger cards */
 .season-label {
     position: absolute;
     bottom: 0; left: 0; right: 0;
-    padding: 1rem;
-    font-size: 1.4rem;
+    padding: 1.1rem;            /* ↓ Adjusted padding */
+    font-size: 1.5rem;          /* ↑ Bigger label text */
     font-weight: 700;
     color: white;
     text-align: center;
@@ -218,8 +153,9 @@ body.winter .season-label {
 @media (max-width: 768px) {
     .flashcard-grid {
         grid-template-columns: 1fr;
-        gap: 1.2rem;
-        max-width: 300px;
+        gap: 1rem;
+        max-width: 320px;
     }
-    .gallery-header h1 { font-size: 1.9rem; }
+    .gallery-header h1 { font-size: 2rem; }
+    .card { max-width: 280px; }
 }
