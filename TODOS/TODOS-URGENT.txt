@@ -229,7 +229,9 @@ Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extension
 
 12th commit: Fixed all image paths for Vercel — no more broken images
 
-13th commit: Add more photos on the following seasons and fix the default photo that always shows "Spring" (not done)
+13th commit: fix the default photo that always shows "Spring" (fixed)
+
+14th commit: Add more photos on the following seasons:
 
 - Spring
 - Summer 
