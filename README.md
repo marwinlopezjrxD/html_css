@@ -70,6 +70,8 @@ Diving deep into fun, bite-sized experiments to build skills without pressure. C
 
 - **[Live Music Teasers Demo](https://marwinlopezjrxD.github.io/html_css/html-css-js/Practice/Mini_Projects/dummy_files/Music/music-index.html)** — Short excerpts + Genius links, all copyright-safe :)
 
+- **[Fan Art Gallery](https://html-css-gallery-reze.vercel.app/winter-theme.html)** — Sample Fan Art Gallery
+
 More minis incoming: Subscriptions form, animations, and whatever comes to mind.
 
 ## Upcoming Activities
