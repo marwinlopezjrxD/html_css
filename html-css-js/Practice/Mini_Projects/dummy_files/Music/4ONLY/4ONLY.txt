@@ -1,0 +1,23 @@
+=============================================================================================================================================================================================
+
+- Add a folder named 4ONLY.
+
+- After adding it, create a website like music-index.html.
+
+- Create a shortcut button that redirects the user.
+
+- After clicking on a specific song to access 4ONLY (LeeHi), create a vinyl record spin animation.
+
+- Add a royalty-free song snippet to all songs on LeeHi's 4ONLY album.
+
+=============================================================================================================================================================================================
+
+4ONLY Live Performance DAY 1 (ENG)
+
+Day 1 Link: https://www.youtube.com/watch?v=fF4UF6VaBSc
+
+4ONLY Live Performance DAY 2 (ENG)
+
+Day 2 Link: https://www.youtube.com/watch?v=BktE3Ta8Mhg
+
+=============================================================================================================================================================================================
