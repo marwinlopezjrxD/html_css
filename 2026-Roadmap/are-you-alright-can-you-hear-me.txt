@@ -30,6 +30,15 @@ RGB TRANSPARENCY, Color Percentage, etc
 Revisit Hierarchy (!important, ".", "#", etc)
 fonts
 
+Preparation/Projects:
+HTML and CSS Reviewer 
+HTML and CSS Certification
+Git commands introduction
+Understanding Tokenomics for web3 development
+Apply for front-end and or find something related to my current understanding on 2025
+- Email reviewer (afaik, it needs a strong knowledge of HTML/CSS to become a strong candidate)
+- QA
+- TBD
 
 research:
 Error Handling
@@ -85,9 +94,5 @@ sql commands
 2027 - JS/TailwindCSS/Node.js
 2028 - SQL/PHP
 ====
-
-PRIO DESIGN (UI/UX) MORE THAN ANYTHING
-
-🎅
 
 ...
