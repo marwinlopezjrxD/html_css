@@ -26,17 +26,6 @@ if you have modified files and accidentally used git reset --hard origin/master 
 
 NO DEADLINE =)
 
-===============================================================
-
-COMPLETE (11/24/2025)
-# Add malupiton vine boom sound effect for failing score on questionnaire.html file.
--- add check sound effect for passing score 
-# Add a random number animation (karaoke-like scoring) if the user submits on the questionnaire (make a slo-mo effect when showing the real score).
--- after showing the real score, apply the sound effect of either pass or fail, delay time is 1-2 seconds.
--- (optional) drum-roll & oh-sh** sound → next time
-
-===============================================================
-
 # Choose and complete 1-3 text files and convert it to a fully-fledge HTML document and make it responsive for all devices (PC, Laptop, Mobile Devices, etc.).
 
 3 text files to be converted (top picks)
