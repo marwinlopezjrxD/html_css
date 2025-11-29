@@ -47,17 +47,14 @@ if you have modified files and accidentally used git reset --hard origin/master 
 --- See main TODOS.txt for more information. for Filipino Driver's Manual
 ---- Link for reference: https://lto.gov.ph/wp-content/uploads/2023/10/FDM-Vol.-1-2nd-Edition.pdf
 
-for transcript folder:
-- find a reputable text to video translation website to finish the following:
--- phillipine-looper.html
--- pagbilan-nga-taho.html
+
 
 Additional
 
 Under Critique Folder:
 - add a file named "how-metas-changes-from-time-to-time.html
 
-
+- does same folder name on files bricks the whole website?
 
 
 # End of file.
