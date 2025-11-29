@@ -6,7 +6,7 @@ Just a simple repo about HTML and CSS, aims to learn mainly on basic HTML tags a
 
 ## HTML/CSS Practice
 
-[Questionnaire Live Demo](https://marwinlopezjrxD.github.io/html_css/questionnaire.html)
+[Questionnaire Live Demo](https://marwinlopezjrxd.github.io/html_css/html-css-js/Questionnaire/questionnaire.html)
 
 ## Q4 2025 Timeline
 
