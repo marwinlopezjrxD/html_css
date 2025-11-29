@@ -7,7 +7,22 @@ you have commit via 📲 11/29 9:02am
 git fetch origin
 git reset --hard origin/master 
 
-git reflog
+checks commit history:
+
+- git reflog
+
+** VERY IMPORTANT **
+
+if you have modified files and accidentally used git reset --hard origin/master or origin/main:
+- click on the specified file
+- right click > find open timeline
+- Find "File Saved"
+- After seeing this "File Saved", press right-click mouse button
+- After pressing right-click mouse button, a menu will pop up
+- Look for "Restore Contents"
+- Lastly is click on "Restore Contents", it will instantly restore the contents  exactly how it was from your last changes (all your lost changes come back).
+
+
 
 NO DEADLINE =)
 
