@@ -7,6 +7,8 @@ you have commit via 📲 11/29 9:02am
 git fetch origin
 git reset --hard origin/master 
 
+git reflog
+
 NO DEADLINE =)
 
 ===============================================================
