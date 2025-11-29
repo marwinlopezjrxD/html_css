@@ -1,6 +1,8 @@
 https://open.spotify.com/track/6TBJkXHPhu3EsMk1bshwuI?si=KWa0v1HaQ-eEKbFmF1UlqQ
 
 
+-- commit via phone --
+
 git fetch origin
 git reset --hard origin/master 
 
