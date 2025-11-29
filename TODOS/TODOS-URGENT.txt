@@ -55,9 +55,7 @@ Additional
 Under Critique Folder:
 - add a file named "how-metas-changes-from-time-to-time.html
 
-Additional (No deadline):
 
-- Proofread/Revise Documentation and heavy commentings on every line.
 
 
 # End of file.

@@ -90,6 +90,10 @@ sql commands
 
 ---------------------------------------------------------------
 
+Additional (No deadline):
+
+- Proofread/Revise Documentation and heavy commentings on every line.
+
 
 2027 - JS/TailwindCSS/Node.js
 2028 - SQL/PHP
