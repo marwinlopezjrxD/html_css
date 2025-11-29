@@ -1,0 +1,192 @@
+LAST ACTIVITY FOR 2025:
+
+Vercel Link: https://html-css-gallery-reze.vercel.app/
+
+GALLERY WEBSITE - for Reze (done 11/29)
+
+Example header sentences
+
+Choose one:
+
+1. Kind with a golden heart. Effortlessly Beautiful.
+2. Caring, quick witted, career-oriented, family-oriented. 
+
+
+               Insert Example Header 
+
+    |------------|                 |------------|                                                                  
+    |            |                 |            |
+    |            |                 |            |
+    |------------|                 |------------|
+        Spring                         Summer
+
+    |------------|                 |------------|                                  
+    |            |                 |            |
+    |            |                 |            |
+    |------------|                 |------------|
+        Autumn                         Winter
+
+# Apply at least one law of UX/UI
+# main page is saturn-based theme, refer to music-index.html.
+# all are hoverable with buttons to return to homepage
+# and or add a floating button icon to return to homepage...
+# all files must be HEAVILY documented and must have a comment every LINE by me, no excuses
+--- try to understand unfamiliar CSS Attributes
+# make a separate repository/folder for this (recommended)
+
+=============================================================================================================================================================================================
+
+# the 4 picture must have different stylings (spring, summer, autumn, winter).
+-- each season will have a different style compared to the main page.
+
+# Spring
+
+Spring palettes evoke freshness, renewal, and optimism. Lighter, brighter pastels are ideal for backgrounds, providing a sense of calm and new beginnings. 
+Background Base: Soft whites, cream, or light grey-beige (#E8EEEF).
+Accent Colors: Use light greens (mint, lime, moss), warm yellows (buttercup, lemon), coral, or peach for buttons and highlights. 
+
+# Summer
+
+Summer palettes capture energy and warmth while also suggesting refreshing, cool elements. The best backgrounds are light to maintain an airy feel, using vibrant hues for contrast. 
+Background Base: Crisp white (#FFFFFF), pale blue, or a very light sand/beige tone (#F3E8DF).
+Accent Colors: Incorporate tropical blues, bright yellows, vibrant greens, or hot pinks for a pop of energy and excitement. 
+
+# Autumn
+
+Autumn colors create a cozy, warm, and approachable feel, leveraging earthy tones and rich, saturated hues. Neutral browns and taupes make excellent, grounding backgrounds. 
+Background Base: Warm neutrals like gentle beige or taupe, soft browns (#948879), or antique white (#F1F0E9).
+Accent Colors: Feature burnt oranges, deep reds (burgundy), golden yellows, olive greens, or bronze accents to evoke warmth and stability. 
+
+# Winter
+
+Winter palettes are generally cool-toned, featuring high contrast and a clean, modern aesthetic. Stark contrast is key to the winter look. 
+Background Base: Pure white, icy blues, pale greys (#C2C9CF), or silver tones.
+Accent Colors: Utilize stark black for text and deep jewel tones like emerald green, sapphire blue, ruby red, or fuchsia to create a bold visual impact. 
+
+# Key Design Considerations
+Readability: White is the most popular background color because it ensures content is easy to read. Ensure sufficient contrast between background and text colors using a contrast checker tool for accessibility.
+
+Consistency: A website often uses a dominant background color (around 60% of the space) combined with secondary and accent colors (30% and 10%).
+
+Brand Identity: Ensure the seasonal colors align with your brand's core message and values for a cohesive user experience. 
+
+=============================================================================================================================================================================================
+
+- NO LIMITS, use all remaining resources that you have 
+
+Main Assistants:
+Grok+
+- Cooldown of 2 hours after 50 prompts + pictures( max attachments is 25images i believe)
+
+Backup Assistants:
+- Gemini (first time using)
+- Copilot (Windows Built-in application)
+
+The remaining 15 commits should be all in this Gallery Website. 
+- so close, yet so far. achieving dreams one step at a time. Go. 
+
+# Transfer to TODOS-2026
+
+Research:
+-Verbose
+-HTML performance optimization - Learn Web Development | MDN
+Source: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/HTML
+
+
+1st commit: Added initial files and folders for Gallery Website. (done)
+
+2nd commit: Completed Gallery Homepage — EXACTLY like Quizlet flashcard blueprint style
+
+- Clean 2×2 grid, minimal flashcard style
+- Only season label below each photo
+- Removed all borders/glows → pure elegance
+- Floating home button → stays inside Gallery (index.html)
+- Lightning fast + fully commented
+- Ready for 100+ photos in pcs-stash-and-etc
+
+3rd commit: Refactored Gallery for Reze (personal update, done)
+
+- Changed all references to Reze (title, header, alts)
+- No other changes — same clean flashcard design & performance
+- Still lightning fast, fully commented, ready for photos
+
+4th commit: favico and upload more photos(done)
+
+5th commit: FINAL NO-SCROLL — cards 210px height, super tight layout, zero scroll forever
+
+- Cards now 210px (was 240px) → fits perfectly on all screens
+- Reduced margins/gaps → absolutely no scroll (tested)
+- Real image paths preserved + lightbox working
+- Favicon + floating home button perfect
+- Ready for drop photos for Reze 
+
+6th commit: EXACT Blueprint Match - 2x2 square grid, header above, labels below
+
+- Cards now perfect squares (1:1 aspect-ratio) like ASCII diagram
+- Header directly above grid, labels under each image
+- Zero scroll, real paths, Saturn theme, lightbox all intact
+- Responsive + heavily commented
+
+7th commit: TRUE Quizlet Flashcard Mode - Labels hidden until hover (all 4 cards)
+
+- Season labels now hidden by default, appear on hover (Spring/Summer/Autumn/Winter)
+- Header no longer cut off
+- Perfect square cards, zero scroll, Saturn-based theme and purple colors are now intact
+- Hover effect smooth + clean
+
+8th commit: Header fully visible + smaller flashcards (160px squares)
+
+- "Kind with a golden heart. Effortlessly Beautiful." now shows completely
+- Flashcards reduced to 160px → perfect fit, no cutoff, zero scroll
+- Hover labels work on all 4 cards
+- Saturn purple theme, lightbox, real paths intact
+
+9th commit: Season theme pages with accurate color palettes + click redirect
+
+- Clicking a card now goes to spring-theme.html / summer-theme.html / etc.
+- All 4 season pages have identical layout to homepage
+- True seasonal colors:
+   • Spring: warm, light, bright pastels
+   • Summer: vibrant sun, ocean blues, tropical energy (TBD)
+   • Autumn: rich earthy oranges, browns, harvest warmth (TBD)
+   • Winter: cool, deep, high-contrast jewel tones + frost (TBD)
+- Shared CSS, zero scroll, hover labels, lightbox all working
+- Ready for 100+ photos per season (TBD)
+
+10th commit: Fixed homepage Saturn purple theme + kept all season redirects
+
+- Saturn purple theme restored on index.html (default)
+- All season pages (spring/summer/autumn/winter) still have correct colors
+- Click cards → go to themed pages
+- Hover labels, zero scroll, all fixed
+
+11th commit: link the favico to the homepage
+
+12th commit: Fixed all image paths for Vercel — no more broken images
+
+13th commit: fix the default photo that always shows "Spring" (fixed)
+
+14th commit: Final: root-relative paths for Vercel (CSS + favicon)
+
+15th commit: Fixed all paths for Vercel: root-relative CSS/JS/images/favicon
+
+16th commit: Forced gradient fonts + theme overrides for Vercel
+
+17th commit: Fixed gradients with fallbacks for Vercel
+
+18th commit: Bigger flashcards (300px) + header text for better end-user view
+
+19th commit: Forced theme-specific gradients with !important for Vercel
+
+20th commit: Fixed typo ($0 → 0) + final mobile responsive version
+
+21th commit: Restored themed font gradients with higher priority
+
+22th commit: Add more photos on the following seasons: (done)
+
+- Spring
+- Summer 
+- Autumn 
+- Winter
+
+23rd commit: fixed paths and photos
