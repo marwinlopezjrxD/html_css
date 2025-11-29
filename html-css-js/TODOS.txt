@@ -221,9 +221,10 @@ FUTURE TODOS
 
 FREE SPACE 
 
-Join any webinar 
-find lost drivers manual book (FDM vol 1)
-find a way to drive montanas
+11/30
+finish remaining todos-urgent.txt tasks
+transfer some stuffs from urgent to a normal todos.txt file
+clean the repo
 
 -
 --
