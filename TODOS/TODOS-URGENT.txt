@@ -33,9 +33,9 @@ NO DEADLINE =)
 
 # Complete 3 draft HTML files
 
--- why-frieren-s2-might-be-AOTY-again.html
--- why-you-should-not-read-chainsawman-real.html
--- html-css-js\Practice\Mini_Projects\dummy_files\Gallery\index.html
+-- why-frieren-s2-might-be-AOTY-again.html (done)
+-- why-you-should-not-read-chainsawman-real.html (done)
+-- html-css-js\Practice\Mini_Projects\dummy_files\Gallery\index.html (ongoing)
 
 # Additional
 
