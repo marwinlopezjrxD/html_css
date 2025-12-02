@@ -51,16 +51,14 @@ HTML and CSS
 
 - https://campus.w3schools.com/collections/certifications?srsltid=AfmBOopOUObkJBbUNWEDKe7yxPwVMBogiygSyPGfLTAgCLlaCW6Sfi_j
 
-Exam Overview:
-Fee: $95 USD per certification.
-Number of Questions: Adaptive, averaging 60 questions.
-Requirement to Pass: Minimum 40% (Intermediate level).
-Time Limit: 60 minutes.
-Number of Attempts: 3 attempts to pass.
-Exam Deadline: None.
-Certification Expiration: Never.
-Format: Online, multiple-choice.
-Skill Levels: Intermediate (40%), Advanced (75%), and Professional (90%).
+HTML (50% off) - 47.50$
+
+- https://campus.w3schools.com/collections/certifications/products/html-certificate
+
+CSS (50% off) - 47.50$
+
+- https://campus.w3schools.com/collections/certifications/products/css-certificate
+
 
 ---------------------------------------------------------------
 
