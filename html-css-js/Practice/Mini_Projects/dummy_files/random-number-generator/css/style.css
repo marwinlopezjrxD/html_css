@@ -1,5 +1,7 @@
 /* ====================================
-   Saturn Based Theme Random Number Generator • No Excuses – Full Styles
+   Saturn KM • No Excuses – Music Index Theme Edition
+   Colors matched to music-index.html: Deep space indigo nebula bg,
+   cream/gold Saturn, teal/cyan neon glows, subtle gradients.
    ==================================== */
 
 * {
@@ -20,10 +22,10 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at center, #0b0e2c 0%, #000 70%);
+  background: radial-gradient(circle at center, #1a0b2e 0%, #0f0f23 50%, #000 100%); /* Indigo nebula like music bg */
 }
 
-/* Animated Stars Background */
+/* Animated Stars Background – Pure CSS, tinted cyan for music vibe */
 .stars,
 .stars2,
 .stars3 {
@@ -32,26 +34,48 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: transparent url('https://i.postimg.cc/Qx34GBJv/stars.png') repeat;
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, #e0f7fa, transparent), /* Cyan-tinted stars */
+    radial-gradient(2px 2px at 40px 70px, rgba(0, 191, 255, 0.8), transparent),
+    radial-gradient(1px 1px at 90px 40px, #fff, transparent),
+    radial-gradient(1px 1px at 130px 80px, rgba(0, 255, 255, 0.6), transparent),
+    radial-gradient(2px 2px at 160px 30px, #b3e5fc, transparent);
+  background-repeat: repeat;
+  background-size: 200px 100px;
+  animation: animStars 100s linear infinite;
+  opacity: 0.7;
 }
 
 .stars2 {
-  animation: animStars 200s linear infinite;
-  opacity: 0.6;
+  background-image: 
+    radial-gradient(1px 1px at 10px 20px, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 50px 60px, rgba(0, 191, 255, 0.7), transparent),
+    radial-gradient(1px 1px at 80px 90px, #e0f7fa, transparent),
+    radial-gradient(2px 2px at 120px 40px, rgba(0, 255, 255, 0.5), transparent),
+    radial-gradient(1px 1px at 150px 70px, #fff, transparent);
+  background-size: 180px 120px;
+  animation: animStars 150s linear infinite reverse;
+  opacity: 0.5;
 }
 
 .stars3 {
-  animation: animStars 300s linear infinite;
-  transform: scale(0.5);
-  opacity: 0.4;
+  background-image: 
+    radial-gradient(0.5px 0.5px at 30px 50px, rgba(0, 255, 255, 0.4), transparent),
+    radial-gradient(1px 1px at 70px 10px, #b3e5fc, transparent),
+    radial-gradient(1.5px 1.5px at 110px 80px, rgba(0, 191, 255, 0.3), transparent),
+    radial-gradient(0.5px 0.5px at 140px 20px, #fff, transparent);
+  background-size: 160px 90px;
+  animation: animStars 200s linear infinite;
+  opacity: 0.3;
+  transform: scale(1.2);
 }
 
 @keyframes animStars {
-  from { transform: translateY(0); }
-  to { transform: translateY(-2000px); }
+  from { transform: translateY(0px); }
+  to { transform: translateY(-100px); }
 }
 
-/* Saturn Planet */
+/* Saturn Planet – Cream/gold tones from music-index */
 .saturn {
   position: absolute;
   top: 50%;
@@ -69,10 +93,10 @@ body {
   left: 50%;
   width: 220px;
   height: 220px;
-  background: linear-gradient(135deg, #f4a261, #e76f51);
+  background: linear-gradient(135deg, #f5deb3, #deb887); /* Wheat/cream Saturn like music */
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: inset -30px -30px 50px rgba(0,0,0,0.6), 0 0 80px rgba(231, 111, 81, 0.6);
+  box-shadow: inset -30px -30px 50px rgba(0,0,0,0.6), 0 0 80px rgba(173, 216, 230, 0.6); /* Teal glow */
 }
 
 .ring {
@@ -81,10 +105,10 @@ body {
   left: 50%;
   width: 420px;
   height: 100px;
-  border: 20px solid rgba(255, 215, 0, 0.4);
+  border: 20px solid rgba(255, 215, 0, 0.3); /* Subtle gold */
   border-radius: 50%;
   transform: translate(-50%, -50%) rotateX(70deg);
-  box-shadow: 0 0 60px rgba(255, 215, 0, 0.5);
+  box-shadow: 0 0 60px rgba(0, 191, 255, 0.5); /* Cyan ring glow from music */
 }
 
 .ring-shadow {
@@ -118,34 +142,34 @@ body {
   transform: translate(-50%, -50%) scale(1);
 }
 
-/* Typography */
+/* Typography – Neon cyan like music accents */
 .title {
   font-family: 'Orbitron', sans-serif;
   font-size: 4.5rem;
-  background: linear-gradient(90deg, #ffd700, #ff6b6b);
+  background: linear-gradient(90deg, #00ffff, #00bfff); /* Cyan/teal gradient */
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   margin-bottom: 10px;
-  text-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
+  text-shadow: 0 0 30px rgba(0, 255, 255, 0.6); /* Cyan glow */
 }
 
 .subtitle {
   font-size: 1.3rem;
-  color: #aaa;
+  color: #b3e5fc; /* Light cyan */
   margin-bottom: 40px;
   letter-spacing: 3px;
 }
 
-/* KM Display Card */
+/* KM Display Card – Teal accents */
 .km-display {
   background: rgba(10, 10, 30, 0.7);
   padding: 40px 20px;
   border-radius: 30px;
-  border: 2px solid rgba(255, 215, 0, 0.3);
+  border: 2px solid rgba(0, 191, 255, 0.4); /* Teal border */
   margin: 40px 0;
   backdrop-filter: blur(10px);
-  box-shadow: 0 0 40px rgba(255, 215, 0, 0.2);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.2); /* Cyan glow */
   transition: transform 0.3s ease;
 }
 
@@ -153,7 +177,7 @@ body {
   font-family: 'Orbitron', sans-serif;
   font-size: 9rem;
   font-weight: 800;
-  color: #ffd700;
+  color: #ffd700; /* Gold number for contrast */
   text-shadow: 0 0 30px #ffd700;
   display: block;
   opacity: 1;
@@ -162,35 +186,35 @@ body {
 
 .km-text {
   font-size: 2.5rem;
-  color: #ff6b6b;
+  color: #00bfff; /* Teal KM text */
   letter-spacing: 5px;
 }
 
-/* Generate Button */
+/* Generate Button – Teal/cyan gradient like music controls */
 .generate-btn {
   margin-top: 30px;
   padding: 18px 50px;
   font-size: 1.4rem;
   font-weight: 600;
-  background: linear-gradient(45deg, #ff6b6b, #ffd700);
+  background: linear-gradient(45deg, #00bfff, #00ffff); /* Teal to cyan */
   color: #000;
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.4s;
-  box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 191, 255, 0.4);
 }
 
 .generate-btn:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(255, 215, 0, 0.6);
+  box-shadow: 0 15px 40px rgba(0, 255, 255, 0.6);
 }
 
 /* Footer */
 .footer {
   margin-top: 50px;
   font-size: 1.1rem;
-  color: #777;
+  color: #778899; /* Cool gray like music subtitles */
   letter-spacing: 2px;
 }
 
