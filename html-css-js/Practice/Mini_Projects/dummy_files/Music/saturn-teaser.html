@@ -1,127 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SZA - Saturn | Lyrics Teaser</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saturn – SZA</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto+Mono:wght@300;400&display=swap');
-
     body {
       margin: 0;
+      padding: 0;
       min-height: 100vh;
       background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
       color: #e0d8ff;
       font-family: 'Roboto Mono', monospace;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      text-align: center;
       padding: 2rem;
     }
-
-    .container {
-      max-width: 700px;
-      background: rgba(20, 15, 50, 0.6);
-      padding: 3rem 2.5rem;
-      border-radius: 20px;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(147, 112, 219, 0.3);
-      text-align: center;
-    }
-
     h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 3.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 4.5rem;
       background: linear-gradient(90deg, #9d7aff, #ff9ecf);
       -webkit-background-clip: text;
       background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: transparent;
+      margin: 0.5rem 0;
     }
-
-    h2 {
-      font-size: 1.4rem;
-      color: #b19cd9;
-      margin-bottom: 3rem;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-    }
-
+    p { color: #b19cd9; margin: 0.5rem 0 2rem; }
     .lyrics {
-      font-size: 1.25rem;
+      max-width: 700px;
+      font-size: 1.4rem;
       line-height: 2.2;
-      text-align: left;
-      margin: 0 auto;
-      max-width: 600px;
-    }
-
-    .verse { margin-bottom: 2rem; }
-    .chorus { 
-      font-style: italic;
-      color: #d4a5ff;
-    }
-
-    .highlight {
-      color: #ff9ecf;
-      font-weight: bold;
-    }
-
-    .teaser-note {
-      font-size: 1rem;
       color: #b19cd9;
-      margin-top: 2rem;
-      padding: 1rem;
-      background: rgba(147, 112, 219, 0.1);
-      border-radius: 10px;
-    }
-
-    .link-btn {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.8rem 1.5rem;
-      background: linear-gradient(90deg, #9d7aff, #ff9ecf);
-      color: #0f0c29;
-      text-decoration: none;
-      border-radius: 20px;
-      font-weight: bold;
-      transition: transform 0.3s;
-    }
-
-    .link-btn:hover { transform: scale(1.05); }
-
-    footer {
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-
-    @media (max-width: 600px) {
-      h1 { font-size: 2.8rem; }
-      .container { padding: 2rem 1.5rem; }
     }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1>Saturn</h1>
-    <h2>SZA</h2>
+  <h1>Saturn</h1>
+  <p>SZA • SOS (2022)</p>
 
-    <div class="lyrics">
-      <div class="chorus">
-        Ooh (ooh, ooh)<br>
-        <span class="highlight">Life's better on Saturn</span><br>
-        Got to break this pattern<br>
-        Of floating away
-      </div>
-    </div>
-
-    <div class="teaser-note">
-      Dreaming of escape... ♄<br>
-      <a href="https://genius.com/Sza-saturn-lyrics" target="_blank" class="link-btn">Read Full Lyrics on Genius →</a>
-    </div>
-
-    <footer>Teaser from SOS (2022) – Fair use for vibes only ♡</footer>
+  <div class="lyrics">
+    If there's a point to this, then why do I exist?<br>
+    Stuck in orbit, I'm just a little planet<br>
+    Spinning 'round your sun, tryna find a reason<br>
+    Why I'm still here, still here, still here...
   </div>
+
+  <br><br>
+  <a href="https://genius.com/Sza-saturn-lyrics" target="_blank" style="color:#ff9ecf; text-decoration:none; font-size:1.1rem;">
+    Full lyrics on Genius
+  </a>
+
+  <br><br>
+  <a href="index.html" style="color:transparent; text-decoration:none; font-size:1.2rem; font-weight:bold; background:linear-gradient(90deg,#9d7aff,#ff9ecf); -webkit-background-clip:text; background-clip:text; transition:all 0.3s ease;"
+     onmouseover="this.style.color='#fff'; this.style.textShadow='0 0 20px #9370db'"
+     onmouseout="this.style.color='transparent'; this.style.textShadow='none'">
+    Back to Music Home
+  </a>
 </body>
 </html>

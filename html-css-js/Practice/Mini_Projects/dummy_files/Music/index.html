@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ming's lyrics teasers ♡</title>
+  <title>marwin's lyrics teasers ♡</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto+Mono:wght@300&display=swap');
 
@@ -79,9 +79,31 @@
       font-size: 0.9rem;
     }
 
+    /* Back to Home Link — same purple/pink gradient as h1 & h3 */
+    .back-home {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: transparent;
+      text-decoration: none;
+      background: linear-gradient(90deg, #9d7aff, #ff9ecf);
+      -webkit-background-clip: text;
+      background-clip: text;
+      transition: all 0.4s ease;
+    }
+
+    .back-home:hover {
+      color: #fff;
+      text-shadow: 0 0 20px rgba(157, 122, 255, 0.8);
+      transform: translateY(-3px);
+    }
+
     @media (max-width: 600px) {
       h1 { font-size: 2.8rem; }
       .card { padding: 1.5rem 1rem; }
+      .back-home { font-size: 1rem; }
     }
   </style>
 </head>
@@ -108,6 +130,8 @@
     </div>
   </div>
 
-  <footer>all teasers are short fair-use excerpts • full lyrics on Genius ♡</footer>
+  <footer>
+    all teasers are short fair-use excerpts • full lyrics on Genius ♡<br>
+  </footer>
 </body>
 </html>
