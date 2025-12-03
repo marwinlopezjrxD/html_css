@@ -63,7 +63,9 @@ Under Critique Folder:
 - does same folder name on files bricks the whole website?
 
 
-deadlines met 
+deadlines met - random number generator site. 
+
+---- 
 
 choose one:
 

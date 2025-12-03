@@ -5,36 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saturn – SZA</title>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-      color: #e0d8ff;
-      font-family: 'Roboto Mono', monospace;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 2rem;
+    body{
+      margin:0;padding:0;min-height:100vh;
+      background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+      color:#e0d8ff;font-family:'Roboto Mono',monospace;
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+      text-align:center;padding:2rem;
     }
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 4.5rem;
-      background: linear-gradient(90deg, #9d7aff, #ff9ecf);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      margin: 0.5rem 0;
-    }
-    p { color: #b19cd9; margin: 0.5rem 0 2rem; }
-    .lyrics {
-      max-width: 700px;
-      font-size: 1.4rem;
-      line-height: 2.2;
-      color: #b19cd9;
-    }
+    h1{font-family:'Playfair Display',serif;font-size:4.5rem;
+      background:linear-gradient(90deg,#9d7aff,#ff9ecf);
+      -webkit-background-clip:text;background-clip:text;color:transparent;margin:0.5rem 0;}
+    p{color:#b19cd9;margin:0.5rem 0 2rem;}
+    .lyrics{max-width:700px;font-size:1.4rem;line-height:2.2;color:#b19cd9;}
+    .highlight{color:#ff9ecf;font-weight:bold;}
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
@@ -43,10 +26,12 @@
   <p>SZA • SOS (2022)</p>
 
   <div class="lyrics">
-    If there's a point to this, then why do I exist?<br>
-    Stuck in orbit, I'm just a little planet<br>
-    Spinning 'round your sun, tryna find a reason<br>
-    Why I'm still here, still here, still here...
+    <div class="chorus">
+      Ooh (ooh, ooh)<br>
+      <span class="highlight">Life's better on Saturn</span><br>
+      Got to break this pattern<br>
+      Of floating away
+    </div>
   </div>
 
   <br><br>
@@ -55,9 +40,9 @@
   </a>
 
   <br><br>
-  <a href="index.html" style="color:transparent; text-decoration:none; font-size:1.2rem; font-weight:bold; background:linear-gradient(90deg,#9d7aff,#ff9ecf); -webkit-background-clip:text; background-clip:text; transition:all 0.3s ease;"
-     onmouseover="this.style.color='#fff'; this.style.textShadow='0 0 20px #9370db'"
-     onmouseout="this.style.color='transparent'; this.style.textShadow='none'">
+  <a href="index.html" style="color:transparent;text-decoration:none;font-size:1.2rem;font-weight:bold;background:linear-gradient(90deg,#9d7aff,#ff9ecf);-webkit-background-clip:text;background-clip:text;transition:all 0.3s ease;"
+     onmouseover="this.style.color='#fff';this.style.textShadow='0 0 20px #9370db'"
+     onmouseout="this.style.color='transparent';this.style.textShadow='none'">
     Back to Music Home
   </a>
 </body>
