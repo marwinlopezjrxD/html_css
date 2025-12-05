@@ -1,0 +1,166 @@
+/* ============================================= */
+/*           MING'S FOOD HUB - STYLE.CSS         */
+/*   A clean, responsive, mobile-first design   */
+/*   Theme: Blue & Sky Blue (Filipino vibes)     */
+/* ============================================= */
+
+:root {
+  --blue: #0a7cff;      /* Primary brand color */
+  --sky: #87CEEB;       /* Background gradient end */
+  --light: #f8f9fa;     /* Card background */
+  --dark: #212529;      /* Text color */
+}
+
+/* Reset default margin/padding and use border-box */
+* { box-sizing: border-box; }
+
+/* ==================== GLOBAL STYLES ==================== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #ffffff, var(--sky));
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* ==================== HEADER ==================== */
+header {
+  background: var(--blue);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.8rem;
+}
+
+/* ==================== LAYOUT ==================== */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section { margin-bottom: 4rem; }
+
+/* Section titles with decorative underline */
+h2 {
+  text-align: center;
+  color: var(--blue);
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: var(--blue);
+  margin: 0.5rem auto;
+  border-radius: 2px;
+}
+
+/* Responsive grid for menu cards */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+/* ==================== CARD DESIGN ==================== */
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+  cursor: default;
+}
+
+/* Hover effect: lift + stronger shadow */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+}
+
+/* Image container */
+.card-img {
+  height: 180px;
+  background: var(--sky) center/cover no-repeat;
+  transition: transform 0.5s ease;
+}
+
+/* Zoom image on hover */
+.card:hover .card-img { 
+  transform: scale(1.1); 
+}
+
+.card-content { 
+  padding: 1rem; 
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--blue);
+  font-size: 1.3rem;
+}
+
+/* Short description (visible by default) */
+.short-desc {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Long description (hidden until hover/tap) */
+.long-desc {
+  font-size: 0.95rem;
+  display: none;
+  margin-top: 0.8rem;
+  color: #333;
+}
+
+/* Show long desc, hide short on hover or when .active (mobile) */
+.card:hover .long-desc,
+.card.active .long-desc { display: block; }
+
+.card:hover .short-desc,
+.card.active .short-desc { display: none; }
+
+/* ==================== FOOD IMAGES (All working!) ==================== */
+.adobo          { background-image: url('https://images.unsplash.com/photo-1596797038530-2c107229654b?w=800&fit=crop'); }
+.adobong-tuyo   { background-image: url('https://images.unsplash.com/photo-1627339923637-1b3b3a3f40fc?w=800&fit=crop'); }
+.bicol-express  { background-image: url('https://images.unsplash.com/photo-1606496393962-218bd4e04974?w=800&fit=crop'); }
+.tomato-salad   { background-image: url('https://images.unsplash.com/photo-1555939594-58056f625634?w=800&fit=crop'); }
+.cucumber-salad { background-image: url('https://images.unsplash.com/photo-1563379922-2d3d0f7e1e6f?w=800&fit=crop'); }
+.bananaque      { background-image: url('https://images.unsplash.com/photo-1606890734073-2d2c4d10c40c?w=800&fit=crop'); }
+.turon          { background-image: url('https://images.unsplash.com/photo-1621939514646-56de34a9312c?w=800&fit=crop'); }
+.gintonic       { background-image: url('https://images.unsplash.com/photo-1551751299-66f8d8bc07da?w=800&fit=crop'); }
+.margarita      { background-image: url('https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800&fit=crop'); }
+.mojito         { background-image: url('https://images.unsplash.com/photo-1541546007048-2f0f6a6792cf?w=800&fit=crop'); }
+
+/* Items without images (drinks, rice) */
+.no-img .card-img { display: none; }
+.no-img .card-content { 
+  padding: 2rem 1rem; 
+  text-align: center; 
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: var(--blue);
+  color: white;
+  margin-top: 3rem;
+}
+
+/* Mobile touch feedback */
+@media (max-width: 768px) {
+  .card:active { 
+    transform: translateY(-5px); 
+  }
+}
