@@ -2,6 +2,12 @@
 
 - scrolabble, responsive to all devices (mobile, desktop, laptop, others)
 - blue-white, blue-yellow, or sky-blue themed, or blue-red
+- make the food menu look small on purpose (pictures & 4-5 word description) but when they hover it,
+it will show the full image size, the lengthy description, on so on. 
+
+git fetch origin
+git reset --hard origin/master
+
 
 Ming's Food Hub
 
