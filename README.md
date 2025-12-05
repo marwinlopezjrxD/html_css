@@ -68,7 +68,7 @@ ADVANCE MERRY CHRISTMAS, EVERYONE!
 
 Diving deep into fun, bite-sized experiments to build skills without pressure. Current highlight: A **cosmic lyrics teasers gallery** (SZA, Mitski, Sade vibes) — fair-use previews with dreamy Saturn-style designs. Check it out:
 
-- **[Live Music Teasers Demo](https://ming-lyrics-teasers.vercel.app/)** — Short excerpts + Genius links, all copyright-safe :)
+- **[Live Music Teasers Demo](https://mings-lyrics-teasers.vercel.app/)** — Short excerpts + Genius links, all copyright-safe :)
 
 - **[Fan Art Gallery](https://html-css-gallery-reze.vercel.app)** — Fan Art Gallery dedicated to Reze (Chainsaw man Character)
 
