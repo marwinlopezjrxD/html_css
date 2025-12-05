@@ -1,27 +1,78 @@
 ==================================================================
 
+- scrolabble, responsive to all devices (mobile, desktop, laptop, others)
+- blue-white, blue-yellow, or sky-blue themed, or blue-red
+
 Ming's Food Hub
 
-Main dishes
+=== Main dishes ===
 
----styled border---
+Adobo
 
-Side dishes
+-- The quintessential Filipino comfort food. 
+This dish features tender meat (usually pork or chicken) slow-cooked and simmered in a savory, 
+tangy sauce made from soy sauce, vinegar, crushed garlic, bay leaves, and black peppercorns. 
+It's rich, deeply flavorful, and perfectly paired with a mountain of white rice.
 
----styled border---
+- Adobong Tuyo
+
+-- This is a "dry" version of the classic adobo, 
+where the meat is simmered in the adobo marinade until the sauce reduces completely and the meat fries in its own rendered fat. 
+The result is an intensely flavorful, concentrated savory and salty bite, often a beloved Filipino breakfast staple served with fried rice and egg.
+
+- Bicol Express
+
+-- A famous dish from the Bicol region, known for its fiery kick and creamy texture. It's a hearty stew made with pork, long green chilies (siling haba), and a generous amount of rich coconut milk, 
+often seasoned with shrimp paste (bagoong). It's a spicy, savory, 
+and rich main dish that guarantees you'll need extra rice!
+
+================================================================== STYLED BORDER
+
+=== Side dishes ===
+
+- Tomatos with onions (seasonings: apple cider vinegar, salt to taste, little bit of honey ---- anong lasa kaya neto ahahah)
+
+-- A bright and crisp side salad using the freshest tomatoes and thinly sliced red onions. 
+The unique dressing is a simple blend of tangy apple cider vinegar, 
+a touch of honey for balance, and salt to taste.
+
+
+- Cucumber salad (A classic, crisp, and refreshing side dish that brings a burst of cool flavor to any meal.)
+
+-- A classic, crisp, and refreshing side dish that brings a burst of cool flavor to any meal.
+This salad is light and simple, focusing on the fresh texture of thinly sliced cucumbers and red onions. 
+It’s typically tossed in a bright vinegar-based dressing lightly sweetened and seasoned with savory notes of fresh dill and a sprinkle of salt and pepper.
+
+================================================================== STYLED BORDER
 
 Dessert 
 
----styled border---
+- Bananaque
+
+--A popular Filipino street food and dessert made of saba bananas skewered on a bamboo stick, 
+coated generously in brown sugar, and then deep-fried until the sugar caramelizes into a crispy, golden-brown glaze.
+
+- Turon
+
+--Sweet, deep-fried spring rolls. Slices of saba banana (sometimes with a slice of jackfruit) are wrapped in a thin lumpia wrapper, 
+rolled in brown sugar, and fried until golden, crunchy, and caramelized.
+
+
+================================================================== STYLED BORDER
 
 Beverages
 
----styled border---
+In a Bottle
+- sprite
+- coke
+- coke zero
 
-Alcoholic Beverages
+================================================================== STYLED BORDER
 
-insert jazz music?
+Extras
 
----insert jazz music song credits---
+- rice
+- fried rice 
+
 
 ==================================================================
