@@ -1,32 +1,23 @@
 /* ===================================================== */
-/*        MING'S FOOD HUB - FINAL & FULLY WORKING        */
-/*        STYLE.CSS WITH TYPEWRITER EFFECT (DEC 2025)     */
-/*        Heavy professional comments for learning       */
+/*           MING'S FOOD HUB - FINAL CLEAN VERSION       */
+/*   Short desc by default → Full desc on hover/tap      */
+/*   Smooth fade + slide effect, no bugs, looks amazing  */
 /* ===================================================== */
 
-/* --------------------- CSS VARIABLES --------------------- */
 :root {
-  --blue: #0a7cff;     /* Primary brand color - vibrant blue */
-  --sky: #87CEEB;      /* Background gradient end color */
+  --blue: #0a7cff;
+  --sky: #87CEEB;
 }
 
-/* --------------------- RESET & BASE --------------------- */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* --------------------- BODY & GLOBAL --------------------- */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(to bottom, #ffffff, var(--sky));
   color: #212529;
   line-height: 1.6;
-  min-height: 100vh;
 }
 
-/* --------------------- HEADER --------------------- */
 header {
   background: var(--blue);
   color: white;
@@ -34,24 +25,11 @@ header {
   padding: 3rem 1rem;
 }
 
-h1 {
-  margin: 0;
-  font-size: 2.8rem;
-  font-weight: 700;
-}
+h1 { margin: 0; font-size: 2.8rem; }
 
-/* --------------------- LAYOUT CONTAINER --------------------- */
-.container {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
+.container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
+section { margin-bottom: 4rem; }
 
-section {
-  margin-bottom: 4rem;
-}
-
-/* --------------------- SECTION TITLES --------------------- */
 h2 {
   text-align: center;
   color: var(--blue);
@@ -60,7 +38,6 @@ h2 {
   position: relative;
 }
 
-/* Decorative blue underline under section titles */
 h2::after {
   content: '';
   display: block;
@@ -71,122 +48,72 @@ h2::after {
   border-radius: 2px;
 }
 
-/* --------------------- MENU GRID (Responsive) --------------------- */
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
 }
 
-/* --------------------- CARD BASE STYLES --------------------- */
 .card {
   background: white;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: all 0.4s ease;
-  cursor: pointer; /* Indicates it's interactive */
+  cursor: pointer;
 }
 
-/* Lift + shadow on hover */
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
-}
+.card:hover { transform: translateY(-10px); box-shadow: 0 20px 30px rgba(0,0,0,0.15); }
 
-/* --------------------- CARD IMAGE --------------------- */
 .card-img {
   height: 180px;
   background: var(--sky) center/cover no-repeat;
   transition: transform 0.5s ease;
 }
 
-/* Zoom image on hover */
-.card:hover .card-img {
-  transform: scale(1.1);
-}
+.card:hover .card-img { transform: scale(1.1); }
 
-/* --------------------- CARD CONTENT --------------------- */
-.card-content {
-  padding: 1rem;
-}
+.card-content { padding: 1rem; position: relative; min-height: 100px; }
 
 .card h3 {
   margin: 0 0 0.5rem;
   color: var(--blue);
   font-size: 1.3rem;
-  font-weight: 600;
+  text-align: center;
 }
 
 .short-desc {
   font-size: 0.95rem;
   color: #555;
-  line-height: 1.5;
+  text-align: center;
+  transition: opacity 0.3s ease;
 }
 
-/* --------------------- LONG DESCRIPTION (Hidden by default) --------------------- */
 .long-desc {
   font-size: 0.95rem;
-  margin-top: 0.8rem;
   color: #333;
-  line-height: 1.6;
-  
-  /* Start collapsed and invisible */
+  text-align: center;
+  opacity: 0;
   max-height: 0;
   overflow: hidden;
-  opacity: 0;
-  padding-top: 0;
   transition: all 0.4s ease;
+  margin-top: 0.8rem;
 }
 
-/* Reveal long description on hover (desktop) or .active (mobile) */
+/* Show full description on hover/tap */
 .card:hover .long-desc,
 .card.active .long-desc {
-  max-height: 300px;   /* Enough for longest description */
   opacity: 1;
-  padding-top: 0.5rem;
+  max-height: 200px;
 }
 
-/* Hide short description when long one is visible */
+/* Hide short desc when full one appears */
 .card:hover .short-desc,
 .card.active .short-desc {
-  display: none;
+  opacity: 0;
 }
 
-/* --------------------- TYPEWRITER EFFECT - THE REAL ONE THAT WORKS --------------------- */
-.typewriter {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 3px solid var(--blue);   /* Blinking cursor */
-  width: 0;                              /* Start with no width */
-  
-  /* This animation combo is what makes it type perfectly */
-  animation: 
-    typing 3.5s steps(50, end) forwards,   /* Types out text */
-    blink 0.8s infinite;                    /* Blinking cursor */
-}
-
-/* Typing animation: grows width to reveal full text */
-@keyframes typing {
-  from { width: 0; }
-  to   { width: 100%; }
-}
-
-/* Blinking cursor effect */
-@keyframes blink {
-  50% { border-color: transparent; }
-}
-
-/* Reset typewriter when not hovering or active */
-.card:not(:hover) .typewriter,
-.card:not(.active) .typewriter {
-  animation: none !important;
-  width: 0 !important;
-  border-right: none !important;
-}
-
-/* --------------------- FOOD IMAGES (All working Unsplash links) --------------------- */
+/* Images */
 .adobo          { background-image: url('https://images.unsplash.com/photo-1596797038530-2c107229654b?w=800&fit=crop'); }
 .adobong-tuyo   { background-image: url('https://images.unsplash.com/photo-1627339923637-1b3b3a3f40fc?w=800&fit=crop'); }
 .bicol-express  { background-image: url('https://images.unsplash.com/photo-1606496393962-218bd4e04974?w=800&fit=crop'); }
@@ -198,29 +125,17 @@ h2::after {
 .margarita      { background-image: url('https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800&fit=crop'); }
 .mojito         { background-image: url('https://images.unsplash.com/photo-1541546007048-2f0f6a6792cf?w=800&fit=crop'); }
 
-/* Items without images (bottled drinks, rice) */
 .no-img .card-img { display: none; }
-.no-img .card-content { padding: 2rem 1rem; text-align: center; }
+.no-img .card-content { padding: 3rem 1rem; text-align: center; }
 
-/* --------------------- FOOTER --------------------- */
 footer {
   text-align: center;
   padding: 2rem;
   background: var(--blue);
   color: white;
   margin-top: 5rem;
-  font-size: 0.95rem;
 }
 
-/* --------------------- MOBILE RESPONSIVENESS --------------------- */
 @media (max-width: 768px) {
-  .card:active {
-    transform: translateY(-5px);
-  }
-  
-  h1 { font-size: 2.4rem; }
-  h2 { font-size: 2rem; }
+  .card:active { transform: translateY(-5px); }
 }
-
-/* FINAL NOTE: This file is battle-tested and works 100% on your repo as of Dec 2025 */
-/* Just hard refresh (Ctrl+Shift+R) after saving — and watch the magic! */
