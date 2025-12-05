@@ -1,43 +1,70 @@
 /**
- * MING'S FOOD HUB - Mobile + Typewriter Animation
- * Triggers typewriter effect on hover (desktop) and tap (mobile)
+ * =====================================================
+ * MING'S FOOD HUB - Mobile Tap + Typewriter Support
+ * 
+ * Features:
+ *  - Tap to expand on mobile
+ *  - Smooth typewriter effect when description appears
+ *  - Resets animation cleanly when closing
+ * 
+ * How it works:
+ *  - On hover (desktop): Triggers typewriter
+ *  - On tap (mobile): Toggles .active class + typewriter
+ *  - Uses DOMContentLoaded to ensure everything loads first
+ * =====================================================
  */
 
 document.addEventListener("DOMContentLoaded", function () {
+  // Select all menu cards
   const cards = document.querySelectorAll('.card');
 
-  function startTypewriter(span) {
-    if (!span) return;
-    span.style.animation = 'none';
-    span.offsetHeight; // Force reflow
-    span.style.animation = 'typing 3.5s steps(60, end) forwards, blink 0.75s infinite';
+  // Function to start typewriter animation on a specific span
+  function startTypewriter(typewriterSpan) {
+    if (!typewriterSpan) return; // Safety check
+    
+    // Reset animation to restart it fresh
+    typewriterSpan.style.animation = 'none';
+    typewriterSpan.offsetHeight; // Force reflow (browser trick to restart CSS animation)
+    typewriterSpan.style.animation = 'typing 3s steps(45, end) forwards, blink 0.75s step-end infinite';
   }
 
   cards.forEach(card => {
-    const typewriter = card.querySelector('.typewriter');
+    // Find the typewriter span inside this card
+    const typewriterSpan = card.querySelector('.typewriter');
 
-    card.addEventListener('mouseenter', () => {
-      if (window.innerWidth > 768) startTypewriter(typewriter);
-    });
-
-    card.addEventListener('click', function (e) {
-      if (window.innerWidth <= 768) {
-        this.classList.toggle('active');
-        if (this.classList.contains('active')) startTypewriter(typewriter);
-        e.preventDefault();
+    // Desktop: Hover → start typewriter
+    card.addEventListener('mouseenter', function () {
+      if (window.innerWidth > 768) { // Only on desktop
+        startTypewriter(typewriterSpan);
       }
     });
 
-    card.addEventListener('mouseleave', () => {
-      if (window.innerWidth > 768 && typewriter) {
-        typewriter.style.animation = 'none';
+    // Mobile: Tap → toggle active + start typewriter
+    card.addEventListener('click', function (e) {
+      if (window.innerWidth <= 768) { // Only on mobile/tablet
+        this.classList.toggle('active');
+        if (this.classList.contains('active')) {
+          startTypewriter(typewriterSpan);
+        }
+        e.preventDefault(); // Prevent any default link behavior
+      }
+    });
+
+    // Desktop: Leave hover → reset typewriter
+    card.addEventListener('mouseleave', function () {
+      if (window.innerWidth > 768 && typewriterSpan) {
+        typewriterSpan.style.animation = 'none';
       }
     });
   });
 
-  window.addEventListener('resize', () => {
+  // Clean up: Remove .active class when resizing to desktop (prevents stuck state)
+  window.addEventListener('resize', function () {
     if (window.innerWidth > 768) {
-      document.querySelectorAll('.card.active').forEach(c => c.classList.remove('active'));
+      cards.forEach(card => card.classList.remove('active'));
     }
   });
+
+  // Optional: Console log for debugging (remove in production)
+  console.log('Ming\'s Food Hub loaded! Hover or tap for typewriter magic. 🚀');
 });
