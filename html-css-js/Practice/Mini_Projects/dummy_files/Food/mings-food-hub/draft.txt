@@ -2,12 +2,6 @@
 
 - scrolabble, responsive to all devices (mobile, desktop, laptop, others)
 - blue-white, blue-yellow, or sky-blue themed, or blue-red
-- make the food menu look small on purpose (pictures & 4-5 word description) but when they hover it,
-it will show the full image size, the lengthy description, on so on. 
-
-git fetch origin
-git reset --hard origin/master
-
 
 Ming's Food Hub
 
@@ -63,6 +57,24 @@ coated generously in brown sugar, and then deep-fried until the sugar caramelize
 --Sweet, deep-fried spring rolls. Slices of saba banana (sometimes with a slice of jackfruit) are wrapped in a thin lumpia wrapper, 
 rolled in brown sugar, and fried until golden, crunchy, and caramelized.
 
+
+================================================================== STYLED BORDER
+
+Alcoholic Beverages 
+
+- Gintonic
+
+-- A universally popular, crisp, and clean highball cocktail. 
+It expertly balances the botanical notes of gin with the bright, 
+effervescent bitterness of premium tonic water, always served over ice with a fresh lime wedge.
+
+- Margarita
+A vibrant and zesty classic cocktail. The perfect blend of tequila, fresh lime juice, and orange liqueur (like Cointreau), 
+served chilled in a salt-rimmed glass. It delivers a refreshing balance of sweet, sour, and savory flavors.
+
+- Mojito
+-- A refreshing and invigorating Cuban classic. This cocktail combines the sweet freshness of muddled mint and lime with rum, sugar, and soda water, 
+creating the perfect light and bubbly drink for a warm day.
 
 ================================================================== STYLED BORDER
 
