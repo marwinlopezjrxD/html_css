@@ -1,0 +1,23 @@
+create a tracker folder
+
+apps
+
+=== sleep tracker ===
+
+calculates your expected sleeping time
+R.E.M eme 
+
+some initial questions
+
+1 did u take a nap my g?
+
+- hell nahh
+- hell yeahh ✅
+
+1.1 for how long?
+
+- 10-30 minutes
+- 1 hour
+- 2 hours or more
+- others
+
