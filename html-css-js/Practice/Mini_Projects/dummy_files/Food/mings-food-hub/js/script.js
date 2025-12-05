@@ -1,32 +1,43 @@
 /**
- * =====================================================
- * MING'S FOOD HUB - Mobile Tap Support
- * Enables tap-to-expand cards on touch devices
- * (Hover doesn't exist on mobile, so we use click)
- * =====================================================
+ * MING'S FOOD HUB - Mobile + Typewriter Animation
+ * Triggers typewriter effect on hover (desktop) and tap (mobile)
  */
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Select all menu cards
   const cards = document.querySelectorAll('.card');
 
+  function startTypewriter(span) {
+    if (!span) return;
+    span.style.animation = 'none';
+    span.offsetHeight; // Force reflow
+    span.style.animation = 'typing 3.5s steps(60, end) forwards, blink 0.75s infinite';
+  }
+
   cards.forEach(card => {
-    // Only activate tap behavior on mobile/small screens
+    const typewriter = card.querySelector('.typewriter');
+
+    card.addEventListener('mouseenter', () => {
+      if (window.innerWidth > 768) startTypewriter(typewriter);
+    });
+
     card.addEventListener('click', function (e) {
       if (window.innerWidth <= 768) {
-        // Toggle .active class to show long description
         this.classList.toggle('active');
-        
-        // Optional: Prevent accidental link navigation if added later
+        if (this.classList.contains('active')) startTypewriter(typewriter);
         e.preventDefault();
+      }
+    });
+
+    card.addEventListener('mouseleave', () => {
+      if (window.innerWidth > 768 && typewriter) {
+        typewriter.style.animation = 'none';
       }
     });
   });
 
-  // Optional: Remove .active class when resizing to desktop (prevents stuck state)
-  window.addEventListener('resize', function () {
+  window.addEventListener('resize', () => {
     if (window.innerWidth > 768) {
-      cards.forEach(card => card.classList.remove('active'));
+      document.querySelectorAll('.card.active').forEach(c => c.classList.remove('active'));
     }
   });
 });
