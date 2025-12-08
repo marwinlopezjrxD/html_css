@@ -1,0 +1,7 @@
+create a financing app that generally
+
+trakcs your billings, dues, and all, 
+
+total dues for all must be situated all 
+
+in this main html file. 
