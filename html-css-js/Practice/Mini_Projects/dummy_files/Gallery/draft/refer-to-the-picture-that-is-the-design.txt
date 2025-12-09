@@ -1,0 +1,31 @@
+                           Landscape-Portrait Option (name of file - sample.jpg)            zoom-out button --- zoom-in button --- markers button 
+                           it might need JS or possibly PHP, since it has download button thing.
+
+
+================            ==================================
+|              |
+|              |
+|  Picture 1   |
+|              |
+|              |
+================           
+
+
+================
+|              |
+|              |
+|  Picture 2   |
+|              |
+|              |
+================                                                                                                  Old Monitor Photo (Overlapping)
+                                                                                                                  Old Monitor that shows the desktop photo (Overlapping)
+                                                                                                                  Old Monitor that shows a random application Photo (Overlapping)
+
+
+================
+|              |
+|              |                        
+|  Picture 3   |
+|              |
+|              |
+================  
