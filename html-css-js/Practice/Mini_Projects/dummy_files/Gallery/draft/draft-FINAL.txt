@@ -1,6 +1,7 @@
                            Landscape-Portrait Option (name of file - sample.jpg)            zoom-out button --- zoom-in button --- markers button 
                            it might need JS or possibly PHP, since it has download button thing.
-                           Omit PHP and back-end related things, just make a "Coming Soon" page.
+                           Omit PHP and back-end related things, just make a "Coming Soon" page. Recycle this website and make a back up of it on your local files.
+                           
 
 
 ================            ================================== to be continued ==================================================================
