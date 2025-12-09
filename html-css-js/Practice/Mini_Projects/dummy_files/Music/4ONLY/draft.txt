@@ -1,0 +1,51 @@
+====================================== Homepage ======================================
+
+====================== 4ONLY by LeeHi (Lee Ha-yi Korean: 이하이) ======================
+
+sky-blue theme, responsive both web and mobile, less lines, Website deployment ready
+
+
+
+
+P 
+H                           == SONG TITLE ==
+O 
+T 
+O
+-
+B 
+G          
+- 
+S                one or two paragraphs for the song summary.
+C 
+R 
+O 
+L 
+L 
+A 
+B 
+L          == Button that redirects the user to the music teaser ==
+E
+
+===================================== Music-Index =====================================
+
+music-index.html (add spinning vinyl when user plays the music audio teaser song, responsive.)
+same stylings (saturn-based theme: purple)
+
+
+
+                     ========================================
+                     |                                      |
+                     |           VINYL CD BLACK             |
+                     |                                      |
+                     |                                      |
+                     |                                      |
+                     |                                      |
+                     |                                      |
+                     =======================================|
+
+                     Option 1 (HARD): if possible, make the song sync to the lyrics teaser.
+                     Option 2 (Recommended): Just add the lyrics teaser lol 
+                             Music Player - <audio> tag 
+                             Genius Song Link Button
+                                Copyright Texts
