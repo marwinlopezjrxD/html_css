@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lee Hi - 4 ONLY</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+        .hero {
+            height: 100vh;
+            background: url('https://www.nme.com/wp-content/uploads/2021/09/lee-hi-4-only-review-red-lipstick-091321.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.7); /* Dark overlay for text readability */
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .album-title {
+            font-size: 6rem;
+            font-weight: bold;
+            letter-spacing: 0.2em;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        .artist {
+            font-size: 2.5rem;
+            margin: 1rem 0;
+            opacity: 0.9;
+        }
+        .release {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+        .content {
+            max-width: 900px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+        h2 {
+            font-size: 2rem;
+            margin: 3rem 0 1.5rem;
+        }
+        .tracklist {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin: 0 auto;
+            display: inline-block;
+        }
+        .tracklist li {
+            padding: 1.2rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        .track-number {
+            display: inline-block;
+            width: 30px;
+            color: #aaa;
+        }
+        .track-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .track-credits {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-top: 0.5rem;
+        }
+        .note {
+            margin: 4rem 0;
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        footer {
+            padding: 3rem;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="album-title">4 ONLY</h1>
+            <p class="artist">Lee Hi</p>
+            <p class="release">Released September 9, 2021 • AOMG</p>
+        </div>
+    </section>
+
+    <div class="content">
+        <h2>Tracklist & Credits</h2>
+        <ul class="tracklist">
+            <li>
+                <span class="track-number">01</span>
+                <span class="track-title">Savior (feat. B.I)</span>
+                <div class="track-credits">Lyrics: B.I • Composed: B.I, Stally, basecamp • Arranged: Stally, basecamp</div>
+            </li>
+            <li>
+                <span class="track-number">02</span>
+                <span class="track-title">Your Intention</span>
+                <div class="track-credits">Lyrics: Ahn Shin-ae • Composed: Ahn Shin-ae • Arranged: Ahn Shin-ae, Lee Hi</div>
+            </li>
+            <li>
+                <span class="track-number">03</span>
+                <span class="track-title">Waterride</span>
+                <div class="track-credits">Lyrics: Ahn Shin-ae • Composed: Ahn Shin-ae • Arranged: Bronze</div>
+            </li>
+            <li>
+                <span class="track-number">04</span>
+                <span class="track-title">Bye</span>
+                <div class="track-credits">Lyrics: Lee Hi • Composed: Lee Hi, GRAY, DAX • Arranged: GRAY, DAX</div>
+            </li>
+            <li>
+                <span class="track-number">05</span>
+                <span class="track-title">Red Lipstick (feat. Yoonmirae)</span>
+                <div class="track-credits">Lyrics: Lee Hi, Chancellor, Yoonmirae • Composed: Chancellor, Purple, Lee Hi, Cocona • Arranged: Chancellor, Purple</div>
+            </li>
+            <li>
+                <span class="track-number">06</span>
+                <span class="track-title">H.S.K.T. (feat. Wonstein)</span>
+                <div class="track-credits">Lyrics: Lee Hi, Wonstein • Composed: Lee Hi, PEEJAY, Wonstein • Arranged: PEEJAY</div>
+            </li>
+            <li>
+                <span class="track-number">07</span>
+                <span class="track-title">Safety Zone</span>
+                <div class="track-credits">Lyrics: Lee Hi • Composed: Lee Hi, CODE KUNST • Arranged: CODE KUNST</div>
+            </li>
+            <li>
+                <span class="track-number">08</span>
+                <span class="track-title">What is Love? (어려워)</span>
+                <div class="track-credits">Lyrics: Lee Hi • Composed: Lee Hi, CODE KUNST • Arranged: CODE KUNST</div>
+            </li>
+            <li>
+                <span class="track-number">09</span>
+                <span class="track-title">Darling</span>
+                <div class="track-credits">Lyrics: Lee Hi • Composed: Lee Hi, Bronze • Arranged: Bronze</div>
+            </li>
+            <li>
+                <span class="track-number">10</span>
+                <span class="track-title">ONLY</span>
+                <div class="track-credits">Lyrics: Ahn Shin-ae • Composed: Ahn Shin-ae • Arranged: philtre</div>
+            </li>
+        </ul>
+
+        <p class="note">
+            All tracks recorded by Lee Pyeong-wook @ Dream Factory Club<br>
+            Mixed by Hyunjung Ko @ KOKO Sound Studio<br>
+            Mastered by Namwoo Kwon @ 821 Sound Mastering<br>
+            Digital Artwork: Rarebirth
+        </p>
+    </div>
+
+    <footer>
+        Fan tribute page inspired by Lee Hi's 4 ONLY. © 2021 AOMG. All rights reserved.
+    </footer>
+
+</body>
+</html>
