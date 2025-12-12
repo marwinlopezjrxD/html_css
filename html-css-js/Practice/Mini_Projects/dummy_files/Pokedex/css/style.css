@@ -1,80 +1,96 @@
 /* ============================================= */
 /*              POKEDEX STYLE.CSS                */
-/*  Sky-Blue Colorway Edition                    */
+/*  Sky-Blue Colorway - Final Balanced Edition   */
 /*  Author: marwinlopezjrxD (with help from Grok) */
-/*  Description: A retro handheld Pokédex built  */
-/*               with pure HTML, CSS, and JS.    */
-/*  Inspired by a generic retro console vector   */
-/*  from Vecteezy (free license - attribution   */
-/*  included in index.html).                     */
+/*  Fixes:                                       */
+/*   - Reduced Pokémon card size for more text   */
+/*     room (prevents cutoff)                    */
+/*   - Increased bottom padding in screen        */
+/*   - Better vertical spacing and balance       */
+/*   - Perfect centering maintained              */
 /* ============================================= */
 
 /* ----------------- Body & Layout ----------------- */
 body {
-  background: #f0f8ff;                  /* AliceBlue - soft light background for contrast */
+  background: #f0f8ff;
   display: flex;
-  flex-direction: column;               /* Stack Pokédex and attribution vertically */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;                         /* Full viewport height */
+  height: 100vh;
   margin: 0;
-  font-family: 'Arial', sans-serif;      /* Clean, readable font */
+  font-family: 'Arial', sans-serif;
 }
 
 /* ----------------- Main Pokédex Container ----------------- */
 .pokedex {
   width: 320px;
   height: 500px;
-  background: #87CEEB;                  /* SkyBlue - main body color (classic light blue) */
-  border-radius: 30px;                   /* Rounded corners for handheld feel */
+  background: #87CEEB;                  /* SkyBlue */
+  border-radius: 30px;
   padding: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Deep shadow for 3D pop */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   position: relative;
-  border: 15px solid #4682B4;            /* SteelBlue - darker border for depth */
+  border: 15px solid #4682B4;            /* SteelBlue frame */
 }
 
 /* ----------------- Screen Area ----------------- */
 .screen {
   width: 100%;
   height: 220px;
-  background: #000;                      /* Black base for screen */
+  background: #A0E7E5;                   /* Light cyan glow */
   border-radius: 15px;
   overflow: hidden;
   position: relative;
-  border: 8px solid #4682B4;             /* Matching dark blue frame */
-  background: #A0E7E5;                   /* Light cyan/turquoise glow - screen "on" effect */
-}
-
-/* Pokémon image placeholder (white card in center) */
-.pokemon-img {
-  width: 180px;
-  height: 180px;
-  background: white;
-  margin: 20px auto;                     /* Center horizontally */
-  border-radius: 10px;
+  border: 8px solid #4682B4;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 80px;                       /* Larger emoji for visibility */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle inner shadow */
+  padding: 10px 0;                        /* NEW: Extra vertical breathing room */
 }
 
-/* Text info below the Pokémon image */
-.info {
+/* Centering wrapper */
+.screen-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  color: #2F4F4F;                        /* DarkSlateGray - high contrast on light screen */
-  margin-top: 10px;
+  max-width: 95%;
+}
+
+/* Pokémon image card - reduced size to prevent text cutoff */
+.pokemon-img {
+  width: 160px;                          /* Was 180px → smaller for balance */
+  height: 160px;                         /* Was 180px */
+  background: white;
+  margin: 0;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 76px;                       /* Slightly smaller emoji */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Info text - more space and better readability */
+.info {
+  color: #1C3D5A;                        /* Deeper blue for contrast */
+  margin-top: 16px;                      /* Increased gap */
+  width: 100%;
 }
 
 .info h2 {
-  margin: 5px 0;
-  font-size: 24px;
+  margin: 6px 0;
+  font-size: 23px;                       /* Slightly smaller but bold */
+  font-weight: bold;
 }
 
 .info p {
-  margin: 5px 0;
-  font-size: 16px;
+  margin: 4px 0;
+  font-size: 15px;
   font-weight: bold;
+  opacity: 0.9;
 }
 
 /* ----------------- Controls Area ----------------- */
@@ -85,10 +101,9 @@ body {
   margin-top: 30px;
 }
 
-/* SCAN button - primary action */
 .scan-btn {
   padding: 12px 28px;
-  background: #4682B4;                   /* SteelBlue - matches border */
+  background: #4682B4;
   color: white;
   border: none;
   border-radius: 12px;
@@ -99,19 +114,17 @@ body {
 }
 
 .scan-btn:hover {
-  background: #5A9BD4;                   /* Lighter blue on hover */
-  transform: translateY(-2px);           /* Slight lift effect */
+  background: #5A9BD4;
+  transform: translateY(-2px);
 }
 
-/* D-Pad (cross shape using pseudo-elements) */
 .dpad {
   width: 80px;
   height: 80px;
-  background: #4682B4;                   /* Dark blue */
+  background: #4682B4;
   position: relative;
 }
 
-/* Horizontal and vertical bars to form + shape */
 .dpad::before {
   content: '';
   position: absolute;
@@ -132,7 +145,6 @@ body {
   left: 0;
 }
 
-/* A and B buttons (green = A, red = B - classic style) */
 .ab-buttons {
   display: flex;
   gap: 20px;
@@ -142,15 +154,14 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #333;                      /* Dark gray base */
+  background: #333;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.btn-a { background: #32CD32; }          /* LimeGreen - A button */
-.btn-b { background: #FF4500; }          /* OrangeRed - B button */
+.btn-a { background: #32CD32; }
+.btn-b { background: #FF4500; }
 
 /* ----------------- Animations ----------------- */
-/* Glow effect when scanning a new Pokémon */
 @keyframes glow {
   0% { box-shadow: 0 0 5px #A0E7E5; }
   50% { box-shadow: 0 0 30px #A0E7E5, 0 0 50px #87CEEB; }
@@ -161,7 +172,7 @@ body {
   animation: glow 0.6s ease-in-out;
 }
 
-/* ----------------- Attribution Footer ----------------- */
+/* ----------------- Attribution ----------------- */
 .attribution {
   margin-top: 30px;
   text-align: center;
@@ -170,7 +181,7 @@ body {
 }
 
 .attribution a {
-  color: #4682B4;                        /* Matches theme */
+  color: #4682B4;
   text-decoration: none;
   font-weight: bold;
 }
