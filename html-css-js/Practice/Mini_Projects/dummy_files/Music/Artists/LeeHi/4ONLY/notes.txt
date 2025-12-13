@@ -1,8 +1,19 @@
 step 1: after creating all of the song summaries, connect it all to the specific song teasers 
 
-step 2: add a iOS (Swift) or Android app (Kotlin) -- estimated time to finish 1-2 weeks
+step 2: add a iOS (Swift - Preferred) or Android app (Kotlin) -- estimated time to finish 3-4 weeks
 
-step 3: deploy all to vercel and create the apk file and or iOS. -- estimated time: 1 month
+step 3: deploy all to vercel and create the apk file and or iOS. -- estimated time: 2 month
+
+main assistant: Grok
+
+backup assistants: Gemini, Copilot 
+
+install some dependencies on the repo if needed 
+
+yarn Package (iOS)
+
+Expo Go for mobile app testing (iOS)
+
 
 git fetch origin
 
