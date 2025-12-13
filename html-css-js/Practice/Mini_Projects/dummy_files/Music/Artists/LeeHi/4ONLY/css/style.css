@@ -92,3 +92,8 @@ footer {
 .hero-red-lipstick {
     background: url('../images/red-lipstick-bg.jpg') center/cover no-repeat !important;
 }
+
+/* Specific override for H.S.K.T. page */
+.hero-hskt {
+    background: url('../images/hskt-bg.jpg') center/cover no-repeat !important;
+}
