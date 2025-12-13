@@ -88,8 +88,7 @@ footer {
     background: url('../images/savior-bg.jpg') center/cover no-repeat !important;
 }
 
-/* You can add more later, e.g.:
+/* Specific override for Red Lipstick page */
 .hero-red-lipstick {
     background: url('../images/red-lipstick-bg.jpg') center/cover no-repeat !important;
 }
-*/
