@@ -1,0 +1,5 @@
+major changes that needs to be done:
+
+add a track-lists page (done)
+add a previous track/song, next track/song and a back to track-lists button
+To be decided
