@@ -37,21 +37,42 @@ body {
 }
 
 .track-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 12px;
-    padding: 2rem;
-    text-align: left;
-    transition: all 0.3s ease;
-    text-decoration: none;
+    position: relative;
+    overflow: hidden;
     color: #fff;
+    text-decoration: none;
     display: block;
 }
 
-.track-card:hover {
-    background: rgba(255, 255, 255, 0.1);
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+.track-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: center/cover no-repeat;
+    opacity: 0.4;
+    filter: blur(10px);
+    transition: all 0.4s ease;
+    z-index: -1;
+    transform: scale(1.1);
+}
+
+.track-card:hover::before {
+    opacity: 0.6;
+    filter: blur(5px);
+}
+
+.track-card .card-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    padding: 2rem;
+    border-radius: 12px;
+    transition: background 0.3s ease;
+}
+
+.track-card:hover .card-content {
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .track-number {
@@ -72,7 +93,24 @@ body {
     margin-top: 0.5rem;
 }
 
-/* Fake pagination */
+/* Specific background images - CORRECTED PATHS (from track-lists/css folder) */
+.bg-default::before {
+    background-image: url('https://www.nme.com/wp-content/uploads/2021/09/lee-hi-4-only-review-red-lipstick-091321.jpg');
+}
+
+.bg-savior::before {
+    background-image: url('../../Artists/LeeHi/4ONLY/images/savior-bg.jpg');
+}
+
+.bg-red-lipstick::before {
+    background-image: url('../../Artists/LeeHi/4ONLY/images/red-lipstick-bg.jpg');
+}
+
+.bg-hskt::before {
+    background-image: url('../../Artists/LeeHi/4ONLY/images/hskt-bg.jpg');
+}
+
+/* Pagination styles */
 .pagination {
     margin: 6rem 0 4rem;
     font-size: 1.2rem;
@@ -85,13 +123,16 @@ body {
     margin: 0 1rem;
 }
 
-.pagination a:hover { opacity: 1; }
+.pagination a:hover {
+    opacity: 1;
+}
 
 .pagination .disabled {
     color: #555;
     pointer-events: none;
 }
 
+/* Footer */
 footer {
     padding: 3rem;
     opacity: 0.7;

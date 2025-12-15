@@ -1,5 +1,17 @@
 major changes that needs to be done:
 
-add a track-lists page (done)
-add a previous track/song, next track/song and a back to track-lists button
-To be decided
+1. - add a track-lists page (done)
+1.1 - add styles for tracklists page (tracklist.css - done)
+
+2. - add a previous track/song, next track/song and a back to track-lists button
+2.1 - To be decided
+
+3.
+
+4.
+
+5.
+
+6.
+
+7.
