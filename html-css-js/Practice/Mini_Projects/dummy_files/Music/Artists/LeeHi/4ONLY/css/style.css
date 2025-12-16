@@ -97,3 +97,41 @@ footer {
 .hero-hskt {
     background: url('../images/hskt-bg.jpg') center/cover no-repeat !important;
 }
+
+/* Top-right credits (for special pages like ONLY) */
+.credits-top {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    z-index: 2;
+    text-align: right;
+    line-height: 1.4;
+}
+
+/* Bottom navigation for all song summary pages */
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin: 5rem 0 6rem;
+    font-size: 1.3rem;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none; /* Removes underline */
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.navigation a:hover {
+    opacity: 1;
+}
+
+.navigation .disabled {
+    color: #666;
+    pointer-events: none;
+}
