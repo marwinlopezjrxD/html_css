@@ -93,24 +93,24 @@ body {
     margin-top: 0.5rem;
 }
 
-/* Specific background images - CORRECTED PATHS (from track-lists/css folder) */
+/* Backgrounds - now correct for track-lists inside 4ONLY */
 .bg-default::before {
     background-image: url('https://www.nme.com/wp-content/uploads/2021/09/lee-hi-4-only-review-red-lipstick-091321.jpg');
 }
 
 .bg-savior::before {
-    background-image: url('../../Artists/LeeHi/4ONLY/images/savior-bg.jpg');
+    background-image: url('../../images/savior-bg.jpg');
 }
 
 .bg-red-lipstick::before {
-    background-image: url('../../Artists/LeeHi/4ONLY/images/red-lipstick-bg.jpg');
+    background-image: url('../../images/red-lipstick-bg.jpg');
 }
 
 .bg-hskt::before {
-    background-image: url('../../Artists/LeeHi/4ONLY/images/hskt-bg.jpg');
+    background-image: url('../../images/hskt-bg.jpg');
 }
 
-/* Pagination styles */
+/* Pagination */
 .pagination {
     margin: 6rem 0 4rem;
     font-size: 1.2rem;
@@ -132,7 +132,6 @@ body {
     pointer-events: none;
 }
 
-/* Footer */
 footer {
     padding: 3rem;
     opacity: 0.7;

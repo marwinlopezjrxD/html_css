@@ -3,14 +3,19 @@ major changes that needs to be done:
 1. - add a track-lists page (done)
 1.1 - add styles for tracklists page (tracklist.css - done)
 
-2. - add a previous track/song, next track/song and a back to track-lists button
-2.1 - To be decided
+2. - add a previous track/song, next track/song and a back to track-lists button (done)
+-- should i use target = "blank" for prev, next, and back to track-lists button? y/n - n
+--- the user will open a new tab or website only in tracklists site.
 
-3.
+2.1 - add hover styles(optional - not done)
 
-4.
+2.2 - add a back to top for every song-summary page (optional - not done)
 
-5.
+3. add a artist page (not done)
+
+4. to be followed by their album (not done)
+
+5. and lastly, to be followed by the contents inside of that specific album of that artist/s (done - #2).
 
 6.
 
