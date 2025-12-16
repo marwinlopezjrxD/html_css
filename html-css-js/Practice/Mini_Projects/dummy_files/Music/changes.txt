@@ -17,6 +17,6 @@ major changes that needs to be done:
 
 5. and lastly, to be followed by the contents inside of that specific album of that artist/s (done - #2).
 
-6.
+6. add a favico for all (not done)
 
 7.
