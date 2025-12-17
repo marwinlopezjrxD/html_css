@@ -1,99 +1,112 @@
+/* Body styling for the tracklist page */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    min-height: 100vh;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, Helvetica, sans-serif; /* Clean font */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    text-align: center; /* Center all text */
+    min-height: 100vh; /* Full screen height */
 }
 
+/* Header section at the top */
 .header {
-    padding: 4rem 2rem;
-    background: rgba(255, 255, 255, 0.05);
+    padding: 4rem 2rem; /* Large vertical padding, smaller sides */
+    background: rgba(255, 255, 255, 0.05); /* Subtle overlay */
 }
 
+/* Album title styling */
 .album-title {
-    font-size: 3.5rem;
-    font-weight: bold;
-    letter-spacing: 0.2em;
-    margin: 0;
-    text-transform: uppercase;
+    font-size: 3.5rem; /* Very large */
+    font-weight: bold; /* Bold */
+    letter-spacing: 0.2em; /* Spaced letters */
+    margin: 0; /* No extra margin */
+    text-transform: uppercase; /* All caps */
 }
 
+/* Artist name below title */
 .artist-name {
-    font-size: 2rem;
-    opacity: 0.9;
-    margin: 1rem 0;
+    font-size: 2rem; /* Large */
+    opacity: 0.9; /* Slightly faded */
+    margin: 1rem 0; /* Space above and below */
 }
 
+/* Grid layout for track cards (responsive) */
 .track-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 4rem auto;
-    padding: 0 2rem;
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 2rem; /* Space between cards */
+    max-width: 1200px; /* Max width for large screens */
+    margin: 4rem auto; /* Center with top/bottom space */
+    padding: 0 2rem; /* Side padding */
 }
 
+/* Clickable track card */
 .track-card {
-    position: relative;
-    overflow: hidden;
-    color: #fff;
-    text-decoration: none;
-    display: block;
+    position: relative; /* Needed for background layering */
+    overflow: hidden; /* Hide overflow */
+    color: #fff; /* White text */
+    text-decoration: none; /* No underline */
+    display: block; /* Full area clickable */
 }
 
+/* Background image behind card */
 .track-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: center/cover no-repeat;
-    opacity: 0.4;
-    filter: blur(10px);
-    transition: all 0.4s ease;
-    z-index: -1;
-    transform: scale(1.1);
+    content: ''; /* Empty pseudo-element */
+    position: absolute; /* Behind content */
+    top: 0; left: 0; width: 100%; height: 100%; /* Full size */
+    background: center/cover no-repeat; /* Image fill */
+    opacity: 0.4; /* Semi-transparent */
+    filter: blur(10px); /* Blurred effect */
+    transition: all 0.4s ease; /* Smooth hover */
+    z-index: -1; /* Behind text */
+    transform: scale(1.1); /* Slight zoom to avoid blur edges */
 }
 
+/* Hover: stronger background */
 .track-card:hover::before {
     opacity: 0.6;
     filter: blur(5px);
 }
 
+/* Text container on top of background */
 .track-card .card-content {
-    position: relative;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.5);
-    height: 100%;
-    padding: 2rem;
-    border-radius: 12px;
-    transition: background 0.3s ease;
+    position: relative; /* Above background */
+    z-index: 1; /* On top */
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    height: 100%; /* Full height */
+    padding: 2rem; /* Inner space */
+    border-radius: 12px; /* Rounded corners */
+    transition: background 0.3s ease; /* Smooth hover */
 }
 
+/* Hover: lighten overlay */
 .track-card:hover .card-content {
     background: rgba(0, 0, 0, 0.3);
 }
 
+/* Track number */
 .track-number {
-    font-size: 1.8rem;
-    font-weight: bold;
-    opacity: 0.7;
-    margin-bottom: 0.5rem;
+    font-size: 1.8rem; /* Large */
+    font-weight: bold; /* Bold */
+    opacity: 0.7; /* Faded */
+    margin-bottom: 0.5rem; /* Space below */
 }
 
+/* Song title */
 .track-title {
-    font-size: 1.4rem;
-    font-weight: bold;
+    font-size: 1.4rem; /* Medium-large */
+    font-weight: bold; /* Bold */
 }
 
+/* Featured artist text */
 .track-feat {
-    font-size: 1rem;
-    opacity: 0.8;
-    margin-top: 0.5rem;
+    font-size: 1rem; /* Normal */
+    opacity: 0.8; /* Slightly faded */
+    margin-top: 0.5rem; /* Space above */
 }
 
-/* Backgrounds - now correct for track-lists inside 4ONLY */
+/* Specific background images (paths from track-lists/css folder) */
 .bg-default::before {
     background-image: url('https://www.nme.com/wp-content/uploads/2021/09/lee-hi-4-only-review-red-lipstick-091321.jpg');
 }
@@ -110,30 +123,9 @@ body {
     background-image: url('../../images/hskt-bg.jpg');
 }
 
-/* Pagination */
-.pagination {
-    margin: 6rem 0 4rem;
-    font-size: 1.2rem;
-}
-
-.pagination a, .pagination span {
-    color: #fff;
-    text-decoration: none;
-    opacity: 0.8;
-    margin: 0 1rem;
-}
-
-.pagination a:hover {
-    opacity: 1;
-}
-
-.pagination .disabled {
-    color: #555;
-    pointer-events: none;
-}
-
+/* Footer styling */
 footer {
-    padding: 3rem;
-    opacity: 0.7;
-    font-size: 0.9rem;
+    padding: 3rem; /* Bottom space */
+    opacity: 0.7; /* Faded text */
+    font-size: 0.9rem; /* Small text */
 }

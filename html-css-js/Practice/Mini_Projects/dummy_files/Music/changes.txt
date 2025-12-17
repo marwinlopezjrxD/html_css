@@ -7,9 +7,11 @@ major changes that needs to be done:
 -- should i use target = "blank" for prev, next, and back to track-lists button? y/n - n
 --- the user will open a new tab or website only in tracklists site.
 
-2.1 - add hover styles(optional - not done)
+2.1 - add hover styles for previous, back to tracklist, and next (optional - done)
+--- Added subtle hover effect (opacity from 0.8 to 1) on active navigation buttons (Previous/Next/Back to Tracklist) for better user feedback. Disabled buttons remain dim without hover.
 
-2.2 - add a back to top for every song-summary page (optional - not done)
+2.2 - add a back to top for every song-summary page (optional - done)
+--- Added fixed "Back to Top" button (bottom-right) that appears on scroll, with smooth scrolling animation.
 
 3. add a artist page (not done)
 
@@ -19,4 +21,4 @@ major changes that needs to be done:
 
 6. add a favico for all (not done)
 
-7.
+7. TBD
