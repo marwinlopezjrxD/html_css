@@ -1,0 +1,10 @@
+.artist-hero {
+    height: 80vh;
+    background: #000 url('https://kprofiles.com/wp-content/uploads/2016/07/Lee-Hi-1-1-768x768.jpg') center/cover no-repeat;
+    /* Or this alternative recent one: https://kpopping.com/documents/0b/3/800/Lee-Hi-2024-duover-profile-photo.webp */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}

@@ -15,7 +15,8 @@ PHASE 1
 2.2 - add a back to top for every song-summary page (optional - done)
 --- Added fixed "Back to Top" button (bottom-right) that appears on scroll, with smooth scrolling animation.
 
-3. add a artist page (not done)
+3. add a artist page (done)
+--- Created dedicated artist profile page for Lee Hi with hero image, short biography, and discography section linking to 4 ONLY tracklist. Sets foundation for future artists/albums.
 
 4. to be followed by their album (not done)
 
