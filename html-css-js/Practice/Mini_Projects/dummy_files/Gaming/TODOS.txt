@@ -121,17 +121,24 @@ PRACTICE
 
 OLD META
 
--GOWIZWITCH
--LAVALOON
--VALK
--HOG RIDER
--DRAG
--EDRAG
+-GOWITCH (done)
+-GOWIZWITCH (done)
+-LAVALOON (test)
+-VALK (test)
+-HOG RIDER (done)
+-DRAG (omit)
+-EDRAG (omit)
 
 ==============================
 
 NEW:
 
 - Queen Walk (Healer 4x)
+- experiment jump spell (for valk)
+- experiment clone spell 
+- planned attacks and master funneling even better
+- Air Attack
+- miners
+- invi spell for rc (for TH13)
 
 ==============================
