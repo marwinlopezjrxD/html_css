@@ -230,7 +230,9 @@ TV, couches
 gen cleaning d2
 
 appliances, microwave, mirrors
-
+current br
+find keycap puller
+clean kb
 
 -
 --
