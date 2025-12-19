@@ -25,6 +25,8 @@ PHASE 1
 --- LeeHi (done)
 
 --- Mitski (ongoing)
+- fixed broken background image (done)
+- add styles to Mitski Profile (ongoing - later)
 
 5. and lastly, to be followed by the contents inside of that specific album of that artist/s (done - #2).
 
