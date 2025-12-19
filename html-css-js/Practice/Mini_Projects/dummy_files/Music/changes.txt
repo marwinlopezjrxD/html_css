@@ -18,7 +18,13 @@ PHASE 1
 3. add a artist page (done)
 --- Created dedicated artist profile page for Lee Hi with hero image, short biography, and discography section linking to 4 ONLY tracklist. Sets foundation for future artists/albums.
 
-4. to be followed by their album (not done)
+4. to be followed by their album 
+
+4.1 Specific Albums:
+
+--- LeeHi (done)
+
+--- Mitski (ongoing)
 
 5. and lastly, to be followed by the contents inside of that specific album of that artist/s (done - #2).
 
