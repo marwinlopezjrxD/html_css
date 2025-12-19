@@ -126,8 +126,8 @@ OLD META
 -LAVALOON (test)
 -VALK (test)
 -HOG RIDER (done)
--DRAG (omit)
--EDRAG (omit)
+-DRAG (omit) - slow, prone to time fail always
+-EDRAG (omit) - same as drag attacks
 
 ==============================
 
@@ -141,4 +141,16 @@ NEW:
 - miners
 - invi spell for rc (for TH13)
 
+
+
 ==============================
+
+pkmn go
+
+find shinies
+
+install epic games
+
+claim free games
+
+
