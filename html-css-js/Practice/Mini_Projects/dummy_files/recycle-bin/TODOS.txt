@@ -221,12 +221,15 @@ FUTURE TODOS
 
 FREE SPACE 
 
-carwash
-done reverse parking
-key points:
-opened windows
-checked side mirror - moved downward slightly
-checked indicator - parking pole (yellow)
+gen cleaning d1
+
+main br
+move all plants 
+TV, couches
+
+gen cleaning d2
+
+appliances, microwave, mirrors
 
 
 -
