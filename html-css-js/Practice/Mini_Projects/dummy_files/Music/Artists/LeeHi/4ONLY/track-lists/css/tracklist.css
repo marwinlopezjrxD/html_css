@@ -123,6 +123,10 @@ body {
     background-image: url('../../images/hskt-bg.jpg'); /* Custom H.S.K.T. MV still */
 }
 
+.bg-only::before {
+    background-image: url('../../images/only-6-bg.jpg'); /* Your special ONLY image */
+}
+
 /* Pagination styling (fake navigation at bottom) */
 .pagination {
     margin: 6rem 0 4rem; /* Space around */
