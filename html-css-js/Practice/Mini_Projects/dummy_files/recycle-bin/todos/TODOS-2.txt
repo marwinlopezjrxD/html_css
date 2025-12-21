@@ -222,15 +222,24 @@ FREE SPACE
 
 gen cleaning d1 -- ongoing
 
+1
 main br --
 move all plants 
 TV, couches
 clean efan -- done
 
+2
+clean unexpected valve box leakage 🤢🤮
+clean exhaust fan 
+vacuum clean main br 
+
 gen cleaning d2
 
+1
 appliances, microwave, mirrors
 current br
+
+2 
 find keycap puller
 clean kb
 
