@@ -220,24 +220,22 @@ FUTURE TODOS
 
 FREE SPACE 
 
-gen cleaning d1 -- ongoing
+gen cleaning d1
 
 1
-main br --
-move all plants 
-TV, couches
+main br -- done
+move all plants to the side (less sun burn) -- done
+clean main br -- done
+clean br 2 -- done 
 clean efan -- done
+clean unexpected valve box leakage 🤢🤮 --
 
-2
-clean unexpected valve box leakage 🤢🤮
-clean exhaust fan 
-vacuum clean main br 
 
 gen cleaning d2
 
 1
-appliances, microwave, mirrors
-current br
+appliances, microwave, mirrors,
+clean exhaust fan
 
 2 
 find keycap puller
