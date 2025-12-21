@@ -220,15 +220,15 @@ FUTURE TODOS
 
 FREE SPACE 
 
-gen cleaning d1
+gen cleaning d1 - done
 
 1
 main br -- done
-move all plants to the side (less sun burn) -- done
-clean main br -- done
-clean br 2 -- done 
-clean efan -- done
-clean unexpected valve box leakage 🤢🤮 --
+move all plants to the side (less sun burn) -- 
+clean main br -
+clean br 2 --  
+clean efan 
+clean unexpected valve box leakage 
 
 
 gen cleaning d2
