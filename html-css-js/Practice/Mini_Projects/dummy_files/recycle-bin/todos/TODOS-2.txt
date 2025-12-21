@@ -220,11 +220,12 @@ FUTURE TODOS
 
 FREE SPACE 
 
-gen cleaning d1
+gen cleaning d1 -- ongoing
 
-main br
+main br --
 move all plants 
 TV, couches
+clean efan -- done
 
 gen cleaning d2
 
