@@ -40,6 +40,18 @@ https://marwinlopezjrxD.github.io/html_css/html-css-js/Practice/Mini_Projects/du
 
 3.1.4 correct paths for track-lists for Mitski (ongoing)
 
+3.2 add about page 
+
+hierarchy:
+- music teasers, 
+lyrics for music teasers page, 
+see more about Artist (New),
+About,
+Artist Profile,
+Discography,
+Track-list,
+Song Summary
+
 4. to be followed by their album 
 
 4.1 Specific Albums:
