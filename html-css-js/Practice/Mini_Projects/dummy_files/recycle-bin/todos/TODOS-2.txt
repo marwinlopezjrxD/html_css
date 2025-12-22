@@ -231,7 +231,7 @@ clean efan
 clean unexpected valve box leakage 
 
 
-gen cleaning d2
+gen cleaning d2 -- next week
 
 1
 appliances, microwave, mirrors,
@@ -245,8 +245,8 @@ Noche Bwenas
 
 Spaghetti
 Lumpia
-Leche Flan (bili paskuhan)
-1.8 (free 250ml) letters sprite
+Leche Flan (DIY)
+1.8L (free 250ml)  sprite
 Ham
 Egg
 Manok
