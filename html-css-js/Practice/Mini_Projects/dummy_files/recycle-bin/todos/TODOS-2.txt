@@ -245,15 +245,15 @@ clean exhaust fan
 find keycap puller
 clean kb
 
-Noche Bwenas
+Noche Bwena food
 
-Spaghetti
-Lumpia
-Leche Flan (DIY)
-1.8L (free 250ml)  sprite
-Ham
-Egg
-Manok
+Spaghetti ✅
+Lumpia ❌
+Leche Flan (DIY)❌ - changed to graham
+1.8L (free 250ml)  sprite✅
+Ham✅
+Egg ✅
+Manok✅
 
 
 
