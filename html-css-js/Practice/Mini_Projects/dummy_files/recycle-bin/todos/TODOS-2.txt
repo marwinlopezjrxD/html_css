@@ -255,7 +255,9 @@ Ham✅
 Egg ✅
 Manok✅
 
-
+urgent:
+bday edit 
+create cons summary n reacklist
 
 -
 --
