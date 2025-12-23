@@ -262,9 +262,6 @@ Ham✅
 Egg ✅
 Manok✅
 
-urgent:
-create song-summary and track-lists for Mitski - ongoing
-
 -
 --
 ---
