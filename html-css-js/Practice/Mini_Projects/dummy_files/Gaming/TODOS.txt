@@ -123,8 +123,8 @@ OLD META
 
 -GOWITCH (done)
 -GOWIZWITCH (done)
--LAVALOON (test)
--VALK (test)
+-LAVALOON (test) --- strat 1
+-MASS VALK (test) --- backup strat
 -HOG RIDER (done)
 -DRAG (omit) - slow, prone to time fail always
 -EDRAG (omit) - same as drag attacks
@@ -137,9 +137,11 @@ NEW:
 - experiment jump spell (for valk)
 - experiment clone spell 
 - planned attacks and master funneling even better
-- Air Attack
+- Air Attack (test)
 - miners
-- invi spell for rc (for TH13)
+
+For TH 13
+- invi spell for royal champion
 
 Current working strats
 
@@ -156,6 +158,7 @@ find shinies
 install epic games done
 
 claim free games 
-12/23 ✅
-
+12/22 ✅
+12/23 🟡
+12/24 🔴
 
