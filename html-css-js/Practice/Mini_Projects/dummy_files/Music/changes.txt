@@ -76,12 +76,4 @@ Song Summary
 
 ==========================================================================================================================
 
-PHASE 2
-
-Design more, be creative. Draw something (mock-designs, vectors, etc)
-
-Reduce lines
-
-Connect the main Gallery website (Vercel) to this? I think its cool right?
-
-If I'll connect it, revise the old site and add the artist's images and their respected albums.
+refactor and/or change all style.css, checked thru mobile and the Discovery album-card is slightly on the right side (Artist profile)
