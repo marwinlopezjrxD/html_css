@@ -33,7 +33,14 @@ https://marwinlopezjrxD.github.io/html_css/html-css-js/Practice/Mini_Projects/du
 3.1.3 correct paths for song-summary for Mitski (ongoing)
 -- corrected file names for song-summary folder. 
 
-3.1.4 correct paths for track-lists for Mitski (ongoing)
+3.1.4 correct paths for track-lists for Mitski (ctrl + f5 to apply change, only if the commit is successful, the ✅ icon after pending 🟡 icon)
+
+
+(
+    
+01-bug-like-an-angel - https://marwinlopezjrxd.github.io/html_css/html-css-js/Practice/Mini_Projects/dummy_files/Music/Artists/Mitski/The-Land-Is-Inhospitable-and-So-Are-We/song-summary/01-bug-like-an-angel/index.html
+
+)
 
 3.2 add about page 
 
