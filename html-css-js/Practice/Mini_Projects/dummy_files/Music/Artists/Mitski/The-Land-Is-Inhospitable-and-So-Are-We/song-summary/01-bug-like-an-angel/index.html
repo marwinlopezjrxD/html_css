@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XX. SONG TITLE - Song Summary | Mitski The Land Is Inhospitable and So Are We</title>
-    <link rel="stylesheet" href="../../css/style.css"> <!-- Adjust if your path is different -->
+    <title>01. Bug Like an Angel - Song Summary | Mitski The Land Is Inhospitable and So Are We</title>
+    <link rel="stylesheet" href="../../css/style.css"> <!-- Adjust if your main CSS path is different -->
 </head>
 <body>
 
-    <section class="hero hero-song-slug"> <!-- Add unique class if special background -->
+    <section class="hero">
         <div class="credits-top">
             Lyrics & Composed by Mitski<br>
             Produced by Patrick Hyland<br>
@@ -16,35 +16,56 @@
         </div>
 
         <div class="hero-content">
-            <h1 class="song-title">SONG TITLE</h1>
+            <h1 class="song-title">Bug Like an Angel</h1>
             <p class="artist">Mitski</p>
-            <p class="release">Track XX • The Land Is Inhospitable and So Are We (2023, Dead Oceans)</p>
+            <p class="release">Track 01 • The Land Is Inhospitable and So Are We (2023, Dead Oceans)</p>
         </div>
     </section>
 
     <div class="content">
         <h2>Song Summary</h2>
         <div class="summary">
-            <p>YOUR SUMMARY PARAGRAPH HERE</p>
-            <p>KEY VIBE OR SECOND PARAGRAPH</p>
+            <p>"Bug Like an Angel" opens the album with haunting vulnerability, using the image of a drowned bug in a drink as a metaphor for broken promises and the pull of addiction. The sudden entrance of a choir on the word "family" underscores the isolation and false comfort found in vices when real connection fails.</p>
+
+            <p>Mitski delivers the lyrics with raw honesty, blending personal pain with universal themes of faith, failure, and the search for something divine in the mundane. The sparse arrangement lets every word hit hard, setting the tone for an album full of quiet devastation and fleeting grace.</p>
+
+            <p>Key vibe: Divine in the broken, the struggle between self-destruction and the desperate need for salvation.</p>
         </div>
 
         <p class="note">
             Lyrics & Composed by Mitski • Produced by Patrick Hyland<br>
-            Background visual inspired by official artwork/MV • Fan tribute only—all rights reserved.
+            Background: Official album artwork • Fan tribute only—all rights reserved.
         </p>        
     </div>
 
     <!-- Navigation -->
     <div class="navigation">
-        <a href="../(previous-folder)/index.html">← Previous</a>
+        <span class="disabled">← Previous</span>
         <a href="../../../track-lists/index.html">Back to Tracklist</a>
-        <a href="../(next-folder)/index.html">Next →</a> <!-- Disable last one with <span class="disabled"> -->
+        <a href="../02-buffalo-replaced/index.html">Next →</a>
     </div>
+
+    <!-- Back to Top button -->
+    <button onclick="topFunction()" id="backToTop" title="Back to Top">↑ Top</button>
 
     <footer>
         Fan tribute inspired by Mitski's The Land Is Inhospitable and So Are We. Stream on official platforms.
     </footer>
+
+    <!-- Inline script for back-to-top (or link to shared js if you have one) -->
+    <script>
+    window.onscroll = function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            document.getElementById("backToTop").style.display = "block";
+        } else {
+            document.getElementById("backToTop").style.display = "none";
+        }
+    };
+
+    function topFunction() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+    </script>
 
 </body>
 </html>
