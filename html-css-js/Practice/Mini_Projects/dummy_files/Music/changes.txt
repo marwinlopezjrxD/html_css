@@ -76,4 +76,19 @@ Song Summary
 
 ==========================================================================================================================
 
-refactor and/or change all style.css, checked thru mobile and the Discovery album-card is slightly on the right side (Artist profile)
+debugs
+
+
+refactor and/or change all style.css, checked thru mobile and the Discovery album-card is slightly on the right side (Artist profile) -- Done 
+
+- working links 
+
+Artist Profile:
+
+Mitski 
+
+https://marwinlopezjrxd.github.io/html_css/html-css-js/Practice/Mini_Projects/dummy_files/Music/Artists/Mitski/index.html
+
+LeeHi 
+
+https://marwinlopezjrxd.github.io/html_css/html-css-js/Practice/Mini_Projects/dummy_files/Music/Artists/LeeHi/index.html
