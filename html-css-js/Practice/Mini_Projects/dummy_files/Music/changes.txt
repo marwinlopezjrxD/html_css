@@ -92,3 +92,6 @@ https://marwinlopezjrxd.github.io/html_css/html-css-js/Practice/Mini_Projects/du
 LeeHi 
 
 https://marwinlopezjrxd.github.io/html_css/html-css-js/Practice/Mini_Projects/dummy_files/Music/Artists/LeeHi/index.html
+
+background image is stretch out to the brim on mobile. (song-summary)
+try to adjust image resolution or idk 
