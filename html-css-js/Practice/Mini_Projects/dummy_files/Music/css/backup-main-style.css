@@ -1,0 +1,125 @@
+/* working main style.css file, version 1.0 
+It is working yes, but:
+
+the .album-card was display: inline-block + margin: 1rem (causes left alignment by default, not centered)
+
+.album-cover has fixed width: 300px (too wide for small screens, no responsiveness)
+No flex centering on the container
+
+
+
+*/
+
+/* Lee Hi Artist Profile - Black & White theme (matches 4 ONLY) */
+
+/* Global body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* Hero section */
+.artist-hero {
+    height: 80vh;
+    background: center/cover no-repeat; /* Image set inline in HTML */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.artist-hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for text readability */
+}
+
+.artist-name-big {
+    font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 1;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Shadow for visibility */
+}
+
+/* Bio and discography sections */
+.bio-section, .discography {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.bio-section h2, .discography h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.bio-section p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+/* Album card */
+.album-card {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+    margin: 1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.album-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.album-cover {
+    width: 300px;
+    height: 300px;
+    background: center/cover no-repeat;
+    border-radius: 8px;
+    margin: 0 auto 1rem;
+}
+
+/* Footer */
+footer {
+    padding: 3rem;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+/* Back to Top button */
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+#backToTop:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}

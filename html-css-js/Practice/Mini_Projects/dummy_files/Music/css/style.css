@@ -1,17 +1,75 @@
-/* Lee Hi Artist Profile - Black & White theme (matches 4 ONLY) */
+/* MAIN SHARED style.css - Black & White theme for the entire Music tribute site */
+/* Controls: tracklist, song-summary, artist profiles, artist list */
+/* Comments added for learning — study each section! */
 
-/* Global body */
+/* ============================================= */
+/* 1. Global Body - Base styling for all pages */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    min-height: 100vh;
+    margin: 0; /* Removes default browser margin */
+    padding: 0; /* Removes default browser padding */
+    font-family: Arial, Helvetica, sans-serif; /* Clean, readable font */
+    background-color: #000; /* Pure black background - dark theme */
+    color: #fff; /* White text for contrast */
+    text-align: center; /* Centers text by default */
+    min-height: 100vh; /* Ensures page fills screen height */
 }
 
-/* Hero section */
+/* ============================================= */
+/* 2. Header - Used on tracklist and artist list pages */
+.header {
+    padding: 4rem 2rem; /* Large top/bottom, smaller sides */
+    background: rgba(255, 255, 255, 0.05); /* Subtle overlay for depth */
+}
+
+.album-title {
+    font-size: 3.5rem; /* Very large title */
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.artist-name {
+    font-size: 2rem;
+    opacity: 0.9;
+    margin: 1rem 0;
+}
+
+/* ============================================= */
+/* 3. Artist list grid - Cards on Artists page */
+.artist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.artist-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: #fff;
+}
+
+.artist-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.artist-cover {
+    width: 100%;
+    height: 300px;
+    background: center/cover no-repeat;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* ============================================= */
+/* 4. Artist profile hero - Big background image with overlay */
 .artist-hero {
     height: 80vh;
     background: center/cover no-repeat; /* Image set inline in HTML */
@@ -26,7 +84,7 @@ body {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.6); /* Dark overlay for text readability */
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .artist-name-big {
@@ -37,14 +95,18 @@ body {
     text-transform: uppercase;
     z-index: 1;
     margin: 0;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Shadow for visibility */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
-/* Bio and discography sections */
+/* ============================================= */
+/* 5. Bio and discography sections */
 .bio-section, .discography {
     max-width: 900px;
     margin: 4rem auto;
     padding: 0 2rem;
+    display: flex; /* Flex for centering */
+    flex-direction: column;
+    align-items: center; /* Centers content */
 }
 
 .bio-section h2, .discography h2 {
@@ -58,16 +120,19 @@ body {
     opacity: 0.95;
 }
 
-/* Album card */
+/* ============================================= */
+/* 6. Album card - Responsive and centered on mobile */
 .album-card {
-    display: inline-block;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
     padding: 2rem;
     transition: transform 0.3s ease;
-    margin: 1rem;
     text-decoration: none;
     color: #fff;
+    width: 100%; /* Full width on mobile */
+    max-width: 400px; /* Limits size on desktop */
+    margin: 1rem 0;
+    box-sizing: border-box;
 }
 
 .album-card:hover {
@@ -76,21 +141,142 @@ body {
 }
 
 .album-cover {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    padding-bottom: 100%; /* Perfect square ratio */
+    position: relative;
     background: center/cover no-repeat;
     border-radius: 8px;
     margin: 0 auto 1rem;
 }
 
-/* Footer */
+.album-cover::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: inherit;
+    border-radius: 8px;
+}
+
+/* ============================================= */
+/* 7. Tracklist grid and cards */
+.track-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.track-card {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.track-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: center/cover no-repeat;
+    opacity: 0.4;
+    filter: blur(10px);
+    transition: all 0.4s ease;
+    z-index: -1;
+    transform: scale(1.1);
+}
+
+.track-card:hover::before {
+    opacity: 0.6;
+    filter: blur(5px);
+}
+
+.track-card .card-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    padding: 2rem;
+    border-radius: 12px;
+    transition: background 0.3s ease;
+}
+
+.track-card:hover .card-content {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.track-number {
+    font-size: 1.8rem;
+    font-weight: bold;
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+}
+
+.track-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.track-feat {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-top: 0.5rem;
+}
+
+/* Custom track backgrounds */
+.bg-default::before {
+    background-image: url('https://www.nme.com/wp-content/uploads/2021/09/lee-hi-4-only-review-red-lipstick-091321.jpg');
+}
+
+.bg-savior::before {
+    background-image: url('Artists/LeeHi/4ONLY/images/savior-bg.jpg');
+}
+
+.bg-red-lipstick::before {
+    background-image: url('Artists/LeeHi/4ONLY/images/red-lipstick-bg.jpg');
+}
+
+.bg-hskt::before {
+    background-image: url('Artists/LeeHi/4ONLY/images/hskt-bg.jpg');
+}
+
+/* ============================================= */
+/* 8. Pagination and navigation */
+.pagination, .navigation {
+    margin: 6rem 0 4rem;
+    font-size: 1.2rem;
+}
+
+.pagination span, .navigation a, .navigation span {
+    color: #fff;
+    opacity: 0.8;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.pagination span:hover, .navigation a:hover {
+    opacity: 1;
+}
+
+.pagination .disabled, .navigation .disabled {
+    color: #555;
+    pointer-events: none;
+}
+
+/* ============================================= */
+/* 9. Footer */
 footer {
     padding: 3rem;
     opacity: 0.7;
     font-size: 0.9rem;
 }
 
-/* Back to Top button */
+/* ============================================= */
+/* 10. Back to Top button */
 #backToTop {
     display: none;
     position: fixed;
