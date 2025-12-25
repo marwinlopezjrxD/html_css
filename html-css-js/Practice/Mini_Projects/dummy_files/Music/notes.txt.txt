@@ -14,3 +14,17 @@ Song-summary pages load music/Artists/LeeHi/4ONLY/css/style.css (that's why they
 
 Tracklist loads music/Artists/LeeHi/4ONLY/track-lists/css/tracklist.css (grid, blur, hover)
 
+
+
+Artist Profiles:
+
+https://github.com/marwinlopezjrxD/html_css/commit/f45d90233412f4b80b92dfb44770651e0fd66aca
+
+Add Lee Hi and Mitski artist profiles with shared black & white theme and working links
+Links for mitski is for LeeHi, will fix paths and correct it later on.
+
+Lee Hi Artist Profile:
+https://marwinlopezjrxD.github.io/html_css/html-css-js/Practice/Mini_Projects/dummy_files/Music/Artists/LeeHi/index.html
+
+Mitski Artist Profile:
+https://marwinlopezjrxD.github.io/html_css/html-css-js/Practice/Mini_Projects/dummy_files/Music/Artists/Mitski/index.html
