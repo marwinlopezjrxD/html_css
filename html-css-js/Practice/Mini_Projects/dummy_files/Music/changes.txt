@@ -95,3 +95,5 @@ https://marwinlopezjrxd.github.io/html_css/html-css-js/Practice/Mini_Projects/du
 
 background image is stretch out to the brim on mobile. (song-summary)
 try to adjust image resolution or idk 
+
+remove fake pagination on tracklists
