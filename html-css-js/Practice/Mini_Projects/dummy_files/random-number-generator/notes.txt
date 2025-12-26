@@ -1,0 +1,13 @@
+add two digits kms logic (js)
+
+11, 13, 15
+
+break for every 5km
+
+just plain water, no sugary drinks.
+
+protein bars
+
+pocari sweat can
+
+# end of file. 
