@@ -1,9 +1,9 @@
-/* Current Version
+/* 
 
-will now show full image of .hero background on mobile devices (song-summary page)
+Version 2 - styles are in great condition, however: 
+ "cinematic" full-bleed look - .hero background images is intentionally cropped on mobile for dramatic effect
 
 */
-
 
 /* MAIN SHARED style.css - Black & White theme for the entire Music tribute site */
 /* Controls: tracklist, song-summary, artist profiles, artist list */
@@ -106,14 +106,14 @@ body {
 }
 
 /* ============================================= */
-/* 5. Bio and discography sections - Centered and mobile-friendly */
+/* 5. Bio and discography sections */
 .bio-section, .discography {
     max-width: 900px;
     margin: 4rem auto;
     padding: 0 2rem;
-    display: flex;
+    display: flex; /* Flex for centering */
     flex-direction: column;
-    align-items: center; /* Centers content on mobile */
+    align-items: center; /* Centers content */
 }
 
 .bio-section h2, .discography h2 {
@@ -128,7 +128,7 @@ body {
 }
 
 /* ============================================= */
-/* 6. Album card - Responsive, centered on mobile */
+/* 6. Album card - Responsive and centered on mobile */
 .album-card {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
@@ -303,26 +303,4 @@ footer {
 
 #backToTop:hover {
     background-color: rgba(255, 255, 255, 0.4);
-}
-
-/* ============================================= */
-/* 11. Song-summary hero - Full image visible on mobile (no cropping) */
-.hero {
-    height: auto; /* Adjusts to image ratio */
-    min-height: 100vh; /* At least full screen */
-    background: center/contain no-repeat; /* Shows full image, no cropping */
-    background-color: #000; /* Black bars if needed */
-    background-position: center top; /* Aligns image to top */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
 }

@@ -84,7 +84,7 @@ refactor and/or change all style.css, checked thru mobile and the Discovery albu
 - working links 
 
 background image is stretch out to the brim on mobile. (song-summary)
-try to adjust image resolution or idk -- done
+try to adjust image resolution or idk -- rollback changes, the cinematic full-bleed on hero background that is intentionally cropped is good
 
 remove fake pagination on tracklists -- done
 
