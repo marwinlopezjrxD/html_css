@@ -1,9 +1,9 @@
-/* Version 3 
+/* 
 
-hero background image stretch full width on mobile (no side gaps, covers the brim),
+Version 2 - styles are in great condition, however: 
+the hero background on mobile version is not stretched on full width.
 
 */
-
 
 /* MAIN SHARED style.css - Black & White theme for the entire Music tribute site */
 /* Controls: tracklist, song-summary, artist profiles, artist list */
@@ -106,14 +106,14 @@ body {
 }
 
 /* ============================================= */
-/* 5. Bio and discography sections - Centered and mobile-friendly */
+/* 5. Bio and discography sections */
 .bio-section, .discography {
     max-width: 900px;
     margin: 4rem auto;
     padding: 0 2rem;
-    display: flex;
+    display: flex; /* Flex for centering */
     flex-direction: column;
-    align-items: center; /* Centers content on mobile */
+    align-items: center; /* Centers content */
 }
 
 .bio-section h2, .discography h2 {
@@ -128,7 +128,7 @@ body {
 }
 
 /* ============================================= */
-/* 6. Album card - Responsive, centered on mobile */
+/* 6. Album card - Responsive and centered on mobile */
 .album-card {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
