@@ -47,9 +47,11 @@ https://wheelofnames.com
 
 Budget:
 
-200 10 names
-300 2 names
-450 1 name
+3spins
+
+500 10 names
+678 2 names
+700 1 name
 =========
 
 gift
