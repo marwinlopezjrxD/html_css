@@ -88,6 +88,16 @@ try to adjust image resolution or idk -- rollback changes, the cinematic full-bl
 
 remove fake pagination on tracklists -- done
 
+- overlapped song titles on mobile -
+
+reduce font size for the following song-summary:
+
+intentions
+waterride
+red lipstick
+h.s.k.t
+
+
 ==========================================================================================================================
 
 Artist Profile:
