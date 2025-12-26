@@ -1,6 +1,6 @@
-/* Version 3 
+/* Current Version
 
-hero background image stretch full width on mobile (no side gaps, covers the brim),
+will now show full image of .hero background on mobile devices (song-summary page)
 
 */
 
@@ -303,4 +303,26 @@ footer {
 
 #backToTop:hover {
     background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* ============================================= */
+/* 11. Song-summary hero - Full image visible on mobile (no cropping) */
+.hero {
+    height: auto; /* Adjusts to image ratio */
+    min-height: 100vh; /* At least full screen */
+    background: center/contain no-repeat; /* Shows full image, no cropping */
+    background-color: #000; /* Black bars if needed */
+    background-position: center top; /* Aligns image to top */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
 }
