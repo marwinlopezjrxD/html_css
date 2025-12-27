@@ -88,7 +88,16 @@ try to adjust image resolution or idk -- rollback changes, the cinematic full-bl
 
 remove fake pagination on tracklists -- done
 
-this thing wont work <a href="../../../track-lists/index.html">Back to Tracklist</a> on Mitski's song summary -- fixing
+27/12/25
+this thing wont work <a href="../../../track-lists/index.html">Back to Tracklist</a> on Mitski's song summary -- fixed
+
+solution:
+delete one up "../" folder path.
+
+solved:
+working HTML <a> href Attribute: 
+<a href="../../track-lists/index.html">Back to Tracklist</a>
+
 
 - overlapped song titles on mobile -
 
