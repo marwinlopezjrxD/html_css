@@ -88,7 +88,11 @@ try to adjust image resolution or idk -- rollback changes, the cinematic full-bl
 
 remove fake pagination on tracklists -- done
 
+
+======================================================================================================
 27/12/25
+
+1. done
 this thing wont work <a href="../../../track-lists/index.html">Back to Tracklist</a> on Mitski's song summary -- fixed
 
 solution:
@@ -98,7 +102,7 @@ solved:
 working HTML <a> href Attribute: 
 <a href="../../track-lists/index.html">Back to Tracklist</a>
 
-
+2. 
 - overlapped song titles on mobile -
 
 reduce font size for the following song-summary:
@@ -107,7 +111,7 @@ intentions
 waterride
 red lipstick
 h.s.k.t
-
+======================================================================================================
 
 ==========================================================================================================================
 
