@@ -10,11 +10,17 @@ https://github.com/marwinlopezjrxD/html_css/commit/8c8f945329c7bc7522f40b080ca5d
 
 =============================================================================================
 
+For LeeHi:
+
 Song-summary pages load music/Artists/LeeHi/4ONLY/css/style.css (that's why they have black background, hero overlay, etc.)
 
 Tracklist loads music/Artists/LeeHi/4ONLY/track-lists/css/tracklist.css (grid, blur, hover)
 
+For Mitski: 
 
+Song-summary pages load music/Artists/Mitski/The-Land-Is-Inhospitable-and-So-Are-We/css/style.css
+
+Tracklist loads music/Artists/Mitski/The-Land-Is-Inhospitable-and-So-Are-We/track-lists/css/tracklist.css (grid, blur, hover)
 
 Artist Profiles:
 
