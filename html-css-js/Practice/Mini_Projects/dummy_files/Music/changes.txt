@@ -88,6 +88,8 @@ try to adjust image resolution or idk -- rollback changes, the cinematic full-bl
 
 remove fake pagination on tracklists -- done
 
+this thing wont work <a href="../../../track-lists/index.html">Back to Tracklist</a> on Mitski's song summary -- fixing
+
 - overlapped song titles on mobile -
 
 reduce font size for the following song-summary:
