@@ -1,7 +1,7 @@
 finish tracklists for Mitski -done
 
-reduce font size of song-summary titles of the song names that are overlappping e.g. - intentions, red-lipsticks, etc.
+reduce font size of song-summary titles of the song names that are overlappping e.g. - intentions, red-lipsticks, etc. - done for LeeHi and Mitski
 
-add leehi live perf
+finish today - done 
 
-finish today
+add leehi live perf - omited (not included on 4ONLY Album)
