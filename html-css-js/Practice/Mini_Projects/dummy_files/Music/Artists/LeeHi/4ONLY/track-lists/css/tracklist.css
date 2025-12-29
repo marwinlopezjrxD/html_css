@@ -124,7 +124,7 @@ body {
 }
 
 .bg-only::before {
-    background-image: url('../../images/only-6-bg.jpg'); /* Your special ONLY image */
+    background-image: url('../../images/only-6-bg.jpg'); 
 }
 
 /* Pagination styling (fake navigation at bottom) */
