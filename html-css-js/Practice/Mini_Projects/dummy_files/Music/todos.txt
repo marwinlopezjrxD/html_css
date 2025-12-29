@@ -1,6 +1,8 @@
 finish tracklists for Mitski -done
 
 reduce font size of song-summary titles of the song names that are overlappping e.g. - intentions, red-lipsticks, etc.
+test solution: try to use text-align: center; for main style
+
 
 add leehi live perf
 
