@@ -1,1 +1,5 @@
-finish tracklists for Mistki
+finish tracklists for Mitski
+
+reduce font size of song-summary titles of the song names that are overlappping e.g. - intentions, red-lipsticks, etc.
+
+finish today
