@@ -1,0 +1,30 @@
+https://open.spotify.com/track/6TBJkXHPhu3EsMk1bshwuI?si=KWa0v1HaQ-eEKbFmF1UlqQ
+
+
+CAR KEYS - BESIDE ROUTER
+LICENSE - INSIDE WALLET BLACK - ALSO BESIDE ROUTER
+
+
+
+please do this ⬇️
+
+git fetch origin
+git reset --hard origin/master 
+
+checks commit history:
+
+- git reflog
+
+** VERY IMPORTANT **
+
+if you have modified files and accidentally used git reset --hard origin/master or origin/main:
+- click on the specified file
+- right click > find open timeline
+- Find "File Saved"
+- After seeing this "File Saved", press right-click mouse button
+- After pressing right-click mouse button, a menu will pop up
+- Look for "Restore Contents"
+- Lastly is click on "Restore Contents", it will instantly restore the contents  exactly how it was from your last changes (all your lost changes come back).
+
+# End of file.
+
