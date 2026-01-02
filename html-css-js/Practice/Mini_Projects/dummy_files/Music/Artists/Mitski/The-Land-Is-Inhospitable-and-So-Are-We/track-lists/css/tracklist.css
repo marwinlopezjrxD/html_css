@@ -128,7 +128,7 @@ footer {
 
 /* Responsive fix for long album titles on mobile/laptop - prevent overflow */
 @media (max-width: 1024px) {
-    .album-title {
+    .song-title {
         font-size: 2.2rem; /* Smaller but readable */
         letter-spacing: 0.08em; /* Tighten spacing */
         line-height: 1.2;
@@ -140,7 +140,7 @@ footer {
         padding: 3rem 1.5rem; /* Reduce side padding */
     }
 
-    .artist-name {
+    .artist {
         font-size: 1.8rem;
     }
 }

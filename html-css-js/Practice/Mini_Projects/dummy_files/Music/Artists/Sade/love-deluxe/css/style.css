@@ -1,3 +1,4 @@
+/* Local style.css for Sade Love Deluxe song-summary pages - matches main theme */
 body {
     margin: 0;
     padding: 0;
@@ -9,8 +10,7 @@ body {
 
 .hero {
     height: 100vh;
-    /* Default background: official 4 ONLY album cover for ALL song pages */
-    background: url('https://www.nme.com/wp-content/uploads/2021/09/lee-hi-4-only-review-red-lipstick-091321.jpg') center/cover no-repeat;
+    background: url('../images/album-cover.jpg') center/cover no-repeat; /* Official Love Deluxe cover - working */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +22,7 @@ body {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
 }
 
 .hero-content {
@@ -83,27 +83,7 @@ footer {
     opacity: 0.7;
 }
 
-/* Specific override for Savior page */
-.hero-savior {
-    background: url('../images/savior-bg.jpg') center/cover no-repeat !important;
-}
-
-/* Specific override for Red Lipstick page */
-.hero-red-lipstick {
-    background: url('../images/red-lipstick-bg.jpg') center/cover no-repeat !important;
-}
-
-/* Specific override for H.S.K.T. page */
-.hero-hskt {
-    background: url('../images/hskt-bg.jpg') center/cover no-repeat !important;
-}
-
-/* NEW: Specific override for ONLY page (track 10) */
-.hero-only {
-    background: url('../images/only-6-bg.jpg') center/cover no-repeat !important;
-}
-
-/* Top-right credits (for special pages like ONLY) */
+/* Top-right credits */
 .credits-top {
     position: absolute;
     top: 30px;
@@ -115,7 +95,7 @@ footer {
     line-height: 1.4;
 }
 
-/* Bottom navigation for all song summary pages */
+/* Bottom navigation */
 .navigation {
     display: flex;
     justify-content: center;
@@ -127,7 +107,7 @@ footer {
 
 .navigation a {
     color: #fff;
-    text-decoration: none; /* Removes underline */
+    text-decoration: none;
     opacity: 0.8;
     transition: opacity 0.3s;
 }
@@ -141,9 +121,9 @@ footer {
     pointer-events: none;
 }
 
-/* Back to Top button styles - shared across all song summary pages */
+/* Back to Top button */
 #backToTop {
-    display: none; /* Hidden until scrolled */
+    display: none;
     position: fixed;
     bottom: 40px;
     right: 40px;
