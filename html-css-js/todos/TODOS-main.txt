@@ -1,6 +1,6 @@
 what u wanna do bro
 
-ming-food-hub folder tom
+
 
 
 
@@ -47,11 +47,9 @@ ming-food-hub folder tom
 
 
 
-HTML mock test dry run - Jan 21 2026
-
-choose two:
 
 https://www.w3schools.com/html/html_quiz.asp - 1
+-35/40
 
 https://test.sanfoundry.com/html-tests/
 
@@ -60,11 +58,8 @@ https://www.studysection.com/html5-foundation
 https://www.proprofs.com/quiz-school/story.php?title=3dq-html-certification-quiz
 
 https://www.geeksforgeeks.org/quizzes/html-course-practice-quiz-1/ - 2
+- 18/20
 
-
-Score: 67/70 (test)
-
-Pass/Fail: Pass (test)
 
 
 
