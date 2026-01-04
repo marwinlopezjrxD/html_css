@@ -150,3 +150,22 @@ footer {
     opacity: 0.7; /* Faded text */
     font-size: 0.9rem; /* Small text */
 }
+
+/* Responsive fix for long album titles on mobile/laptop - prevent overflow */
+@media (max-width: 1024px) {
+    .song-title {
+        font-size: 2.2rem; /* Smaller but readable */
+        letter-spacing: 0.08em; /* Tighten spacing */
+        line-height: 1.2;
+        padding: 0 1.5rem; /* Side padding to keep in bounds */
+        word-break: break-word; /* Break long words if needed */
+    }
+
+    .header {
+        padding: 3rem 1.5rem; /* Reduce side padding */
+    }
+
+    .artist {
+        font-size: 1.8rem;
+    }
+}

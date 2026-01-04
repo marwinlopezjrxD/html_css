@@ -1,4 +1,4 @@
-/* Tracklist page - full styles (grid, cards, blur, backgrounds) - SZA SOS */
+/* Tracklist page - full styles (grid, cards, blur, backgrounds) - SZA SOS + Lana */
 body {
     margin: 0;
     padding: 0;
@@ -94,31 +94,70 @@ body {
     margin-top: 0.5rem;
 }
 
-/* Default background - SOS cover (working high-res link) */
-.bg-default::before {
-    background-image: url('https://hips.hearstapps.com/hmg-prod/images/sza-final-artwork-3000x3000-1670870780.jpg'); /* Official SOS cover - tested and working */
+/* Background for original SOS tracks (blue cover) */
+.bg-sos::before {
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/sza-final-artwork-3000x3000-1670870780.jpg'); /* Official SOS cover */
 }
 
-/* Pagination */
+/* Background for Lana (SOS Deluxe) tracks (bug-eyed cover) */
+.bg-lana::before {
+    background-image: url('https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fwp-content%2Fblogs.dir%2F6%2Ffiles%2F2024%2F12%2F23%2Fhttps-hypebeast.com-image-2024-12-19-sza-sos-deluxe-lana-album-stream-001.jpg?q=75&w=800&cbr=1&fit=max'); /* Official Lana cover - stable and working */
+}
+
+/* Pagination - matches song-summary style */
 .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
     margin: 6rem 0 4rem;
     font-size: 1.2rem;
 }
 
-.pagination span {
+.pagination a {
     color: #fff;
     opacity: 0.8;
-    margin: 0 1rem;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.pagination a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.pagination span {
+    color: #fff;
+    opacity: 0.9;
 }
 
 .pagination .disabled {
     color: #555;
+    opacity: 0.5;
     pointer-events: none;
 }
 
-/* Footer */
 footer {
     padding: 3rem;
     opacity: 0.7;
     font-size: 0.9rem;
+}
+
+/* Responsive fix for long album titles on mobile/laptop - prevent overflow */
+@media (max-width: 1024px) {
+    .song-title {
+        font-size: 2.2rem; /* Smaller but readable */
+        letter-spacing: 0.08em; /* Tighten spacing */
+        line-height: 1.2;
+        padding: 0 1.5rem; /* Side padding to keep in bounds */
+        word-break: break-word; /* Break long words if needed */
+    }
+
+    .header {
+        padding: 3rem 1.5rem; /* Reduce side padding */
+    }
+
+    .artist {
+        font-size: 1.8rem;
+    }
 }
