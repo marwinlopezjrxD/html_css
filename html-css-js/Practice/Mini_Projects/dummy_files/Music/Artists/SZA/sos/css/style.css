@@ -25,6 +25,24 @@ body {
     background: rgba(0, 0, 0, 0.7); /* Dark overlay */
 }
 
+/* NEW: Lana (SOS Deluxe) hero background - only used for tracks 24-40 */
+.hero-lana {
+    height: 100vh;
+    background: url('https://i.ytimg.com/vi/y9MzKPIa1wc/maxresdefault.jpg') center/cover no-repeat; /* Reliable Lana cover */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-lana::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Same dark overlay */
+}
+
 .hero-content {
     position: relative;
     z-index: 1;
