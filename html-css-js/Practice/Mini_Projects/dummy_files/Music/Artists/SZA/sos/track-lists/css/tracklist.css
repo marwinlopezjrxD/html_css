@@ -104,6 +104,11 @@ body {
     background-image: url('https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fwp-content%2Fblogs.dir%2F6%2Ffiles%2F2024%2F12%2F23%2Fhttps-hypebeast.com-image-2024-12-19-sza-sos-deluxe-lana-album-stream-001.jpg?q=75&w=800&cbr=1&fit=max'); /* Official Lana cover - stable and working */
 }
 
+/* Background for Saturn specific song (SOS Deluxe) */
+.bg-saturn::before {
+    background-image: url('../../images/saturn-background-image.jpg'); /* Official Lana cover - stable and working */
+}
+
 /* Pagination - matches song-summary style */
 .pagination {
     display: flex;
