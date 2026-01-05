@@ -163,3 +163,7 @@ claim free games
 12/23 🟡
 12/24 🔴
 
+TEST Agents Duel (VALORANT):
+
+Using:
+ISO - test for 1 week
