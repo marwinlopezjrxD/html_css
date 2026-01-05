@@ -147,7 +147,7 @@ footer {
 
 /* Heaven track - hover shows animated GIF (desktop only) */
 .heaven-hover::before {
-    background-image: url('../../gifs/mitski-haven-snippet-ezgif.com-video-to-gif-converter.gif');
+    background-image: url('../../gifs/mitski-heaven-snippet-ezgif.com-video-to-gif-converter.gif');
 }
 
 .heaven-hover:hover::before {
