@@ -162,3 +162,19 @@ footer {
         font-size: 1.8rem;
     }
 }
+
+/* Heaven page - your video background */
+.hero-heaven .hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* Fallback if video fails */
+.hero-heaven {
+    background: black url('../images/album-cover.jpg') center/cover no-repeat;
+}
