@@ -1,7 +1,8 @@
 what u wanna do bro
 
 
--try to make the bg image move (GIFs), try on Mitski.
+-try to make the bg image move (GIFs), try on Mitski. - success
+- try on other songs too later
 
 
 
