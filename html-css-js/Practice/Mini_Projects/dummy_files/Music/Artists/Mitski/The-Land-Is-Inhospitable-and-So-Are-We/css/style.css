@@ -181,6 +181,14 @@ footer {
     /* Add your card styles if needed: padding, border, etc. */
 }
 
+/* Bug Like an Angel page - animated GIF background (newly added) */
+.hero-bug {
+    background: 
+        url('../gifs/mitski-bug-like-an-angel-snippet-ezgif.com-video-to-gif-convert.gif') center/cover no-repeat fixed,
+        url('../images/album-cover.jpg') center/cover no-repeat fixed,
+        black;
+}
+
 /* Specific for Heaven track card - hover shows GIF */
 .track-card[data-track="03"],  /* or use a specific class like .track-heaven if easier */
 .track-card a[href*="03-heaven"] {  /* Targets the card linking to Heaven */
@@ -191,3 +199,4 @@ footer {
 .track-card a[href*="03-heaven"]:hover {
     background: url('../gifs/mitski-haven-snippet-ezgif.com-video-to-gif-converter.gif') center/cover no-repeat fixed; /* Your GIF on hover */
 }
+
