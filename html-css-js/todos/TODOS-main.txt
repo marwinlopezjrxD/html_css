@@ -1,5 +1,8 @@
 what u wanna do bro
 
+on hover: gif shows
+on hover 1024pc reso: auto play gif
+
 run 3km -
 sampay -
 grocery busget 1k
