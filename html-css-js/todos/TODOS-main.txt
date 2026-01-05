@@ -1,18 +1,15 @@
 what u wanna do bro
 
+youtube snippet to gif or youtube to mp4 dl -
+https://ytcutter.link/ - omit, too much console commands
+still finding links
 
-continue at 1:10am
+mp4 to gif
+https://ezgif.com/video-to-gif
 
-find deep cleaner aircon
-cetirizine taken - 1
 
-on hover: gif shows
-on hover 1024pc reso: auto play gif
 
-pick your poison:
-
-option 1: - is good, try option 2 later on
-
+option 1: - applied to Mitski
 
 
 tracklist track-card: show default background image
@@ -26,6 +23,11 @@ IDK
 tracklist track-card: show animated GIF
 tracklist track-card hover::: show default background image (specific image will be shown also)
 song-summary 01-example-song: show animated GIF
+
+
+restock
+coffee 3-in1 or black coffee (no sugar)
+
 
 
 do not autoplay gifs on 1024 responsive fix for mobile if:
