@@ -164,3 +164,13 @@ footer {
     opacity: 0.8;
     filter: blur(3px); /* Slightly clearer GIF on hover */
 }
+
+/* I Don't Like My Mind track - hover shows animated GIF (desktop only) */
+.mind-hover::before {
+    background-image: url('../../gifs/i-dont-like-my-mind-snippet-ezgif.com-video-to-gif-converter.gif');
+}
+
+.mind-hover:hover::before {
+    opacity: 0.8;
+    filter: blur(3px); /* Slightly clearer GIF on hover */
+}

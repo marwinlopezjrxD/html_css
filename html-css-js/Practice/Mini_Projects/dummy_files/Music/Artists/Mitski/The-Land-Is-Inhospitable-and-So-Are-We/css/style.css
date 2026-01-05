@@ -200,3 +200,10 @@ footer {
     background: url('../gifs/mitski-haven-snippet-ezgif.com-video-to-gif-converter.gif') center/cover no-repeat fixed; /* Your GIF on hover */
 }
 
+/* I Don't Like My Mind page - animated GIF background */
+.hero-mind {
+    background: 
+        url('../gifs/i-dont-like-my-mind-snippet-ezgif.com-video-to-gif-converter.gif') center/cover no-repeat fixed,
+        url('../images/album-cover.jpg') center/cover no-repeat fixed,
+        black;
+}
