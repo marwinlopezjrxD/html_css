@@ -3,6 +3,11 @@ what u wanna do bro
 on hover: gif shows
 on hover 1024pc reso: auto play gif
 
+do not autoplay gifs on 1024 responsive fix for mobile if:
+the gifs are taking too long to load (big no-no). 
+just use hover and not autoplay
+
+
 run 3km - done https://strava.app.link/uE0JEZI4FZb
 sampay -
 grocery busget 1k - done 499 total spent
