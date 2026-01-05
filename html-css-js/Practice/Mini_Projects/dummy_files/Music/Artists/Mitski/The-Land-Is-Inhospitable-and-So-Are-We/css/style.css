@@ -173,3 +173,21 @@ footer {
         url('../images/album-cover.jpg') center/cover no-repeat fixed,
         black;
 }
+
+/* Track cards - default static, hover animated GIF (Heaven example) */
+.track-card {
+    background: url('../images/album-cover.jpg') center/cover no-repeat; /* Default for all */
+    transition: background 0.6s ease; /* Smooth swap */
+    /* Add your card styles if needed: padding, border, etc. */
+}
+
+/* Specific for Heaven track card - hover shows GIF */
+.track-card[data-track="03"],  /* or use a specific class like .track-heaven if easier */
+.track-card a[href*="03-heaven"] {  /* Targets the card linking to Heaven */
+    background: url('../images/album-cover.jpg') center/cover no-repeat; /* Normal */
+}
+
+.track-card[data-track="03"]:hover,
+.track-card a[href*="03-heaven"]:hover {
+    background: url('../gifs/mitski-haven-snippet-ezgif.com-video-to-gif-converter.gif') center/cover no-repeat fixed; /* Your GIF on hover */
+}

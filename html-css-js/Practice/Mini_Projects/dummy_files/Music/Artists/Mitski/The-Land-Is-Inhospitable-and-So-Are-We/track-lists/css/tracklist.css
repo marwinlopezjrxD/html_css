@@ -144,3 +144,13 @@ footer {
         font-size: 1.8rem;
     }
 }
+
+/* Heaven track - hover shows animated GIF (desktop only) */
+.heaven-hover::before {
+    background-image: url('../../gifs/mitski-haven-snippet-ezgif.com-video-to-gif-converter.gif');
+}
+
+.heaven-hover:hover::before {
+    opacity: 0.8;
+    filter: blur(3px); /* Slightly clearer GIF on hover */
+}

@@ -5,9 +5,9 @@ on hover 1024pc reso: auto play gif
 
 pick your poison:
 
-option 1: - TRY
+option 1: - is good, try option 2 later on
 
-ONLY GOOD ON DESKTOP/LAPTOP, BAD ON MOBILE
+
 
 tracklist track-card: show default background image
 tracklist track-card hover::: show animated GIF 
