@@ -1,4 +1,4 @@
-/* style.css - Black & White theme for Mitski song-summary pages (matches Lee Hi's 4 ONLY) */
+/* style.css - Black & White theme for Mitski song-summary pages */
 
 body {
     margin: 0;
@@ -11,7 +11,7 @@ body {
 
 .hero {
     height: 100vh;
-    background: url('../images/album-cover.jpg') center/cover no-repeat; /* Local image - no 404! */
+    background: url('../images/album-cover.jpg') center/cover no-repeat; /* Default fallback for all pages */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,11 +117,6 @@ footer {
     opacity: 1;
 }
 
-.navigation .disabled {
-    color: #666;
-    pointer-events: none;
-}
-
 /* Back to Top button */
 #backToTop {
     display: none;
@@ -144,18 +139,14 @@ footer {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-/* Responsive fix for long album titles on mobile/laptop - prevent overflow */
+/* Responsive fix for long album titles */
 @media (max-width: 1024px) {
     .song-title {
-        font-size: 2.2rem; /* Smaller but readable */
-        letter-spacing: 0.08em; /* Tighten spacing */
+        font-size: 2.2rem;
+        letter-spacing: 0.08em;
         line-height: 1.2;
-        padding: 0 1.5rem; /* Side padding to keep in bounds */
-        word-break: break-word; /* Break long words if needed */
-    }
-
-    .header {
-        padding: 3rem 1.5rem; /* Reduce side padding */
+        padding: 0 1.5rem;
+        word-break: break-word;
     }
 
     .artist {
@@ -163,7 +154,7 @@ footer {
     }
 }
 
-/* Heaven page - your video background */
+/* Heaven page video background only */
 .hero-heaven .hero-video {
     position: absolute;
     top: 0;
@@ -174,7 +165,11 @@ footer {
     z-index: -2;
 }
 
-/* Fallback if video fails */
+/* Heaven page - animated GIF background (your converted snippet) */
 .hero-heaven {
-    background: black url('../images/album-cover.jpg') center/cover no-repeat;
+    /* GIF on top layer, album cover as fallback below, black as final safety */
+    background: 
+        url('../gifs/mitski-haven-snippet-ezgif.com-video-to-gif-converter.gif') center/cover no-repeat fixed,
+        url('../images/album-cover.jpg') center/cover no-repeat fixed,
+        black;
 }
