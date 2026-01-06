@@ -174,3 +174,13 @@ footer {
     opacity: 0.8;
     filter: blur(3px); /* Slightly clearer GIF on hover */
 }
+
+/* Buffalo Replaced track - hover shows animated GIF (desktop only) */
+.buffalo-hover::before {
+    background-image: url('../../gifs/buffalo-replaced-snippet-ezgif.com-video-to-gif-converter.gif');
+}
+
+.buffalo-hover:hover::before {
+    opacity: 0.8;
+    filter: blur(3px); /* Slightly clearer GIF on hover */
+}

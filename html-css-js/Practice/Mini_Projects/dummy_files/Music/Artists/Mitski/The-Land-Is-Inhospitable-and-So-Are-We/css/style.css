@@ -207,3 +207,11 @@ footer {
         url('../images/album-cover.jpg') center/cover no-repeat fixed,
         black;
 }
+
+/* Buffalo Replaced page - animated GIF background */
+.hero-buffalo {
+    background: 
+        url('../gifs/buffalo-replaced-snippet-ezgif.com-video-to-gif-converter.gif') center/cover no-repeat fixed,
+        url('../images/album-cover.jpg') center/cover no-repeat fixed,
+        black;
+}
