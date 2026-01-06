@@ -231,3 +231,11 @@ footer {
         url('../images/album-cover.jpg') center/cover no-repeat fixed,
         black;
 }
+
+/* My Love Mine All Mine page - animated GIF background */
+.hero-love {
+    background: 
+        url('../gifs/my-love-all-mine-snippet-ezgif.com-video-to-gif-converter.gif') center/cover no-repeat fixed,
+        url('../images/album-cover.jpg') center/cover no-repeat fixed,
+        black;
+}

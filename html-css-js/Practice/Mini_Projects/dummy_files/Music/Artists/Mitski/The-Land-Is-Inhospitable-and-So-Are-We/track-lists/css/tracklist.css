@@ -204,3 +204,13 @@ footer {
     opacity: 0.8;
     filter: blur(3px); /* Slightly clearer GIF on hover */
 }
+
+/* My Love Mine All Mine track - hover shows animated GIF (desktop only) */
+.love-hover::before {
+    background-image: url('../../gifs/my-love-all-mine-snippet-ezgif.com-video-to-gif-converter.gif');
+}
+
+.love-hover:hover::before {
+    opacity: 0.8;
+    filter: blur(3px); /* Slightly clearer GIF on hover */
+}
