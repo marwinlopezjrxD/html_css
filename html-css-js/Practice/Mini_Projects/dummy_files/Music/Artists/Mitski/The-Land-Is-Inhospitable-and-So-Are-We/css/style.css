@@ -223,3 +223,11 @@ footer {
         url('../images/album-cover.jpg') center/cover no-repeat fixed,
         black;
 }
+
+/* When Memories Snow page - animated GIF background */
+.hero-snow {
+    background: 
+        url('../gifs/when-memories-snow-snippet-ezgif.com-video-to-gif-converter.gif') center/cover no-repeat fixed,
+        url('../images/album-cover.jpg') center/cover no-repeat fixed,
+        black;
+}
