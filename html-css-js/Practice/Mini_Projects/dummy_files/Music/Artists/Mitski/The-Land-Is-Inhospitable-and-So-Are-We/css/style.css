@@ -239,3 +239,35 @@ footer {
         url('../images/album-cover.jpg') center/cover no-repeat fixed,
         black;
 }
+
+/* The Frost page - animated GIF background */
+.hero-frost {
+    background: 
+        url('../gifs/the-frost-snippet-ezgif.com-video-to-gif-converter.gif') center/cover no-repeat fixed,
+        url('../images/album-cover.jpg') center/cover no-repeat fixed,
+        black;
+}
+
+/* Star page - animated GIF background */
+.hero-star {
+    background: 
+        url('../gifs/star-snippet-ezgif.com-video-to-gif-converter.gif') center/cover no-repeat fixed,
+        url('../images/album-cover.jpg') center/cover no-repeat fixed,
+        black;
+}
+
+/* I'm Your Man page - animated GIF background */
+.hero-man {
+    background: 
+        url('../gifs/im-your-man-snippet-ezgif.com-video-to-gif-converter.gif') center/cover no-repeat fixed,
+        url('../images/album-cover.jpg') center/cover no-repeat fixed,
+        black;
+}
+
+/* I Love Me After You page - animated GIF background */
+.hero-loveafter {
+    background: 
+        url('../gifs/i-love-me-after-you-snippet-ezgif.com-video-to-gif-converter.gif') center/cover no-repeat fixed,
+        url('../images/album-cover.jpg') center/cover no-repeat fixed,
+        black;
+}

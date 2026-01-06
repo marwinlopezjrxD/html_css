@@ -214,3 +214,43 @@ footer {
     opacity: 0.8;
     filter: blur(3px); /* Slightly clearer GIF on hover */
 }
+
+/* The Frost track - hover shows animated GIF (desktop only) */
+.frost-hover::before {
+    background-image: url('../../gifs/the-frost-snippet-ezgif.com-video-to-gif-converter.gif');
+}
+
+.frost-hover:hover::before {
+    opacity: 0.8;
+    filter: blur(3px); /* Slightly clearer GIF on hover */
+}
+
+/* Star track - hover shows animated GIF (desktop only) */
+.star-hover::before {
+    background-image: url('../../gifs/star-snippet-ezgif.com-video-to-gif-converter.gif');
+}
+
+.star-hover:hover::before {
+    opacity: 0.8;
+    filter: blur(3px); /* Slightly clearer GIF on hover */
+}
+
+/* I'm Your Man track - hover shows animated GIF (desktop only) */
+.man-hover::before {
+    background-image: url('../../gifs/im-your-man-snippet-ezgif.com-video-to-gif-converter.gif');
+}
+
+.man-hover:hover::before {
+    opacity: 0.8;
+    filter: blur(3px); /* Slightly clearer GIF on hover */
+}
+
+/* I Love Me After You track - hover shows animated GIF (desktop only) */
+.loveafter-hover::before {
+    background-image: url('../../gifs/i-love-me-after-you-snippet-ezgif.com-video-to-gif-converter.gif');
+}
+
+.loveafter-hover:hover::before {
+    opacity: 0.8;
+    filter: blur(3px); /* Slightly clearer GIF on hover */
+}
