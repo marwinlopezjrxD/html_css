@@ -215,3 +215,11 @@ footer {
         url('../images/album-cover.jpg') center/cover no-repeat fixed,
         black;
 }
+
+/* The Deal page - animated GIF background */
+.hero-deal {
+    background: 
+        url('../gifs/the-deal-snippet-ezgif.com-video-to-gif-converter.gif') center/cover no-repeat fixed,
+        url('../images/album-cover.jpg') center/cover no-repeat fixed,
+        black;
+}

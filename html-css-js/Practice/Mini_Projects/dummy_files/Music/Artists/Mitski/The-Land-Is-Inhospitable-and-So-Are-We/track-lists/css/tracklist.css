@@ -184,3 +184,13 @@ footer {
     opacity: 0.8;
     filter: blur(3px); /* Slightly clearer GIF on hover */
 }
+
+/* The Deal track - hover shows animated GIF (desktop only) */
+.deal-hover::before {
+    background-image: url('../../gifs/the-deal-snippet-ezgif.com-video-to-gif-converter.gif');
+}
+
+.deal-hover:hover::before {
+    opacity: 0.8;
+    filter: blur(3px); /* Slightly clearer GIF on hover */
+}
