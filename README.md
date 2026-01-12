@@ -56,10 +56,6 @@ Just a simple repo about HTML and CSS, aims to learn mainly on basic HTML tags a
 - Proofread `Subscriptions` folder
 - Added `freestyle.txt` for future ideas (and when bored)
 
-ON A STREAK — WILL BE ON A LONG HIATUS AFTER THIS!
-
-ADVANCE MERRY CHRISTMAS, EVERYONE!
-
 (Progress: ~95% as of November 20, 2025 — Subscription form + cosmic lyrics teasers in Mini_Projects rocking!)
 
 ## Mini_Projects (New Priority Focus!)
