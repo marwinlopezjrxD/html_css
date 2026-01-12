@@ -2,15 +2,6 @@ what u wanna do bro
 
 finish LeeHi Gif experiment
 
-updated resume - ongoing
-
-create a live demo vercel page with links specified - ongoing
-
-3links to be shown:
-
-Questionnaire
-Music Teasers 
-Music Tracklists, song-summary, artist Profile
 
 
 identify why gifs autoplays (mitsko), i set out a rule that it will autoplay
