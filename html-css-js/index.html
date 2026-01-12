@@ -1,45 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Test</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ming's Creative Hub • Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    :root {
+      --sky: #a1d4ff;
+      --sky-light: #d5ecff;
+      --sky-dark: #7bb8f5;
+      --text: #1a365d;
+      --white: #ffffff;
+      --shadow: 0 8px 30px rgba(49, 130, 206, 0.15);
+    }
+
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, var(--sky-light) 0%, var(--sky) 100%);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+    header { text-align: center; padding: 4rem 0 2.5rem; }
+    h1 { font-size: 3.2rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .subtitle { font-size: 1.25rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .card {
+      background: rgba(255,255,255,0.92);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: all 0.35s ease;
+      border: 1px solid rgba(255,255,255,0.4);
+    }
+    .card:hover { transform: translateY(-10px); box-shadow: 0 20px 45px rgba(49,130,206,0.25); }
+    .card-img {
+      height: 170px;
+      background: linear-gradient(135deg, #60a5fa, #3b82f6);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.9rem;
+      font-weight: bold;
+      text-align: center;
+      padding: 1rem;
+    }
+    .card-body { padding: 1.8rem; }
+    .card h2 { font-size: 1.65rem; color: var(--sky-dark); margin-bottom: 0.7rem; }
+    .card p { color: #4a5568; margin-bottom: 1.4rem; }
+    .btn {
+      background: var(--sky-dark);
+      color: white;
+      padding: 0.85rem 1.7rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s;
+      display: inline-block;
+    }
+    .btn:hover { background: #2563eb; transform: translateY(-2px); }
+    .extra-section {
+      text-align: center;
+      margin: 4rem 0 2rem;
+      font-size: 1.3rem;
+    }
+    footer { text-align: center; padding: 3rem 0; opacity: 0.8; font-size: 0.95rem; }
+  </style>
 </head>
 <body>
 
-    <div>
-    <h1 class="testHdr">Test Header</h1>
-    <p class="testPara"><b>Test Paragraph</b></p>
-    <a href="../html-css-js/Questionnaire/navigationHub.html" target="_blank"> <button>"Back to Navigation Hub"</button> </a>
+  <div class="container">
+    <header>
+      <h1>Welcome to My Creative Hub ♡</h1>
+      <p class="subtitle">Music, Food, Art, and Experiments — all made with love in the Philippines</p>
+    </header>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">Lyrics Teasers ♡</div>
+        <div class="card-body">
+          <h2>Ming's Lyrics Teasers</h2>
+          <p>Heartfelt song snippets from your favorite artists (SZA, Mitski, Sade & more)</p>
+          <a href="https://mings-lyrics-teasers.vercel.app/" target="_blank" class="btn">
+            <i class="fas fa-music"></i> Open Project →
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">Food Hub</div>
+        <div class="card-body">
+          <h2>Ming's Food Hub</h2>
+          <p>Authentic Filipino dishes — Adobo, Turon, Bananaque, and more!</p>
+          <a href="https://mings-food-hub-html-css.vercel.app/" target="_blank" class="btn">
+            <i class="fas fa-utensils"></i> Open Project →
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">Artist Profile</div>
+        <div class="card-body">
+          <h2>Artist Tributes</h2>
+          <p>Fan tribute pages for Lee Hi, Mitski, Sade, SZA & more</p>
+          <a href="https://marwinlopezjrxd.github.io/html_css/html-css-js/Practice/Mini_Projects/dummy_files/Music/Artists/index.html" target="_blank" class="btn">
+            <i class="fas fa-user"></i> Open Project →
+          </a>
+        </div>
+      </div>
+
     </div>
 
-    <div>
-
-    <h2 class="testImg">Test Image</h2>
-
-    <img src="images/cat.jpeg" alt="Cat Image" width="200"/>
-    
+    <!-- Connects to your Questionnaire / Navigation area -->
+    <div class="extra-section">
+      <p>Want to try some fun experiments & questionnaires?</p>
+      <a href="../html-css-js/questionnaire/navigationHub.html" class="btn" style="font-size:1.1rem; padding:1rem 2rem;">
+        <i class="fas fa-flask"></i> Go to Navigation Hub / Questionnaire →
+      </a>
     </div>
 
-
-    <h2 class="testImg">Test Clickable Image with Overlay Effects</h2>
-
-
-    <div class="container">
-    
-        <img src="images/cat1.webp" alt="Clickable Image with Overlay Effects" class="image">
-
-    <div class="overlay">
-
-        <div class="text"><a class="text-deco" href="images/cat1.webp" target="_blank">Click Me</a>
-
-    </div>
-
-    </div>
-
-
+    <footer>
+      Made with ♡ • January 2026 • Philippines
+    </footer>
+  </div>
 
 </body>
 </html>
